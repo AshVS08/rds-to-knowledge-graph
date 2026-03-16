@@ -1,0 +1,61 @@
+{
+  "db_id": "company_office",
+  "nodes": [
+    {
+      "id": "Companies",
+      "columns": [
+        "id",
+        "name",
+        "Headquarters",
+        "Industry",
+        "Sales_billion",
+        "Profits_billion",
+        "Assets_billion",
+        "Market_Value_billion"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    },
+    {
+      "id": "Office_locations",
+      "columns": [
+        "building_id",
+        "company_id",
+        "move_in_year"
+      ],
+      "primary_keys": [
+        "building_id",
+        "company_id"
+      ]
+    },
+    {
+      "id": "buildings",
+      "columns": [
+        "id",
+        "name",
+        "City",
+        "Height",
+        "Stories",
+        "Status"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Office_locations",
+      "to": "Companies",
+      "from_column": "company_id",
+      "to_column": "id"
+    },
+    {
+      "from": "Office_locations",
+      "to": "buildings",
+      "from_column": "building_id",
+      "to_column": "id"
+    }
+  ]
+}

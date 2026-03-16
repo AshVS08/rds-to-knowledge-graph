@@ -1,0 +1,186 @@
+{
+  "db_id": "game_1",
+  "tables": [
+    {
+      "name": "Plays_Games",
+      "columns": [
+        {
+          "name": "StuID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "GameID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Hours_Played",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "SportsInfo",
+      "columns": [
+        {
+          "name": "StuID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "SportName",
+          "type": "VARCHAR(32)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "HoursPerWeek",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "GamesPlayed",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "OnScholarship",
+          "type": "VARCHAR(1)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "Student",
+      "columns": [
+        {
+          "name": "StuID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "LName",
+          "type": "VARCHAR(12)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Fname",
+          "type": "VARCHAR(12)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Age",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Sex",
+          "type": "VARCHAR(1)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Major",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Advisor",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "city_code",
+          "type": "VARCHAR(3)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "StuID"
+      ]
+    },
+    {
+      "name": "Video_Games",
+      "columns": [
+        {
+          "name": "GameID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "GName",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "GType",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "GameID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Plays_Games",
+      "from_column": "StuID",
+      "to_table": "Student",
+      "to_column": "StuID"
+    },
+    {
+      "from_table": "Plays_Games",
+      "from_column": "GameID",
+      "to_table": "Video_Games",
+      "to_column": "GameID"
+    },
+    {
+      "from_table": "SportsInfo",
+      "from_column": "StuID",
+      "to_table": "Student",
+      "to_column": "StuID"
+    }
+  ]
+}

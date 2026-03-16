@@ -1,0 +1,36 @@
+DB ID: manufacturer
+Run:   20250910-163730
+
+Tables: 3
+Columns: 12
+PKs: 4
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- furniture: ['Furniture_ID']
+- furniture_manufacte: ['Manufacturer_ID', 'Furniture_ID']
+- manufacturer: ['Manufacturer_ID']
+
+Null summary:
+{
+  "furniture": {
+    "Furniture_ID": 0,
+    "Name": 0,
+    "Num_of_Component": 0,
+    "Market_Rate": 0
+  },
+  "furniture_manufacte": {
+    "Manufacturer_ID": 0,
+    "Furniture_ID": 0,
+    "Price_in_Dollar": 0
+  },
+  "manufacturer": {
+    "Manufacturer_ID": 0,
+    "Open_Year": 0,
+    "Name": 0,
+    "Num_of_Factories": 0,
+    "Num_of_Shops": 0
+  }
+}

@@ -1,0 +1,42 @@
+DB ID: battle_death
+Run:   20250910-163730
+
+Tables: 3
+Columns: 18
+PKs: 3
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- battle: ['id']
+- death: ['id']
+- ship: ['id']
+
+Null summary:
+{
+  "battle": {
+    "id": 0,
+    "name": 0,
+    "date": 0,
+    "bulgarian_commander": 0,
+    "latin_commander": 0,
+    "result": 0
+  },
+  "death": {
+    "caused_by_ship_id": 0,
+    "id": 0,
+    "note": 0,
+    "killed": 0,
+    "injured": 0
+  },
+  "ship": {
+    "lost_in_battle": 0,
+    "id": 0,
+    "name": 0,
+    "tonnage": 0,
+    "ship_type": 0,
+    "location": 0,
+    "disposition_of_ship": 0
+  }
+}

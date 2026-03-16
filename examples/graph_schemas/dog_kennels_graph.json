@@ -1,0 +1,162 @@
+{
+  "db_id": "dog_kennels",
+  "nodes": [
+    {
+      "id": "Breeds",
+      "columns": [
+        "breed_code",
+        "breed_name"
+      ],
+      "primary_keys": [
+        "breed_code"
+      ]
+    },
+    {
+      "id": "Charges",
+      "columns": [
+        "charge_id",
+        "charge_type",
+        "charge_amount"
+      ],
+      "primary_keys": [
+        "charge_id"
+      ]
+    },
+    {
+      "id": "Dogs",
+      "columns": [
+        "dog_id",
+        "owner_id",
+        "abandoned_yn",
+        "breed_code",
+        "size_code",
+        "name",
+        "age",
+        "date_of_birth",
+        "gender",
+        "weight",
+        "date_arrived",
+        "date_adopted",
+        "date_departed"
+      ],
+      "primary_keys": [
+        "dog_id"
+      ]
+    },
+    {
+      "id": "Owners",
+      "columns": [
+        "owner_id",
+        "first_name",
+        "last_name",
+        "street",
+        "city",
+        "state",
+        "zip_code",
+        "email_address",
+        "home_phone",
+        "cell_number"
+      ],
+      "primary_keys": [
+        "owner_id"
+      ]
+    },
+    {
+      "id": "Professionals",
+      "columns": [
+        "professional_id",
+        "role_code",
+        "first_name",
+        "street",
+        "city",
+        "state",
+        "zip_code",
+        "last_name",
+        "email_address",
+        "home_phone",
+        "cell_number"
+      ],
+      "primary_keys": [
+        "professional_id"
+      ]
+    },
+    {
+      "id": "Sizes",
+      "columns": [
+        "size_code",
+        "size_description"
+      ],
+      "primary_keys": [
+        "size_code"
+      ]
+    },
+    {
+      "id": "Treatment_Types",
+      "columns": [
+        "treatment_type_code",
+        "treatment_type_description"
+      ],
+      "primary_keys": [
+        "treatment_type_code"
+      ]
+    },
+    {
+      "id": "Treatments",
+      "columns": [
+        "treatment_id",
+        "dog_id",
+        "professional_id",
+        "treatment_type_code",
+        "date_of_treatment",
+        "cost_of_treatment"
+      ],
+      "primary_keys": [
+        "treatment_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Dogs",
+      "to": "Owners",
+      "from_column": "owner_id",
+      "to_column": "owner_id"
+    },
+    {
+      "from": "Dogs",
+      "to": "Owners",
+      "from_column": "owner_id",
+      "to_column": "owner_id"
+    },
+    {
+      "from": "Dogs",
+      "to": "Sizes",
+      "from_column": "size_code",
+      "to_column": "size_code"
+    },
+    {
+      "from": "Dogs",
+      "to": "Breeds",
+      "from_column": "breed_code",
+      "to_column": "breed_code"
+    },
+    {
+      "from": "Treatments",
+      "to": "Dogs",
+      "from_column": "dog_id",
+      "to_column": "dog_id"
+    },
+    {
+      "from": "Treatments",
+      "to": "Professionals",
+      "from_column": "professional_id",
+      "to_column": "professional_id"
+    },
+    {
+      "from": "Treatments",
+      "to": "Treatment_Types",
+      "from_column": "treatment_type_code",
+      "to_column": "treatment_type_code"
+    }
+  ]
+}

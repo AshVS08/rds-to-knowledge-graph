@@ -1,0 +1,29 @@
+DB ID: geo
+Run:   20250910-163730
+
+Tables: 7
+Columns: 29
+PKs: 9
+FKs: 6
+
+No structural issues found.
+
+Primary keys by table:
+- border_info: ['state_name', 'border']
+- city: ['city_name', 'state_name']
+- highlow: ['state_name']
+- lake: None
+- mountain: ['mountain_name', 'state_name']
+- river: ['river_name']
+- state: ['state_name']
+
+Null summary:
+{
+  "border_info": {},
+  "city": {},
+  "highlow": {},
+  "lake": {},
+  "mountain": {},
+  "river": {},
+  "state": {}
+}

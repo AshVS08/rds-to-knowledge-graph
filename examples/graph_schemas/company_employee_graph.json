@@ -1,0 +1,60 @@
+{
+  "db_id": "company_employee",
+  "nodes": [
+    {
+      "id": "company",
+      "columns": [
+        "Company_ID",
+        "Name",
+        "Headquarters",
+        "Industry",
+        "Sales_in_Billion",
+        "Profits_in_Billion",
+        "Assets_in_Billion",
+        "Market_Value_in_Billion"
+      ],
+      "primary_keys": [
+        "Company_ID"
+      ]
+    },
+    {
+      "id": "employment",
+      "columns": [
+        "Company_ID",
+        "People_ID",
+        "Year_working"
+      ],
+      "primary_keys": [
+        "Company_ID",
+        "People_ID"
+      ]
+    },
+    {
+      "id": "people",
+      "columns": [
+        "People_ID",
+        "Age",
+        "Name",
+        "Nationality",
+        "Graduation_College"
+      ],
+      "primary_keys": [
+        "People_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "employment",
+      "to": "people",
+      "from_column": "People_ID",
+      "to_column": "People_ID"
+    },
+    {
+      "from": "employment",
+      "to": "company",
+      "from_column": "Company_ID",
+      "to_column": "Company_ID"
+    }
+  ]
+}

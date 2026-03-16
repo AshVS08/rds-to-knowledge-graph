@@ -1,0 +1,73 @@
+{
+  "db_id": "flight_4",
+  "nodes": [
+    {
+      "id": "airlines",
+      "columns": [
+        "alid",
+        "name",
+        "iata",
+        "icao",
+        "callsign",
+        "country",
+        "active"
+      ],
+      "primary_keys": [
+        "alid"
+      ]
+    },
+    {
+      "id": "airports",
+      "columns": [
+        "apid",
+        "name",
+        "city",
+        "country",
+        "x",
+        "y",
+        "elevation",
+        "iata",
+        "icao"
+      ],
+      "primary_keys": [
+        "apid"
+      ]
+    },
+    {
+      "id": "routes",
+      "columns": [
+        "rid",
+        "dst_apid",
+        "dst_ap",
+        "src_apid",
+        "src_ap",
+        "alid",
+        "airline",
+        "codeshare"
+      ],
+      "primary_keys": [
+        "rid"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "routes",
+      "to": "airlines",
+      "from_column": "alid",
+      "to_column": "alid"
+    },
+    {
+      "from": "routes",
+      "to": "airports",
+      "from_column": "src_apid",
+      "to_column": "apid"
+    },
+    {
+      "from": "routes",
+      "to": "airports",
+      "from_column": "dst_apid",
+      "to_column": "apid"
+    }
+  ]
+}

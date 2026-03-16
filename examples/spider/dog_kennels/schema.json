@@ -1,0 +1,456 @@
+{
+  "db_id": "dog_kennels",
+  "tables": [
+    {
+      "name": "Breeds",
+      "columns": [
+        {
+          "name": "breed_code",
+          "type": "VARCHAR(10)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "breed_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "breed_code"
+      ]
+    },
+    {
+      "name": "Charges",
+      "columns": [
+        {
+          "name": "charge_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "charge_type",
+          "type": "VARCHAR(10)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "charge_amount",
+          "type": "DECIMAL(19,4)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "charge_id"
+      ]
+    },
+    {
+      "name": "Dogs",
+      "columns": [
+        {
+          "name": "dog_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "owner_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "abandoned_yn",
+          "type": "VARCHAR(1)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "breed_code",
+          "type": "VARCHAR(10)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "size_code",
+          "type": "VARCHAR(10)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "name",
+          "type": "VARCHAR(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "age",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_of_birth",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "gender",
+          "type": "VARCHAR(1)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "weight",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_arrived",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_adopted",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_departed",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "dog_id"
+      ]
+    },
+    {
+      "name": "Owners",
+      "columns": [
+        {
+          "name": "owner_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "first_name",
+          "type": "VARCHAR(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "last_name",
+          "type": "VARCHAR(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "street",
+          "type": "VARCHAR(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "city",
+          "type": "VARCHAR(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "state",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "zip_code",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "email_address",
+          "type": "VARCHAR(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "home_phone",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "cell_number",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "owner_id"
+      ]
+    },
+    {
+      "name": "Professionals",
+      "columns": [
+        {
+          "name": "professional_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "role_code",
+          "type": "VARCHAR(10)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "first_name",
+          "type": "VARCHAR(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "street",
+          "type": "VARCHAR(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "city",
+          "type": "VARCHAR(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "state",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "zip_code",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "last_name",
+          "type": "VARCHAR(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "email_address",
+          "type": "VARCHAR(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "home_phone",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "cell_number",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "professional_id"
+      ]
+    },
+    {
+      "name": "Sizes",
+      "columns": [
+        {
+          "name": "size_code",
+          "type": "VARCHAR(10)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "size_description",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "size_code"
+      ]
+    },
+    {
+      "name": "Treatment_Types",
+      "columns": [
+        {
+          "name": "treatment_type_code",
+          "type": "VARCHAR(10)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "treatment_type_description",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "treatment_type_code"
+      ]
+    },
+    {
+      "name": "Treatments",
+      "columns": [
+        {
+          "name": "treatment_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "dog_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "professional_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "treatment_type_code",
+          "type": "VARCHAR(10)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_of_treatment",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "cost_of_treatment",
+          "type": "DECIMAL(19,4)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "treatment_id"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Dogs",
+      "from_column": "owner_id",
+      "to_table": "Owners",
+      "to_column": "owner_id"
+    },
+    {
+      "from_table": "Dogs",
+      "from_column": "owner_id",
+      "to_table": "Owners",
+      "to_column": "owner_id"
+    },
+    {
+      "from_table": "Dogs",
+      "from_column": "size_code",
+      "to_table": "Sizes",
+      "to_column": "size_code"
+    },
+    {
+      "from_table": "Dogs",
+      "from_column": "breed_code",
+      "to_table": "Breeds",
+      "to_column": "breed_code"
+    },
+    {
+      "from_table": "Treatments",
+      "from_column": "dog_id",
+      "to_table": "Dogs",
+      "to_column": "dog_id"
+    },
+    {
+      "from_table": "Treatments",
+      "from_column": "professional_id",
+      "to_table": "Professionals",
+      "to_column": "professional_id"
+    },
+    {
+      "from_table": "Treatments",
+      "from_column": "treatment_type_code",
+      "to_table": "Treatment_Types",
+      "to_column": "treatment_type_code"
+    }
+  ]
+}

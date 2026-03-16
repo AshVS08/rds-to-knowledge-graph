@@ -1,0 +1,78 @@
+DB ID: college_3
+Run:   20250910-163730
+
+Tables: 8
+Columns: 39
+PKs: 5
+FKs: 9
+
+No structural issues found.
+
+Primary keys by table:
+- Course: ['CID']
+- Department: ['DNO']
+- Enrolled_in: None
+- Faculty: ['FacID']
+- Gradeconversion: ['lettergrade']
+- Member_of: None
+- Minor_in: None
+- Student: ['StuID']
+
+Null summary:
+{
+  "Course": {
+    "CID": 0,
+    "CName": 0,
+    "Credits": 0,
+    "Instructor": 0,
+    "Days": 0,
+    "Hours": 0,
+    "DNO": 0
+  },
+  "Department": {
+    "DNO": 0,
+    "Division": 0,
+    "DName": 0,
+    "Room": 0,
+    "Building": 0,
+    "DPhone": 0
+  },
+  "Enrolled_in": {
+    "StuID": 0,
+    "CID": 0,
+    "Grade": 0
+  },
+  "Faculty": {
+    "FacID": 0,
+    "Lname": 0,
+    "Fname": 0,
+    "Rank": 0,
+    "Sex": 0,
+    "Phone": 0,
+    "Room": 0,
+    "Building": 0
+  },
+  "Gradeconversion": {
+    "lettergrade": 0,
+    "gradepoint": 0
+  },
+  "Member_of": {
+    "FacID": 0,
+    "DNO": 0,
+    "Appt_Type": 0
+  },
+  "Minor_in": {
+    "StuID": 0,
+    "DNO": 0
+  },
+  "Student": {
+    "StuID": 0,
+    "LName": 0,
+    "Fname": 0,
+    "Age": 0,
+    "Sex": 0,
+    "Major": 0,
+    "Advisor": 0,
+    "city_code": 0
+  }
+}

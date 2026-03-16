@@ -1,0 +1,82 @@
+{
+  "db_id": "farm",
+  "nodes": [
+    {
+      "id": "city",
+      "columns": [
+        "City_ID",
+        "Official_Name",
+        "Status",
+        "Area_km_2",
+        "Population",
+        "Census_Ranking"
+      ],
+      "primary_keys": [
+        "City_ID"
+      ]
+    },
+    {
+      "id": "competition_record",
+      "columns": [
+        "Competition_ID",
+        "Farm_ID",
+        "Rank"
+      ],
+      "primary_keys": [
+        "Competition_ID",
+        "Farm_ID"
+      ]
+    },
+    {
+      "id": "farm",
+      "columns": [
+        "Farm_ID",
+        "Year",
+        "Total_Horses",
+        "Working_Horses",
+        "Total_Cattle",
+        "Oxen",
+        "Bulls",
+        "Cows",
+        "Pigs",
+        "Sheep_and_Goats"
+      ],
+      "primary_keys": [
+        "Farm_ID"
+      ]
+    },
+    {
+      "id": "farm_competition",
+      "columns": [
+        "Competition_ID",
+        "Year",
+        "Theme",
+        "Host_city_ID",
+        "Hosts"
+      ],
+      "primary_keys": [
+        "Competition_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "competition_record",
+      "to": "farm",
+      "from_column": "Farm_ID",
+      "to_column": "Farm_ID"
+    },
+    {
+      "from": "competition_record",
+      "to": "farm_competition",
+      "from_column": "Competition_ID",
+      "to_column": "Competition_ID"
+    },
+    {
+      "from": "farm_competition",
+      "to": "city",
+      "from_column": "Host_city_ID",
+      "to_column": "City_ID"
+    }
+  ]
+}

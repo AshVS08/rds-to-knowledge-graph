@@ -1,0 +1,176 @@
+{
+  "db_id": "culture_company",
+  "tables": [
+    {
+      "name": "book_club",
+      "columns": [
+        {
+          "name": "book_club_id",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Year",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Author_or_Editor",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Book_Title",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Publisher",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Category",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Result",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "book_club_id"
+      ]
+    },
+    {
+      "name": "culture_company",
+      "columns": [
+        {
+          "name": "Company_name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Type",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Incorporated_in",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Group_Equity_Shareholding",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "book_club_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "movie_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Company_name"
+      ]
+    },
+    {
+      "name": "movie",
+      "columns": [
+        {
+          "name": "movie_id",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Title",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Year",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Director",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Budget_million",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Gross_worldwide",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "movie_id"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "culture_company",
+      "from_column": "movie_id",
+      "to_table": "movie",
+      "to_column": "movie_id"
+    },
+    {
+      "from_table": "culture_company",
+      "from_column": "book_club_id",
+      "to_table": "book_club",
+      "to_column": "book_club_id"
+    }
+  ]
+}

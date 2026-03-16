@@ -1,0 +1,138 @@
+{
+  "db_id": "music_2",
+  "nodes": [
+    {
+      "id": "Albums",
+      "columns": [
+        "AId",
+        "Title",
+        "Year",
+        "Label",
+        "Type"
+      ],
+      "primary_keys": [
+        "AId"
+      ]
+    },
+    {
+      "id": "Band",
+      "columns": [
+        "Id",
+        "Firstname",
+        "Lastname"
+      ],
+      "primary_keys": [
+        "Id"
+      ]
+    },
+    {
+      "id": "Instruments",
+      "columns": [
+        "SongId",
+        "BandmateId",
+        "Instrument"
+      ],
+      "primary_keys": [
+        "SongId",
+        "BandmateId",
+        "Instrument"
+      ]
+    },
+    {
+      "id": "Performance",
+      "columns": [
+        "SongId",
+        "Bandmate",
+        "StagePosition"
+      ],
+      "primary_keys": [
+        "SongId",
+        "Bandmate"
+      ]
+    },
+    {
+      "id": "Songs",
+      "columns": [
+        "SongId",
+        "Title"
+      ],
+      "primary_keys": [
+        "SongId"
+      ]
+    },
+    {
+      "id": "Tracklists",
+      "columns": [
+        "AlbumId",
+        "Position",
+        "SongId"
+      ],
+      "primary_keys": [
+        "AlbumId",
+        "Position"
+      ]
+    },
+    {
+      "id": "Vocals",
+      "columns": [
+        "SongId",
+        "Bandmate",
+        "Type"
+      ],
+      "primary_keys": [
+        "SongId",
+        "Bandmate"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Instruments",
+      "to": "Band",
+      "from_column": "BandmateId",
+      "to_column": "Id"
+    },
+    {
+      "from": "Instruments",
+      "to": "Songs",
+      "from_column": "SongId",
+      "to_column": "SongId"
+    },
+    {
+      "from": "Performance",
+      "to": "Band",
+      "from_column": "Bandmate",
+      "to_column": "Id"
+    },
+    {
+      "from": "Performance",
+      "to": "Songs",
+      "from_column": "SongId",
+      "to_column": "SongId"
+    },
+    {
+      "from": "Tracklists",
+      "to": "Albums",
+      "from_column": "AlbumId",
+      "to_column": "AId"
+    },
+    {
+      "from": "Tracklists",
+      "to": "Songs",
+      "from_column": "SongId",
+      "to_column": "SongId"
+    },
+    {
+      "from": "Vocals",
+      "to": "Band",
+      "from_column": "Bandmate",
+      "to_column": "Id"
+    },
+    {
+      "from": "Vocals",
+      "to": "Songs",
+      "from_column": "SongId",
+      "to_column": "SongId"
+    }
+  ]
+}

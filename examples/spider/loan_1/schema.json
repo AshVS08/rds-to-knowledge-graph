@@ -1,0 +1,175 @@
+{
+  "db_id": "loan_1",
+  "tables": [
+    {
+      "name": "bank",
+      "columns": [
+        {
+          "name": "branch_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "bname",
+          "type": "varchar(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "no_of_customers",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "city",
+          "type": "varchar(10)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "state",
+          "type": "varchar(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "branch_ID"
+      ]
+    },
+    {
+      "name": "customer",
+      "columns": [
+        {
+          "name": "cust_ID",
+          "type": "varchar(3)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "cust_name",
+          "type": "varchar(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "acc_type",
+          "type": "char(1)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "acc_bal",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "no_of_loans",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "credit_score",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "branch_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "state",
+          "type": "varchar(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "cust_ID"
+      ]
+    },
+    {
+      "name": "loan",
+      "columns": [
+        {
+          "name": "loan_ID",
+          "type": "varchar(3)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "loan_type",
+          "type": "varchar(15)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "cust_ID",
+          "type": "varchar(3)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "branch_ID",
+          "type": "varchar(3)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "amount",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "loan_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "customer",
+      "from_column": "branch_ID",
+      "to_table": "bank",
+      "to_column": "branch_ID"
+    },
+    {
+      "from_table": "loan",
+      "from_column": "cust_ID",
+      "to_table": "customer",
+      "to_column": "Cust_ID"
+    },
+    {
+      "from_table": "loan",
+      "from_column": "branch_ID",
+      "to_table": "bank",
+      "to_column": "branch_ID"
+    }
+  ]
+}

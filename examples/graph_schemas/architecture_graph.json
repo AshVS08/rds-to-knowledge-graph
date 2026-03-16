@@ -1,0 +1,60 @@
+{
+  "db_id": "architecture",
+  "nodes": [
+    {
+      "id": "architect",
+      "columns": [
+        "id",
+        "name",
+        "nationality",
+        "gender"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    },
+    {
+      "id": "bridge",
+      "columns": [
+        "architect_id",
+        "id",
+        "name",
+        "location",
+        "length_meters",
+        "length_feet"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    },
+    {
+      "id": "mill",
+      "columns": [
+        "architect_id",
+        "id",
+        "location",
+        "name",
+        "type",
+        "built_year",
+        "notes"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "bridge",
+      "to": "architect",
+      "from_column": "architect_id",
+      "to_column": "id"
+    },
+    {
+      "from": "mill",
+      "to": "architect",
+      "from_column": "architect_id",
+      "to_column": "id"
+    }
+  ]
+}

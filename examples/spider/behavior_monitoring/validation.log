@@ -1,0 +1,112 @@
+DB ID: behavior_monitoring
+Run:   20250910-163730
+
+Tables: 11
+Columns: 64
+PKs: 8
+FKs: 13
+
+No structural issues found.
+
+Primary keys by table:
+- Addresses: ['address_id']
+- Assessment_Notes: None
+- Behavior_Incident: ['incident_id']
+- Detention: ['detention_id']
+- Ref_Address_Types: ['address_type_code']
+- Ref_Detention_Type: ['detention_type_code']
+- Ref_Incident_Type: ['incident_type_code']
+- Student_Addresses: None
+- Students: ['student_id']
+- Students_in_Detention: None
+- Teachers: ['teacher_id']
+
+Null summary:
+{
+  "Addresses": {
+    "address_id": 0,
+    "line_1": 0,
+    "line_2": 20,
+    "line_3": 20,
+    "city": 0,
+    "zip_postcode": 0,
+    "state_province_county": 0,
+    "country": 0,
+    "other_address_details": 20
+  },
+  "Assessment_Notes": {
+    "notes_id": 0,
+    "student_id": 0,
+    "teacher_id": 0,
+    "date_of_notes": 0,
+    "text_of_notes": 15,
+    "other_details": 15
+  },
+  "Behavior_Incident": {
+    "incident_id": 0,
+    "incident_type_code": 0,
+    "student_id": 0,
+    "date_incident_start": 0,
+    "date_incident_end": 0,
+    "incident_summary": 15,
+    "recommendations": 12,
+    "other_details": 15
+  },
+  "Detention": {
+    "detention_id": 0,
+    "detention_type_code": 0,
+    "teacher_id": 0,
+    "datetime_detention_start": 0,
+    "datetime_detention_end": 0,
+    "detention_summary": 15,
+    "other_details": 15
+  },
+  "Ref_Address_Types": {
+    "address_type_code": 0,
+    "address_type_description": 0
+  },
+  "Ref_Detention_Type": {
+    "detention_type_code": 0,
+    "detention_type_description": 0
+  },
+  "Ref_Incident_Type": {
+    "incident_type_code": 0,
+    "incident_type_description": 0
+  },
+  "Student_Addresses": {
+    "student_id": 0,
+    "address_id": 0,
+    "date_address_from": 0,
+    "date_address_to": 0,
+    "monthly_rental": 0,
+    "other_details": 0
+  },
+  "Students": {
+    "student_id": 0,
+    "address_id": 0,
+    "first_name": 0,
+    "middle_name": 0,
+    "last_name": 0,
+    "cell_mobile_number": 0,
+    "email_address": 0,
+    "date_first_rental": 0,
+    "date_left_university": 0,
+    "other_student_details": 11
+  },
+  "Students_in_Detention": {
+    "student_id": 0,
+    "detention_id": 0,
+    "incident_id": 0
+  },
+  "Teachers": {
+    "teacher_id": 0,
+    "address_id": 0,
+    "first_name": 0,
+    "middle_name": 0,
+    "last_name": 0,
+    "gender": 0,
+    "cell_mobile_number": 0,
+    "email_address": 0,
+    "other_details": 14
+  }
+}

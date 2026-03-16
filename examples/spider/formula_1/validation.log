@@ -1,0 +1,133 @@
+DB ID: formula_1
+Run:   20250910-163730
+
+Tables: 13
+Columns: 94
+PKs: 17
+FKs: 17
+
+No structural issues found.
+
+Primary keys by table:
+- circuits: ['circuitId']
+- constructorResults: ['constructorResultsId']
+- constructorStandings: ['constructorStandingsId']
+- constructors: ['constructorId']
+- driverStandings: ['driverStandingsId']
+- drivers: ['driverId']
+- lapTimes: ['raceId', 'driverId', 'lap']
+- pitStops: ['raceId', 'driverId', 'stop']
+- qualifying: ['qualifyId']
+- races: ['raceId']
+- results: ['resultId']
+- seasons: ['year']
+- status: ['statusId']
+
+Null summary:
+{
+  "circuits": {
+    "circuitId": 0,
+    "circuitRef": 0,
+    "name": 0,
+    "location": 0,
+    "country": 0,
+    "lat": 0,
+    "lng": 0,
+    "alt": 0,
+    "url": 0
+  },
+  "constructorResults": {
+    "constructorResultsId": 0,
+    "raceId": 0,
+    "constructorId": 0,
+    "points": 0,
+    "status": 0
+  },
+  "constructorStandings": {
+    "constructorStandingsId": 0,
+    "raceId": 0,
+    "constructorId": 0,
+    "points": 0,
+    "position": 0,
+    "positionText": 0,
+    "wins": 0
+  },
+  "constructors": {
+    "constructorId": 0,
+    "constructorRef": 0,
+    "name": 0,
+    "nationality": 0,
+    "url": 0
+  },
+  "driverStandings": {
+    "driverStandingsId": 0,
+    "raceId": 0,
+    "driverId": 0,
+    "points": 0,
+    "position": 0,
+    "positionText": 0,
+    "wins": 0
+  },
+  "drivers": {
+    "driverId": 0,
+    "driverRef": 0,
+    "number": 0,
+    "code": 0,
+    "forename": 0,
+    "surname": 0,
+    "dob": 0,
+    "nationality": 0,
+    "url": 0
+  },
+  "lapTimes": {},
+  "pitStops": {},
+  "qualifying": {
+    "qualifyId": 0,
+    "raceId": 0,
+    "driverId": 0,
+    "constructorId": 0,
+    "number": 0,
+    "position": 0,
+    "q1": 0,
+    "q2": 0,
+    "q3": 0
+  },
+  "races": {
+    "raceId": 0,
+    "year": 0,
+    "round": 0,
+    "circuitId": 0,
+    "name": 0,
+    "date": 0,
+    "time": 0,
+    "url": 0
+  },
+  "results": {
+    "resultId": 0,
+    "raceId": 0,
+    "driverId": 0,
+    "constructorId": 0,
+    "number": 0,
+    "grid": 0,
+    "position": 0,
+    "positionText": 0,
+    "positionOrder": 0,
+    "points": 0,
+    "laps": 0,
+    "time": 0,
+    "milliseconds": 0,
+    "fastestLap": 0,
+    "rank": 0,
+    "fastestLapTime": 0,
+    "fastestLapSpeed": 0,
+    "statusId": 0
+  },
+  "seasons": {
+    "year": 0,
+    "url": 0
+  },
+  "status": {
+    "statusId": 0,
+    "status": 0
+  }
+}

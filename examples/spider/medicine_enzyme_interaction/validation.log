@@ -1,0 +1,38 @@
+DB ID: medicine_enzyme_interaction
+Run:   20250910-163730
+
+Tables: 3
+Columns: 14
+PKs: 4
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- enzyme: ['id']
+- medicine: ['id']
+- medicine_enzyme_interaction: ['enzyme_id', 'medicine_id']
+
+Null summary:
+{
+  "enzyme": {
+    "id": 0,
+    "name": 0,
+    "Location": 0,
+    "Product": 0,
+    "Chromosome": 0,
+    "OMIM": 0,
+    "Porphyria": 0
+  },
+  "medicine": {
+    "id": 0,
+    "name": 0,
+    "Trade_Name": 0,
+    "FDA_approved": 0
+  },
+  "medicine_enzyme_interaction": {
+    "enzyme_id": 0,
+    "medicine_id": 0,
+    "interaction_type": 0
+  }
+}

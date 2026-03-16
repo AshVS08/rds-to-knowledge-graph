@@ -1,0 +1,52 @@
+DB ID: activity_1
+Run:   20250910-163730
+
+Tables: 5
+Columns: 22
+PKs: 3
+FKs: 4
+
+No structural issues found.
+
+Primary keys by table:
+- Activity: ['actid']
+- Faculty: ['FacID']
+- Faculty_Participates_in: None
+- Participates_in: None
+- Student: ['StuID']
+
+Null summary:
+{
+  "Activity": {
+    "actid": 0,
+    "activity_name": 0
+  },
+  "Faculty": {
+    "FacID": 0,
+    "Lname": 0,
+    "Fname": 0,
+    "Rank": 0,
+    "Sex": 0,
+    "Phone": 0,
+    "Room": 0,
+    "Building": 0
+  },
+  "Faculty_Participates_in": {
+    "FacID": 0,
+    "actid": 0
+  },
+  "Participates_in": {
+    "stuid": 0,
+    "actid": 0
+  },
+  "Student": {
+    "StuID": 0,
+    "LName": 0,
+    "Fname": 0,
+    "Age": 0,
+    "Sex": 0,
+    "Major": 0,
+    "Advisor": 0,
+    "city_code": 0
+  }
+}

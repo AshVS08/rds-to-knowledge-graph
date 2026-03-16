@@ -1,0 +1,38 @@
+DB ID: device
+Run:   20250910-163730
+
+Tables: 3
+Columns: 14
+PKs: 4
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- device: ['Device_ID']
+- shop: ['Shop_ID']
+- stock: ['Shop_ID', 'Device_ID']
+
+Null summary:
+{
+  "device": {
+    "Device_ID": 0,
+    "Device": 0,
+    "Carrier": 0,
+    "Package_Version": 0,
+    "Applications": 0,
+    "Software_Platform": 0
+  },
+  "shop": {
+    "Shop_ID": 0,
+    "Shop_Name": 0,
+    "Location": 0,
+    "Open_Date": 0,
+    "Open_Year": 0
+  },
+  "stock": {
+    "Shop_ID": 0,
+    "Device_ID": 0,
+    "Quantity": 0
+  }
+}

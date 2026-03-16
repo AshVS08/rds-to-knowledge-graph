@@ -1,0 +1,176 @@
+{
+  "db_id": "cre_Doc_Template_Mgt",
+  "tables": [
+    {
+      "name": "Documents",
+      "columns": [
+        {
+          "name": "Document_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Template_ID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Document_Name",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Document_Description",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Other_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Document_ID"
+      ]
+    },
+    {
+      "name": "Paragraphs",
+      "columns": [
+        {
+          "name": "Paragraph_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Document_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Paragraph_Text",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Other_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Paragraph_ID"
+      ]
+    },
+    {
+      "name": "Ref_Template_Types",
+      "columns": [
+        {
+          "name": "Template_Type_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Template_Type_Description",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Template_Type_Code"
+      ]
+    },
+    {
+      "name": "Templates",
+      "columns": [
+        {
+          "name": "Template_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Version_Number",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Template_Type_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Date_Effective_From",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Date_Effective_To",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Template_Details",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Template_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Documents",
+      "from_column": "Template_ID",
+      "to_table": "Templates",
+      "to_column": "Template_ID"
+    },
+    {
+      "from_table": "Paragraphs",
+      "from_column": "Document_ID",
+      "to_table": "Documents",
+      "to_column": "Document_ID"
+    },
+    {
+      "from_table": "Templates",
+      "from_column": "Template_Type_Code",
+      "to_table": "Ref_Template_Types",
+      "to_column": "Template_Type_Code"
+    }
+  ]
+}

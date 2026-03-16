@@ -1,0 +1,142 @@
+{
+  "db_id": "debate",
+  "tables": [
+    {
+      "name": "debate",
+      "columns": [
+        {
+          "name": "Debate_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Date",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Venue",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Num_of_Audience",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Debate_ID"
+      ]
+    },
+    {
+      "name": "debate_people",
+      "columns": [
+        {
+          "name": "Debate_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Affirmative",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Negative",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "If_Affirmative_Win",
+          "type": "bool",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Debate_ID",
+        "Affirmative",
+        "Negative"
+      ]
+    },
+    {
+      "name": "people",
+      "columns": [
+        {
+          "name": "People_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "District",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Party",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Age",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "People_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "debate_people",
+      "from_column": "Negative",
+      "to_table": "people",
+      "to_column": "People_ID"
+    },
+    {
+      "from_table": "debate_people",
+      "from_column": "Affirmative",
+      "to_table": "people",
+      "to_column": "People_ID"
+    },
+    {
+      "from_table": "debate_people",
+      "from_column": "Debate_ID",
+      "to_table": "debate",
+      "to_column": "Debate_ID"
+    }
+  ]
+}

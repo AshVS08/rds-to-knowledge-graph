@@ -1,0 +1,246 @@
+{"table": "Campuses", "row": {"Id": 1, "Campus": "California State University-Bakersfield", "Location": "Bakersfield", "County": "Kern", "Year": 1965}}
+{"table": "Campuses", "row": {"Id": 2, "Campus": "California State University-Channel Islands", "Location": "Camarillo", "County": "Ventura", "Year": 2002}}
+{"table": "Campuses", "row": {"Id": 3, "Campus": "California State University-Chico", "Location": "Chico", "County": "Butte", "Year": 1887}}
+{"table": "Campuses", "row": {"Id": 4, "Campus": "California State University-Dominguez Hills", "Location": "Carson", "County": "Los Angeles", "Year": 1960}}
+{"table": "Campuses", "row": {"Id": 5, "Campus": "California State University-East Bay", "Location": "Hayward", "County": "Alameida", "Year": 1957}}
+{"table": "Campuses", "row": {"Id": 6, "Campus": "Fresno State University", "Location": "Fresno", "County": "Fresno", "Year": 1911}}
+{"table": "Campuses", "row": {"Id": 7, "Campus": "California State University-Fullerton", "Location": "Fullerton", "County": "Orange", "Year": 1957}}
+{"table": "Campuses", "row": {"Id": 8, "Campus": "Humboldt State University", "Location": "Arcata", "County": "Humboldt", "Year": 1913}}
+{"table": "Campuses", "row": {"Id": 9, "Campus": "Long Beach State University", "Location": "Long Beach", "County": "Los Angeles", "Year": 1949}}
+{"table": "Campuses", "row": {"Id": 10, "Campus": "California State University-Los Angeles", "Location": "Los Angeles", "County": "Los Angeles", "Year": 1947}}
+{"table": "Campuses", "row": {"Id": 11, "Campus": "California  Maritime Academy", "Location": "Vallejo", "County": "Solano", "Year": 1929}}
+{"table": "Campuses", "row": {"Id": 12, "Campus": "California State University-Monterey Bay", "Location": "Seaside", "County": "Monterey", "Year": 1994}}
+{"table": "Campuses", "row": {"Id": 13, "Campus": "California State University-Northridge", "Location": "Northridge", "County": "Los Angeles", "Year": 1958}}
+{"table": "Campuses", "row": {"Id": 14, "Campus": "California State Polytechnic University-Pomona", "Location": "Pomona", "County": "Los Angeles", "Year": 1938}}
+{"table": "Campuses", "row": {"Id": 15, "Campus": "California State University-Sacramento", "Location": "Sacramento", "County": "Sacramento", "Year": 1947}}
+{"table": "Campuses", "row": {"Id": 16, "Campus": "California State University-San Bernardino", "Location": "San Bernardino", "County": "San Bernardino", "Year": 1960}}
+{"table": "Campuses", "row": {"Id": 17, "Campus": "San Diego State University", "Location": "San Diego", "County": "San Diego", "Year": 1897}}
+{"table": "Campuses", "row": {"Id": 18, "Campus": "San Francisco State University", "Location": "San Francisco", "County": "San Francisco", "Year": 1899}}
+{"table": "Campuses", "row": {"Id": 19, "Campus": "San Jose State University", "Location": "San Jose", "County": "Santa Clara", "Year": 1857}}
+{"table": "Campuses", "row": {"Id": 20, "Campus": "California Polytechnic State University-San Luis Obispo", "Location": "San Luis Obispo", "County": "San Luis Obispo", "Year": 1901}}
+{"table": "Campuses", "row": {"Id": 21, "Campus": "California State University-San Marcos", "Location": "San Marcos", "County": "San Diego", "Year": 1989}}
+{"table": "Campuses", "row": {"Id": 22, "Campus": "Sonoma State University", "Location": "Rohnert Park", "County": "Sonoma", "Year": 1960}}
+{"table": "Campuses", "row": {"Id": 23, "Campus": "California State University-Stanislaus", "Location": "Turlock", "County": "Stanislaus", "Year": 1957}}
+{"table": "csu_fees", "row": {"Campus": 1, "Year": 1996, "CampusFee": 1951}}
+{"table": "csu_fees", "row": {"Campus": 2, "Year": 2003, "CampusFee": 1868}}
+{"table": "csu_fees", "row": {"Campus": 3, "Year": 1996, "CampusFee": 2042}}
+{"table": "csu_fees", "row": {"Campus": 4, "Year": 1996, "CampusFee": 1816}}
+{"table": "csu_fees", "row": {"Campus": 5, "Year": 1996, "CampusFee": 1818}}
+{"table": "csu_fees", "row": {"Campus": 6, "Year": 1996, "CampusFee": 1916}}
+{"table": "csu_fees", "row": {"Campus": 7, "Year": 1996, "CampusFee": 1797}}
+{"table": "csu_fees", "row": {"Campus": 8, "Year": 1996, "CampusFee": 1884}}
+{"table": "csu_fees", "row": {"Campus": 9, "Year": 1996, "CampusFee": 1824}}
+{"table": "csu_fees", "row": {"Campus": 10, "Year": 1996, "CampusFee": 1751}}
+{"table": "csu_fees", "row": {"Campus": 11, "Year": 1996, "CampusFee": 2258}}
+{"table": "csu_fees", "row": {"Campus": 12, "Year": 1996, "CampusFee": 2009}}
+{"table": "csu_fees", "row": {"Campus": 13, "Year": 1996, "CampusFee": 1970}}
+{"table": "csu_fees", "row": {"Campus": 14, "Year": 1996, "CampusFee": 1903}}
+{"table": "csu_fees", "row": {"Campus": 15, "Year": 1996, "CampusFee": 1950}}
+{"table": "csu_fees", "row": {"Campus": 16, "Year": 1996, "CampusFee": 1875}}
+{"table": "csu_fees", "row": {"Campus": 17, "Year": 1996, "CampusFee": 1902}}
+{"table": "csu_fees", "row": {"Campus": 18, "Year": 1996, "CampusFee": 1978}}
+{"table": "csu_fees", "row": {"Campus": 19, "Year": 1996, "CampusFee": 2001}}
+{"table": "csu_fees", "row": {"Campus": 20, "Year": 1996, "CampusFee": 2204}}
+{"table": "csu_fees", "row": {"Campus": 21, "Year": 1996, "CampusFee": 1720}}
+{"table": "csu_fees", "row": {"Campus": 22, "Year": 1996, "CampusFee": 2110}}
+{"table": "csu_fees", "row": {"Campus": 23, "Year": 1996, "CampusFee": 1915}}
+{"table": "degrees", "row": {"Year": 1990, "Campus": 1, "Degrees": 701}}
+{"table": "degrees", "row": {"Year": 1991, "Campus": 1, "Degrees": 681}}
+{"table": "degrees", "row": {"Year": 1992, "Campus": 1, "Degrees": 791}}
+{"table": "degrees", "row": {"Year": 1993, "Campus": 1, "Degrees": 801}}
+{"table": "degrees", "row": {"Year": 1994, "Campus": 1, "Degrees": 849}}
+{"table": "degrees", "row": {"Year": 1995, "Campus": 1, "Degrees": 818}}
+{"table": "degrees", "row": {"Year": 1996, "Campus": 1, "Degrees": 804}}
+{"table": "degrees", "row": {"Year": 1997, "Campus": 1, "Degrees": 928}}
+{"table": "degrees", "row": {"Year": 1998, "Campus": 1, "Degrees": 816}}
+{"table": "degrees", "row": {"Year": 1999, "Campus": 1, "Degrees": 959}}
+{"table": "degrees", "row": {"Year": 2000, "Campus": 1, "Degrees": 955}}
+{"table": "degrees", "row": {"Year": 2001, "Campus": 1, "Degrees": 1086}}
+{"table": "degrees", "row": {"Year": 2002, "Campus": 1, "Degrees": 1151}}
+{"table": "degrees", "row": {"Year": 2003, "Campus": 1, "Degrees": 1193}}
+{"table": "degrees", "row": {"Year": 2004, "Campus": 1, "Degrees": 1243}}
+{"table": "degrees", "row": {"Year": 2002, "Campus": 2, "Degrees": 2}}
+{"table": "degrees", "row": {"Year": 2003, "Campus": 2, "Degrees": 142}}
+{"table": "degrees", "row": {"Year": 2004, "Campus": 2, "Degrees": 346}}
+{"table": "degrees", "row": {"Year": 1990, "Campus": 3, "Degrees": 2880}}
+{"table": "degrees", "row": {"Year": 1991, "Campus": 3, "Degrees": 3036}}
+{"table": "degrees", "row": {"Year": 1992, "Campus": 3, "Degrees": 3026}}
+{"table": "degrees", "row": {"Year": 1993, "Campus": 3, "Degrees": 3008}}
+{"table": "degrees", "row": {"Year": 1994, "Campus": 3, "Degrees": 2852}}
+{"table": "degrees", "row": {"Year": 1995, "Campus": 3, "Degrees": 2678}}
+{"table": "degrees", "row": {"Year": 1996, "Campus": 3, "Degrees": 2636}}
+{"table": "degrees", "row": {"Year": 1997, "Campus": 3, "Degrees": 2453}}
+{"table": "degrees", "row": {"Year": 1998, "Campus": 3, "Degrees": 2677}}
+{"table": "degrees", "row": {"Year": 1999, "Campus": 3, "Degrees": 2401}}
+{"table": "degrees", "row": {"Year": 2000, "Campus": 3, "Degrees": 2696}}
+{"table": "degrees", "row": {"Year": 2001, "Campus": 3, "Degrees": 2943}}
+{"table": "degrees", "row": {"Year": 2002, "Campus": 3, "Degrees": 3045}}
+{"table": "degrees", "row": {"Year": 2003, "Campus": 3, "Degrees": 3128}}
+{"table": "degrees", "row": {"Year": 2004, "Campus": 3, "Degrees": 2724}}
+{"table": "degrees", "row": {"Year": 1990, "Campus": 4, "Degrees": 1128}}
+{"table": "degrees", "row": {"Year": 1991, "Campus": 4, "Degrees": 1218}}
+{"table": "degrees", "row": {"Year": 1992, "Campus": 4, "Degrees": 1471}}
+{"table": "degrees", "row": {"Year": 1993, "Campus": 4, "Degrees": 1598}}
+{"table": "degrees", "row": {"Year": 1994, "Campus": 4, "Degrees": 1744}}
+{"table": "degrees", "row": {"Year": 1995, "Campus": 4, "Degrees": 1693}}
+{"table": "degrees", "row": {"Year": 1996, "Campus": 4, "Degrees": 1728}}
+{"table": "degrees", "row": {"Year": 1997, "Campus": 4, "Degrees": 1735}}
+{"table": "degrees", "row": {"Year": 1998, "Campus": 4, "Degrees": 1806}}
+{"table": "degrees", "row": {"Year": 1999, "Campus": 4, "Degrees": 1651}}
+{"table": "degrees", "row": {"Year": 2000, "Campus": 4, "Degrees": 1703}}
+{"table": "degrees", "row": {"Year": 2001, "Campus": 4, "Degrees": 1746}}
+{"table": "degrees", "row": {"Year": 2002, "Campus": 4, "Degrees": 1775}}
+{"table": "degrees", "row": {"Year": 2003, "Campus": 4, "Degrees": 1849}}
+{"table": "degrees", "row": {"Year": 2004, "Campus": 4, "Degrees": 1716}}
+{"table": "degrees", "row": {"Year": 1990, "Campus": 5, "Degrees": 2025}}
+{"table": "degrees", "row": {"Year": 1991, "Campus": 5, "Degrees": 1960}}
+{"table": "discipline_enrollments", "row": {"Campus": 1, "Discipline": 4, "Year": 2004, "Undergraduate": 248, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 1, "Discipline": 5, "Year": 2004, "Undergraduate": 811, "Graduate": 73}}
+{"table": "discipline_enrollments", "row": {"Campus": 1, "Discipline": 6, "Year": 2004, "Undergraduate": 199, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 1, "Discipline": 7, "Year": 2004, "Undergraduate": 179, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 1, "Discipline": 8, "Year": 2004, "Undergraduate": 293, "Graduate": 422}}
+{"table": "discipline_enrollments", "row": {"Campus": 1, "Discipline": 10, "Year": 2004, "Undergraduate": 164, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 1, "Discipline": 11, "Year": 2004, "Undergraduate": 60, "Graduate": 6}}
+{"table": "discipline_enrollments", "row": {"Campus": 1, "Discipline": 12, "Year": 2004, "Undergraduate": 457, "Graduate": 35}}
+{"table": "discipline_enrollments", "row": {"Campus": 1, "Discipline": 14, "Year": 2004, "Undergraduate": 1153, "Graduate": 6}}
+{"table": "discipline_enrollments", "row": {"Campus": 1, "Discipline": 15, "Year": 2004, "Undergraduate": 244, "Graduate": 23}}
+{"table": "discipline_enrollments", "row": {"Campus": 1, "Discipline": 17, "Year": 2004, "Undergraduate": 115, "Graduate": 8}}
+{"table": "discipline_enrollments", "row": {"Campus": 1, "Discipline": 18, "Year": 2004, "Undergraduate": 102, "Graduate": 7}}
+{"table": "discipline_enrollments", "row": {"Campus": 1, "Discipline": 19, "Year": 2004, "Undergraduate": 501, "Graduate": 50}}
+{"table": "discipline_enrollments", "row": {"Campus": 1, "Discipline": 20, "Year": 2004, "Undergraduate": 383, "Graduate": 142}}
+{"table": "discipline_enrollments", "row": {"Campus": 1, "Discipline": 21, "Year": 2004, "Undergraduate": 584, "Graduate": 32}}
+{"table": "discipline_enrollments", "row": {"Campus": 1, "Discipline": 22, "Year": 2004, "Undergraduate": 514, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 2, "Discipline": 4, "Year": 2004, "Undergraduate": 155, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 2, "Discipline": 5, "Year": 2004, "Undergraduate": 364, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 2, "Discipline": 7, "Year": 2004, "Undergraduate": 72, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 2, "Discipline": 10, "Year": 2004, "Undergraduate": 127, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 2, "Discipline": 14, "Year": 2004, "Undergraduate": 516, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 2, "Discipline": 15, "Year": 2004, "Undergraduate": 117, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 2, "Discipline": 17, "Year": 2004, "Undergraduate": 60, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 2, "Discipline": 19, "Year": 2004, "Undergraduate": 207, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 2, "Discipline": 21, "Year": 2004, "Undergraduate": 84, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 2, "Discipline": 22, "Year": 2004, "Undergraduate": 118, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 1, "Year": 2004, "Undergraduate": 380, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 2, "Year": 2004, "Undergraduate": 0, "Graduate": 4}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 3, "Year": 2004, "Undergraduate": 36, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 4, "Year": 2004, "Undergraduate": 381, "Graduate": 27}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 5, "Year": 2004, "Undergraduate": 2264, "Graduate": 46}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 6, "Year": 2004, "Undergraduate": 762, "Graduate": 21}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 7, "Year": 2004, "Undergraduate": 489, "Graduate": 64}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 8, "Year": 2004, "Undergraduate": 637, "Graduate": 181}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 9, "Year": 2004, "Undergraduate": 1298, "Graduate": 25}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 10, "Year": 2004, "Undergraduate": 836, "Graduate": 25}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 11, "Year": 2004, "Undergraduate": 108, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 12, "Year": 2004, "Undergraduate": 426, "Graduate": 60}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 13, "Year": 2004, "Undergraduate": 113, "Graduate": 16}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 14, "Year": 2004, "Undergraduate": 1275, "Graduate": 46}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 15, "Year": 2004, "Undergraduate": 643, "Graduate": 44}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 17, "Year": 2004, "Undergraduate": 141, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 18, "Year": 2004, "Undergraduate": 130, "Graduate": 13}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 19, "Year": 2004, "Undergraduate": 657, "Graduate": 88}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 20, "Year": 2004, "Undergraduate": 774, "Graduate": 108}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 21, "Year": 2004, "Undergraduate": 1264, "Graduate": 107}}
+{"table": "discipline_enrollments", "row": {"Campus": 3, "Discipline": 22, "Year": 2004, "Undergraduate": 1665, "Graduate": 0}}
+{"table": "discipline_enrollments", "row": {"Campus": 4, "Discipline": 4, "Year": 2004, "Undergraduate": 267, "Graduate": 19}}
+{"table": "discipline_enrollments", "row": {"Campus": 4, "Discipline": 5, "Year": 2004, "Undergraduate": 1502, "Graduate": 72}}
+{"table": "discipline_enrollments", "row": {"Campus": 4, "Discipline": 6, "Year": 2004, "Undergraduate": 233, "Graduate": 0}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1956, "TotalEnrollment_AY": 384, "FTE_AY": 123}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1957, "TotalEnrollment_AY": 432, "FTE_AY": 151}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1958, "TotalEnrollment_AY": 422, "FTE_AY": 178}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1959, "TotalEnrollment_AY": 443, "FTE_AY": 184}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1960, "TotalEnrollment_AY": 414, "FTE_AY": 191}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1961, "TotalEnrollment_AY": 434, "FTE_AY": 203}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1962, "TotalEnrollment_AY": 495, "FTE_AY": 230}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1963, "TotalEnrollment_AY": 533, "FTE_AY": 262}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1964, "TotalEnrollment_AY": 518, "FTE_AY": 238}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1965, "TotalEnrollment_AY": 457, "FTE_AY": 210}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1966, "TotalEnrollment_AY": 492, "FTE_AY": 233}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1967, "TotalEnrollment_AY": 560, "FTE_AY": 281}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1968, "TotalEnrollment_AY": 684, "FTE_AY": 358}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1969, "TotalEnrollment_AY": 790, "FTE_AY": 475}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1970, "TotalEnrollment_AY": 1036, "FTE_AY": 852}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1971, "TotalEnrollment_AY": 1757, "FTE_AY": 1495}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1972, "TotalEnrollment_AY": 2263, "FTE_AY": 1941}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1973, "TotalEnrollment_AY": 2719, "FTE_AY": 2296}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1974, "TotalEnrollment_AY": 2847, "FTE_AY": 2268}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1975, "TotalEnrollment_AY": 2982, "FTE_AY": 2295}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1976, "TotalEnrollment_AY": 3070, "FTE_AY": 2338}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1977, "TotalEnrollment_AY": 3107, "FTE_AY": 2322}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1978, "TotalEnrollment_AY": 2927, "FTE_AY": 2239}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1979, "TotalEnrollment_AY": 2956, "FTE_AY": 2219}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1980, "TotalEnrollment_AY": 3115, "FTE_AY": 2328}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1981, "TotalEnrollment_AY": 3220, "FTE_AY": 2358}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1982, "TotalEnrollment_AY": 3256, "FTE_AY": 2403}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1983, "TotalEnrollment_AY": 3326, "FTE_AY": 2470}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1984, "TotalEnrollment_AY": 3501, "FTE_AY": 2547}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1985, "TotalEnrollment_AY": 3720, "FTE_AY": 2760}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1986, "TotalEnrollment_AY": 4183, "FTE_AY": 3033}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1987, "TotalEnrollment_AY": 4494, "FTE_AY": 3312}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1988, "TotalEnrollment_AY": 4810, "FTE_AY": 3602}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1989, "TotalEnrollment_AY": 5117, "FTE_AY": 3877}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1990, "TotalEnrollment_AY": 5300, "FTE_AY": 3845}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1991, "TotalEnrollment_AY": 5440, "FTE_AY": 4146}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1992, "TotalEnrollment_AY": 5313, "FTE_AY": 4219}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1993, "TotalEnrollment_AY": 5178, "FTE_AY": 4158}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1994, "TotalEnrollment_AY": 5029, "FTE_AY": 4057}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1995, "TotalEnrollment_AY": 5121, "FTE_AY": 4179}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1996, "TotalEnrollment_AY": 5256, "FTE_AY": 4394}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1997, "TotalEnrollment_AY": 5445, "FTE_AY": 4585}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1998, "TotalEnrollment_AY": 5578, "FTE_AY": 4703}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 1999, "TotalEnrollment_AY": 6059, "FTE_AY": 5108}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 2000, "TotalEnrollment_AY": 6383, "FTE_AY": 5358}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 2001, "TotalEnrollment_AY": 7027, "FTE_AY": 5914}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 2002, "TotalEnrollment_AY": 7577, "FTE_AY": 6410}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 2003, "TotalEnrollment_AY": 7597, "FTE_AY": 6358}}
+{"table": "enrollments", "row": {"Campus": 1, "Year": 2004, "TotalEnrollment_AY": 7470, "FTE_AY": 6330}}
+{"table": "enrollments", "row": {"Campus": 2, "Year": 2002, "TotalEnrollment_AY": 771, "FTE_AY": 562}}
+{"table": "faculty", "row": {"Campus": 1, "Year": 2002, "Faculty": 357.1}}
+{"table": "faculty", "row": {"Campus": 2, "Year": 2002, "Faculty": 48.4}}
+{"table": "faculty", "row": {"Campus": 3, "Year": 2002, "Faculty": 742.8}}
+{"table": "faculty", "row": {"Campus": 4, "Year": 2002, "Faculty": 449.8}}
+{"table": "faculty", "row": {"Campus": 5, "Year": 2002, "Faculty": 552.0}}
+{"table": "faculty", "row": {"Campus": 6, "Year": 2002, "Faculty": 694.6}}
+{"table": "faculty", "row": {"Campus": 7, "Year": 2002, "Faculty": 1257.3}}
+{"table": "faculty", "row": {"Campus": 8, "Year": 2002, "Faculty": 435.4}}
+{"table": "faculty", "row": {"Campus": 9, "Year": 2002, "Faculty": 1429.0}}
+{"table": "faculty", "row": {"Campus": 10, "Year": 2002, "Faculty": 831.5}}
+{"table": "faculty", "row": {"Campus": 11, "Year": 2002, "Faculty": 53.8}}
+{"table": "faculty", "row": {"Campus": 12, "Year": 2002, "Faculty": 156.4}}
+{"table": "faculty", "row": {"Campus": 13, "Year": 2002, "Faculty": 1141.2}}
+{"table": "faculty", "row": {"Campus": 14, "Year": 2002, "Faculty": 873.5}}
+{"table": "faculty", "row": {"Campus": 15, "Year": 2002, "Faculty": 1102.0}}
+{"table": "faculty", "row": {"Campus": 16, "Year": 2002, "Faculty": 670.9}}
+{"table": "faculty", "row": {"Campus": 17, "Year": 2002, "Faculty": 1555.7}}
+{"table": "faculty", "row": {"Campus": 18, "Year": 2002, "Faculty": 1173.3}}
+{"table": "faculty", "row": {"Campus": 19, "Year": 2002, "Faculty": 1177.5}}
+{"table": "faculty", "row": {"Campus": 20, "Year": 2002, "Faculty": 945.6}}
+{"table": "faculty", "row": {"Campus": 21, "Year": 2002, "Faculty": 290.4}}
+{"table": "faculty", "row": {"Campus": 22, "Year": 2002, "Faculty": 334.4}}
+{"table": "faculty", "row": {"Campus": 23, "Year": 2002, "Faculty": 319.5}}
+{"table": "faculty", "row": {"Campus": 1, "Year": 2003, "Faculty": 361.6}}
+{"table": "faculty", "row": {"Campus": 2, "Year": 2003, "Faculty": 92.5}}
+{"table": "faculty", "row": {"Campus": 3, "Year": 2003, "Faculty": 697.4}}
+{"table": "faculty", "row": {"Campus": 4, "Year": 2003, "Faculty": 470.5}}
+{"table": "faculty", "row": {"Campus": 5, "Year": 2003, "Faculty": 526.0}}
+{"table": "faculty", "row": {"Campus": 6, "Year": 2003, "Faculty": 738.0}}
+{"table": "faculty", "row": {"Campus": 7, "Year": 2003, "Faculty": 1253.5}}
+{"table": "faculty", "row": {"Campus": 8, "Year": 2003, "Faculty": 406.2}}
+{"table": "faculty", "row": {"Campus": 9, "Year": 2003, "Faculty": 1388.5}}
+{"table": "faculty", "row": {"Campus": 10, "Year": 2003, "Faculty": 793.7}}
+{"table": "faculty", "row": {"Campus": 11, "Year": 2003, "Faculty": 53.6}}
+{"table": "faculty", "row": {"Campus": 12, "Year": 2003, "Faculty": 153.9}}
+{"table": "faculty", "row": {"Campus": 13, "Year": 2003, "Faculty": 1163.1}}
+{"table": "faculty", "row": {"Campus": 14, "Year": 2003, "Faculty": 857.5}}
+{"table": "faculty", "row": {"Campus": 15, "Year": 2003, "Faculty": 1107.2}}
+{"table": "faculty", "row": {"Campus": 16, "Year": 2003, "Faculty": 660.0}}
+{"table": "faculty", "row": {"Campus": 17, "Year": 2003, "Faculty": 1447.1}}
+{"table": "faculty", "row": {"Campus": 18, "Year": 2003, "Faculty": 1116.3}}
+{"table": "faculty", "row": {"Campus": 19, "Year": 2003, "Faculty": 1091.3}}
+{"table": "faculty", "row": {"Campus": 20, "Year": 2003, "Faculty": 935.7}}
+{"table": "faculty", "row": {"Campus": 21, "Year": 2003, "Faculty": 282.1}}
+{"table": "faculty", "row": {"Campus": 22, "Year": 2003, "Faculty": 315.4}}
+{"table": "faculty", "row": {"Campus": 23, "Year": 2003, "Faculty": 333.9}}
+{"table": "faculty", "row": {"Campus": 1, "Year": 2004, "Faculty": 346.2}}
+{"table": "faculty", "row": {"Campus": 2, "Year": 2004, "Faculty": 117.7}}
+{"table": "faculty", "row": {"Campus": 3, "Year": 2004, "Faculty": 656.0}}
+{"table": "faculty", "row": {"Campus": 4, "Year": 2004, "Faculty": 406.2}}

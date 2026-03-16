@@ -1,0 +1,112 @@
+DB ID: chinook_1
+Run:   20250910-163730
+
+Tables: 11
+Columns: 64
+PKs: 12
+FKs: 11
+
+No structural issues found.
+
+Primary keys by table:
+- Album: ['AlbumId']
+- Artist: ['ArtistId']
+- Customer: ['CustomerId']
+- Employee: ['EmployeeId']
+- Genre: ['GenreId']
+- Invoice: ['InvoiceId']
+- InvoiceLine: ['InvoiceLineId']
+- MediaType: ['MediaTypeId']
+- Playlist: ['PlaylistId']
+- PlaylistTrack: ['PlaylistId', 'TrackId']
+- Track: ['TrackId']
+
+Null summary:
+{
+  "Album": {
+    "AlbumId": 0,
+    "Title": 0,
+    "ArtistId": 0
+  },
+  "Artist": {
+    "ArtistId": 0,
+    "Name": 0
+  },
+  "Customer": {
+    "CustomerId": 0,
+    "FirstName": 0,
+    "LastName": 0,
+    "Company": 40,
+    "Address": 0,
+    "City": 0,
+    "State": 21,
+    "Country": 0,
+    "PostalCode": 3,
+    "Phone": 1,
+    "Fax": 38,
+    "Email": 0,
+    "SupportRepId": 0
+  },
+  "Employee": {
+    "EmployeeId": 0,
+    "LastName": 0,
+    "FirstName": 0,
+    "Title": 0,
+    "ReportsTo": 1,
+    "BirthDate": 0,
+    "HireDate": 0,
+    "Address": 0,
+    "City": 0,
+    "State": 0,
+    "Country": 0,
+    "PostalCode": 0,
+    "Phone": 0,
+    "Fax": 0,
+    "Email": 0
+  },
+  "Genre": {
+    "GenreId": 0,
+    "Name": 0
+  },
+  "Invoice": {
+    "InvoiceId": 0,
+    "CustomerId": 0,
+    "InvoiceDate": 0,
+    "BillingAddress": 0,
+    "BillingCity": 0,
+    "BillingState": 25,
+    "BillingCountry": 0,
+    "BillingPostalCode": 4,
+    "Total": 0
+  },
+  "InvoiceLine": {
+    "InvoiceLineId": 0,
+    "InvoiceId": 0,
+    "TrackId": 0,
+    "UnitPrice": 0,
+    "Quantity": 0
+  },
+  "MediaType": {
+    "MediaTypeId": 0,
+    "Name": 0
+  },
+  "Playlist": {
+    "PlaylistId": 0,
+    "Name": 0
+  },
+  "PlaylistTrack": {
+    "PlaylistId": 0,
+    "TrackId": 0
+  },
+  "Track": {
+    "TrackId": 0,
+    "Name": 0,
+    "AlbumId": 0,
+    "MediaTypeId": 0,
+    "GenreId": 0,
+    "Composer": 1,
+    "Milliseconds": 0,
+    "Bytes": 0,
+    "UnitPrice": 0
+  }
+}

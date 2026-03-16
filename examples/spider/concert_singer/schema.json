@@ -1,0 +1,205 @@
+{
+  "db_id": "concert_singer",
+  "tables": [
+    {
+      "name": "concert",
+      "columns": [
+        {
+          "name": "concert_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "concert_Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Theme",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Stadium_ID",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Year",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "concert_ID"
+      ]
+    },
+    {
+      "name": "singer",
+      "columns": [
+        {
+          "name": "Singer_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Country",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Song_Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Song_release_year",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Age",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Is_male",
+          "type": "bool",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Singer_ID"
+      ]
+    },
+    {
+      "name": "singer_in_concert",
+      "columns": [
+        {
+          "name": "concert_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Singer_ID",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "concert_ID",
+        "Singer_ID"
+      ]
+    },
+    {
+      "name": "stadium",
+      "columns": [
+        {
+          "name": "Stadium_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Location",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Capacity",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Highest",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Lowest",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Average",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Stadium_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "concert",
+      "from_column": "Stadium_ID",
+      "to_table": "stadium",
+      "to_column": "Stadium_ID"
+    },
+    {
+      "from_table": "singer_in_concert",
+      "from_column": "Singer_ID",
+      "to_table": "singer",
+      "to_column": "Singer_ID"
+    },
+    {
+      "from_table": "singer_in_concert",
+      "from_column": "concert_ID",
+      "to_table": "concert",
+      "to_column": "concert_ID"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+DB ID: musical
+Run:   20250910-163730
+
+Tables: 2
+Columns: 13
+PKs: 2
+FKs: 1
+
+No structural issues found.
+
+Primary keys by table:
+- actor: ['Actor_ID']
+- musical: ['Musical_ID']
+
+Null summary:
+{
+  "actor": {
+    "Actor_ID": 0,
+    "Name": 0,
+    "Musical_ID": 0,
+    "Character": 0,
+    "Duration": 0,
+    "age": 0
+  },
+  "musical": {
+    "Musical_ID": 0,
+    "Name": 0,
+    "Year": 0,
+    "Award": 0,
+    "Category": 0,
+    "Nominee": 0,
+    "Result": 0
+  }
+}

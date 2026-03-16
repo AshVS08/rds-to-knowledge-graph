@@ -1,0 +1,402 @@
+{
+  "db_id": "cre_Drama_Workshop_Groups",
+  "nodes": [
+    {
+      "id": "Addresses",
+      "columns": [
+        "Address_ID",
+        "Line_1",
+        "Line_2",
+        "City_Town",
+        "State_County",
+        "Other_Details"
+      ],
+      "primary_keys": [
+        "Address_ID"
+      ]
+    },
+    {
+      "id": "Bookings",
+      "columns": [
+        "Booking_ID",
+        "Customer_ID",
+        "Workshop_Group_ID",
+        "Status_Code",
+        "Store_ID",
+        "Order_Date",
+        "Planned_Delivery_Date",
+        "Actual_Delivery_Date",
+        "Other_Order_Details"
+      ],
+      "primary_keys": [
+        "Booking_ID"
+      ]
+    },
+    {
+      "id": "Bookings_Services",
+      "columns": [
+        "Order_ID",
+        "Product_ID"
+      ],
+      "primary_keys": [
+        "Order_ID",
+        "Product_ID"
+      ]
+    },
+    {
+      "id": "Clients",
+      "columns": [
+        "Client_ID",
+        "Address_ID",
+        "Customer_Email_Address",
+        "Customer_Name",
+        "Customer_Phone",
+        "Other_Details"
+      ],
+      "primary_keys": [
+        "Client_ID"
+      ]
+    },
+    {
+      "id": "Customer_Orders",
+      "columns": [
+        "Order_ID",
+        "Customer_ID",
+        "Store_ID",
+        "Order_Date",
+        "Planned_Delivery_Date",
+        "Actual_Delivery_Date",
+        "Other_Order_Details"
+      ],
+      "primary_keys": [
+        "Order_ID"
+      ]
+    },
+    {
+      "id": "Customers",
+      "columns": [
+        "Customer_ID",
+        "Address_ID",
+        "Customer_Name",
+        "Customer_Phone",
+        "Customer_Email_Address",
+        "Other_Details"
+      ],
+      "primary_keys": [
+        "Customer_ID"
+      ]
+    },
+    {
+      "id": "Drama_Workshop_Groups",
+      "columns": [
+        "Workshop_Group_ID",
+        "Address_ID",
+        "Currency_Code",
+        "Marketing_Region_Code",
+        "Store_Name",
+        "Store_Phone",
+        "Store_Email_Address",
+        "Other_Details"
+      ],
+      "primary_keys": [
+        "Workshop_Group_ID"
+      ]
+    },
+    {
+      "id": "Invoice_Items",
+      "columns": [
+        "Invoice_Item_ID",
+        "Invoice_ID",
+        "Order_ID",
+        "Order_Item_ID",
+        "Product_ID",
+        "Order_Quantity",
+        "Other_Item_Details"
+      ],
+      "primary_keys": [
+        "Invoice_Item_ID"
+      ]
+    },
+    {
+      "id": "Invoices",
+      "columns": [
+        "Invoice_ID",
+        "Order_ID",
+        "payment_method_code",
+        "Product_ID",
+        "Order_Quantity",
+        "Other_Item_Details",
+        "Order_Item_ID"
+      ],
+      "primary_keys": [
+        "Invoice_ID"
+      ]
+    },
+    {
+      "id": "Marketing_Regions",
+      "columns": [
+        "Marketing_Region_Code",
+        "Marketing_Region_Name",
+        "Marketing_Region_Descriptrion",
+        "Other_Details"
+      ],
+      "primary_keys": [
+        "Marketing_Region_Code"
+      ]
+    },
+    {
+      "id": "Order_Items",
+      "columns": [
+        "Order_Item_ID",
+        "Order_ID",
+        "Product_ID",
+        "Order_Quantity",
+        "Other_Item_Details"
+      ],
+      "primary_keys": [
+        "Order_Item_ID"
+      ]
+    },
+    {
+      "id": "Performers",
+      "columns": [
+        "Performer_ID",
+        "Address_ID",
+        "Customer_Name",
+        "Customer_Phone",
+        "Customer_Email_Address",
+        "Other_Details"
+      ],
+      "primary_keys": [
+        "Performer_ID"
+      ]
+    },
+    {
+      "id": "Performers_in_Bookings",
+      "columns": [
+        "Order_ID",
+        "Performer_ID"
+      ],
+      "primary_keys": [
+        "Order_ID",
+        "Performer_ID"
+      ]
+    },
+    {
+      "id": "Products",
+      "columns": [
+        "Product_ID",
+        "Product_Name",
+        "Product_Price",
+        "Product_Description",
+        "Other_Product_Service_Details"
+      ],
+      "primary_keys": [
+        "Product_ID"
+      ]
+    },
+    {
+      "id": "Ref_Payment_Methods",
+      "columns": [
+        "payment_method_code",
+        "payment_method_description"
+      ],
+      "primary_keys": [
+        "payment_method_code"
+      ]
+    },
+    {
+      "id": "Ref_Service_Types",
+      "columns": [
+        "Service_Type_Code",
+        "Parent_Service_Type_Code",
+        "Service_Type_Description"
+      ],
+      "primary_keys": [
+        "Service_Type_Code"
+      ]
+    },
+    {
+      "id": "Services",
+      "columns": [
+        "Service_ID",
+        "Service_Type_Code",
+        "Workshop_Group_ID",
+        "Product_Description",
+        "Product_Name",
+        "Product_Price",
+        "Other_Product_Service_Details"
+      ],
+      "primary_keys": [
+        "Service_ID"
+      ]
+    },
+    {
+      "id": "Stores",
+      "columns": [
+        "Store_ID",
+        "Address_ID",
+        "Marketing_Region_Code",
+        "Store_Name",
+        "Store_Phone",
+        "Store_Email_Address",
+        "Other_Details"
+      ],
+      "primary_keys": [
+        "Store_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Bookings",
+      "to": "Drama_Workshop_Groups",
+      "from_column": "Workshop_Group_ID",
+      "to_column": "Workshop_Group_ID"
+    },
+    {
+      "from": "Bookings",
+      "to": "Clients",
+      "from_column": "Customer_ID",
+      "to_column": "Client_ID"
+    },
+    {
+      "from": "Bookings_Services",
+      "to": "Services",
+      "from_column": "Product_ID",
+      "to_column": "Service_ID"
+    },
+    {
+      "from": "Bookings_Services",
+      "to": "Bookings",
+      "from_column": "Order_ID",
+      "to_column": "Booking_ID"
+    },
+    {
+      "from": "Clients",
+      "to": "Addresses",
+      "from_column": "Address_ID",
+      "to_column": "Address_ID"
+    },
+    {
+      "from": "Customer_Orders",
+      "to": "Stores",
+      "from_column": "Store_ID",
+      "to_column": "Store_ID"
+    },
+    {
+      "from": "Customer_Orders",
+      "to": "Customers",
+      "from_column": "Customer_ID",
+      "to_column": "Customer_ID"
+    },
+    {
+      "from": "Customers",
+      "to": "Addresses",
+      "from_column": "Address_ID",
+      "to_column": "Address_ID"
+    },
+    {
+      "from": "Drama_Workshop_Groups",
+      "to": "Addresses",
+      "from_column": "Address_ID",
+      "to_column": "Address_ID"
+    },
+    {
+      "from": "Invoice_Items",
+      "to": "Bookings_Services",
+      "from_column": "Order_ID",
+      "to_column": "Order_ID"
+    },
+    {
+      "from": "Invoice_Items",
+      "to": "Bookings_Services",
+      "from_column": "Product_ID",
+      "to_column": "Product_ID"
+    },
+    {
+      "from": "Invoice_Items",
+      "to": "Invoices",
+      "from_column": "Invoice_ID",
+      "to_column": "Invoice_ID"
+    },
+    {
+      "from": "Invoice_Items",
+      "to": "Order_Items",
+      "from_column": "Order_Item_ID",
+      "to_column": "Order_Item_ID"
+    },
+    {
+      "from": "Invoices",
+      "to": "Ref_Payment_Methods",
+      "from_column": "payment_method_code",
+      "to_column": "payment_method_code"
+    },
+    {
+      "from": "Invoices",
+      "to": "Bookings",
+      "from_column": "Order_ID",
+      "to_column": "Booking_ID"
+    },
+    {
+      "from": "Invoices",
+      "to": "Customer_Orders",
+      "from_column": "Order_ID",
+      "to_column": "Order_ID"
+    },
+    {
+      "from": "Order_Items",
+      "to": "Products",
+      "from_column": "Product_ID",
+      "to_column": "Product_ID"
+    },
+    {
+      "from": "Order_Items",
+      "to": "Customer_Orders",
+      "from_column": "Order_ID",
+      "to_column": "Order_ID"
+    },
+    {
+      "from": "Performers",
+      "to": "Addresses",
+      "from_column": "Address_ID",
+      "to_column": "Address_ID"
+    },
+    {
+      "from": "Performers_in_Bookings",
+      "to": "Bookings",
+      "from_column": "Order_ID",
+      "to_column": "Booking_ID"
+    },
+    {
+      "from": "Performers_in_Bookings",
+      "to": "Performers",
+      "from_column": "Performer_ID",
+      "to_column": "Performer_ID"
+    },
+    {
+      "from": "Services",
+      "to": "Ref_Service_Types",
+      "from_column": "Service_Type_Code",
+      "to_column": "Service_Type_Code"
+    },
+    {
+      "from": "Services",
+      "to": "Drama_Workshop_Groups",
+      "from_column": "Workshop_Group_ID",
+      "to_column": "Workshop_Group_ID"
+    },
+    {
+      "from": "Stores",
+      "to": "Marketing_Regions",
+      "from_column": "Marketing_Region_Code",
+      "to_column": "Marketing_Region_Code"
+    },
+    {
+      "from": "Stores",
+      "to": "Addresses",
+      "from_column": "Address_ID",
+      "to_column": "Address_ID"
+    }
+  ]
+}

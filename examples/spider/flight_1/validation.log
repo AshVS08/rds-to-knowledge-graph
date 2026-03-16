@@ -1,0 +1,43 @@
+DB ID: flight_1
+Run:   20250910-163730
+
+Tables: 4
+Columns: 16
+PKs: 5
+FKs: 3
+
+No structural issues found.
+
+Primary keys by table:
+- aircraft: ['aid']
+- certificate: ['eid', 'aid']
+- employee: ['eid']
+- flight: ['flno']
+
+Null summary:
+{
+  "aircraft": {
+    "aid": 0,
+    "name": 0,
+    "distance": 0
+  },
+  "certificate": {
+    "eid": 0,
+    "aid": 0
+  },
+  "employee": {
+    "eid": 0,
+    "name": 0,
+    "salary": 0
+  },
+  "flight": {
+    "flno": 0,
+    "origin": 0,
+    "destination": 0,
+    "distance": 0,
+    "departure_date": 0,
+    "arrival_date": 0,
+    "price": 0,
+    "aid": 0
+  }
+}

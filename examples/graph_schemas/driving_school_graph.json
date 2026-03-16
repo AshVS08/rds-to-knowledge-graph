@@ -1,0 +1,132 @@
+{
+  "db_id": "driving_school",
+  "nodes": [
+    {
+      "id": "Addresses",
+      "columns": [
+        "address_id",
+        "line_1_number_building",
+        "city",
+        "zip_postcode",
+        "state_province_county",
+        "country"
+      ],
+      "primary_keys": [
+        "address_id"
+      ]
+    },
+    {
+      "id": "Customer_Payments",
+      "columns": [
+        "customer_id",
+        "datetime_payment",
+        "payment_method_code",
+        "amount_payment"
+      ],
+      "primary_keys": [
+        "customer_id",
+        "datetime_payment"
+      ]
+    },
+    {
+      "id": "Customers",
+      "columns": [
+        "customer_id",
+        "customer_address_id",
+        "customer_status_code",
+        "date_became_customer",
+        "date_of_birth",
+        "first_name",
+        "last_name",
+        "amount_outstanding",
+        "email_address",
+        "phone_number",
+        "cell_mobile_phone_number"
+      ],
+      "primary_keys": [
+        "customer_id"
+      ]
+    },
+    {
+      "id": "Lessons",
+      "columns": [
+        "lesson_id",
+        "customer_id",
+        "lesson_status_code",
+        "staff_id",
+        "vehicle_id",
+        "lesson_date",
+        "lesson_time",
+        "price"
+      ],
+      "primary_keys": [
+        "lesson_id"
+      ]
+    },
+    {
+      "id": "Staff",
+      "columns": [
+        "staff_id",
+        "staff_address_id",
+        "nickname",
+        "first_name",
+        "middle_name",
+        "last_name",
+        "date_of_birth",
+        "date_joined_staff",
+        "date_left_staff"
+      ],
+      "primary_keys": [
+        "staff_id"
+      ]
+    },
+    {
+      "id": "Vehicles",
+      "columns": [
+        "vehicle_id",
+        "vehicle_details"
+      ],
+      "primary_keys": [
+        "vehicle_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Customer_Payments",
+      "to": "Customers",
+      "from_column": "customer_id",
+      "to_column": "customer_id"
+    },
+    {
+      "from": "Customers",
+      "to": "Addresses",
+      "from_column": "customer_address_id",
+      "to_column": "address_id"
+    },
+    {
+      "from": "Lessons",
+      "to": "Customers",
+      "from_column": "customer_id",
+      "to_column": "customer_id"
+    },
+    {
+      "from": "Lessons",
+      "to": "Staff",
+      "from_column": "staff_id",
+      "to_column": "staff_id"
+    },
+    {
+      "from": "Lessons",
+      "to": "Vehicles",
+      "from_column": "vehicle_id",
+      "to_column": "vehicle_id"
+    },
+    {
+      "from": "Staff",
+      "to": "Addresses",
+      "from_column": "staff_address_id",
+      "to_column": "address_id"
+    }
+  ]
+}

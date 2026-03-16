@@ -1,0 +1,168 @@
+DB ID: cre_Drama_Workshop_Groups
+Run:   20250910-163730
+
+Tables: 18
+Columns: 99
+PKs: 20
+FKs: 25
+
+No structural issues found.
+
+Primary keys by table:
+- Addresses: ['Address_ID']
+- Bookings: ['Booking_ID']
+- Bookings_Services: ['Order_ID', 'Product_ID']
+- Clients: ['Client_ID']
+- Customer_Orders: ['Order_ID']
+- Customers: ['Customer_ID']
+- Drama_Workshop_Groups: ['Workshop_Group_ID']
+- Invoice_Items: ['Invoice_Item_ID']
+- Invoices: ['Invoice_ID']
+- Marketing_Regions: ['Marketing_Region_Code']
+- Order_Items: ['Order_Item_ID']
+- Performers: ['Performer_ID']
+- Performers_in_Bookings: ['Order_ID', 'Performer_ID']
+- Products: ['Product_ID']
+- Ref_Payment_Methods: ['payment_method_code']
+- Ref_Service_Types: ['Service_Type_Code']
+- Services: ['Service_ID']
+- Stores: ['Store_ID']
+
+Null summary:
+{
+  "Addresses": {
+    "Address_ID": 0,
+    "Line_1": 0,
+    "Line_2": 0,
+    "City_Town": 0,
+    "State_County": 0,
+    "Other_Details": 20
+  },
+  "Bookings": {
+    "Booking_ID": 0,
+    "Customer_ID": 0,
+    "Workshop_Group_ID": 0,
+    "Status_Code": 0,
+    "Store_ID": 0,
+    "Order_Date": 0,
+    "Planned_Delivery_Date": 0,
+    "Actual_Delivery_Date": 0,
+    "Other_Order_Details": 15
+  },
+  "Bookings_Services": {
+    "Order_ID": 0,
+    "Product_ID": 0
+  },
+  "Clients": {
+    "Client_ID": 0,
+    "Address_ID": 0,
+    "Customer_Email_Address": 0,
+    "Customer_Name": 0,
+    "Customer_Phone": 0,
+    "Other_Details": 17
+  },
+  "Customer_Orders": {
+    "Order_ID": 0,
+    "Customer_ID": 0,
+    "Store_ID": 0,
+    "Order_Date": 0,
+    "Planned_Delivery_Date": 0,
+    "Actual_Delivery_Date": 0,
+    "Other_Order_Details": 15
+  },
+  "Customers": {
+    "Customer_ID": 0,
+    "Address_ID": 0,
+    "Customer_Name": 0,
+    "Customer_Phone": 0,
+    "Customer_Email_Address": 0,
+    "Other_Details": 13
+  },
+  "Drama_Workshop_Groups": {
+    "Workshop_Group_ID": 0,
+    "Address_ID": 0,
+    "Currency_Code": 0,
+    "Marketing_Region_Code": 0,
+    "Store_Name": 0,
+    "Store_Phone": 0,
+    "Store_Email_Address": 0,
+    "Other_Details": 12
+  },
+  "Invoice_Items": {
+    "Invoice_Item_ID": 0,
+    "Invoice_ID": 0,
+    "Order_ID": 0,
+    "Order_Item_ID": 0,
+    "Product_ID": 0,
+    "Order_Quantity": 0,
+    "Other_Item_Details": 1
+  },
+  "Invoices": {
+    "Invoice_ID": 0,
+    "Order_ID": 0,
+    "payment_method_code": 0,
+    "Product_ID": 0,
+    "Order_Quantity": 0,
+    "Other_Item_Details": 15,
+    "Order_Item_ID": 0
+  },
+  "Marketing_Regions": {
+    "Marketing_Region_Code": 0,
+    "Marketing_Region_Name": 0,
+    "Marketing_Region_Descriptrion": 0,
+    "Other_Details": 8
+  },
+  "Order_Items": {
+    "Order_Item_ID": 0,
+    "Order_ID": 0,
+    "Product_ID": 0,
+    "Order_Quantity": 0,
+    "Other_Item_Details": 15
+  },
+  "Performers": {
+    "Performer_ID": 0,
+    "Address_ID": 0,
+    "Customer_Name": 0,
+    "Customer_Phone": 0,
+    "Customer_Email_Address": 0,
+    "Other_Details": 17
+  },
+  "Performers_in_Bookings": {
+    "Order_ID": 0,
+    "Performer_ID": 0
+  },
+  "Products": {
+    "Product_ID": 0,
+    "Product_Name": 0,
+    "Product_Price": 0,
+    "Product_Description": 15,
+    "Other_Product_Service_Details": 15
+  },
+  "Ref_Payment_Methods": {
+    "payment_method_code": 0,
+    "payment_method_description": 0
+  },
+  "Ref_Service_Types": {
+    "Service_Type_Code": 0,
+    "Parent_Service_Type_Code": 0,
+    "Service_Type_Description": 0
+  },
+  "Services": {
+    "Service_ID": 0,
+    "Service_Type_Code": 0,
+    "Workshop_Group_ID": 0,
+    "Product_Description": 15,
+    "Product_Name": 0,
+    "Product_Price": 0,
+    "Other_Product_Service_Details": 15
+  },
+  "Stores": {
+    "Store_ID": 0,
+    "Address_ID": 0,
+    "Marketing_Region_Code": 0,
+    "Store_Name": 0,
+    "Store_Phone": 0,
+    "Store_Email_Address": 0,
+    "Other_Details": 6
+  }
+}

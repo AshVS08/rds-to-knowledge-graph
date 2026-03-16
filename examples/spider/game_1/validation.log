@@ -1,0 +1,46 @@
+DB ID: game_1
+Run:   20250910-163730
+
+Tables: 4
+Columns: 19
+PKs: 2
+FKs: 3
+
+No structural issues found.
+
+Primary keys by table:
+- Plays_Games: None
+- SportsInfo: None
+- Student: ['StuID']
+- Video_Games: ['GameID']
+
+Null summary:
+{
+  "Plays_Games": {
+    "StuID": 0,
+    "GameID": 0,
+    "Hours_Played": 0
+  },
+  "SportsInfo": {
+    "StuID": 0,
+    "SportName": 0,
+    "HoursPerWeek": 0,
+    "GamesPlayed": 0,
+    "OnScholarship": 0
+  },
+  "Student": {
+    "StuID": 0,
+    "LName": 0,
+    "Fname": 0,
+    "Age": 0,
+    "Sex": 0,
+    "Major": 0,
+    "Advisor": 0,
+    "city_code": 0
+  },
+  "Video_Games": {
+    "GameID": 0,
+    "GName": 0,
+    "GType": 0
+  }
+}

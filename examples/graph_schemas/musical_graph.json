@@ -1,0 +1,42 @@
+{
+  "db_id": "musical",
+  "nodes": [
+    {
+      "id": "actor",
+      "columns": [
+        "Actor_ID",
+        "Name",
+        "Musical_ID",
+        "Character",
+        "Duration",
+        "age"
+      ],
+      "primary_keys": [
+        "Actor_ID"
+      ]
+    },
+    {
+      "id": "musical",
+      "columns": [
+        "Musical_ID",
+        "Name",
+        "Year",
+        "Award",
+        "Category",
+        "Nominee",
+        "Result"
+      ],
+      "primary_keys": [
+        "Musical_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "actor",
+      "to": "actor",
+      "from_column": "Musical_ID",
+      "to_column": "Actor_ID"
+    }
+  ]
+}

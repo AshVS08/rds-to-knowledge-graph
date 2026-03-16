@@ -1,0 +1,39 @@
+DB ID: club_1
+Run:   20250910-163730
+
+Tables: 3
+Columns: 15
+PKs: 2
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- Club: ['ClubID']
+- Member_of_club: None
+- Student: ['StuID']
+
+Null summary:
+{
+  "Club": {
+    "ClubID": 0,
+    "ClubName": 0,
+    "ClubDesc": 0,
+    "ClubLocation": 0
+  },
+  "Member_of_club": {
+    "StuID": 0,
+    "ClubID": 0,
+    "Position": 0
+  },
+  "Student": {
+    "StuID": 0,
+    "LName": 0,
+    "Fname": 0,
+    "Age": 0,
+    "Sex": 0,
+    "Major": 0,
+    "Advisor": 0,
+    "city_code": 0
+  }
+}

@@ -1,0 +1,40 @@
+DB ID: company_employee
+Run:   20250910-163730
+
+Tables: 3
+Columns: 16
+PKs: 4
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- company: ['Company_ID']
+- employment: ['Company_ID', 'People_ID']
+- people: ['People_ID']
+
+Null summary:
+{
+  "company": {
+    "Company_ID": 0,
+    "Name": 0,
+    "Headquarters": 0,
+    "Industry": 0,
+    "Sales_in_Billion": 0,
+    "Profits_in_Billion": 0,
+    "Assets_in_Billion": 0,
+    "Market_Value_in_Billion": 0
+  },
+  "employment": {
+    "Company_ID": 0,
+    "People_ID": 0,
+    "Year_working": 0
+  },
+  "people": {
+    "People_ID": 0,
+    "Age": 0,
+    "Name": 0,
+    "Nationality": 0,
+    "Graduation_College": 0
+  }
+}

@@ -1,0 +1,615 @@
+{
+  "db_id": "behavior_monitoring",
+  "tables": [
+    {
+      "name": "Addresses",
+      "columns": [
+        {
+          "name": "address_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "line_1",
+          "type": "VARCHAR(120)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "line_2",
+          "type": "VARCHAR(120)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "line_3",
+          "type": "VARCHAR(120)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "city",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "zip_postcode",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "state_province_county",
+          "type": "VARCHAR(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "country",
+          "type": "VARCHAR(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "other_address_details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "address_id"
+      ]
+    },
+    {
+      "name": "Assessment_Notes",
+      "columns": [
+        {
+          "name": "notes_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "student_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "teacher_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_of_notes",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "text_of_notes",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "other_details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "Behavior_Incident",
+      "columns": [
+        {
+          "name": "incident_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "incident_type_code",
+          "type": "VARCHAR(10)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "student_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_incident_start",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_incident_end",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "incident_summary",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "recommendations",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "other_details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "incident_id"
+      ]
+    },
+    {
+      "name": "Detention",
+      "columns": [
+        {
+          "name": "detention_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "detention_type_code",
+          "type": "VARCHAR(10)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "teacher_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "datetime_detention_start",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "datetime_detention_end",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "detention_summary",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "other_details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "detention_id"
+      ]
+    },
+    {
+      "name": "Ref_Address_Types",
+      "columns": [
+        {
+          "name": "address_type_code",
+          "type": "VARCHAR(15)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "address_type_description",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "address_type_code"
+      ]
+    },
+    {
+      "name": "Ref_Detention_Type",
+      "columns": [
+        {
+          "name": "detention_type_code",
+          "type": "VARCHAR(10)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "detention_type_description",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "detention_type_code"
+      ]
+    },
+    {
+      "name": "Ref_Incident_Type",
+      "columns": [
+        {
+          "name": "incident_type_code",
+          "type": "VARCHAR(10)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "incident_type_description",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "incident_type_code"
+      ]
+    },
+    {
+      "name": "Student_Addresses",
+      "columns": [
+        {
+          "name": "student_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "address_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_address_from",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_address_to",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "monthly_rental",
+          "type": "DECIMAL(19,4)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "other_details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "Students",
+      "columns": [
+        {
+          "name": "student_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "address_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "first_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "middle_name",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "last_name",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "cell_mobile_number",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "email_address",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_first_rental",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_left_university",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "other_student_details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "student_id"
+      ]
+    },
+    {
+      "name": "Students_in_Detention",
+      "columns": [
+        {
+          "name": "student_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "detention_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "incident_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "Teachers",
+      "columns": [
+        {
+          "name": "teacher_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "address_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "first_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "middle_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "last_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "gender",
+          "type": "VARCHAR(1)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "cell_mobile_number",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "email_address",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "other_details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "teacher_id"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Assessment_Notes",
+      "from_column": "teacher_id",
+      "to_table": "Teachers",
+      "to_column": "teacher_id"
+    },
+    {
+      "from_table": "Assessment_Notes",
+      "from_column": "student_id",
+      "to_table": "Students",
+      "to_column": "student_id"
+    },
+    {
+      "from_table": "Behavior_Incident",
+      "from_column": "student_id",
+      "to_table": "Students",
+      "to_column": "student_id"
+    },
+    {
+      "from_table": "Behavior_Incident",
+      "from_column": "incident_type_code",
+      "to_table": "Ref_Incident_Type",
+      "to_column": "incident_type_code"
+    },
+    {
+      "from_table": "Detention",
+      "from_column": "teacher_id",
+      "to_table": "Teachers",
+      "to_column": "teacher_id"
+    },
+    {
+      "from_table": "Detention",
+      "from_column": "detention_type_code",
+      "to_table": "Ref_Detention_Type",
+      "to_column": "detention_type_code"
+    },
+    {
+      "from_table": "Student_Addresses",
+      "from_column": "student_id",
+      "to_table": "Students",
+      "to_column": "student_id"
+    },
+    {
+      "from_table": "Student_Addresses",
+      "from_column": "address_id",
+      "to_table": "Addresses",
+      "to_column": "address_id"
+    },
+    {
+      "from_table": "Students",
+      "from_column": "address_id",
+      "to_table": "Addresses",
+      "to_column": "address_id"
+    },
+    {
+      "from_table": "Students_in_Detention",
+      "from_column": "student_id",
+      "to_table": "Students",
+      "to_column": "student_id"
+    },
+    {
+      "from_table": "Students_in_Detention",
+      "from_column": "detention_id",
+      "to_table": "Detention",
+      "to_column": "detention_id"
+    },
+    {
+      "from_table": "Students_in_Detention",
+      "from_column": "incident_id",
+      "to_table": "Behavior_Incident",
+      "to_column": "incident_id"
+    },
+    {
+      "from_table": "Teachers",
+      "from_column": "address_id",
+      "to_table": "Addresses",
+      "to_column": "address_id"
+    }
+  ]
+}

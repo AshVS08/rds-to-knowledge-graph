@@ -1,0 +1,86 @@
+{
+  "db_id": "customer_complaints",
+  "nodes": [
+    {
+      "id": "Complaints",
+      "columns": [
+        "complaint_id",
+        "product_id",
+        "customer_id",
+        "complaint_outcome_code",
+        "complaint_status_code",
+        "complaint_type_code",
+        "date_complaint_raised",
+        "date_complaint_closed",
+        "staff_id"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Customers",
+      "columns": [
+        "customer_id",
+        "customer_type_code",
+        "address_line_1",
+        "address_line_2",
+        "town_city",
+        "state",
+        "email_address",
+        "phone_number"
+      ],
+      "primary_keys": [
+        "customer_id"
+      ]
+    },
+    {
+      "id": "Products",
+      "columns": [
+        "product_id",
+        "parent_product_id",
+        "product_category_code",
+        "date_product_first_available",
+        "date_product_discontinued",
+        "product_name",
+        "product_description",
+        "product_price"
+      ],
+      "primary_keys": [
+        "product_id"
+      ]
+    },
+    {
+      "id": "Staff",
+      "columns": [
+        "staff_id",
+        "gender",
+        "first_name",
+        "last_name",
+        "email_address",
+        "phone_number"
+      ],
+      "primary_keys": [
+        "staff_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Complaints",
+      "to": "Customers",
+      "from_column": "customer_id",
+      "to_column": "customer_id"
+    },
+    {
+      "from": "Complaints",
+      "to": "Products",
+      "from_column": "product_id",
+      "to_column": "product_id"
+    },
+    {
+      "from": "Complaints",
+      "to": "Staff",
+      "from_column": "staff_id",
+      "to_column": "staff_id"
+    }
+  ]
+}

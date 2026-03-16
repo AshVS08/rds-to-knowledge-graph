@@ -1,0 +1,121 @@
+{
+  "db_id": "browser_web",
+  "tables": [
+    {
+      "name": "Web_client_accelerator",
+      "columns": [
+        {
+          "name": "id",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Operating_system",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Client",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Connection",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "id"
+      ]
+    },
+    {
+      "name": "accelerator_compatible_browser",
+      "columns": [
+        {
+          "name": "accelerator_id",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "browser_id",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "compatible_since_year",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "accelerator_id",
+        "browser_id"
+      ]
+    },
+    {
+      "name": "browser",
+      "columns": [
+        {
+          "name": "id",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "market_share",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "id"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "accelerator_compatible_browser",
+      "from_column": "browser_id",
+      "to_table": "browser",
+      "to_column": "id"
+    },
+    {
+      "from_table": "accelerator_compatible_browser",
+      "from_column": "accelerator_id",
+      "to_table": "Web_client_accelerator",
+      "to_column": "id"
+    }
+  ]
+}

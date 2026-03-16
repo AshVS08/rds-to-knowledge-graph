@@ -1,0 +1,113 @@
+{
+  "db_id": "climbing",
+  "tables": [
+    {
+      "name": "climber",
+      "columns": [
+        {
+          "name": "Climber_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Country",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Time",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Points",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Mountain_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Climber_ID"
+      ]
+    },
+    {
+      "name": "mountain",
+      "columns": [
+        {
+          "name": "Mountain_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Height",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Prominence",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Range",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Country",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Mountain_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "climber",
+      "from_column": "Mountain_ID",
+      "to_table": "mountain",
+      "to_column": "Mountain_ID"
+    }
+  ]
+}

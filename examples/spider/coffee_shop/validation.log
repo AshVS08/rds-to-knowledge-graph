@@ -1,0 +1,46 @@
+DB ID: coffee_shop
+Run:   20250910-163730
+
+Tables: 4
+Columns: 19
+PKs: 7
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- happy_hour: ['HH_ID', 'Shop_ID', 'Month']
+- happy_hour_member: ['HH_ID', 'Member_ID']
+- member: ['Member_ID']
+- shop: ['Shop_ID']
+
+Null summary:
+{
+  "happy_hour": {
+    "HH_ID": 0,
+    "Shop_ID": 0,
+    "Month": 0,
+    "Num_of_shaff_in_charge": 0
+  },
+  "happy_hour_member": {
+    "HH_ID": 0,
+    "Member_ID": 0,
+    "Total_amount": 0
+  },
+  "member": {
+    "Member_ID": 0,
+    "Name": 0,
+    "Membership_card": 0,
+    "Age": 0,
+    "Time_of_purchase": 0,
+    "Level_of_membership": 0,
+    "Address": 0
+  },
+  "shop": {
+    "Shop_ID": 0,
+    "Address": 0,
+    "Num_of_staff": 0,
+    "Score": 0,
+    "Open_Year": 0
+  }
+}

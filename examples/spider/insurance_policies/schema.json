@@ -1,0 +1,246 @@
+{
+  "db_id": "insurance_policies",
+  "tables": [
+    {
+      "name": "Claims",
+      "columns": [
+        {
+          "name": "Claim_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Policy_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Date_Claim_Made",
+          "type": "DATE",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Date_Claim_Settled",
+          "type": "DATE",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Amount_Claimed",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Amount_Settled",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Claim_ID"
+      ]
+    },
+    {
+      "name": "Customer_Policies",
+      "columns": [
+        {
+          "name": "Policy_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Customer_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Policy_Type_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Start_Date",
+          "type": "DATE",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "End_Date",
+          "type": "DATE",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Policy_ID"
+      ]
+    },
+    {
+      "name": "Customers",
+      "columns": [
+        {
+          "name": "Customer_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Customer_Details",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Customer_ID"
+      ]
+    },
+    {
+      "name": "Payments",
+      "columns": [
+        {
+          "name": "Payment_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Settlement_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Payment_Method_Code",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Date_Payment_Made",
+          "type": "DATE",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Amount_Payment",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Payment_ID"
+      ]
+    },
+    {
+      "name": "Settlements",
+      "columns": [
+        {
+          "name": "Settlement_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Claim_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Date_Claim_Made",
+          "type": "DATE",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Date_Claim_Settled",
+          "type": "DATE",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Amount_Claimed",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Amount_Settled",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Customer_Policy_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Settlement_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Claims",
+      "from_column": "Policy_ID",
+      "to_table": "Customer_Policies",
+      "to_column": "Policy_ID"
+    },
+    {
+      "from_table": "Customer_Policies",
+      "from_column": "Customer_ID",
+      "to_table": "Customers",
+      "to_column": "Customer_ID"
+    },
+    {
+      "from_table": "Payments",
+      "from_column": "Settlement_ID",
+      "to_table": "Settlements",
+      "to_column": "Settlement_ID"
+    },
+    {
+      "from_table": "Settlements",
+      "from_column": "Claim_ID",
+      "to_table": "Claims",
+      "to_column": "Claim_ID"
+    }
+  ]
+}

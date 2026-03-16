@@ -1,0 +1,196 @@
+{
+  "db_id": "dorm_1",
+  "tables": [
+    {
+      "name": "Dorm",
+      "columns": [
+        {
+          "name": "dormid",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "dorm_name",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "student_capacity",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "gender",
+          "type": "VARCHAR(1)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "Dorm_amenity",
+      "columns": [
+        {
+          "name": "amenid",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "amenity_name",
+          "type": "VARCHAR(25)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "Has_amenity",
+      "columns": [
+        {
+          "name": "dormid",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "amenid",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "Lives_in",
+      "columns": [
+        {
+          "name": "stuid",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "dormid",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "room_number",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "Student",
+      "columns": [
+        {
+          "name": "StuID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "LName",
+          "type": "VARCHAR(12)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Fname",
+          "type": "VARCHAR(12)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Age",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Sex",
+          "type": "VARCHAR(1)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Major",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Advisor",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "city_code",
+          "type": "VARCHAR(3)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "StuID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Has_amenity",
+      "from_column": "amenid",
+      "to_table": "Dorm_amenity",
+      "to_column": "amenid"
+    },
+    {
+      "from_table": "Has_amenity",
+      "from_column": "dormid",
+      "to_table": "Dorm",
+      "to_column": "dormid"
+    },
+    {
+      "from_table": "Lives_in",
+      "from_column": "dormid",
+      "to_table": "Dorm",
+      "to_column": "dormid"
+    },
+    {
+      "from_table": "Lives_in",
+      "from_column": "stuid",
+      "to_table": "Student",
+      "to_column": "StuID"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "db_id": "employee_hire_evaluation",
+  "nodes": [
+    {
+      "id": "employee",
+      "columns": [
+        "Employee_ID",
+        "Name",
+        "Age",
+        "City"
+      ],
+      "primary_keys": [
+        "Employee_ID"
+      ]
+    },
+    {
+      "id": "evaluation",
+      "columns": [
+        "Employee_ID",
+        "Year_awarded",
+        "Bonus"
+      ],
+      "primary_keys": [
+        "Employee_ID",
+        "Year_awarded"
+      ]
+    },
+    {
+      "id": "hiring",
+      "columns": [
+        "Shop_ID",
+        "Employee_ID",
+        "Start_from",
+        "Is_full_time"
+      ],
+      "primary_keys": [
+        "Employee_ID"
+      ]
+    },
+    {
+      "id": "shop",
+      "columns": [
+        "Shop_ID",
+        "Name",
+        "Location",
+        "District",
+        "Number_products",
+        "Manager_name"
+      ],
+      "primary_keys": [
+        "Shop_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "evaluation",
+      "to": "employee",
+      "from_column": "Employee_ID",
+      "to_column": "Employee_ID"
+    },
+    {
+      "from": "hiring",
+      "to": "employee",
+      "from_column": "Employee_ID",
+      "to_column": "Employee_ID"
+    },
+    {
+      "from": "hiring",
+      "to": "shop",
+      "from_column": "Shop_ID",
+      "to_column": "Shop_ID"
+    }
+  ]
+}

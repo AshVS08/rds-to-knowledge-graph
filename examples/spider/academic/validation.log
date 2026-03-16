@@ -1,0 +1,45 @@
+DB ID: academic
+Run:   20250910-163730
+
+Tables: 15
+Columns: 42
+PKs: 21
+FKs: 18
+
+No structural issues found.
+
+Primary keys by table:
+- author: ['aid']
+- cite: None
+- conference: ['cid']
+- domain: ['did']
+- domain_author: ['aid', 'did']
+- domain_conference: ['cid', 'did']
+- domain_journal: ['did', 'jid']
+- domain_keyword: ['did', 'kid']
+- domain_publication: ['did', 'pid']
+- journal: ['jid']
+- keyword: ['kid']
+- organization: ['oid']
+- publication: ['pid']
+- publication_keyword: ['pid', 'kid']
+- writes: ['aid', 'pid']
+
+Null summary:
+{
+  "author": {},
+  "cite": {},
+  "conference": {},
+  "domain": {},
+  "domain_author": {},
+  "domain_conference": {},
+  "domain_journal": {},
+  "domain_keyword": {},
+  "domain_publication": {},
+  "journal": {},
+  "keyword": {},
+  "organization": {},
+  "publication": {},
+  "publication_keyword": {},
+  "writes": {}
+}

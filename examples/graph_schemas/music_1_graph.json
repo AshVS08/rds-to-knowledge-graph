@@ -1,0 +1,90 @@
+{
+  "db_id": "music_1",
+  "nodes": [
+    {
+      "id": "artist",
+      "columns": [
+        "artist_name",
+        "country",
+        "gender",
+        "preferred_genre"
+      ],
+      "primary_keys": [
+        "artist_name"
+      ]
+    },
+    {
+      "id": "files",
+      "columns": [
+        "f_id",
+        "artist_name",
+        "file_size",
+        "duration",
+        "formats"
+      ],
+      "primary_keys": [
+        "f_id"
+      ]
+    },
+    {
+      "id": "genre",
+      "columns": [
+        "g_name",
+        "rating",
+        "most_popular_in"
+      ],
+      "primary_keys": [
+        "g_name"
+      ]
+    },
+    {
+      "id": "song",
+      "columns": [
+        "song_name",
+        "artist_name",
+        "country",
+        "f_id",
+        "genre_is",
+        "rating",
+        "languages",
+        "releasedate",
+        "resolution"
+      ],
+      "primary_keys": [
+        "song_name"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "artist",
+      "to": "genre",
+      "from_column": "preferred_genre",
+      "to_column": "g_name"
+    },
+    {
+      "from": "files",
+      "to": "artist",
+      "from_column": "artist_name",
+      "to_column": "artist_name"
+    },
+    {
+      "from": "song",
+      "to": "genre",
+      "from_column": "genre_is",
+      "to_column": "g_name"
+    },
+    {
+      "from": "song",
+      "to": "files",
+      "from_column": "f_id",
+      "to_column": "f_id"
+    },
+    {
+      "from": "song",
+      "to": "artist",
+      "from_column": "artist_name",
+      "to_column": "artist_name"
+    }
+  ]
+}

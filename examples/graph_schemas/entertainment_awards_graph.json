@@ -1,0 +1,56 @@
+{
+  "db_id": "entertainment_awards",
+  "nodes": [
+    {
+      "id": "artwork",
+      "columns": [
+        "Artwork_ID",
+        "Type",
+        "Name"
+      ],
+      "primary_keys": [
+        "Artwork_ID"
+      ]
+    },
+    {
+      "id": "festival_detail",
+      "columns": [
+        "Festival_ID",
+        "Festival_Name",
+        "Chair_Name",
+        "Location",
+        "Year",
+        "Num_of_Audience"
+      ],
+      "primary_keys": [
+        "Festival_ID"
+      ]
+    },
+    {
+      "id": "nomination",
+      "columns": [
+        "Artwork_ID",
+        "Festival_ID",
+        "Result"
+      ],
+      "primary_keys": [
+        "Artwork_ID",
+        "Festival_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "nomination",
+      "to": "festival_detail",
+      "from_column": "Festival_ID",
+      "to_column": "Festival_ID"
+    },
+    {
+      "from": "nomination",
+      "to": "artwork",
+      "from_column": "Artwork_ID",
+      "to_column": "Artwork_ID"
+    }
+  ]
+}

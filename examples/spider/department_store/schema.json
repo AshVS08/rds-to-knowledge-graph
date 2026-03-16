@@ -1,0 +1,593 @@
+{
+  "db_id": "department_store",
+  "tables": [
+    {
+      "name": "Addresses",
+      "columns": [
+        {
+          "name": "address_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "address_details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "address_id"
+      ]
+    },
+    {
+      "name": "Customer_Addresses",
+      "columns": [
+        {
+          "name": "customer_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "address_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "date_from",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_to",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "customer_id",
+        "address_id"
+      ]
+    },
+    {
+      "name": "Customer_Orders",
+      "columns": [
+        {
+          "name": "order_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "customer_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "order_status_code",
+          "type": "VARCHAR(10)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "order_date",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "order_id"
+      ]
+    },
+    {
+      "name": "Customers",
+      "columns": [
+        {
+          "name": "customer_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "payment_method_code",
+          "type": "VARCHAR(10)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "customer_code",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "customer_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "customer_address",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "customer_phone",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "customer_email",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "customer_id"
+      ]
+    },
+    {
+      "name": "Department_Store_Chain",
+      "columns": [
+        {
+          "name": "dept_store_chain_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "dept_store_chain_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "dept_store_chain_id"
+      ]
+    },
+    {
+      "name": "Department_Stores",
+      "columns": [
+        {
+          "name": "dept_store_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "dept_store_chain_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "store_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "store_address",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "store_phone",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "store_email",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "dept_store_id"
+      ]
+    },
+    {
+      "name": "Departments",
+      "columns": [
+        {
+          "name": "department_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "dept_store_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "department_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "department_id"
+      ]
+    },
+    {
+      "name": "Order_Items",
+      "columns": [
+        {
+          "name": "order_item_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "order_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "product_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "order_item_id"
+      ]
+    },
+    {
+      "name": "Product_Suppliers",
+      "columns": [
+        {
+          "name": "product_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "supplier_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "date_supplied_from",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_supplied_to",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "total_amount_purchased",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "total_value_purchased",
+          "type": "DECIMAL(19,4)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "product_id",
+        "supplier_id"
+      ]
+    },
+    {
+      "name": "Products",
+      "columns": [
+        {
+          "name": "product_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "product_type_code",
+          "type": "VARCHAR(10)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "product_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "product_price",
+          "type": "DECIMAL(19,4)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "product_id"
+      ]
+    },
+    {
+      "name": "Staff",
+      "columns": [
+        {
+          "name": "staff_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "staff_gender",
+          "type": "VARCHAR(1)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "staff_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "staff_id"
+      ]
+    },
+    {
+      "name": "Staff_Department_Assignments",
+      "columns": [
+        {
+          "name": "staff_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "department_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "date_assigned_from",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "job_title_code",
+          "type": "VARCHAR(10)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_assigned_to",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "staff_id",
+        "department_id"
+      ]
+    },
+    {
+      "name": "Supplier_Addresses",
+      "columns": [
+        {
+          "name": "supplier_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "address_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "date_from",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_to",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "supplier_id",
+        "address_id"
+      ]
+    },
+    {
+      "name": "Suppliers",
+      "columns": [
+        {
+          "name": "supplier_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "supplier_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "supplier_phone",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "supplier_id"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Customer_Addresses",
+      "from_column": "customer_id",
+      "to_table": "Customers",
+      "to_column": "customer_id"
+    },
+    {
+      "from_table": "Customer_Addresses",
+      "from_column": "address_id",
+      "to_table": "Addresses",
+      "to_column": "address_id"
+    },
+    {
+      "from_table": "Customer_Orders",
+      "from_column": "customer_id",
+      "to_table": "Customers",
+      "to_column": "customer_id"
+    },
+    {
+      "from_table": "Department_Stores",
+      "from_column": "dept_store_chain_id",
+      "to_table": "Department_Store_Chain",
+      "to_column": "dept_store_chain_id"
+    },
+    {
+      "from_table": "Departments",
+      "from_column": "dept_store_id",
+      "to_table": "Department_Stores",
+      "to_column": "dept_store_id"
+    },
+    {
+      "from_table": "Order_Items",
+      "from_column": "product_id",
+      "to_table": "Products",
+      "to_column": "product_id"
+    },
+    {
+      "from_table": "Order_Items",
+      "from_column": "order_id",
+      "to_table": "Customer_Orders",
+      "to_column": "order_id"
+    },
+    {
+      "from_table": "Product_Suppliers",
+      "from_column": "product_id",
+      "to_table": "Products",
+      "to_column": "product_id"
+    },
+    {
+      "from_table": "Product_Suppliers",
+      "from_column": "supplier_id",
+      "to_table": "Suppliers",
+      "to_column": "supplier_id"
+    },
+    {
+      "from_table": "Staff_Department_Assignments",
+      "from_column": "staff_id",
+      "to_table": "Staff",
+      "to_column": "staff_id"
+    },
+    {
+      "from_table": "Staff_Department_Assignments",
+      "from_column": "department_id",
+      "to_table": "Departments",
+      "to_column": "department_id"
+    },
+    {
+      "from_table": "Supplier_Addresses",
+      "from_column": "supplier_id",
+      "to_table": "Suppliers",
+      "to_column": "supplier_id"
+    },
+    {
+      "from_table": "Supplier_Addresses",
+      "from_column": "address_id",
+      "to_table": "Addresses",
+      "to_column": "address_id"
+    }
+  ]
+}

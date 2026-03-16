@@ -1,0 +1,39 @@
+DB ID: film_rank
+Run:   20250910-163730
+
+Tables: 3
+Columns: 15
+PKs: 3
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- film: ['Film_ID']
+- film_market_estimation: ['Estimation_ID']
+- market: ['Market_ID']
+
+Null summary:
+{
+  "film": {
+    "Film_ID": 0,
+    "Title": 0,
+    "Studio": 0,
+    "Director": 0,
+    "Gross_in_dollar": 0
+  },
+  "film_market_estimation": {
+    "Estimation_ID": 0,
+    "Low_Estimate": 0,
+    "High_Estimate": 0,
+    "Film_ID": 0,
+    "Type": 0,
+    "Market_ID": 0,
+    "Year": 0
+  },
+  "market": {
+    "Market_ID": 0,
+    "Country": 0,
+    "Number_cities": 0
+  }
+}

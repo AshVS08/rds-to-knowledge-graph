@@ -1,0 +1,62 @@
+{
+  "db_id": "culture_company",
+  "nodes": [
+    {
+      "id": "book_club",
+      "columns": [
+        "book_club_id",
+        "Year",
+        "Author_or_Editor",
+        "Book_Title",
+        "Publisher",
+        "Category",
+        "Result"
+      ],
+      "primary_keys": [
+        "book_club_id"
+      ]
+    },
+    {
+      "id": "culture_company",
+      "columns": [
+        "Company_name",
+        "Type",
+        "Incorporated_in",
+        "Group_Equity_Shareholding",
+        "book_club_id",
+        "movie_id"
+      ],
+      "primary_keys": [
+        "Company_name"
+      ]
+    },
+    {
+      "id": "movie",
+      "columns": [
+        "movie_id",
+        "Title",
+        "Year",
+        "Director",
+        "Budget_million",
+        "Gross_worldwide"
+      ],
+      "primary_keys": [
+        "movie_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "culture_company",
+      "to": "movie",
+      "from_column": "movie_id",
+      "to_column": "movie_id"
+    },
+    {
+      "from": "culture_company",
+      "to": "book_club",
+      "from_column": "book_club_id",
+      "to_column": "book_club_id"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "db_id": "college_3",
+  "nodes": [
+    {
+      "id": "Course",
+      "columns": [
+        "CID",
+        "CName",
+        "Credits",
+        "Instructor",
+        "Days",
+        "Hours",
+        "DNO"
+      ],
+      "primary_keys": [
+        "CID"
+      ]
+    },
+    {
+      "id": "Department",
+      "columns": [
+        "DNO",
+        "Division",
+        "DName",
+        "Room",
+        "Building",
+        "DPhone"
+      ],
+      "primary_keys": [
+        "DNO"
+      ]
+    },
+    {
+      "id": "Enrolled_in",
+      "columns": [
+        "StuID",
+        "CID",
+        "Grade"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Faculty",
+      "columns": [
+        "FacID",
+        "Lname",
+        "Fname",
+        "Rank",
+        "Sex",
+        "Phone",
+        "Room",
+        "Building"
+      ],
+      "primary_keys": [
+        "FacID"
+      ]
+    },
+    {
+      "id": "Gradeconversion",
+      "columns": [
+        "lettergrade",
+        "gradepoint"
+      ],
+      "primary_keys": [
+        "lettergrade"
+      ]
+    },
+    {
+      "id": "Member_of",
+      "columns": [
+        "FacID",
+        "DNO",
+        "Appt_Type"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Minor_in",
+      "columns": [
+        "StuID",
+        "DNO"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Student",
+      "columns": [
+        "StuID",
+        "LName",
+        "Fname",
+        "Age",
+        "Sex",
+        "Major",
+        "Advisor",
+        "city_code"
+      ],
+      "primary_keys": [
+        "StuID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Course",
+      "to": "Department",
+      "from_column": "DNO",
+      "to_column": "DNO"
+    },
+    {
+      "from": "Course",
+      "to": "Faculty",
+      "from_column": "Instructor",
+      "to_column": "FacID"
+    },
+    {
+      "from": "Enrolled_in",
+      "to": "Gradeconversion",
+      "from_column": "Grade",
+      "to_column": "lettergrade"
+    },
+    {
+      "from": "Enrolled_in",
+      "to": "Course",
+      "from_column": "CID",
+      "to_column": "CID"
+    },
+    {
+      "from": "Enrolled_in",
+      "to": "Student",
+      "from_column": "StuID",
+      "to_column": "StuID"
+    },
+    {
+      "from": "Member_of",
+      "to": "Department",
+      "from_column": "DNO",
+      "to_column": "DNO"
+    },
+    {
+      "from": "Member_of",
+      "to": "Faculty",
+      "from_column": "FacID",
+      "to_column": "FacID"
+    },
+    {
+      "from": "Minor_in",
+      "to": "Department",
+      "from_column": "DNO",
+      "to_column": "DNO"
+    },
+    {
+      "from": "Minor_in",
+      "to": "Student",
+      "from_column": "StuID",
+      "to_column": "StuID"
+    }
+  ]
+}

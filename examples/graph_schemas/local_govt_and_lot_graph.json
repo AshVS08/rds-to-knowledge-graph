@@ -1,0 +1,240 @@
+{
+  "db_id": "local_govt_and_lot",
+  "nodes": [
+    {
+      "id": "Customer_Event_Notes",
+      "columns": [
+        "Customer_Event_Note_ID",
+        "Customer_Event_ID",
+        "service_type_code",
+        "resident_id",
+        "property_id",
+        "date_moved_in"
+      ],
+      "primary_keys": [
+        "Customer_Event_Note_ID"
+      ]
+    },
+    {
+      "id": "Customer_Events",
+      "columns": [
+        "Customer_Event_ID",
+        "customer_id",
+        "date_moved_in",
+        "property_id",
+        "resident_id",
+        "thing_id"
+      ],
+      "primary_keys": [
+        "Customer_Event_ID"
+      ]
+    },
+    {
+      "id": "Customers",
+      "columns": [
+        "customer_id",
+        "customer_details"
+      ],
+      "primary_keys": [
+        "customer_id"
+      ]
+    },
+    {
+      "id": "Organizations",
+      "columns": [
+        "organization_id",
+        "parent_organization_id",
+        "organization_details"
+      ],
+      "primary_keys": [
+        "organization_id"
+      ]
+    },
+    {
+      "id": "Properties",
+      "columns": [
+        "property_id",
+        "property_type_code",
+        "property_address",
+        "other_details"
+      ],
+      "primary_keys": [
+        "property_id"
+      ]
+    },
+    {
+      "id": "Residents",
+      "columns": [
+        "resident_id",
+        "property_id",
+        "date_moved_in",
+        "date_moved_out",
+        "other_details"
+      ],
+      "primary_keys": [
+        "resident_id",
+        "property_id",
+        "date_moved_in"
+      ]
+    },
+    {
+      "id": "Residents_Services",
+      "columns": [
+        "resident_id",
+        "service_id",
+        "date_moved_in",
+        "property_id",
+        "date_requested",
+        "date_provided",
+        "other_details"
+      ],
+      "primary_keys": [
+        "resident_id",
+        "service_id"
+      ]
+    },
+    {
+      "id": "Services",
+      "columns": [
+        "service_id",
+        "organization_id",
+        "service_type_code",
+        "service_details"
+      ],
+      "primary_keys": [
+        "service_id"
+      ]
+    },
+    {
+      "id": "Things",
+      "columns": [
+        "thing_id",
+        "organization_id",
+        "Type_of_Thing_Code",
+        "service_type_code",
+        "service_details"
+      ],
+      "primary_keys": [
+        "thing_id"
+      ]
+    },
+    {
+      "id": "Timed_Locations_of_Things",
+      "columns": [
+        "thing_id",
+        "Date_and_Time",
+        "Location_Code"
+      ],
+      "primary_keys": [
+        "thing_id",
+        "Date_and_Time",
+        "Location_Code"
+      ]
+    },
+    {
+      "id": "Timed_Status_of_Things",
+      "columns": [
+        "thing_id",
+        "Date_and_Date",
+        "Status_of_Thing_Code"
+      ],
+      "primary_keys": [
+        "thing_id",
+        "Date_and_Date",
+        "Status_of_Thing_Code"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Customer_Event_Notes",
+      "to": "Customer_Events",
+      "from_column": "Customer_Event_ID",
+      "to_column": "Customer_Event_ID"
+    },
+    {
+      "from": "Customer_Events",
+      "to": "Residents",
+      "from_column": "resident_id",
+      "to_column": "resident_id"
+    },
+    {
+      "from": "Customer_Events",
+      "to": "Residents",
+      "from_column": "property_id",
+      "to_column": "property_id"
+    },
+    {
+      "from": "Customer_Events",
+      "to": "Residents",
+      "from_column": "date_moved_in",
+      "to_column": "date_moved_in"
+    },
+    {
+      "from": "Customer_Events",
+      "to": "Customers",
+      "from_column": "customer_id",
+      "to_column": "customer_id"
+    },
+    {
+      "from": "Customer_Events",
+      "to": "Things",
+      "from_column": "thing_id",
+      "to_column": "thing_id"
+    },
+    {
+      "from": "Residents",
+      "to": "Properties",
+      "from_column": "property_id",
+      "to_column": "property_id"
+    },
+    {
+      "from": "Residents_Services",
+      "to": "Residents",
+      "from_column": "resident_id",
+      "to_column": "resident_id"
+    },
+    {
+      "from": "Residents_Services",
+      "to": "Residents",
+      "from_column": "property_id",
+      "to_column": "property_id"
+    },
+    {
+      "from": "Residents_Services",
+      "to": "Residents",
+      "from_column": "date_moved_in",
+      "to_column": "date_moved_in"
+    },
+    {
+      "from": "Residents_Services",
+      "to": "Services",
+      "from_column": "service_id",
+      "to_column": "service_id"
+    },
+    {
+      "from": "Services",
+      "to": "Organizations",
+      "from_column": "organization_id",
+      "to_column": "organization_id"
+    },
+    {
+      "from": "Things",
+      "to": "Organizations",
+      "from_column": "organization_id",
+      "to_column": "organization_id"
+    },
+    {
+      "from": "Timed_Locations_of_Things",
+      "to": "Things",
+      "from_column": "thing_id",
+      "to_column": "thing_id"
+    },
+    {
+      "from": "Timed_Status_of_Things",
+      "to": "Things",
+      "from_column": "thing_id",
+      "to_column": "thing_id"
+    }
+  ]
+}

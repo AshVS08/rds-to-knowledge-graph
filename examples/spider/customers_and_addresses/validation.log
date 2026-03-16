@@ -1,0 +1,68 @@
+DB ID: customers_and_addresses
+Run:   20250910-163730
+
+Tables: 7
+Columns: 32
+PKs: 4
+FKs: 6
+
+No structural issues found.
+
+Primary keys by table:
+- Addresses: ['address_id']
+- Customer_Addresses: None
+- Customer_Contact_Channels: None
+- Customer_Orders: ['order_id']
+- Customers: ['customer_id']
+- Order_Items: None
+- Products: ['product_id']
+
+Null summary:
+{
+  "Addresses": {
+    "address_id": 0,
+    "address_content": 0,
+    "city": 0,
+    "zip_postcode": 0,
+    "state_province_county": 0,
+    "country": 0,
+    "other_address_details": 15
+  },
+  "Customer_Addresses": {
+    "customer_id": 0,
+    "address_id": 0,
+    "date_address_from": 0,
+    "address_type": 0,
+    "date_address_to": 0
+  },
+  "Customer_Contact_Channels": {
+    "customer_id": 0,
+    "channel_code": 0,
+    "active_from_date": 0,
+    "active_to_date": 0,
+    "contact_number": 0
+  },
+  "Customer_Orders": {
+    "order_id": 0,
+    "customer_id": 0,
+    "order_status": 0,
+    "order_date": 0,
+    "order_details": 10
+  },
+  "Customers": {
+    "customer_id": 0,
+    "payment_method": 0,
+    "customer_name": 0,
+    "date_became_customer": 0,
+    "other_customer_details": 13
+  },
+  "Order_Items": {
+    "order_id": 0,
+    "product_id": 0,
+    "order_quantity": 0
+  },
+  "Products": {
+    "product_id": 0,
+    "product_details": 0
+  }
+}

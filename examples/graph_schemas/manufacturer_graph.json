@@ -1,0 +1,56 @@
+{
+  "db_id": "manufacturer",
+  "nodes": [
+    {
+      "id": "furniture",
+      "columns": [
+        "Furniture_ID",
+        "Name",
+        "Num_of_Component",
+        "Market_Rate"
+      ],
+      "primary_keys": [
+        "Furniture_ID"
+      ]
+    },
+    {
+      "id": "furniture_manufacte",
+      "columns": [
+        "Manufacturer_ID",
+        "Furniture_ID",
+        "Price_in_Dollar"
+      ],
+      "primary_keys": [
+        "Manufacturer_ID",
+        "Furniture_ID"
+      ]
+    },
+    {
+      "id": "manufacturer",
+      "columns": [
+        "Manufacturer_ID",
+        "Open_Year",
+        "Name",
+        "Num_of_Factories",
+        "Num_of_Shops"
+      ],
+      "primary_keys": [
+        "Manufacturer_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "furniture_manufacte",
+      "to": "furniture",
+      "from_column": "Furniture_ID",
+      "to_column": "Furniture_ID"
+    },
+    {
+      "from": "furniture_manufacte",
+      "to": "manufacturer",
+      "from_column": "Manufacturer_ID",
+      "to_column": "Manufacturer_ID"
+    }
+  ]
+}

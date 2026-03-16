@@ -1,0 +1,100 @@
+{
+  "db_id": "aircraft",
+  "nodes": [
+    {
+      "id": "aircraft",
+      "columns": [
+        "Aircraft_ID",
+        "Aircraft",
+        "Description",
+        "Max_Gross_Weight",
+        "Total_disk_area",
+        "Max_disk_Loading"
+      ],
+      "primary_keys": [
+        "Aircraft_ID"
+      ]
+    },
+    {
+      "id": "airport",
+      "columns": [
+        "Airport_ID",
+        "Airport_Name",
+        "Total_Passengers",
+        "%_Change_2007",
+        "International_Passengers",
+        "Domestic_Passengers",
+        "Transit_Passengers",
+        "Aircraft_Movements",
+        "Freight_Metric_Tonnes"
+      ],
+      "primary_keys": [
+        "Airport_ID"
+      ]
+    },
+    {
+      "id": "airport_aircraft",
+      "columns": [
+        "ID",
+        "Airport_ID",
+        "Aircraft_ID"
+      ],
+      "primary_keys": [
+        "Airport_ID",
+        "Aircraft_ID"
+      ]
+    },
+    {
+      "id": "match",
+      "columns": [
+        "Round",
+        "Location",
+        "Country",
+        "Date",
+        "Fastest_Qualifying",
+        "Winning_Pilot",
+        "Winning_Aircraft"
+      ],
+      "primary_keys": [
+        "Round"
+      ]
+    },
+    {
+      "id": "pilot",
+      "columns": [
+        "Pilot_Id",
+        "Name",
+        "Age"
+      ],
+      "primary_keys": [
+        "Pilot_Id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "airport_aircraft",
+      "to": "aircraft",
+      "from_column": "Aircraft_ID",
+      "to_column": "Aircraft_ID"
+    },
+    {
+      "from": "airport_aircraft",
+      "to": "airport",
+      "from_column": "Airport_ID",
+      "to_column": "Airport_ID"
+    },
+    {
+      "from": "match",
+      "to": "pilot",
+      "from_column": "Winning_Pilot",
+      "to_column": "Pilot_Id"
+    },
+    {
+      "from": "match",
+      "to": "aircraft",
+      "from_column": "Winning_Aircraft",
+      "to_column": "Aircraft_ID"
+    }
+  ]
+}

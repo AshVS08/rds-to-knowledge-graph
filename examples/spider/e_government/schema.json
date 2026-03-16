@@ -1,0 +1,492 @@
+{
+  "db_id": "e_government",
+  "tables": [
+    {
+      "name": "Addresses",
+      "columns": [
+        {
+          "name": "address_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "line_1_number_building",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "town_city",
+          "type": "VARCHAR(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "zip_postcode",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "state_province_county",
+          "type": "VARCHAR(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "country",
+          "type": "VARCHAR(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "address_id"
+      ]
+    },
+    {
+      "name": "Forms",
+      "columns": [
+        {
+          "name": "form_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "form_type_code",
+          "type": "VARCHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "service_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "form_number",
+          "type": "VARCHAR(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "form_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "form_description",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "form_id"
+      ]
+    },
+    {
+      "name": "Individuals",
+      "columns": [
+        {
+          "name": "individual_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "individual_first_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "individual_middle_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "inidividual_phone",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "individual_email",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "individual_address",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "individual_last_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "individual_id"
+      ]
+    },
+    {
+      "name": "Organization_Contact_Individuals",
+      "columns": [
+        {
+          "name": "individual_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "organization_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "date_contact_from",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_contact_to",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "individual_id",
+        "organization_id"
+      ]
+    },
+    {
+      "name": "Organizations",
+      "columns": [
+        {
+          "name": "organization_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "date_formed",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "organization_name",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "uk_vat_number",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "organization_id"
+      ]
+    },
+    {
+      "name": "Parties",
+      "columns": [
+        {
+          "name": "party_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "payment_method_code",
+          "type": "VARCHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "party_phone",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "party_email",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "party_id"
+      ]
+    },
+    {
+      "name": "Party_Addresses",
+      "columns": [
+        {
+          "name": "party_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "address_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "date_address_from",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "address_type_code",
+          "type": "VARCHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_address_to",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "party_id",
+        "address_id"
+      ]
+    },
+    {
+      "name": "Party_Forms",
+      "columns": [
+        {
+          "name": "party_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "form_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "date_completion_started",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "form_status_code",
+          "type": "VARCHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_fully_completed",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "party_id",
+        "form_id"
+      ]
+    },
+    {
+      "name": "Party_Services",
+      "columns": [
+        {
+          "name": "booking_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "customer_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "service_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "service_datetime",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "booking_made_date",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "Services",
+      "columns": [
+        {
+          "name": "service_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "service_type_code",
+          "type": "VARCHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "service_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "service_descriptio",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "service_id"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Forms",
+      "from_column": "service_id",
+      "to_table": "Services",
+      "to_column": "service_id"
+    },
+    {
+      "from_table": "Organization_Contact_Individuals",
+      "from_column": "individual_id",
+      "to_table": "Individuals",
+      "to_column": "individual_id"
+    },
+    {
+      "from_table": "Organization_Contact_Individuals",
+      "from_column": "organization_id",
+      "to_table": "Organizations",
+      "to_column": "organization_id"
+    },
+    {
+      "from_table": "Party_Addresses",
+      "from_column": "party_id",
+      "to_table": "Parties",
+      "to_column": "party_id"
+    },
+    {
+      "from_table": "Party_Addresses",
+      "from_column": "address_id",
+      "to_table": "Addresses",
+      "to_column": "address_id"
+    },
+    {
+      "from_table": "Party_Forms",
+      "from_column": "form_id",
+      "to_table": "Forms",
+      "to_column": "form_id"
+    },
+    {
+      "from_table": "Party_Forms",
+      "from_column": "party_id",
+      "to_table": "Parties",
+      "to_column": "party_id"
+    },
+    {
+      "from_table": "Party_Services",
+      "from_column": "customer_id",
+      "to_table": "Parties",
+      "to_column": "party_id"
+    },
+    {
+      "from_table": "Party_Services",
+      "from_column": "service_id",
+      "to_table": "Services",
+      "to_column": "service_id"
+    }
+  ]
+}

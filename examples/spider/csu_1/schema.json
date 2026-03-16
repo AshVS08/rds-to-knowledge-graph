@@ -1,0 +1,247 @@
+{
+  "db_id": "csu_1",
+  "tables": [
+    {
+      "name": "Campuses",
+      "columns": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Campus",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Location",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "County",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Id"
+      ]
+    },
+    {
+      "name": "csu_fees",
+      "columns": [
+        {
+          "name": "Campus",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "CampusFee",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Campus"
+      ]
+    },
+    {
+      "name": "degrees",
+      "columns": [
+        {
+          "name": "Year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Campus",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Degrees",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Year",
+        "Campus"
+      ]
+    },
+    {
+      "name": "discipline_enrollments",
+      "columns": [
+        {
+          "name": "Campus",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Discipline",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Undergraduate",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Graduate",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Campus",
+        "Discipline"
+      ]
+    },
+    {
+      "name": "enrollments",
+      "columns": [
+        {
+          "name": "Campus",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "TotalEnrollment_AY",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "FTE_AY",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Campus",
+        "Year"
+      ]
+    },
+    {
+      "name": "faculty",
+      "columns": [
+        {
+          "name": "Campus",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Faculty",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "csu_fees",
+      "from_column": "Campus",
+      "to_table": "Campuses",
+      "to_column": "Id"
+    },
+    {
+      "from_table": "degrees",
+      "from_column": "Campus",
+      "to_table": "Campuses",
+      "to_column": "Id"
+    },
+    {
+      "from_table": "discipline_enrollments",
+      "from_column": "Campus",
+      "to_table": "Campuses",
+      "to_column": "Id"
+    },
+    {
+      "from_table": "enrollments",
+      "from_column": "Campus",
+      "to_table": "Campuses",
+      "to_column": "Id"
+    },
+    {
+      "from_table": "faculty",
+      "from_column": "Campus",
+      "to_table": "Campuses",
+      "to_column": "Id"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{"table": "Affiliated_With", "row": {"Physician": 1, "Department": 1, "PrimaryAffiliation": 1}}
+{"table": "Affiliated_With", "row": {"Physician": 2, "Department": 1, "PrimaryAffiliation": 1}}
+{"table": "Affiliated_With", "row": {"Physician": 3, "Department": 1, "PrimaryAffiliation": 0}}
+{"table": "Affiliated_With", "row": {"Physician": 3, "Department": 2, "PrimaryAffiliation": 1}}
+{"table": "Affiliated_With", "row": {"Physician": 4, "Department": 1, "PrimaryAffiliation": 1}}
+{"table": "Affiliated_With", "row": {"Physician": 5, "Department": 1, "PrimaryAffiliation": 1}}
+{"table": "Affiliated_With", "row": {"Physician": 6, "Department": 2, "PrimaryAffiliation": 1}}
+{"table": "Affiliated_With", "row": {"Physician": 7, "Department": 1, "PrimaryAffiliation": 0}}
+{"table": "Affiliated_With", "row": {"Physician": 7, "Department": 2, "PrimaryAffiliation": 1}}
+{"table": "Affiliated_With", "row": {"Physician": 8, "Department": 1, "PrimaryAffiliation": 1}}
+{"table": "Affiliated_With", "row": {"Physician": 9, "Department": 3, "PrimaryAffiliation": 1}}
+{"table": "Appointment", "row": {"AppointmentID": 13216584, "Patient": 100000001, "PrepNurse": 101, "Physician": 1, "Start": "2008-04-24 10:00", "End": "2008-04-24 11:00", "ExaminationRoom": "A"}}
+{"table": "Appointment", "row": {"AppointmentID": 26548913, "Patient": 100000002, "PrepNurse": 101, "Physician": 2, "Start": "2008-04-24 10:00", "End": "2008-04-24 11:00", "ExaminationRoom": "B"}}
+{"table": "Appointment", "row": {"AppointmentID": 36549879, "Patient": 100000001, "PrepNurse": 102, "Physician": 1, "Start": "2008-04-25 10:00", "End": "2008-04-25 11:00", "ExaminationRoom": "A"}}
+{"table": "Appointment", "row": {"AppointmentID": 46846589, "Patient": 100000004, "PrepNurse": 103, "Physician": 4, "Start": "2008-04-25 10:00", "End": "2008-04-25 11:00", "ExaminationRoom": "B"}}
+{"table": "Appointment", "row": {"AppointmentID": 59871321, "Patient": 100000004, "PrepNurse": null, "Physician": 4, "Start": "2008-04-26 10:00", "End": "2008-04-26 11:00", "ExaminationRoom": "C"}}
+{"table": "Appointment", "row": {"AppointmentID": 69879231, "Patient": 100000003, "PrepNurse": 103, "Physician": 2, "Start": "2008-04-26 11:00", "End": "2008-04-26 12:00", "ExaminationRoom": "C"}}
+{"table": "Appointment", "row": {"AppointmentID": 76983231, "Patient": 100000001, "PrepNurse": null, "Physician": 3, "Start": "2008-04-26 12:00", "End": "2008-04-26 13:00", "ExaminationRoom": "C"}}
+{"table": "Appointment", "row": {"AppointmentID": 86213939, "Patient": 100000004, "PrepNurse": 102, "Physician": 9, "Start": "2008-04-27 10:00", "End": "2008-04-21 11:00", "ExaminationRoom": "A"}}
+{"table": "Appointment", "row": {"AppointmentID": 93216548, "Patient": 100000002, "PrepNurse": 101, "Physician": 2, "Start": "2008-04-27 10:00", "End": "2008-04-27 11:00", "ExaminationRoom": "B"}}
+{"table": "Block", "row": {"BlockFloor": 1, "BlockCode": 1}}
+{"table": "Block", "row": {"BlockFloor": 1, "BlockCode": 2}}
+{"table": "Block", "row": {"BlockFloor": 1, "BlockCode": 3}}
+{"table": "Block", "row": {"BlockFloor": 2, "BlockCode": 1}}
+{"table": "Block", "row": {"BlockFloor": 2, "BlockCode": 2}}
+{"table": "Block", "row": {"BlockFloor": 2, "BlockCode": 3}}
+{"table": "Block", "row": {"BlockFloor": 3, "BlockCode": 1}}
+{"table": "Block", "row": {"BlockFloor": 3, "BlockCode": 2}}
+{"table": "Block", "row": {"BlockFloor": 3, "BlockCode": 3}}
+{"table": "Block", "row": {"BlockFloor": 4, "BlockCode": 1}}
+{"table": "Block", "row": {"BlockFloor": 4, "BlockCode": 2}}
+{"table": "Block", "row": {"BlockFloor": 4, "BlockCode": 3}}
+{"table": "Department", "row": {"DepartmentID": 1, "Name": "General Medicine", "Head": 4}}
+{"table": "Department", "row": {"DepartmentID": 2, "Name": "Surgery", "Head": 7}}
+{"table": "Department", "row": {"DepartmentID": 3, "Name": "Psychiatry", "Head": 9}}
+{"table": "Medication", "row": {"Code": 1, "Name": "Procrastin-X", "Brand": "X", "Description": "N/A"}}
+{"table": "Medication", "row": {"Code": 2, "Name": "Thesisin", "Brand": "Foo Labs", "Description": "N/A"}}
+{"table": "Medication", "row": {"Code": 3, "Name": "Awakin", "Brand": "Bar Laboratories", "Description": "N/A"}}
+{"table": "Medication", "row": {"Code": 4, "Name": "Crescavitin", "Brand": "Baz Industries", "Description": "N/A"}}
+{"table": "Medication", "row": {"Code": 5, "Name": "Melioraurin", "Brand": "Snafu Pharmaceuticals", "Description": "N/A"}}
+{"table": "Nurse", "row": {"EmployeeID": 101, "Name": "Carla Espinosa", "Position": "Head Nurse", "Registered": 1, "SSN": 111111110}}
+{"table": "Nurse", "row": {"EmployeeID": 102, "Name": "Laverne Roberts", "Position": "Nurse", "Registered": 1, "SSN": 222222220}}
+{"table": "Nurse", "row": {"EmployeeID": 103, "Name": "Paul Flowers", "Position": "Nurse", "Registered": 0, "SSN": 333333330}}
+{"table": "On_Call", "row": {"Nurse": 101, "BlockFloor": 1, "BlockCode": 1, "OnCallStart": "2008-11-04 11:00", "OnCallEnd": "2008-11-04 19:00"}}
+{"table": "On_Call", "row": {"Nurse": 101, "BlockFloor": 1, "BlockCode": 2, "OnCallStart": "2008-11-04 11:00", "OnCallEnd": "2008-11-04 19:00"}}
+{"table": "On_Call", "row": {"Nurse": 102, "BlockFloor": 1, "BlockCode": 3, "OnCallStart": "2008-11-04 11:00", "OnCallEnd": "2008-11-04 19:00"}}
+{"table": "On_Call", "row": {"Nurse": 103, "BlockFloor": 1, "BlockCode": 1, "OnCallStart": "2008-11-04 19:00", "OnCallEnd": "2008-11-05 03:00"}}
+{"table": "On_Call", "row": {"Nurse": 103, "BlockFloor": 1, "BlockCode": 2, "OnCallStart": "2008-11-04 19:00", "OnCallEnd": "2008-11-05 03:00"}}
+{"table": "On_Call", "row": {"Nurse": 103, "BlockFloor": 1, "BlockCode": 3, "OnCallStart": "2008-11-04 19:00", "OnCallEnd": "2008-11-05 03:00"}}
+{"table": "Patient", "row": {"SSN": 100000001, "Name": "John Smith", "Address": "42 Foobar Lane", "Phone": "555-0256", "InsuranceID": 68476213, "PCP": 1}}
+{"table": "Patient", "row": {"SSN": 100000002, "Name": "Grace Ritchie", "Address": "37 Snafu Drive", "Phone": "555-0512", "InsuranceID": 36546321, "PCP": 2}}
+{"table": "Patient", "row": {"SSN": 100000003, "Name": "Random J. Patient", "Address": "101 Omgbbq Street", "Phone": "555-1204", "InsuranceID": 65465421, "PCP": 2}}
+{"table": "Patient", "row": {"SSN": 100000004, "Name": "Dennis Doe", "Address": "1100 Foobaz Avenue", "Phone": "555-2048", "InsuranceID": 68421879, "PCP": 3}}
+{"table": "Physician", "row": {"EmployeeID": 1, "Name": "John Dorian", "Position": "Staff Internist", "SSN": 111111111}}
+{"table": "Physician", "row": {"EmployeeID": 2, "Name": "Elliot Reid", "Position": "Attending Physician", "SSN": 222222222}}
+{"table": "Physician", "row": {"EmployeeID": 3, "Name": "Christopher Turk", "Position": "Surgical Attending Physician", "SSN": 333333333}}
+{"table": "Physician", "row": {"EmployeeID": 4, "Name": "Percival Cox", "Position": "Senior Attending Physician", "SSN": 444444444}}
+{"table": "Physician", "row": {"EmployeeID": 5, "Name": "Bob Kelso", "Position": "Head Chief of Medicine", "SSN": 555555555}}
+{"table": "Physician", "row": {"EmployeeID": 6, "Name": "Todd Quinlan", "Position": "Surgical Attending Physician", "SSN": 666666666}}
+{"table": "Physician", "row": {"EmployeeID": 7, "Name": "John Wen", "Position": "Surgical Attending Physician", "SSN": 777777777}}
+{"table": "Physician", "row": {"EmployeeID": 8, "Name": "Keith Dudemeister", "Position": "MD Resident", "SSN": 888888888}}
+{"table": "Physician", "row": {"EmployeeID": 9, "Name": "Molly Clock", "Position": "Attending Psychiatrist", "SSN": 999999999}}
+{"table": "Prescribes", "row": {"Physician": 1, "Patient": 100000001, "Medication": 1, "Date": "2008-04-24 10:47", "Appointment": 13216584, "Dose": "5"}}
+{"table": "Prescribes", "row": {"Physician": 9, "Patient": 100000004, "Medication": 2, "Date": "2008-04-27 10:53", "Appointment": 86213939, "Dose": "10"}}
+{"table": "Prescribes", "row": {"Physician": 9, "Patient": 100000004, "Medication": 2, "Date": "2008-04-30 16:53", "Appointment": null, "Dose": "5"}}
+{"table": "Procedures", "row": {"Code": 1, "Name": "Reverse Rhinopodoplasty", "Cost": 1500.0}}
+{"table": "Procedures", "row": {"Code": 2, "Name": "Obtuse Pyloric Recombobulation", "Cost": 3750.0}}
+{"table": "Procedures", "row": {"Code": 3, "Name": "Folded Demiophtalmectomy", "Cost": 4500.0}}
+{"table": "Procedures", "row": {"Code": 4, "Name": "Complete Walletectomy", "Cost": 10000.0}}
+{"table": "Procedures", "row": {"Code": 5, "Name": "Obfuscated Dermogastrotomy", "Cost": 4899.0}}
+{"table": "Procedures", "row": {"Code": 6, "Name": "Reversible Pancreomyoplasty", "Cost": 5600.0}}
+{"table": "Procedures", "row": {"Code": 7, "Name": "Follicular Demiectomy", "Cost": 25.0}}
+{"table": "Room", "row": {"RoomNumber": 101, "RoomType": "Single", "BlockFloor": 1, "BlockCode": 1, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 102, "RoomType": "Single", "BlockFloor": 1, "BlockCode": 1, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 103, "RoomType": "Single", "BlockFloor": 1, "BlockCode": 1, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 111, "RoomType": "Single", "BlockFloor": 1, "BlockCode": 2, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 112, "RoomType": "Single", "BlockFloor": 1, "BlockCode": 2, "Unavailable": 1}}
+{"table": "Room", "row": {"RoomNumber": 113, "RoomType": "Single", "BlockFloor": 1, "BlockCode": 2, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 121, "RoomType": "Single", "BlockFloor": 1, "BlockCode": 3, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 122, "RoomType": "Single", "BlockFloor": 1, "BlockCode": 3, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 123, "RoomType": "Single", "BlockFloor": 1, "BlockCode": 3, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 201, "RoomType": "Single", "BlockFloor": 2, "BlockCode": 1, "Unavailable": 1}}
+{"table": "Room", "row": {"RoomNumber": 202, "RoomType": "Single", "BlockFloor": 2, "BlockCode": 1, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 203, "RoomType": "Single", "BlockFloor": 2, "BlockCode": 1, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 211, "RoomType": "Single", "BlockFloor": 2, "BlockCode": 2, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 212, "RoomType": "Single", "BlockFloor": 2, "BlockCode": 2, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 213, "RoomType": "Single", "BlockFloor": 2, "BlockCode": 2, "Unavailable": 1}}
+{"table": "Room", "row": {"RoomNumber": 221, "RoomType": "Single", "BlockFloor": 2, "BlockCode": 3, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 222, "RoomType": "Single", "BlockFloor": 2, "BlockCode": 3, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 223, "RoomType": "Single", "BlockFloor": 2, "BlockCode": 3, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 301, "RoomType": "Single", "BlockFloor": 3, "BlockCode": 1, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 302, "RoomType": "Single", "BlockFloor": 3, "BlockCode": 1, "Unavailable": 1}}
+{"table": "Room", "row": {"RoomNumber": 303, "RoomType": "Single", "BlockFloor": 3, "BlockCode": 1, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 311, "RoomType": "Single", "BlockFloor": 3, "BlockCode": 2, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 312, "RoomType": "Single", "BlockFloor": 3, "BlockCode": 2, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 313, "RoomType": "Single", "BlockFloor": 3, "BlockCode": 2, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 321, "RoomType": "Single", "BlockFloor": 3, "BlockCode": 3, "Unavailable": 1}}
+{"table": "Room", "row": {"RoomNumber": 322, "RoomType": "Single", "BlockFloor": 3, "BlockCode": 3, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 323, "RoomType": "Single", "BlockFloor": 3, "BlockCode": 3, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 401, "RoomType": "Single", "BlockFloor": 4, "BlockCode": 1, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 402, "RoomType": "Single", "BlockFloor": 4, "BlockCode": 1, "Unavailable": 1}}
+{"table": "Room", "row": {"RoomNumber": 403, "RoomType": "Single", "BlockFloor": 4, "BlockCode": 1, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 411, "RoomType": "Single", "BlockFloor": 4, "BlockCode": 2, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 412, "RoomType": "Single", "BlockFloor": 4, "BlockCode": 2, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 413, "RoomType": "Single", "BlockFloor": 4, "BlockCode": 2, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 421, "RoomType": "Single", "BlockFloor": 4, "BlockCode": 3, "Unavailable": 1}}
+{"table": "Room", "row": {"RoomNumber": 422, "RoomType": "Single", "BlockFloor": 4, "BlockCode": 3, "Unavailable": 0}}
+{"table": "Room", "row": {"RoomNumber": 423, "RoomType": "Single", "BlockFloor": 4, "BlockCode": 3, "Unavailable": 0}}
+{"table": "Stay", "row": {"StayID": 3215, "Patient": 100000001, "Room": 111, "StayStart": "2008-05-01", "StayEnd": "2008-05-04"}}
+{"table": "Stay", "row": {"StayID": 3216, "Patient": 100000003, "Room": 123, "StayStart": "2008-05-03", "StayEnd": "2008-05-14"}}
+{"table": "Stay", "row": {"StayID": 3217, "Patient": 100000004, "Room": 112, "StayStart": "2008-05-02", "StayEnd": "2008-05-03"}}
+{"table": "Trained_In", "row": {"Physician": 3, "Treatment": 1, "CertificationDate": "2008-01-01", "CertificationExpires": "2008-12-31"}}
+{"table": "Trained_In", "row": {"Physician": 3, "Treatment": 2, "CertificationDate": "2008-01-01", "CertificationExpires": "2008-12-31"}}
+{"table": "Trained_In", "row": {"Physician": 3, "Treatment": 5, "CertificationDate": "2008-01-01", "CertificationExpires": "2008-12-31"}}
+{"table": "Trained_In", "row": {"Physician": 3, "Treatment": 6, "CertificationDate": "2008-01-01", "CertificationExpires": "2008-12-31"}}
+{"table": "Trained_In", "row": {"Physician": 3, "Treatment": 7, "CertificationDate": "2008-01-01", "CertificationExpires": "2008-12-31"}}
+{"table": "Trained_In", "row": {"Physician": 6, "Treatment": 2, "CertificationDate": "2008-01-01", "CertificationExpires": "2008-12-31"}}
+{"table": "Trained_In", "row": {"Physician": 6, "Treatment": 5, "CertificationDate": "2007-01-01", "CertificationExpires": "2007-12-31"}}
+{"table": "Trained_In", "row": {"Physician": 6, "Treatment": 6, "CertificationDate": "2008-01-01", "CertificationExpires": "2008-12-31"}}
+{"table": "Trained_In", "row": {"Physician": 7, "Treatment": 1, "CertificationDate": "2008-01-01", "CertificationExpires": "2008-12-31"}}
+{"table": "Trained_In", "row": {"Physician": 7, "Treatment": 2, "CertificationDate": "2008-01-01", "CertificationExpires": "2008-12-31"}}
+{"table": "Trained_In", "row": {"Physician": 7, "Treatment": 3, "CertificationDate": "2008-01-01", "CertificationExpires": "2008-12-31"}}
+{"table": "Trained_In", "row": {"Physician": 7, "Treatment": 4, "CertificationDate": "2008-01-01", "CertificationExpires": "2008-12-31"}}
+{"table": "Trained_In", "row": {"Physician": 7, "Treatment": 5, "CertificationDate": "2008-01-01", "CertificationExpires": "2008-12-31"}}
+{"table": "Trained_In", "row": {"Physician": 7, "Treatment": 6, "CertificationDate": "2008-01-01", "CertificationExpires": "2008-12-31"}}
+{"table": "Trained_In", "row": {"Physician": 7, "Treatment": 7, "CertificationDate": "2008-01-01", "CertificationExpires": "2008-12-31"}}
+{"table": "Undergoes", "row": {"Patient": 100000001, "Procedures": 6, "Stay": 3215, "DateUndergoes": "2008-05-02", "Physician": 3, "AssistingNurse": 101}}
+{"table": "Undergoes", "row": {"Patient": 100000001, "Procedures": 2, "Stay": 3215, "DateUndergoes": "2008-05-03", "Physician": 7, "AssistingNurse": 101}}
+{"table": "Undergoes", "row": {"Patient": 100000004, "Procedures": 1, "Stay": 3217, "DateUndergoes": "2008-05-07", "Physician": 3, "AssistingNurse": 102}}
+{"table": "Undergoes", "row": {"Patient": 100000004, "Procedures": 5, "Stay": 3217, "DateUndergoes": "2008-05-09", "Physician": 6, "AssistingNurse": 105}}
+{"table": "Undergoes", "row": {"Patient": 100000001, "Procedures": 7, "Stay": 3217, "DateUndergoes": "2008-05-10", "Physician": 7, "AssistingNurse": 101}}
+{"table": "Undergoes", "row": {"Patient": 100000004, "Procedures": 4, "Stay": 3217, "DateUndergoes": "2008-05-13", "Physician": 3, "AssistingNurse": 103}}

@@ -1,0 +1,36 @@
+DB ID: museum_visit
+Run:   20250910-163730
+
+Tables: 3
+Columns: 12
+PKs: 4
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- museum: ['Museum_ID']
+- visit: ['Museum_ID', 'visitor_ID']
+- visitor: ['ID']
+
+Null summary:
+{
+  "museum": {
+    "Museum_ID": 0,
+    "Name": 0,
+    "Num_of_Staff": 0,
+    "Open_Year": 0
+  },
+  "visit": {
+    "Museum_ID": 0,
+    "visitor_ID": 0,
+    "Num_of_Ticket": 0,
+    "Total_spent": 0
+  },
+  "visitor": {
+    "ID": 0,
+    "Name": 0,
+    "Level_of_membership": 0,
+    "Age": 0
+  }
+}

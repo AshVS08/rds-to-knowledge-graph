@@ -1,0 +1,584 @@
+{
+  "db_id": "cre_Theme_park",
+  "tables": [
+    {
+      "name": "Features",
+      "columns": [
+        {
+          "name": "Feature_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Feature_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Feature_ID"
+      ]
+    },
+    {
+      "name": "Hotels",
+      "columns": [
+        {
+          "name": "hotel_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "star_rating_code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "pets_allowed_yn",
+          "type": "CHAR(1)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "price_range",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "other_hotel_details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "hotel_id"
+      ]
+    },
+    {
+      "name": "Locations",
+      "columns": [
+        {
+          "name": "Location_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Location_Name",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Address",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Other_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Location_ID"
+      ]
+    },
+    {
+      "name": "Museums",
+      "columns": [
+        {
+          "name": "Museum_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Museum_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Museum_ID"
+      ]
+    },
+    {
+      "name": "Photos",
+      "columns": [
+        {
+          "name": "Photo_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Tourist_Attraction_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Name",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Description",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Filename",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Other_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Photo_ID"
+      ]
+    },
+    {
+      "name": "Ref_Attraction_Types",
+      "columns": [
+        {
+          "name": "Attraction_Type_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Attraction_Type_Description",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Attraction_Type_Code"
+      ]
+    },
+    {
+      "name": "Ref_Hotel_Star_Ratings",
+      "columns": [
+        {
+          "name": "star_rating_code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "star_rating_description",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "star_rating_code"
+      ]
+    },
+    {
+      "name": "Royal_Family",
+      "columns": [
+        {
+          "name": "Royal_Family_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Royal_Family_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Royal_Family_ID"
+      ]
+    },
+    {
+      "name": "Shops",
+      "columns": [
+        {
+          "name": "Shop_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Shop_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Shop_ID"
+      ]
+    },
+    {
+      "name": "Staff",
+      "columns": [
+        {
+          "name": "Staff_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Tourist_Attraction_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Name",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Other_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Staff_ID"
+      ]
+    },
+    {
+      "name": "Street_Markets",
+      "columns": [
+        {
+          "name": "Market_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Market_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Market_ID"
+      ]
+    },
+    {
+      "name": "Theme_Parks",
+      "columns": [
+        {
+          "name": "Theme_Park_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Theme_Park_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Theme_Park_ID"
+      ]
+    },
+    {
+      "name": "Tourist_Attraction_Features",
+      "columns": [
+        {
+          "name": "Tourist_Attraction_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Feature_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "Tourist_Attraction_ID",
+        "Feature_ID"
+      ]
+    },
+    {
+      "name": "Tourist_Attractions",
+      "columns": [
+        {
+          "name": "Tourist_Attraction_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Attraction_Type_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Location_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "How_to_Get_There",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Name",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Description",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Opening_Hours",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Other_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Tourist_Attraction_ID"
+      ]
+    },
+    {
+      "name": "Visitors",
+      "columns": [
+        {
+          "name": "Tourist_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Tourist_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Tourist_ID"
+      ]
+    },
+    {
+      "name": "Visits",
+      "columns": [
+        {
+          "name": "Visit_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Tourist_Attraction_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Tourist_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Visit_Date",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Visit_Details",
+          "type": "VARCHAR(40)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Visit_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Hotels",
+      "from_column": "star_rating_code",
+      "to_table": "Ref_Hotel_Star_Ratings",
+      "to_column": "star_rating_code"
+    },
+    {
+      "from_table": "Museums",
+      "from_column": "Museum_ID",
+      "to_table": "Tourist_Attractions",
+      "to_column": "Tourist_Attraction_ID"
+    },
+    {
+      "from_table": "Photos",
+      "from_column": "Tourist_Attraction_ID",
+      "to_table": "Tourist_Attractions",
+      "to_column": "Tourist_Attraction_ID"
+    },
+    {
+      "from_table": "Royal_Family",
+      "from_column": "Royal_Family_ID",
+      "to_table": "Tourist_Attractions",
+      "to_column": "Tourist_Attraction_ID"
+    },
+    {
+      "from_table": "Shops",
+      "from_column": "Shop_ID",
+      "to_table": "Tourist_Attractions",
+      "to_column": "Tourist_Attraction_ID"
+    },
+    {
+      "from_table": "Staff",
+      "from_column": "Tourist_Attraction_ID",
+      "to_table": "Tourist_Attractions",
+      "to_column": "Tourist_Attraction_ID"
+    },
+    {
+      "from_table": "Street_Markets",
+      "from_column": "Market_ID",
+      "to_table": "Tourist_Attractions",
+      "to_column": "Tourist_Attraction_ID"
+    },
+    {
+      "from_table": "Theme_Parks",
+      "from_column": "Theme_Park_ID",
+      "to_table": "Tourist_Attractions",
+      "to_column": "Tourist_Attraction_ID"
+    },
+    {
+      "from_table": "Tourist_Attraction_Features",
+      "from_column": "Feature_ID",
+      "to_table": "Features",
+      "to_column": "Feature_ID"
+    },
+    {
+      "from_table": "Tourist_Attraction_Features",
+      "from_column": "Tourist_Attraction_ID",
+      "to_table": "Tourist_Attractions",
+      "to_column": "Tourist_Attraction_ID"
+    },
+    {
+      "from_table": "Tourist_Attractions",
+      "from_column": "Attraction_Type_Code",
+      "to_table": "Ref_Attraction_Types",
+      "to_column": "Attraction_Type_Code"
+    },
+    {
+      "from_table": "Tourist_Attractions",
+      "from_column": "Location_ID",
+      "to_table": "Locations",
+      "to_column": "Location_ID"
+    },
+    {
+      "from_table": "Visits",
+      "from_column": "Tourist_ID",
+      "to_table": "Visitors",
+      "to_column": "Tourist_ID"
+    },
+    {
+      "from_table": "Visits",
+      "from_column": "Tourist_Attraction_ID",
+      "to_table": "Tourist_Attractions",
+      "to_column": "Tourist_Attraction_ID"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+DB ID: browser_web
+Run:   20250910-163730
+
+Tables: 3
+Columns: 11
+PKs: 4
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- Web_client_accelerator: ['id']
+- accelerator_compatible_browser: ['accelerator_id', 'browser_id']
+- browser: ['id']
+
+Null summary:
+{
+  "Web_client_accelerator": {
+    "id": 0,
+    "name": 0,
+    "Operating_system": 0,
+    "Client": 0,
+    "Connection": 0
+  },
+  "accelerator_compatible_browser": {
+    "accelerator_id": 0,
+    "browser_id": 0,
+    "compatible_since_year": 0
+  },
+  "browser": {
+    "id": 0,
+    "name": 0,
+    "market_share": 0
+  }
+}

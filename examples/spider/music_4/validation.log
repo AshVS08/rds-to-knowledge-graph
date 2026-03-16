@@ -1,0 +1,41 @@
+DB ID: music_4
+Run:   20250910-163730
+
+Tables: 3
+Columns: 17
+PKs: 3
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- artist: ['Artist_ID']
+- music_festival: ['ID']
+- volume: ['Volume_ID']
+
+Null summary:
+{
+  "artist": {
+    "Artist_ID": 0,
+    "Artist": 0,
+    "Age": 0,
+    "Famous_Title": 0,
+    "Famous_Release_date": 0
+  },
+  "music_festival": {
+    "ID": 0,
+    "Music_Festival": 0,
+    "Date_of_ceremony": 0,
+    "Category": 0,
+    "Volume": 0,
+    "Result": 0
+  },
+  "volume": {
+    "Volume_ID": 0,
+    "Volume_Issue": 0,
+    "Issue_Date": 0,
+    "Weeks_on_Top": 0,
+    "Song": 0,
+    "Artist_ID": 0
+  }
+}

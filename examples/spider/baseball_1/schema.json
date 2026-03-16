@@ -1,0 +1,2747 @@
+{
+  "db_id": "baseball_1",
+  "tables": [
+    {
+      "name": "all_star",
+      "columns": [
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "game_num",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "game_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "gp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "starting_pos",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "appearances",
+      "columns": [
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_all",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "gs",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_batting",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_defense",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_p",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_c",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_1b",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_2b",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_3b",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_ss",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_lf",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_cf",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_rf",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_of",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_dh",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_ph",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_pr",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "batting",
+      "columns": [
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "stint",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ab",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "r",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "h",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "double",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "triple",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "hr",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "rbi",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sb",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "cs",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "bb",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "so",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ibb",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "hbp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sh",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sf",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_idp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "batting_postseason",
+      "columns": [
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "round",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ab",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "r",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "h",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "double",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "triple",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "hr",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "rbi",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sb",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "cs",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "bb",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "so",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ibb",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "hbp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sh",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sf",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_idp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "college",
+      "columns": [
+        {
+          "name": "college_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "name_full",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "city",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "state",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "country",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "fielding",
+      "columns": [
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "stint",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "pos",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "gs",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "inn_outs",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "po",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "a",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "e",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "dp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "pb",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "wp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sb",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "cs",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "zr",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "fielding_outfield",
+      "columns": [
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "stint",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "glf",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "gcf",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "grf",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "fielding_postseason",
+      "columns": [
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "round",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "pos",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "gs",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "inn_outs",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "po",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "a",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "e",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "dp",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "tp",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "pb",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sb",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "cs",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "hall_of_fame",
+      "columns": [
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "yearid",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "votedby",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ballots",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "needed",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "votes",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "inducted",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "category",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "needed_note",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "home_game",
+      "columns": [
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "park_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "span_first",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "span_last",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "games",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "openings",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "attendance",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "manager",
+      "columns": [
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "inseason",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "w",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "l",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "rank",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "plyr_mgr",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "manager_award",
+      "columns": [
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "award_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "tie",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "notes",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "manager_award_vote",
+      "columns": [
+        {
+          "name": "award_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "points_won",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "points_max",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "votes_first",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "manager_half",
+      "columns": [
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "inseason",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "half",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "w",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "l",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "rank",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "park",
+      "columns": [
+        {
+          "name": "park_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "park_name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "park_alias",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "city",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "state",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "country",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "pitching",
+      "columns": [
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "stint",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "w",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "l",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "gs",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "cg",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sho",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sv",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ipouts",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "h",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "er",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "hr",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "bb",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "so",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "baopp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "era",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ibb",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "wp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "hbp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "bk",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "bfp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "gf",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "r",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sh",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sf",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_idp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "pitching_postseason",
+      "columns": [
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "round",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "w",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "l",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "gs",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "cg",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sho",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sv",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ipouts",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "h",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "er",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "hr",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "bb",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "so",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "baopp",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "era",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ibb",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "wp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "hbp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "bk",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "bfp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "gf",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "r",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sh",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sf",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g_idp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "player",
+      "columns": [
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "birth_year",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "birth_month",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "birth_day",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "birth_country",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "birth_state",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "birth_city",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "death_year",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "death_month",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "death_day",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "death_country",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "death_state",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "death_city",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "name_first",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "name_last",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "name_given",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "weight",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "height",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "bats",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "throws",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "debut",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "final_game",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "retro_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "bbref_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "player_award",
+      "columns": [
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "award_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "tie",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "notes",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "player_award_vote",
+      "columns": [
+        {
+          "name": "award_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "points_won",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "points_max",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "votes_first",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "player_college",
+      "columns": [
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "college_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "postseason",
+      "columns": [
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "round",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id_winner",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id_winner",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id_loser",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id_loser",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "wins",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "losses",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ties",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "salary",
+      "columns": [
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "player_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "salary",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "team",
+      "columns": [
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "franchise_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "div_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "rank",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ghome",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "w",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "l",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "div_win",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "wc_win",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "lg_win",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ws_win",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "r",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ab",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "h",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "double",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "triple",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "hr",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "bb",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "so",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sb",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "cs",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "hbp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sf",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ra",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "er",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "era",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "cg",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sho",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "sv",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ipouts",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ha",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "hra",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "bba",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "soa",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "e",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "dp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "fp",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "park",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "attendance",
+          "type": "NUMERIC",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "bpf",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ppf",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id_br",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id_lahman45",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id_retro",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "team_franchise",
+      "columns": [
+        {
+          "name": "franchise_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "franchise_name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "active",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "na_assoc",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "team_half",
+      "columns": [
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "league_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "team_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "half",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "div_id",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "div_win",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "rank",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "g",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "w",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "l",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "all_star",
+      "from_column": "player_id",
+      "to_table": "player",
+      "to_column": "player_id"
+    },
+    {
+      "from_table": "appearances",
+      "from_column": "player_id",
+      "to_table": "player",
+      "to_column": "player_id"
+    },
+    {
+      "from_table": "appearances",
+      "from_column": "team_id",
+      "to_table": "team",
+      "to_column": "team_id"
+    },
+    {
+      "from_table": "batting",
+      "from_column": "player_id",
+      "to_table": "player",
+      "to_column": "player_id"
+    },
+    {
+      "from_table": "batting_postseason",
+      "from_column": "team_id",
+      "to_table": "team",
+      "to_column": "team_id"
+    },
+    {
+      "from_table": "batting_postseason",
+      "from_column": "player_id",
+      "to_table": "player",
+      "to_column": "player_id"
+    },
+    {
+      "from_table": "fielding",
+      "from_column": "player_id",
+      "to_table": "player",
+      "to_column": "player_id"
+    },
+    {
+      "from_table": "fielding_outfield",
+      "from_column": "player_id",
+      "to_table": "player",
+      "to_column": "player_id"
+    },
+    {
+      "from_table": "fielding_postseason",
+      "from_column": "team_id",
+      "to_table": "player",
+      "to_column": "team_id"
+    },
+    {
+      "from_table": "fielding_postseason",
+      "from_column": "player_id",
+      "to_table": "player",
+      "to_column": "player_id"
+    },
+    {
+      "from_table": "hall_of_fame",
+      "from_column": "player_id",
+      "to_table": "player",
+      "to_column": "player_id"
+    },
+    {
+      "from_table": "home_game",
+      "from_column": "park_id",
+      "to_table": "park",
+      "to_column": "park_id"
+    },
+    {
+      "from_table": "home_game",
+      "from_column": "team_id",
+      "to_table": "team",
+      "to_column": "team_id"
+    },
+    {
+      "from_table": "manager",
+      "from_column": "team_id",
+      "to_table": "team",
+      "to_column": "team_id"
+    },
+    {
+      "from_table": "manager_award",
+      "from_column": "player_id",
+      "to_table": "player",
+      "to_column": "player_id"
+    },
+    {
+      "from_table": "manager_half",
+      "from_column": "team_id",
+      "to_table": "team",
+      "to_column": "team_id"
+    },
+    {
+      "from_table": "player_award",
+      "from_column": "player_id",
+      "to_table": "player",
+      "to_column": "player_id"
+    },
+    {
+      "from_table": "player_award_vote",
+      "from_column": "player_id",
+      "to_table": "player",
+      "to_column": "player_id"
+    },
+    {
+      "from_table": "player_college",
+      "from_column": "college_id",
+      "to_table": "college",
+      "to_column": "college_id"
+    },
+    {
+      "from_table": "player_college",
+      "from_column": "player_id",
+      "to_table": "player",
+      "to_column": "player_id"
+    }
+  ]
+}

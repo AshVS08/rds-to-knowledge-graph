@@ -1,0 +1,112 @@
+{"table": "airlines", "row": {"uid": 1, "Airline": "United Airlines", "Abbreviation": "UAL", "Country": "USA"}}
+{"table": "airlines", "row": {"uid": 2, "Airline": "US Airways", "Abbreviation": "USAir", "Country": "USA"}}
+{"table": "airlines", "row": {"uid": 3, "Airline": "Delta Airlines", "Abbreviation": "Delta", "Country": "USA"}}
+{"table": "airlines", "row": {"uid": 4, "Airline": "Southwest Airlines", "Abbreviation": "Southwest", "Country": "USA"}}
+{"table": "airlines", "row": {"uid": 5, "Airline": "American Airlines", "Abbreviation": "American", "Country": "USA"}}
+{"table": "airlines", "row": {"uid": 6, "Airline": "Northwest Airlines", "Abbreviation": "Northwest", "Country": "USA"}}
+{"table": "airlines", "row": {"uid": 7, "Airline": "Continental Airlines", "Abbreviation": "Continental", "Country": "USA"}}
+{"table": "airlines", "row": {"uid": 8, "Airline": "JetBlue Airways", "Abbreviation": "JetBlue", "Country": "USA"}}
+{"table": "airlines", "row": {"uid": 9, "Airline": "Frontier Airlines", "Abbreviation": "Frontier", "Country": "USA"}}
+{"table": "airlines", "row": {"uid": 10, "Airline": "AirTran Airways", "Abbreviation": "AirTran", "Country": "USA"}}
+{"table": "airlines", "row": {"uid": 11, "Airline": "Allegiant Air", "Abbreviation": "Allegiant", "Country": "USA"}}
+{"table": "airlines", "row": {"uid": 12, "Airline": "Virgin America", "Abbreviation": "Virgin", "Country": "USA"}}
+{"table": "airports", "row": {"City": "Aberdeen ", "AirportCode": "APG", "AirportName": "Phillips AAF ", "Country": "United States ", "CountryAbbrev": "US "}}
+{"table": "airports", "row": {"City": "Aberdeen ", "AirportCode": "ABR", "AirportName": "Municipal ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Abilene ", "AirportCode": "DYS", "AirportName": "Dyess AFB ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Abilene ", "AirportCode": "ABI", "AirportName": "Municipal ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Abingdon ", "AirportCode": "VJI", "AirportName": "Virginia Highlands ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Ada ", "AirportCode": "ADT", "AirportName": "Ada ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Adak Island ", "AirportCode": "ADK", "AirportName": "Adak Island Ns ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Adrian ", "AirportCode": "ADG", "AirportName": "Lenawee County ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Afton ", "AirportCode": "AFO", "AirportName": "Municipal ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Aiken ", "AirportCode": "AIK", "AirportName": "Municipal ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Ainsworth ", "AirportCode": "ANW", "AirportName": "Ainsworth ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Akhiok ", "AirportCode": "AKK", "AirportName": "Akhiok SPB ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Akiachak ", "AirportCode": "KKI", "AirportName": "Spb ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Akiak ", "AirportCode": "AKI", "AirportName": "Akiak ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Akron CO  ", "AirportCode": "AKO", "AirportName": "Colorado Plains Regional Airport ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Akron/Canton OH  ", "AirportCode": "CAK", "AirportName": "Akron/canton Regional ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Akron/Canton ", "AirportCode": "AKC", "AirportName": "Fulton International ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Akutan ", "AirportCode": "KQA", "AirportName": "Akutan ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Alakanuk ", "AirportCode": "AUK", "AirportName": "Alakanuk ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Alameda ", "AirportCode": "NGZ", "AirportName": "NAS ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Alamogordo ", "AirportCode": "HMN", "AirportName": "Holloman AFB ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Alamogordo ", "AirportCode": "ALM", "AirportName": "Municipal ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Alamosa ", "AirportCode": "ALS", "AirportName": "Municipal ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Albany ", "AirportCode": "NAB", "AirportName": "Albany NAS ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Albany ", "AirportCode": "ABY", "AirportName": "Dougherty County ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Albany ", "AirportCode": "ALB", "AirportName": "Albany International ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Albany ", "AirportCode": "CVO", "AirportName": "Albany ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Albert Lea ", "AirportCode": "AEL", "AirportName": "Albert Lea ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Albuquerque ", "AirportCode": "ABQ", "AirportName": "Albuquerque International ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Aleknagik ", "AirportCode": "WKK", "AirportName": "Aleknagik ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Aleneva ", "AirportCode": "AED", "AirportName": "Aleneva ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": " Alexander City AL  ", "AirportCode": "ALX", "AirportName": "Thomas C Russell Fld ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": " Alexandria LA  ", "AirportCode": "AEX", "AirportName": "Alexandria International ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Alexandria ", "AirportCode": "ESF", "AirportName": "Esler Field ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Alexandria ", "AirportCode": "AXN", "AirportName": "Alexandria ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Alexandria Bay ", "AirportCode": "AXB", "AirportName": "Alexandria Bay ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Algona ", "AirportCode": "AXG", "AirportName": "Algona ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Alice ", "AirportCode": "ALI", "AirportName": "International ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": " Aliceville AL  ", "AirportCode": "AIV", "AirportName": "George Downer ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Alitak ", "AirportCode": "ALZ", "AirportName": "Alitak SPB ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Allakaket ", "AirportCode": "AET", "AirportName": "Allakaket ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Alliance ", "AirportCode": "AIA", "AirportName": "Alliance ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Alma ", "AirportCode": "AMN", "AirportName": "Gratiot Community ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Alpena ", "AirportCode": "APN", "AirportName": "Alpena County Regional ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Alpine ", "AirportCode": "ALE", "AirportName": "Alpine ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Alton ", "AirportCode": "ALN", "AirportName": "Alton ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Altus ", "AirportCode": "LTS", "AirportName": "Altus AFB ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Altus ", "AirportCode": "AXS", "AirportName": "Municipal ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": "Alyeska ", "AirportCode": "AQY", "AirportName": "Alyeska ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "airports", "row": {"City": " Amarillo   ", "AirportCode": "AMA", "AirportName": "Rick Husband Amarillo International ", "Country": "United States ", "CountryAbbrev": "US"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 28, "SourceAirport": " APG", "DestAirport": " ASY"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 29, "SourceAirport": " ASY", "DestAirport": " APG"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 44, "SourceAirport": " CVO", "DestAirport": " ACV"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 45, "SourceAirport": " ACV", "DestAirport": " CVO"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 54, "SourceAirport": " AHD", "DestAirport": " AHT"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 55, "SourceAirport": " AHT", "DestAirport": " AHD"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 90, "SourceAirport": " ATO", "DestAirport": " ABR"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 91, "SourceAirport": " ABR", "DestAirport": " ATO"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 108, "SourceAirport": " ANV", "DestAirport": " MMI"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 109, "SourceAirport": " MMI", "DestAirport": " ANV"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 142, "SourceAirport": " ALI", "DestAirport": " AKC"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 143, "SourceAirport": " AKC", "DestAirport": " ALI"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 148, "SourceAirport": " HMN", "DestAirport": " ABL"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 149, "SourceAirport": " ABL", "DestAirport": " HMN"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 198, "SourceAirport": " NGZ", "DestAirport": " AAF"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 199, "SourceAirport": " AAF", "DestAirport": " NGZ"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 226, "SourceAirport": " CVO", "DestAirport": " KKI"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 227, "SourceAirport": " KKI", "DestAirport": " CVO"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 276, "SourceAirport": " ARB", "DestAirport": " ANV"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 277, "SourceAirport": " ANV", "DestAirport": " ARB"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 308, "SourceAirport": " ATE", "DestAirport": " AKC"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 309, "SourceAirport": " AKC", "DestAirport": " ATE"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 326, "SourceAirport": " ALX", "DestAirport": " ALI"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 327, "SourceAirport": " ALI", "DestAirport": " ALX"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 370, "SourceAirport": " AKC", "DestAirport": " WKK"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 371, "SourceAirport": " WKK", "DestAirport": " AKC"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 414, "SourceAirport": " AAF", "DestAirport": " ALB"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 415, "SourceAirport": " ALB", "DestAirport": " AAF"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 424, "SourceAirport": " ADG", "DestAirport": " AOS"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 425, "SourceAirport": " AOS", "DestAirport": " ADG"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 470, "SourceAirport": " ABQ", "DestAirport": " MMI"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 471, "SourceAirport": " MMI", "DestAirport": " ABQ"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 520, "SourceAirport": " AIV", "DestAirport": " ALS"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 521, "SourceAirport": " ALS", "DestAirport": " AIV"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 556, "SourceAirport": " AYZ", "DestAirport": " AHD"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 557, "SourceAirport": " AHD", "DestAirport": " AYZ"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 560, "SourceAirport": " AHF", "DestAirport": " ATO"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 561, "SourceAirport": " ATO", "DestAirport": " AHF"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 604, "SourceAirport": " ADG", "DestAirport": " ANN"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 605, "SourceAirport": " ANN", "DestAirport": " ADG"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 608, "SourceAirport": " AST", "DestAirport": " DYS"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 609, "SourceAirport": " DYS", "DestAirport": " AST"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 626, "SourceAirport": " AKI", "DestAirport": " AEL"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 627, "SourceAirport": " AEL", "DestAirport": " AKI"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 658, "SourceAirport": " ARC", "DestAirport": " ALM"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 659, "SourceAirport": " ALM", "DestAirport": " ARC"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 708, "SourceAirport": " AXB", "DestAirport": " AFO"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 709, "SourceAirport": " AFO", "DestAirport": " AXB"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 744, "SourceAirport": " AED", "DestAirport": " OTS"}}
+{"table": "flights", "row": {"Airline": 1, "FlightNo": 745, "SourceAirport": " OTS", "DestAirport": " AED"}}

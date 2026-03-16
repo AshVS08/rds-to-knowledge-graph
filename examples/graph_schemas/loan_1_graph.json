@@ -1,0 +1,67 @@
+{
+  "db_id": "loan_1",
+  "nodes": [
+    {
+      "id": "bank",
+      "columns": [
+        "branch_ID",
+        "bname",
+        "no_of_customers",
+        "city",
+        "state"
+      ],
+      "primary_keys": [
+        "branch_ID"
+      ]
+    },
+    {
+      "id": "customer",
+      "columns": [
+        "cust_ID",
+        "cust_name",
+        "acc_type",
+        "acc_bal",
+        "no_of_loans",
+        "credit_score",
+        "branch_ID",
+        "state"
+      ],
+      "primary_keys": [
+        "cust_ID"
+      ]
+    },
+    {
+      "id": "loan",
+      "columns": [
+        "loan_ID",
+        "loan_type",
+        "cust_ID",
+        "branch_ID",
+        "amount"
+      ],
+      "primary_keys": [
+        "loan_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "customer",
+      "to": "bank",
+      "from_column": "branch_ID",
+      "to_column": "branch_ID"
+    },
+    {
+      "from": "loan",
+      "to": "customer",
+      "from_column": "cust_ID",
+      "to_column": "Cust_ID"
+    },
+    {
+      "from": "loan",
+      "to": "bank",
+      "from_column": "branch_ID",
+      "to_column": "branch_ID"
+    }
+  ]
+}

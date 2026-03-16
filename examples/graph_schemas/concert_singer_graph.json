@@ -1,0 +1,79 @@
+{
+  "db_id": "concert_singer",
+  "nodes": [
+    {
+      "id": "concert",
+      "columns": [
+        "concert_ID",
+        "concert_Name",
+        "Theme",
+        "Stadium_ID",
+        "Year"
+      ],
+      "primary_keys": [
+        "concert_ID"
+      ]
+    },
+    {
+      "id": "singer",
+      "columns": [
+        "Singer_ID",
+        "Name",
+        "Country",
+        "Song_Name",
+        "Song_release_year",
+        "Age",
+        "Is_male"
+      ],
+      "primary_keys": [
+        "Singer_ID"
+      ]
+    },
+    {
+      "id": "singer_in_concert",
+      "columns": [
+        "concert_ID",
+        "Singer_ID"
+      ],
+      "primary_keys": [
+        "concert_ID",
+        "Singer_ID"
+      ]
+    },
+    {
+      "id": "stadium",
+      "columns": [
+        "Stadium_ID",
+        "Location",
+        "Name",
+        "Capacity",
+        "Highest",
+        "Lowest",
+        "Average"
+      ],
+      "primary_keys": [
+        "Stadium_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "concert",
+      "to": "stadium",
+      "from_column": "Stadium_ID",
+      "to_column": "Stadium_ID"
+    },
+    {
+      "from": "singer_in_concert",
+      "to": "singer",
+      "from_column": "Singer_ID",
+      "to_column": "Singer_ID"
+    },
+    {
+      "from": "singer_in_concert",
+      "to": "concert",
+      "from_column": "concert_ID",
+      "to_column": "concert_ID"
+    }
+  ]
+}

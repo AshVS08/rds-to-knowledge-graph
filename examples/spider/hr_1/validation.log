@@ -1,0 +1,71 @@
+DB ID: hr_1
+Run:   20250910-163730
+
+Tables: 7
+Columns: 35
+PKs: 8
+FKs: 7
+
+No structural issues found.
+
+Primary keys by table:
+- countries: ['COUNTRY_ID']
+- departments: ['DEPARTMENT_ID']
+- employees: ['EMPLOYEE_ID']
+- job_history: ['EMPLOYEE_ID', 'START_DATE']
+- jobs: ['JOB_ID']
+- locations: ['LOCATION_ID']
+- regions: ['REGION_ID']
+
+Null summary:
+{
+  "countries": {
+    "COUNTRY_ID": 0,
+    "COUNTRY_NAME": 0,
+    "REGION_ID": 0
+  },
+  "departments": {
+    "DEPARTMENT_ID": 0,
+    "DEPARTMENT_NAME": 0,
+    "MANAGER_ID": 0,
+    "LOCATION_ID": 0
+  },
+  "employees": {
+    "EMPLOYEE_ID": 0,
+    "FIRST_NAME": 0,
+    "LAST_NAME": 0,
+    "EMAIL": 0,
+    "PHONE_NUMBER": 0,
+    "HIRE_DATE": 0,
+    "JOB_ID": 0,
+    "SALARY": 0,
+    "COMMISSION_PCT": 0,
+    "MANAGER_ID": 0,
+    "DEPARTMENT_ID": 0
+  },
+  "job_history": {
+    "EMPLOYEE_ID": 0,
+    "START_DATE": 0,
+    "END_DATE": 0,
+    "JOB_ID": 0,
+    "DEPARTMENT_ID": 0
+  },
+  "jobs": {
+    "JOB_ID": 0,
+    "JOB_TITLE": 0,
+    "MIN_SALARY": 0,
+    "MAX_SALARY": 0
+  },
+  "locations": {
+    "LOCATION_ID": 0,
+    "STREET_ADDRESS": 0,
+    "POSTAL_CODE": 0,
+    "CITY": 0,
+    "STATE_PROVINCE": 0,
+    "COUNTRY_ID": 0
+  },
+  "regions": {
+    "REGION_ID": 0,
+    "REGION_NAME": 0
+  }
+}

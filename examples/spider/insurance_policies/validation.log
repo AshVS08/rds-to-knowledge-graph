@@ -1,0 +1,55 @@
+DB ID: insurance_policies
+Run:   20250910-163730
+
+Tables: 5
+Columns: 25
+PKs: 5
+FKs: 4
+
+No structural issues found.
+
+Primary keys by table:
+- Claims: ['Claim_ID']
+- Customer_Policies: ['Policy_ID']
+- Customers: ['Customer_ID']
+- Payments: ['Payment_ID']
+- Settlements: ['Settlement_ID']
+
+Null summary:
+{
+  "Claims": {
+    "Claim_ID": 0,
+    "Policy_ID": 0,
+    "Date_Claim_Made": 0,
+    "Date_Claim_Settled": 0,
+    "Amount_Claimed": 0,
+    "Amount_Settled": 0
+  },
+  "Customer_Policies": {
+    "Policy_ID": 0,
+    "Customer_ID": 0,
+    "Policy_Type_Code": 0,
+    "Start_Date": 0,
+    "End_Date": 0
+  },
+  "Customers": {
+    "Customer_ID": 0,
+    "Customer_Details": 0
+  },
+  "Payments": {
+    "Payment_ID": 0,
+    "Settlement_ID": 0,
+    "Payment_Method_Code": 0,
+    "Date_Payment_Made": 0,
+    "Amount_Payment": 0
+  },
+  "Settlements": {
+    "Settlement_ID": 0,
+    "Claim_ID": 0,
+    "Date_Claim_Made": 0,
+    "Date_Claim_Settled": 0,
+    "Amount_Claimed": 0,
+    "Amount_Settled": 0,
+    "Customer_Policy_ID": 0
+  }
+}

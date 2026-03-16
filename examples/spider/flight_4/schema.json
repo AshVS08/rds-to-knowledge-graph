@@ -1,0 +1,217 @@
+{
+  "db_id": "flight_4",
+  "tables": [
+    {
+      "name": "airlines",
+      "columns": [
+        {
+          "name": "alid",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "iata",
+          "type": "varchar(2)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "icao",
+          "type": "varchar(3)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "callsign",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "country",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "active",
+          "type": "varchar(2)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "alid"
+      ]
+    },
+    {
+      "name": "airports",
+      "columns": [
+        {
+          "name": "apid",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "city",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "country",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "x",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "y",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "elevation",
+          "type": "bigint",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "iata",
+          "type": "character varchar(3)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "icao",
+          "type": "character varchar(4)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "apid"
+      ]
+    },
+    {
+      "name": "routes",
+      "columns": [
+        {
+          "name": "rid",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "dst_apid",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "dst_ap",
+          "type": "varchar(4)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "src_apid",
+          "type": "bigint",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "src_ap",
+          "type": "varchar(4)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "alid",
+          "type": "bigint",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "airline",
+          "type": "varchar(4)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "codeshare",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "rid"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "routes",
+      "from_column": "alid",
+      "to_table": "airlines",
+      "to_column": "alid"
+    },
+    {
+      "from_table": "routes",
+      "from_column": "src_apid",
+      "to_table": "airports",
+      "to_column": "apid"
+    },
+    {
+      "from_table": "routes",
+      "from_column": "dst_apid",
+      "to_table": "airports",
+      "to_column": "apid"
+    }
+  ]
+}

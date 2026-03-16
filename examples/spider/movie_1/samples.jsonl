@@ -1,0 +1,30 @@
+{"table": "Movie", "row": {"mID": 101, "title": "Gone with the Wind", "year": 1939, "director": "Victor Fleming"}}
+{"table": "Movie", "row": {"mID": 102, "title": "Star Wars", "year": 1977, "director": "George Lucas"}}
+{"table": "Movie", "row": {"mID": 103, "title": "The Sound of Music", "year": 1965, "director": "Robert Wise"}}
+{"table": "Movie", "row": {"mID": 104, "title": "E.T.", "year": 1982, "director": "Steven Spielberg"}}
+{"table": "Movie", "row": {"mID": 105, "title": "Titanic", "year": 1997, "director": "James Cameron"}}
+{"table": "Movie", "row": {"mID": 106, "title": "Snow White", "year": 1937, "director": null}}
+{"table": "Movie", "row": {"mID": 107, "title": "Avatar", "year": 2009, "director": "James Cameron"}}
+{"table": "Movie", "row": {"mID": 108, "title": "Raiders of the Lost Ark", "year": 1981, "director": "Steven Spielberg"}}
+{"table": "Rating", "row": {"rID": 201, "mID": 101, "stars": 2, "ratingDate": "2011-01-22"}}
+{"table": "Rating", "row": {"rID": 201, "mID": 101, "stars": 4, "ratingDate": "2011-01-27"}}
+{"table": "Rating", "row": {"rID": 202, "mID": 106, "stars": 4, "ratingDate": null}}
+{"table": "Rating", "row": {"rID": 203, "mID": 103, "stars": 2, "ratingDate": "2011-01-20"}}
+{"table": "Rating", "row": {"rID": 203, "mID": 108, "stars": 4, "ratingDate": "2011-01-12"}}
+{"table": "Rating", "row": {"rID": 203, "mID": 108, "stars": 2, "ratingDate": "2011-01-30"}}
+{"table": "Rating", "row": {"rID": 204, "mID": 101, "stars": 3, "ratingDate": "2011-01-09"}}
+{"table": "Rating", "row": {"rID": 205, "mID": 103, "stars": 3, "ratingDate": "2011-01-27"}}
+{"table": "Rating", "row": {"rID": 205, "mID": 104, "stars": 2, "ratingDate": "2011-01-22"}}
+{"table": "Rating", "row": {"rID": 205, "mID": 108, "stars": 4, "ratingDate": null}}
+{"table": "Rating", "row": {"rID": 206, "mID": 107, "stars": 3, "ratingDate": "2011-01-15"}}
+{"table": "Rating", "row": {"rID": 206, "mID": 106, "stars": 5, "ratingDate": "2011-01-19"}}
+{"table": "Rating", "row": {"rID": 207, "mID": 107, "stars": 5, "ratingDate": "2011-01-20"}}
+{"table": "Rating", "row": {"rID": 208, "mID": 104, "stars": 3, "ratingDate": "2011-01-02"}}
+{"table": "Reviewer", "row": {"rID": 201, "name": "Sarah Martinez"}}
+{"table": "Reviewer", "row": {"rID": 202, "name": "Daniel Lewis"}}
+{"table": "Reviewer", "row": {"rID": 203, "name": "Brittany Harris"}}
+{"table": "Reviewer", "row": {"rID": 204, "name": "Mike Anderson"}}
+{"table": "Reviewer", "row": {"rID": 205, "name": "Chris Jackson"}}
+{"table": "Reviewer", "row": {"rID": 206, "name": "Elizabeth Thomas"}}
+{"table": "Reviewer", "row": {"rID": 207, "name": "James Cameron"}}
+{"table": "Reviewer", "row": {"rID": 208, "name": "Ashley White"}}

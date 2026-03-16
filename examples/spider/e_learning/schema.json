@@ -1,0 +1,307 @@
+{
+  "db_id": "e_learning",
+  "tables": [
+    {
+      "name": "Course_Authors_and_Tutors",
+      "columns": [
+        {
+          "name": "author_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "author_tutor_ATB",
+          "type": "VARCHAR(3)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "login_name",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "password",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "personal_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "middle_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "family_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "gender_mf",
+          "type": "VARCHAR(1)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "address_line_1",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "author_id"
+      ]
+    },
+    {
+      "name": "Courses",
+      "columns": [
+        {
+          "name": "course_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "author_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "subject_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "course_name",
+          "type": "VARCHAR(120)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "course_description",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "course_id"
+      ]
+    },
+    {
+      "name": "Student_Course_Enrolment",
+      "columns": [
+        {
+          "name": "registration_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "student_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "course_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_of_enrolment",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_of_completion",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "registration_id"
+      ]
+    },
+    {
+      "name": "Student_Tests_Taken",
+      "columns": [
+        {
+          "name": "registration_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_test_taken",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "test_result",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "Students",
+      "columns": [
+        {
+          "name": "student_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "date_of_registration",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_of_latest_logon",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "login_name",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "password",
+          "type": "VARCHAR(10)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "personal_name",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "middle_name",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "family_name",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "student_id"
+      ]
+    },
+    {
+      "name": "Subjects",
+      "columns": [
+        {
+          "name": "subject_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "subject_name",
+          "type": "VARCHAR(120)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "subject_id"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Courses",
+      "from_column": "subject_id",
+      "to_table": "Subjects",
+      "to_column": "subject_id"
+    },
+    {
+      "from_table": "Courses",
+      "from_column": "author_id",
+      "to_table": "Course_Authors_and_Tutors",
+      "to_column": "author_id"
+    },
+    {
+      "from_table": "Student_Course_Enrolment",
+      "from_column": "student_id",
+      "to_table": "Students",
+      "to_column": "student_id"
+    },
+    {
+      "from_table": "Student_Course_Enrolment",
+      "from_column": "course_id",
+      "to_table": "Courses",
+      "to_column": "course_id"
+    },
+    {
+      "from_table": "Student_Tests_Taken",
+      "from_column": "registration_id",
+      "to_table": "Student_Course_Enrolment",
+      "to_column": "registration_id"
+    }
+  ]
+}

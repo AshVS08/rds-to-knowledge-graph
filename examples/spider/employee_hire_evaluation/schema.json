@@ -1,0 +1,177 @@
+{
+  "db_id": "employee_hire_evaluation",
+  "tables": [
+    {
+      "name": "employee",
+      "columns": [
+        {
+          "name": "Employee_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Age",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "City",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Employee_ID"
+      ]
+    },
+    {
+      "name": "evaluation",
+      "columns": [
+        {
+          "name": "Employee_ID",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Year_awarded",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Bonus",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Employee_ID",
+        "Year_awarded"
+      ]
+    },
+    {
+      "name": "hiring",
+      "columns": [
+        {
+          "name": "Shop_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Employee_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Start_from",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Is_full_time",
+          "type": "bool",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Employee_ID"
+      ]
+    },
+    {
+      "name": "shop",
+      "columns": [
+        {
+          "name": "Shop_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Location",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "District",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Number_products",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Manager_name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Shop_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "evaluation",
+      "from_column": "Employee_ID",
+      "to_table": "employee",
+      "to_column": "Employee_ID"
+    },
+    {
+      "from_table": "hiring",
+      "from_column": "Employee_ID",
+      "to_table": "employee",
+      "to_column": "Employee_ID"
+    },
+    {
+      "from_table": "hiring",
+      "from_column": "Shop_ID",
+      "to_table": "shop",
+      "to_column": "Shop_ID"
+    }
+  ]
+}

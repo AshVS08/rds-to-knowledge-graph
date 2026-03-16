@@ -1,0 +1,257 @@
+{
+  "db_id": "department_store",
+  "nodes": [
+    {
+      "id": "Addresses",
+      "columns": [
+        "address_id",
+        "address_details"
+      ],
+      "primary_keys": [
+        "address_id"
+      ]
+    },
+    {
+      "id": "Customer_Addresses",
+      "columns": [
+        "customer_id",
+        "address_id",
+        "date_from",
+        "date_to"
+      ],
+      "primary_keys": [
+        "customer_id",
+        "address_id"
+      ]
+    },
+    {
+      "id": "Customer_Orders",
+      "columns": [
+        "order_id",
+        "customer_id",
+        "order_status_code",
+        "order_date"
+      ],
+      "primary_keys": [
+        "order_id"
+      ]
+    },
+    {
+      "id": "Customers",
+      "columns": [
+        "customer_id",
+        "payment_method_code",
+        "customer_code",
+        "customer_name",
+        "customer_address",
+        "customer_phone",
+        "customer_email"
+      ],
+      "primary_keys": [
+        "customer_id"
+      ]
+    },
+    {
+      "id": "Department_Store_Chain",
+      "columns": [
+        "dept_store_chain_id",
+        "dept_store_chain_name"
+      ],
+      "primary_keys": [
+        "dept_store_chain_id"
+      ]
+    },
+    {
+      "id": "Department_Stores",
+      "columns": [
+        "dept_store_id",
+        "dept_store_chain_id",
+        "store_name",
+        "store_address",
+        "store_phone",
+        "store_email"
+      ],
+      "primary_keys": [
+        "dept_store_id"
+      ]
+    },
+    {
+      "id": "Departments",
+      "columns": [
+        "department_id",
+        "dept_store_id",
+        "department_name"
+      ],
+      "primary_keys": [
+        "department_id"
+      ]
+    },
+    {
+      "id": "Order_Items",
+      "columns": [
+        "order_item_id",
+        "order_id",
+        "product_id"
+      ],
+      "primary_keys": [
+        "order_item_id"
+      ]
+    },
+    {
+      "id": "Product_Suppliers",
+      "columns": [
+        "product_id",
+        "supplier_id",
+        "date_supplied_from",
+        "date_supplied_to",
+        "total_amount_purchased",
+        "total_value_purchased"
+      ],
+      "primary_keys": [
+        "product_id",
+        "supplier_id"
+      ]
+    },
+    {
+      "id": "Products",
+      "columns": [
+        "product_id",
+        "product_type_code",
+        "product_name",
+        "product_price"
+      ],
+      "primary_keys": [
+        "product_id"
+      ]
+    },
+    {
+      "id": "Staff",
+      "columns": [
+        "staff_id",
+        "staff_gender",
+        "staff_name"
+      ],
+      "primary_keys": [
+        "staff_id"
+      ]
+    },
+    {
+      "id": "Staff_Department_Assignments",
+      "columns": [
+        "staff_id",
+        "department_id",
+        "date_assigned_from",
+        "job_title_code",
+        "date_assigned_to"
+      ],
+      "primary_keys": [
+        "staff_id",
+        "department_id"
+      ]
+    },
+    {
+      "id": "Supplier_Addresses",
+      "columns": [
+        "supplier_id",
+        "address_id",
+        "date_from",
+        "date_to"
+      ],
+      "primary_keys": [
+        "supplier_id",
+        "address_id"
+      ]
+    },
+    {
+      "id": "Suppliers",
+      "columns": [
+        "supplier_id",
+        "supplier_name",
+        "supplier_phone"
+      ],
+      "primary_keys": [
+        "supplier_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Customer_Addresses",
+      "to": "Customers",
+      "from_column": "customer_id",
+      "to_column": "customer_id"
+    },
+    {
+      "from": "Customer_Addresses",
+      "to": "Addresses",
+      "from_column": "address_id",
+      "to_column": "address_id"
+    },
+    {
+      "from": "Customer_Orders",
+      "to": "Customers",
+      "from_column": "customer_id",
+      "to_column": "customer_id"
+    },
+    {
+      "from": "Department_Stores",
+      "to": "Department_Store_Chain",
+      "from_column": "dept_store_chain_id",
+      "to_column": "dept_store_chain_id"
+    },
+    {
+      "from": "Departments",
+      "to": "Department_Stores",
+      "from_column": "dept_store_id",
+      "to_column": "dept_store_id"
+    },
+    {
+      "from": "Order_Items",
+      "to": "Products",
+      "from_column": "product_id",
+      "to_column": "product_id"
+    },
+    {
+      "from": "Order_Items",
+      "to": "Customer_Orders",
+      "from_column": "order_id",
+      "to_column": "order_id"
+    },
+    {
+      "from": "Product_Suppliers",
+      "to": "Products",
+      "from_column": "product_id",
+      "to_column": "product_id"
+    },
+    {
+      "from": "Product_Suppliers",
+      "to": "Suppliers",
+      "from_column": "supplier_id",
+      "to_column": "supplier_id"
+    },
+    {
+      "from": "Staff_Department_Assignments",
+      "to": "Staff",
+      "from_column": "staff_id",
+      "to_column": "staff_id"
+    },
+    {
+      "from": "Staff_Department_Assignments",
+      "to": "Departments",
+      "from_column": "department_id",
+      "to_column": "department_id"
+    },
+    {
+      "from": "Supplier_Addresses",
+      "to": "Suppliers",
+      "from_column": "supplier_id",
+      "to_column": "supplier_id"
+    },
+    {
+      "from": "Supplier_Addresses",
+      "to": "Addresses",
+      "from_column": "address_id",
+      "to_column": "address_id"
+    }
+  ]
+}

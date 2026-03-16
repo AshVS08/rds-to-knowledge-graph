@@ -1,0 +1,43 @@
+DB ID: culture_company
+Run:   20250910-163730
+
+Tables: 3
+Columns: 19
+PKs: 3
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- book_club: ['book_club_id']
+- culture_company: ['Company_name']
+- movie: ['movie_id']
+
+Null summary:
+{
+  "book_club": {
+    "book_club_id": 0,
+    "Year": 0,
+    "Author_or_Editor": 0,
+    "Book_Title": 0,
+    "Publisher": 0,
+    "Category": 0,
+    "Result": 0
+  },
+  "culture_company": {
+    "Company_name": 0,
+    "Type": 0,
+    "Incorporated_in": 0,
+    "Group_Equity_Shareholding": 0,
+    "book_club_id": 0,
+    "movie_id": 0
+  },
+  "movie": {
+    "movie_id": 0,
+    "Title": 0,
+    "Year": 0,
+    "Director": 0,
+    "Budget_million": 0,
+    "Gross_worldwide": 0
+  }
+}

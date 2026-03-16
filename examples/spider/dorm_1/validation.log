@@ -1,0 +1,49 @@
+DB ID: dorm_1
+Run:   20250910-163730
+
+Tables: 5
+Columns: 19
+PKs: 1
+FKs: 4
+
+No structural issues found.
+
+Primary keys by table:
+- Dorm: None
+- Dorm_amenity: None
+- Has_amenity: None
+- Lives_in: None
+- Student: ['StuID']
+
+Null summary:
+{
+  "Dorm": {
+    "dormid": 0,
+    "dorm_name": 0,
+    "student_capacity": 0,
+    "gender": 0
+  },
+  "Dorm_amenity": {
+    "amenid": 0,
+    "amenity_name": 0
+  },
+  "Has_amenity": {
+    "dormid": 0,
+    "amenid": 0
+  },
+  "Lives_in": {
+    "stuid": 0,
+    "dormid": 0,
+    "room_number": 0
+  },
+  "Student": {
+    "StuID": 0,
+    "LName": 0,
+    "Fname": 0,
+    "Age": 0,
+    "Sex": 0,
+    "Major": 0,
+    "Advisor": 0,
+    "city_code": 0
+  }
+}

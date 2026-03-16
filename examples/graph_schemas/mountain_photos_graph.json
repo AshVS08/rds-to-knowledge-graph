@@ -1,0 +1,59 @@
+{
+  "db_id": "mountain_photos",
+  "nodes": [
+    {
+      "id": "camera_lens",
+      "columns": [
+        "id",
+        "brand",
+        "name",
+        "focal_length_mm",
+        "max_aperture"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    },
+    {
+      "id": "mountain",
+      "columns": [
+        "id",
+        "name",
+        "Height",
+        "Prominence",
+        "Range",
+        "Country"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    },
+    {
+      "id": "photos",
+      "columns": [
+        "id",
+        "camera_lens_id",
+        "mountain_id",
+        "color",
+        "name"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "photos",
+      "to": "mountain",
+      "from_column": "mountain_id",
+      "to_column": "id"
+    },
+    {
+      "from": "photos",
+      "to": "camera_lens",
+      "from_column": "camera_lens_id",
+      "to_column": "id"
+    }
+  ]
+}

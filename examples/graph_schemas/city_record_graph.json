@@ -1,0 +1,84 @@
+{
+  "db_id": "city_record",
+  "nodes": [
+    {
+      "id": "city",
+      "columns": [
+        "City_ID",
+        "City",
+        "Hanzi",
+        "Hanyu_Pinyin",
+        "Regional_Population",
+        "GDP"
+      ],
+      "primary_keys": [
+        "City_ID"
+      ]
+    },
+    {
+      "id": "hosting_city",
+      "columns": [
+        "Year",
+        "Match_ID",
+        "Host_City"
+      ],
+      "primary_keys": [
+        "Year"
+      ]
+    },
+    {
+      "id": "match",
+      "columns": [
+        "Match_ID",
+        "Date",
+        "Venue",
+        "Score",
+        "Result",
+        "Competition"
+      ],
+      "primary_keys": [
+        "Match_ID"
+      ]
+    },
+    {
+      "id": "temperature",
+      "columns": [
+        "City_ID",
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "primary_keys": [
+        "City_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "hosting_city",
+      "to": "match",
+      "from_column": "Match_ID",
+      "to_column": "Match_ID"
+    },
+    {
+      "from": "hosting_city",
+      "to": "city",
+      "from_column": "Host_City",
+      "to_column": "City_ID"
+    },
+    {
+      "from": "temperature",
+      "to": "city",
+      "from_column": "City_ID",
+      "to_column": "City_ID"
+    }
+  ]
+}

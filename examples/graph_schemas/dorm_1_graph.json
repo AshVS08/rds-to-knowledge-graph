@@ -1,0 +1,82 @@
+{
+  "db_id": "dorm_1",
+  "nodes": [
+    {
+      "id": "Dorm",
+      "columns": [
+        "dormid",
+        "dorm_name",
+        "student_capacity",
+        "gender"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Dorm_amenity",
+      "columns": [
+        "amenid",
+        "amenity_name"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Has_amenity",
+      "columns": [
+        "dormid",
+        "amenid"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Lives_in",
+      "columns": [
+        "stuid",
+        "dormid",
+        "room_number"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Student",
+      "columns": [
+        "StuID",
+        "LName",
+        "Fname",
+        "Age",
+        "Sex",
+        "Major",
+        "Advisor",
+        "city_code"
+      ],
+      "primary_keys": [
+        "StuID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Has_amenity",
+      "to": "Dorm_amenity",
+      "from_column": "amenid",
+      "to_column": "amenid"
+    },
+    {
+      "from": "Has_amenity",
+      "to": "Dorm",
+      "from_column": "dormid",
+      "to_column": "dormid"
+    },
+    {
+      "from": "Lives_in",
+      "to": "Dorm",
+      "from_column": "dormid",
+      "to_column": "dormid"
+    },
+    {
+      "from": "Lives_in",
+      "to": "Student",
+      "from_column": "stuid",
+      "to_column": "StuID"
+    }
+  ]
+}

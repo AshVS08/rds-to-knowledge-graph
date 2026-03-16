@@ -1,0 +1,45 @@
+{
+  "db_id": "inn_1",
+  "nodes": [
+    {
+      "id": "Reservations",
+      "columns": [
+        "Code",
+        "Room",
+        "CheckIn",
+        "CheckOut",
+        "Rate",
+        "LastName",
+        "FirstName",
+        "Adults",
+        "Kids"
+      ],
+      "primary_keys": [
+        "Code"
+      ]
+    },
+    {
+      "id": "Rooms",
+      "columns": [
+        "RoomId",
+        "roomName",
+        "beds",
+        "bedType",
+        "maxOccupancy",
+        "basePrice",
+        "decor"
+      ],
+      "primary_keys": [
+        "RoomId"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Reservations",
+      "to": "Rooms",
+      "from_column": "Room",
+      "to_column": "RoomId"
+    }
+  ]
+}

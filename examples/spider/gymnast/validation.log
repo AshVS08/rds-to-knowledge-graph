@@ -1,0 +1,34 @@
+DB ID: gymnast
+Run:   20250910-163730
+
+Tables: 2
+Columns: 13
+PKs: 2
+FKs: 1
+
+No structural issues found.
+
+Primary keys by table:
+- gymnast: ['Gymnast_ID']
+- people: ['People_ID']
+
+Null summary:
+{
+  "gymnast": {
+    "Gymnast_ID": 0,
+    "Floor_Exercise_Points": 0,
+    "Pommel_Horse_Points": 0,
+    "Rings_Points": 0,
+    "Vault_Points": 0,
+    "Parallel_Bars_Points": 0,
+    "Horizontal_Bar_Points": 0,
+    "Total_Points": 0
+  },
+  "people": {
+    "People_ID": 0,
+    "Name": 0,
+    "Age": 0,
+    "Height": 0,
+    "Hometown": 0
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "db_id": "e_learning",
+  "nodes": [
+    {
+      "id": "Course_Authors_and_Tutors",
+      "columns": [
+        "author_id",
+        "author_tutor_ATB",
+        "login_name",
+        "password",
+        "personal_name",
+        "middle_name",
+        "family_name",
+        "gender_mf",
+        "address_line_1"
+      ],
+      "primary_keys": [
+        "author_id"
+      ]
+    },
+    {
+      "id": "Courses",
+      "columns": [
+        "course_id",
+        "author_id",
+        "subject_id",
+        "course_name",
+        "course_description"
+      ],
+      "primary_keys": [
+        "course_id"
+      ]
+    },
+    {
+      "id": "Student_Course_Enrolment",
+      "columns": [
+        "registration_id",
+        "student_id",
+        "course_id",
+        "date_of_enrolment",
+        "date_of_completion"
+      ],
+      "primary_keys": [
+        "registration_id"
+      ]
+    },
+    {
+      "id": "Student_Tests_Taken",
+      "columns": [
+        "registration_id",
+        "date_test_taken",
+        "test_result"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Students",
+      "columns": [
+        "student_id",
+        "date_of_registration",
+        "date_of_latest_logon",
+        "login_name",
+        "password",
+        "personal_name",
+        "middle_name",
+        "family_name"
+      ],
+      "primary_keys": [
+        "student_id"
+      ]
+    },
+    {
+      "id": "Subjects",
+      "columns": [
+        "subject_id",
+        "subject_name"
+      ],
+      "primary_keys": [
+        "subject_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Courses",
+      "to": "Subjects",
+      "from_column": "subject_id",
+      "to_column": "subject_id"
+    },
+    {
+      "from": "Courses",
+      "to": "Course_Authors_and_Tutors",
+      "from_column": "author_id",
+      "to_column": "author_id"
+    },
+    {
+      "from": "Student_Course_Enrolment",
+      "to": "Students",
+      "from_column": "student_id",
+      "to_column": "student_id"
+    },
+    {
+      "from": "Student_Course_Enrolment",
+      "to": "Courses",
+      "from_column": "course_id",
+      "to_column": "course_id"
+    },
+    {
+      "from": "Student_Tests_Taken",
+      "to": "Student_Course_Enrolment",
+      "from_column": "registration_id",
+      "to_column": "registration_id"
+    }
+  ]
+}

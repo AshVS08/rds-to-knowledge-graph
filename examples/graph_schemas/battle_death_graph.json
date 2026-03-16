@@ -1,0 +1,61 @@
+{
+  "db_id": "battle_death",
+  "nodes": [
+    {
+      "id": "battle",
+      "columns": [
+        "id",
+        "name",
+        "date",
+        "bulgarian_commander",
+        "latin_commander",
+        "result"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    },
+    {
+      "id": "death",
+      "columns": [
+        "caused_by_ship_id",
+        "id",
+        "note",
+        "killed",
+        "injured"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    },
+    {
+      "id": "ship",
+      "columns": [
+        "lost_in_battle",
+        "id",
+        "name",
+        "tonnage",
+        "ship_type",
+        "location",
+        "disposition_of_ship"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "death",
+      "to": "ship",
+      "from_column": "caused_by_ship_id",
+      "to_column": "id"
+    },
+    {
+      "from": "ship",
+      "to": "battle",
+      "from_column": "lost_in_battle",
+      "to_column": "id"
+    }
+  ]
+}

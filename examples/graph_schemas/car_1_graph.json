@@ -1,0 +1,108 @@
+{
+  "db_id": "car_1",
+  "nodes": [
+    {
+      "id": "car_makers",
+      "columns": [
+        "Id",
+        "Maker",
+        "FullName",
+        "Country"
+      ],
+      "primary_keys": [
+        "Id"
+      ]
+    },
+    {
+      "id": "car_names",
+      "columns": [
+        "MakeId",
+        "Model",
+        "Make"
+      ],
+      "primary_keys": [
+        "MakeId"
+      ]
+    },
+    {
+      "id": "cars_data",
+      "columns": [
+        "Id",
+        "MPG",
+        "Cylinders",
+        "Edispl",
+        "Horsepower",
+        "Weight",
+        "Accelerate",
+        "Year"
+      ],
+      "primary_keys": [
+        "Id"
+      ]
+    },
+    {
+      "id": "continents",
+      "columns": [
+        "ContId",
+        "Continent"
+      ],
+      "primary_keys": [
+        "ContId"
+      ]
+    },
+    {
+      "id": "countries",
+      "columns": [
+        "CountryId",
+        "CountryName",
+        "Continent"
+      ],
+      "primary_keys": [
+        "CountryId"
+      ]
+    },
+    {
+      "id": "model_list",
+      "columns": [
+        "ModelId",
+        "Maker",
+        "Model"
+      ],
+      "primary_keys": [
+        "ModelId"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "car_makers",
+      "to": "countries",
+      "from_column": "Country",
+      "to_column": "CountryId"
+    },
+    {
+      "from": "car_names",
+      "to": "model_list",
+      "from_column": "Model",
+      "to_column": "Model"
+    },
+    {
+      "from": "cars_data",
+      "to": "car_names",
+      "from_column": "Id",
+      "to_column": "MakeId"
+    },
+    {
+      "from": "countries",
+      "to": "continents",
+      "from_column": "Continent",
+      "to_column": "ContId"
+    },
+    {
+      "from": "model_list",
+      "to": "car_makers",
+      "from_column": "Maker",
+      "to_column": "Id"
+    }
+  ]
+}

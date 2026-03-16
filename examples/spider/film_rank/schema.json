@@ -1,0 +1,148 @@
+{
+  "db_id": "film_rank",
+  "tables": [
+    {
+      "name": "film",
+      "columns": [
+        {
+          "name": "Film_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Title",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Studio",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Director",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Gross_in_dollar",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Film_ID"
+      ]
+    },
+    {
+      "name": "film_market_estimation",
+      "columns": [
+        {
+          "name": "Estimation_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Low_Estimate",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "High_Estimate",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Film_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Type",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Market_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Year",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Estimation_ID"
+      ]
+    },
+    {
+      "name": "market",
+      "columns": [
+        {
+          "name": "Market_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Country",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Number_cities",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Market_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "film_market_estimation",
+      "from_column": "Market_ID",
+      "to_table": "market",
+      "to_column": "Market_ID"
+    },
+    {
+      "from_table": "film_market_estimation",
+      "from_column": "Film_ID",
+      "to_table": "film",
+      "to_column": "Film_ID"
+    }
+  ]
+}

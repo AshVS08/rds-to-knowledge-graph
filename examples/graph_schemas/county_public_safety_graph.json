@@ -1,0 +1,47 @@
+{
+  "db_id": "county_public_safety",
+  "nodes": [
+    {
+      "id": "city",
+      "columns": [
+        "City_ID",
+        "County_ID",
+        "Name",
+        "White",
+        "Black",
+        "Amerindian",
+        "Asian",
+        "Multiracial",
+        "Hispanic"
+      ],
+      "primary_keys": [
+        "City_ID"
+      ]
+    },
+    {
+      "id": "county_public_safety",
+      "columns": [
+        "County_ID",
+        "Name",
+        "Population",
+        "Police_officers",
+        "Residents_per_officer",
+        "Case_burden",
+        "Crime_rate",
+        "Police_force",
+        "Location"
+      ],
+      "primary_keys": [
+        "County_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "city",
+      "to": "county_public_safety",
+      "from_column": "County_ID",
+      "to_column": "County_ID"
+    }
+  ]
+}

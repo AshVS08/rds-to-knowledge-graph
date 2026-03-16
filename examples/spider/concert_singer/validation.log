@@ -1,0 +1,48 @@
+DB ID: concert_singer
+Run:   20250910-163730
+
+Tables: 4
+Columns: 21
+PKs: 5
+FKs: 3
+
+No structural issues found.
+
+Primary keys by table:
+- concert: ['concert_ID']
+- singer: ['Singer_ID']
+- singer_in_concert: ['concert_ID', 'Singer_ID']
+- stadium: ['Stadium_ID']
+
+Null summary:
+{
+  "concert": {
+    "concert_ID": 0,
+    "concert_Name": 0,
+    "Theme": 0,
+    "Stadium_ID": 0,
+    "Year": 0
+  },
+  "singer": {
+    "Singer_ID": 0,
+    "Name": 0,
+    "Country": 0,
+    "Song_Name": 0,
+    "Song_release_year": 0,
+    "Age": 0,
+    "Is_male": 0
+  },
+  "singer_in_concert": {
+    "concert_ID": 0,
+    "Singer_ID": 0
+  },
+  "stadium": {
+    "Stadium_ID": 0,
+    "Location": 0,
+    "Name": 0,
+    "Capacity": 0,
+    "Highest": 0,
+    "Lowest": 0,
+    "Average": 0
+  }
+}

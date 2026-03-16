@@ -1,0 +1,43 @@
+DB ID: loan_1
+Run:   20250910-163730
+
+Tables: 3
+Columns: 18
+PKs: 3
+FKs: 3
+
+issues:
+- Missing to_column customer.Cust_ID
+
+Primary keys by table:
+- bank: ['branch_ID']
+- customer: ['cust_ID']
+- loan: ['loan_ID']
+
+Null summary:
+{
+  "bank": {
+    "branch_ID": 0,
+    "bname": 0,
+    "no_of_customers": 0,
+    "city": 0,
+    "state": 0
+  },
+  "customer": {
+    "cust_ID": 0,
+    "cust_name": 0,
+    "acc_type": 0,
+    "acc_bal": 0,
+    "no_of_loans": 0,
+    "credit_score": 0,
+    "branch_ID": 0,
+    "state": 0
+  },
+  "loan": {
+    "loan_ID": 0,
+    "loan_type": 0,
+    "cust_ID": 0,
+    "branch_ID": 0,
+    "amount": 0
+  }
+}

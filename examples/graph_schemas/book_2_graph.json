@@ -1,0 +1,38 @@
+{
+  "db_id": "book_2",
+  "nodes": [
+    {
+      "id": "book",
+      "columns": [
+        "Book_ID",
+        "Title",
+        "Issues",
+        "Writer"
+      ],
+      "primary_keys": [
+        "Book_ID"
+      ]
+    },
+    {
+      "id": "publication",
+      "columns": [
+        "Publication_ID",
+        "Book_ID",
+        "Publisher",
+        "Publication_Date",
+        "Price"
+      ],
+      "primary_keys": [
+        "Publication_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "publication",
+      "to": "book",
+      "from_column": "Book_ID",
+      "to_column": "Book_ID"
+    }
+  ]
+}

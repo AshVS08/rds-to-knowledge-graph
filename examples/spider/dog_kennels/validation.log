@@ -1,0 +1,88 @@
+DB ID: dog_kennels
+Run:   20250910-163730
+
+Tables: 8
+Columns: 49
+PKs: 8
+FKs: 7
+
+No structural issues found.
+
+Primary keys by table:
+- Breeds: ['breed_code']
+- Charges: ['charge_id']
+- Dogs: ['dog_id']
+- Owners: ['owner_id']
+- Professionals: ['professional_id']
+- Sizes: ['size_code']
+- Treatment_Types: ['treatment_type_code']
+- Treatments: ['treatment_id']
+
+Null summary:
+{
+  "Breeds": {
+    "breed_code": 0,
+    "breed_name": 0
+  },
+  "Charges": {
+    "charge_id": 0,
+    "charge_type": 0,
+    "charge_amount": 0
+  },
+  "Dogs": {
+    "dog_id": 0,
+    "owner_id": 0,
+    "abandoned_yn": 0,
+    "breed_code": 0,
+    "size_code": 0,
+    "name": 0,
+    "age": 0,
+    "date_of_birth": 0,
+    "gender": 0,
+    "weight": 0,
+    "date_arrived": 0,
+    "date_adopted": 0,
+    "date_departed": 0
+  },
+  "Owners": {
+    "owner_id": 0,
+    "first_name": 0,
+    "last_name": 0,
+    "street": 0,
+    "city": 0,
+    "state": 0,
+    "zip_code": 0,
+    "email_address": 0,
+    "home_phone": 0,
+    "cell_number": 0
+  },
+  "Professionals": {
+    "professional_id": 0,
+    "role_code": 0,
+    "first_name": 0,
+    "street": 0,
+    "city": 0,
+    "state": 0,
+    "zip_code": 0,
+    "last_name": 0,
+    "email_address": 0,
+    "home_phone": 0,
+    "cell_number": 0
+  },
+  "Sizes": {
+    "size_code": 0,
+    "size_description": 0
+  },
+  "Treatment_Types": {
+    "treatment_type_code": 0,
+    "treatment_type_description": 0
+  },
+  "Treatments": {
+    "treatment_id": 0,
+    "dog_id": 0,
+    "professional_id": 0,
+    "treatment_type_code": 0,
+    "date_of_treatment": 0,
+    "cost_of_treatment": 0
+  }
+}

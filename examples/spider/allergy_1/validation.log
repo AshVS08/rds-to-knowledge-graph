@@ -1,0 +1,36 @@
+DB ID: allergy_1
+Run:   20250910-163730
+
+Tables: 3
+Columns: 12
+PKs: 2
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- Allergy_Type: ['Allergy']
+- Has_Allergy: None
+- Student: ['StuID']
+
+Null summary:
+{
+  "Allergy_Type": {
+    "Allergy": 0,
+    "AllergyType": 0
+  },
+  "Has_Allergy": {
+    "StuID": 0,
+    "Allergy": 0
+  },
+  "Student": {
+    "StuID": 0,
+    "LName": 0,
+    "Fname": 0,
+    "Age": 0,
+    "Sex": 0,
+    "Major": 0,
+    "Advisor": 0,
+    "city_code": 0
+  }
+}

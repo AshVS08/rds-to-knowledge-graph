@@ -1,0 +1,192 @@
+{
+  "db_id": "machine_repair",
+  "tables": [
+    {
+      "name": "machine",
+      "columns": [
+        {
+          "name": "Machine_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Making_Year",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Class",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Team",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Machine_series",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "value_points",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "quality_rank",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Machine_ID"
+      ]
+    },
+    {
+      "name": "repair",
+      "columns": [
+        {
+          "name": "repair_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Launch_Date",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Notes",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "repair_ID"
+      ]
+    },
+    {
+      "name": "repair_assignment",
+      "columns": [
+        {
+          "name": "technician_id",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "repair_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Machine_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "technician_id",
+        "repair_ID",
+        "Machine_ID"
+      ]
+    },
+    {
+      "name": "technician",
+      "columns": [
+        {
+          "name": "technician_id",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Team",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Starting_Year",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Age",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "technician_id"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "repair_assignment",
+      "from_column": "Machine_ID",
+      "to_table": "machine",
+      "to_column": "Machine_ID"
+    },
+    {
+      "from_table": "repair_assignment",
+      "from_column": "repair_ID",
+      "to_table": "repair",
+      "to_column": "repair_ID"
+    },
+    {
+      "from_table": "repair_assignment",
+      "from_column": "technician_id",
+      "to_table": "technician",
+      "to_column": "technician_id"
+    }
+  ]
+}

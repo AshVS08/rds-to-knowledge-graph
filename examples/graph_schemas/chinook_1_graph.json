@@ -1,0 +1,226 @@
+{
+  "db_id": "chinook_1",
+  "nodes": [
+    {
+      "id": "Album",
+      "columns": [
+        "AlbumId",
+        "Title",
+        "ArtistId"
+      ],
+      "primary_keys": [
+        "AlbumId"
+      ]
+    },
+    {
+      "id": "Artist",
+      "columns": [
+        "ArtistId",
+        "Name"
+      ],
+      "primary_keys": [
+        "ArtistId"
+      ]
+    },
+    {
+      "id": "Customer",
+      "columns": [
+        "CustomerId",
+        "FirstName",
+        "LastName",
+        "Company",
+        "Address",
+        "City",
+        "State",
+        "Country",
+        "PostalCode",
+        "Phone",
+        "Fax",
+        "Email",
+        "SupportRepId"
+      ],
+      "primary_keys": [
+        "CustomerId"
+      ]
+    },
+    {
+      "id": "Employee",
+      "columns": [
+        "EmployeeId",
+        "LastName",
+        "FirstName",
+        "Title",
+        "ReportsTo",
+        "BirthDate",
+        "HireDate",
+        "Address",
+        "City",
+        "State",
+        "Country",
+        "PostalCode",
+        "Phone",
+        "Fax",
+        "Email"
+      ],
+      "primary_keys": [
+        "EmployeeId"
+      ]
+    },
+    {
+      "id": "Genre",
+      "columns": [
+        "GenreId",
+        "Name"
+      ],
+      "primary_keys": [
+        "GenreId"
+      ]
+    },
+    {
+      "id": "Invoice",
+      "columns": [
+        "InvoiceId",
+        "CustomerId",
+        "InvoiceDate",
+        "BillingAddress",
+        "BillingCity",
+        "BillingState",
+        "BillingCountry",
+        "BillingPostalCode",
+        "Total"
+      ],
+      "primary_keys": [
+        "InvoiceId"
+      ]
+    },
+    {
+      "id": "InvoiceLine",
+      "columns": [
+        "InvoiceLineId",
+        "InvoiceId",
+        "TrackId",
+        "UnitPrice",
+        "Quantity"
+      ],
+      "primary_keys": [
+        "InvoiceLineId"
+      ]
+    },
+    {
+      "id": "MediaType",
+      "columns": [
+        "MediaTypeId",
+        "Name"
+      ],
+      "primary_keys": [
+        "MediaTypeId"
+      ]
+    },
+    {
+      "id": "Playlist",
+      "columns": [
+        "PlaylistId",
+        "Name"
+      ],
+      "primary_keys": [
+        "PlaylistId"
+      ]
+    },
+    {
+      "id": "PlaylistTrack",
+      "columns": [
+        "PlaylistId",
+        "TrackId"
+      ],
+      "primary_keys": [
+        "PlaylistId",
+        "TrackId"
+      ]
+    },
+    {
+      "id": "Track",
+      "columns": [
+        "TrackId",
+        "Name",
+        "AlbumId",
+        "MediaTypeId",
+        "GenreId",
+        "Composer",
+        "Milliseconds",
+        "Bytes",
+        "UnitPrice"
+      ],
+      "primary_keys": [
+        "TrackId"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Album",
+      "to": "Artist",
+      "from_column": "ArtistId",
+      "to_column": "ArtistId"
+    },
+    {
+      "from": "Customer",
+      "to": "Employee",
+      "from_column": "SupportRepId",
+      "to_column": "EmployeeId"
+    },
+    {
+      "from": "Employee",
+      "to": "Employee",
+      "from_column": "ReportsTo",
+      "to_column": "EmployeeId"
+    },
+    {
+      "from": "Invoice",
+      "to": "Customer",
+      "from_column": "CustomerId",
+      "to_column": "CustomerId"
+    },
+    {
+      "from": "InvoiceLine",
+      "to": "Track",
+      "from_column": "TrackId",
+      "to_column": "TrackId"
+    },
+    {
+      "from": "InvoiceLine",
+      "to": "Invoice",
+      "from_column": "InvoiceId",
+      "to_column": "InvoiceId"
+    },
+    {
+      "from": "PlaylistTrack",
+      "to": "Track",
+      "from_column": "TrackId",
+      "to_column": "TrackId"
+    },
+    {
+      "from": "PlaylistTrack",
+      "to": "Playlist",
+      "from_column": "PlaylistId",
+      "to_column": "PlaylistId"
+    },
+    {
+      "from": "Track",
+      "to": "MediaType",
+      "from_column": "MediaTypeId",
+      "to_column": "MediaTypeId"
+    },
+    {
+      "from": "Track",
+      "to": "Genre",
+      "from_column": "GenreId",
+      "to_column": "GenreId"
+    },
+    {
+      "from": "Track",
+      "to": "Album",
+      "from_column": "AlbumId",
+      "to_column": "AlbumId"
+    }
+  ]
+}

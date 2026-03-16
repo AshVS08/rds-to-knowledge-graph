@@ -1,0 +1,63 @@
+{
+  "db_id": "game_injury",
+  "nodes": [
+    {
+      "id": "game",
+      "columns": [
+        "stadium_id",
+        "id",
+        "Season",
+        "Date",
+        "Home_team",
+        "Away_team",
+        "Score",
+        "Competition"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    },
+    {
+      "id": "injury_accident",
+      "columns": [
+        "game_id",
+        "id",
+        "Player",
+        "Injury",
+        "Number_of_matches",
+        "Source"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    },
+    {
+      "id": "stadium",
+      "columns": [
+        "id",
+        "name",
+        "Home_Games",
+        "Average_Attendance",
+        "Total_Attendance",
+        "Capacity_Percentage"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "game",
+      "to": "stadium",
+      "from_column": "stadium_id",
+      "to_column": "id"
+    },
+    {
+      "from": "injury_accident",
+      "to": "game",
+      "from_column": "game_id",
+      "to_column": "id"
+    }
+  ]
+}

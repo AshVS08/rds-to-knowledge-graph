@@ -1,0 +1,151 @@
+{
+  "db_id": "document_management",
+  "nodes": [
+    {
+      "id": "Document_Functional_Areas",
+      "columns": [
+        "document_code",
+        "functional_area_code"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Document_Sections",
+      "columns": [
+        "section_id",
+        "document_code",
+        "section_sequence",
+        "section_code",
+        "section_title"
+      ],
+      "primary_keys": [
+        "section_id"
+      ]
+    },
+    {
+      "id": "Document_Sections_Images",
+      "columns": [
+        "section_id",
+        "image_id"
+      ],
+      "primary_keys": [
+        "section_id",
+        "image_id"
+      ]
+    },
+    {
+      "id": "Document_Structures",
+      "columns": [
+        "document_structure_code",
+        "parent_document_structure_code",
+        "document_structure_description"
+      ],
+      "primary_keys": [
+        "document_structure_code"
+      ]
+    },
+    {
+      "id": "Documents",
+      "columns": [
+        "document_code",
+        "document_structure_code",
+        "document_type_code",
+        "access_count",
+        "document_name"
+      ],
+      "primary_keys": [
+        "document_code"
+      ]
+    },
+    {
+      "id": "Functional_Areas",
+      "columns": [
+        "functional_area_code",
+        "parent_functional_area_code",
+        "functional_area_description"
+      ],
+      "primary_keys": [
+        "functional_area_code"
+      ]
+    },
+    {
+      "id": "Images",
+      "columns": [
+        "image_id",
+        "image_alt_text",
+        "image_name",
+        "image_url"
+      ],
+      "primary_keys": [
+        "image_id"
+      ]
+    },
+    {
+      "id": "Roles",
+      "columns": [
+        "role_code",
+        "role_description"
+      ],
+      "primary_keys": [
+        "role_code"
+      ]
+    },
+    {
+      "id": "Users",
+      "columns": [
+        "user_id",
+        "role_code",
+        "user_name",
+        "user_login",
+        "password"
+      ],
+      "primary_keys": [
+        "user_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Document_Functional_Areas",
+      "to": "Functional_Areas",
+      "from_column": "functional_area_code",
+      "to_column": "functional_area_code"
+    },
+    {
+      "from": "Document_Functional_Areas",
+      "to": "Documents",
+      "from_column": "document_code",
+      "to_column": "document_code"
+    },
+    {
+      "from": "Document_Sections",
+      "to": "Documents",
+      "from_column": "document_code",
+      "to_column": "document_code"
+    },
+    {
+      "from": "Document_Sections_Images",
+      "to": "Images",
+      "from_column": "image_id",
+      "to_column": "image_id"
+    },
+    {
+      "from": "Document_Sections_Images",
+      "to": "Document_Sections",
+      "from_column": "section_id",
+      "to_column": "section_id"
+    },
+    {
+      "from": "Documents",
+      "to": "Document_Structures",
+      "from_column": "document_structure_code",
+      "to_column": "document_structure_code"
+    },
+    {
+      "from": "Users",
+      "to": "Roles",
+      "from_column": "role_code",
+      "to_column": "role_code"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "db_id": "allergy_1",
+  "tables": [
+    {
+      "name": "Allergy_Type",
+      "columns": [
+        {
+          "name": "Allergy",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "AllergyType",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Allergy"
+      ]
+    },
+    {
+      "name": "Has_Allergy",
+      "columns": [
+        {
+          "name": "StuID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Allergy",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "Student",
+      "columns": [
+        {
+          "name": "StuID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "LName",
+          "type": "VARCHAR(12)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Fname",
+          "type": "VARCHAR(12)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Age",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Sex",
+          "type": "VARCHAR(1)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Major",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Advisor",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "city_code",
+          "type": "VARCHAR(3)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "StuID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Has_Allergy",
+      "from_column": "Allergy",
+      "to_table": "Allergy_Type",
+      "to_column": "Allergy"
+    },
+    {
+      "from_table": "Has_Allergy",
+      "from_column": "StuID",
+      "to_table": "Student",
+      "to_column": "StuID"
+    }
+  ]
+}

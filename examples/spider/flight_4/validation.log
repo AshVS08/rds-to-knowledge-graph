@@ -1,0 +1,48 @@
+DB ID: flight_4
+Run:   20250910-163730
+
+Tables: 3
+Columns: 24
+PKs: 3
+FKs: 3
+
+No structural issues found.
+
+Primary keys by table:
+- airlines: ['alid']
+- airports: ['apid']
+- routes: ['rid']
+
+Null summary:
+{
+  "airlines": {
+    "alid": 0,
+    "name": 0,
+    "iata": 0,
+    "icao": 0,
+    "callsign": 1,
+    "country": 1,
+    "active": 0
+  },
+  "airports": {
+    "apid": 0,
+    "name": 0,
+    "city": 0,
+    "country": 0,
+    "x": 0,
+    "y": 0,
+    "elevation": 0,
+    "iata": 0,
+    "icao": 0
+  },
+  "routes": {
+    "rid": 0,
+    "dst_apid": 0,
+    "dst_ap": 0,
+    "src_apid": 0,
+    "src_ap": 0,
+    "alid": 0,
+    "airline": 0,
+    "codeshare": 50
+  }
+}

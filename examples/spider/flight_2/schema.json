@@ -1,0 +1,135 @@
+{
+  "db_id": "flight_2",
+  "tables": [
+    {
+      "name": "airlines",
+      "columns": [
+        {
+          "name": "uid",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Airline",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Abbreviation",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Country",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "uid"
+      ]
+    },
+    {
+      "name": "airports",
+      "columns": [
+        {
+          "name": "City",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "AirportCode",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "AirportName",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Country",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "CountryAbbrev",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "AirportCode"
+      ]
+    },
+    {
+      "name": "flights",
+      "columns": [
+        {
+          "name": "Airline",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "FlightNo",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "SourceAirport",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "DestAirport",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Airline",
+        "FlightNo"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "flights",
+      "from_column": "DestAirport",
+      "to_table": "airports",
+      "to_column": "AirportCode"
+    },
+    {
+      "from_table": "flights",
+      "from_column": "SourceAirport",
+      "to_table": "airports",
+      "to_column": "AirportCode"
+    }
+  ]
+}

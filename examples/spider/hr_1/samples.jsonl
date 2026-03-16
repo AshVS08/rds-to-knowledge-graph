@@ -1,0 +1,159 @@
+{"table": "countries", "row": {"COUNTRY_ID": "AR", "COUNTRY_NAME": "Argentina", "REGION_ID": 2}}
+{"table": "countries", "row": {"COUNTRY_ID": "AU", "COUNTRY_NAME": "Australia", "REGION_ID": 3}}
+{"table": "countries", "row": {"COUNTRY_ID": "BE", "COUNTRY_NAME": "Belgium", "REGION_ID": 1}}
+{"table": "countries", "row": {"COUNTRY_ID": "BR", "COUNTRY_NAME": "Brazil", "REGION_ID": 2}}
+{"table": "countries", "row": {"COUNTRY_ID": "CA", "COUNTRY_NAME": "Canada", "REGION_ID": 2}}
+{"table": "countries", "row": {"COUNTRY_ID": "CH", "COUNTRY_NAME": "Switzerland", "REGION_ID": 1}}
+{"table": "countries", "row": {"COUNTRY_ID": "CN", "COUNTRY_NAME": "China", "REGION_ID": 3}}
+{"table": "countries", "row": {"COUNTRY_ID": "DE", "COUNTRY_NAME": "Germany", "REGION_ID": 1}}
+{"table": "countries", "row": {"COUNTRY_ID": "DK", "COUNTRY_NAME": "Denmark", "REGION_ID": 1}}
+{"table": "countries", "row": {"COUNTRY_ID": "EG", "COUNTRY_NAME": "Egypt", "REGION_ID": 4}}
+{"table": "countries", "row": {"COUNTRY_ID": "FR", "COUNTRY_NAME": "France", "REGION_ID": 1}}
+{"table": "countries", "row": {"COUNTRY_ID": "HK", "COUNTRY_NAME": "HongKong", "REGION_ID": 3}}
+{"table": "countries", "row": {"COUNTRY_ID": "IL", "COUNTRY_NAME": "Israel", "REGION_ID": 4}}
+{"table": "countries", "row": {"COUNTRY_ID": "IN", "COUNTRY_NAME": "India", "REGION_ID": 3}}
+{"table": "countries", "row": {"COUNTRY_ID": "IT", "COUNTRY_NAME": "Italy", "REGION_ID": 1}}
+{"table": "countries", "row": {"COUNTRY_ID": "JP", "COUNTRY_NAME": "Japan", "REGION_ID": 3}}
+{"table": "countries", "row": {"COUNTRY_ID": "KW", "COUNTRY_NAME": "Kuwait", "REGION_ID": 4}}
+{"table": "countries", "row": {"COUNTRY_ID": "MX", "COUNTRY_NAME": "Mexico", "REGION_ID": 2}}
+{"table": "countries", "row": {"COUNTRY_ID": "NG", "COUNTRY_NAME": "Nigeria", "REGION_ID": 4}}
+{"table": "countries", "row": {"COUNTRY_ID": "NL", "COUNTRY_NAME": "Netherlands", "REGION_ID": 1}}
+{"table": "countries", "row": {"COUNTRY_ID": "SG", "COUNTRY_NAME": "Singapore", "REGION_ID": 3}}
+{"table": "countries", "row": {"COUNTRY_ID": "UK", "COUNTRY_NAME": "United Kingdom", "REGION_ID": 1}}
+{"table": "countries", "row": {"COUNTRY_ID": "US", "COUNTRY_NAME": "United States of America", "REGION_ID": 2}}
+{"table": "countries", "row": {"COUNTRY_ID": "ZM", "COUNTRY_NAME": "Zambia", "REGION_ID": 4}}
+{"table": "countries", "row": {"COUNTRY_ID": "ZW", "COUNTRY_NAME": "Zimbabwe", "REGION_ID": 4}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 10, "DEPARTMENT_NAME": "Administration", "MANAGER_ID": 200, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 20, "DEPARTMENT_NAME": "Marketing", "MANAGER_ID": 201, "LOCATION_ID": 1800}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 30, "DEPARTMENT_NAME": "Purchasing", "MANAGER_ID": 114, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 40, "DEPARTMENT_NAME": "Human Resources", "MANAGER_ID": 203, "LOCATION_ID": 2400}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 50, "DEPARTMENT_NAME": "Shipping", "MANAGER_ID": 121, "LOCATION_ID": 1500}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 60, "DEPARTMENT_NAME": "IT", "MANAGER_ID": 103, "LOCATION_ID": 1400}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 70, "DEPARTMENT_NAME": "Public Relations", "MANAGER_ID": 204, "LOCATION_ID": 2700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 80, "DEPARTMENT_NAME": "Sales", "MANAGER_ID": 145, "LOCATION_ID": 2500}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 90, "DEPARTMENT_NAME": "Executive", "MANAGER_ID": 100, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 100, "DEPARTMENT_NAME": "Finance", "MANAGER_ID": 108, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 110, "DEPARTMENT_NAME": "Accounting", "MANAGER_ID": 205, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 120, "DEPARTMENT_NAME": "Treasury", "MANAGER_ID": 0, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 130, "DEPARTMENT_NAME": "Corporate Tax", "MANAGER_ID": 0, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 140, "DEPARTMENT_NAME": "Control And Credit", "MANAGER_ID": 0, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 150, "DEPARTMENT_NAME": "Shareholder Services", "MANAGER_ID": 0, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 160, "DEPARTMENT_NAME": "Benefits", "MANAGER_ID": 0, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 170, "DEPARTMENT_NAME": "Manufacturing", "MANAGER_ID": 0, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 180, "DEPARTMENT_NAME": "Construction", "MANAGER_ID": 0, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 190, "DEPARTMENT_NAME": "Contracting", "MANAGER_ID": 0, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 200, "DEPARTMENT_NAME": "Operations", "MANAGER_ID": 0, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 210, "DEPARTMENT_NAME": "IT Support", "MANAGER_ID": 0, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 220, "DEPARTMENT_NAME": "NOC", "MANAGER_ID": 0, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 230, "DEPARTMENT_NAME": "IT Helpdesk", "MANAGER_ID": 0, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 240, "DEPARTMENT_NAME": "Government Sales", "MANAGER_ID": 0, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 250, "DEPARTMENT_NAME": "Retail Sales", "MANAGER_ID": 0, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 260, "DEPARTMENT_NAME": "Recruiting", "MANAGER_ID": 0, "LOCATION_ID": 1700}}
+{"table": "departments", "row": {"DEPARTMENT_ID": 270, "DEPARTMENT_NAME": "Payroll", "MANAGER_ID": 0, "LOCATION_ID": 1700}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 100, "FIRST_NAME": "Steven", "LAST_NAME": "King", "EMAIL": "SKING", "PHONE_NUMBER": "515.123.4567", "HIRE_DATE": "1987-06-17", "JOB_ID": "AD_PRES", "SALARY": 24000, "COMMISSION_PCT": 0, "MANAGER_ID": 0, "DEPARTMENT_ID": 90}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 101, "FIRST_NAME": "Neena", "LAST_NAME": "Kochhar", "EMAIL": "NKOCHHAR", "PHONE_NUMBER": "515.123.4568", "HIRE_DATE": "1987-06-18", "JOB_ID": "AD_VP", "SALARY": 17000, "COMMISSION_PCT": 0, "MANAGER_ID": 100, "DEPARTMENT_ID": 90}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 102, "FIRST_NAME": "Lex", "LAST_NAME": "De Haan", "EMAIL": "LDEHAAN", "PHONE_NUMBER": "515.123.4569", "HIRE_DATE": "1987-06-19", "JOB_ID": "AD_VP", "SALARY": 17000, "COMMISSION_PCT": 0, "MANAGER_ID": 100, "DEPARTMENT_ID": 90}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 103, "FIRST_NAME": "Alexander", "LAST_NAME": "Hunold", "EMAIL": "AHUNOLD", "PHONE_NUMBER": "590.423.4567", "HIRE_DATE": "1987-06-20", "JOB_ID": "IT_PROG", "SALARY": 9000, "COMMISSION_PCT": 0, "MANAGER_ID": 102, "DEPARTMENT_ID": 60}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 104, "FIRST_NAME": "Bruce", "LAST_NAME": "Ernst", "EMAIL": "BERNST", "PHONE_NUMBER": "590.423.4568", "HIRE_DATE": "1987-06-21", "JOB_ID": "IT_PROG", "SALARY": 6000, "COMMISSION_PCT": 0, "MANAGER_ID": 103, "DEPARTMENT_ID": 60}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 105, "FIRST_NAME": "David", "LAST_NAME": "Austin", "EMAIL": "DAUSTIN", "PHONE_NUMBER": "590.423.4569", "HIRE_DATE": "1987-06-22", "JOB_ID": "IT_PROG", "SALARY": 4800, "COMMISSION_PCT": 0, "MANAGER_ID": 103, "DEPARTMENT_ID": 60}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 106, "FIRST_NAME": "Valli", "LAST_NAME": "Pataballa", "EMAIL": "VPATABAL", "PHONE_NUMBER": "590.423.4560", "HIRE_DATE": "1987-06-23", "JOB_ID": "IT_PROG", "SALARY": 4800, "COMMISSION_PCT": 0, "MANAGER_ID": 103, "DEPARTMENT_ID": 60}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 107, "FIRST_NAME": "Diana", "LAST_NAME": "Lorentz", "EMAIL": "DLORENTZ", "PHONE_NUMBER": "590.423.5567", "HIRE_DATE": "1987-06-24", "JOB_ID": "IT_PROG", "SALARY": 4200, "COMMISSION_PCT": 0, "MANAGER_ID": 103, "DEPARTMENT_ID": 60}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 108, "FIRST_NAME": "Nancy", "LAST_NAME": "Greenberg", "EMAIL": "NGREENBE", "PHONE_NUMBER": "515.124.4569", "HIRE_DATE": "1987-06-25", "JOB_ID": "FI_MGR", "SALARY": 12000, "COMMISSION_PCT": 0, "MANAGER_ID": 101, "DEPARTMENT_ID": 100}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 109, "FIRST_NAME": "Daniel", "LAST_NAME": "Faviet", "EMAIL": "DFAVIET", "PHONE_NUMBER": "515.124.4169", "HIRE_DATE": "1987-06-26", "JOB_ID": "FI_ACCOUNT", "SALARY": 9000, "COMMISSION_PCT": 0, "MANAGER_ID": 108, "DEPARTMENT_ID": 100}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 110, "FIRST_NAME": "John", "LAST_NAME": "Chen", "EMAIL": "JCHEN", "PHONE_NUMBER": "515.124.4269", "HIRE_DATE": "1987-06-27", "JOB_ID": "FI_ACCOUNT", "SALARY": 8200, "COMMISSION_PCT": 0, "MANAGER_ID": 108, "DEPARTMENT_ID": 100}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 111, "FIRST_NAME": "Ismael", "LAST_NAME": "Sciarra", "EMAIL": "ISCIARRA", "PHONE_NUMBER": "515.124.4369", "HIRE_DATE": "1987-06-28", "JOB_ID": "FI_ACCOUNT", "SALARY": 7700, "COMMISSION_PCT": 0, "MANAGER_ID": 108, "DEPARTMENT_ID": 100}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 112, "FIRST_NAME": "Jose Manuel", "LAST_NAME": "Urman", "EMAIL": "JMURMAN", "PHONE_NUMBER": "515.124.4469", "HIRE_DATE": "1987-06-29", "JOB_ID": "FI_ACCOUNT", "SALARY": 7800, "COMMISSION_PCT": 0, "MANAGER_ID": 108, "DEPARTMENT_ID": 100}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 113, "FIRST_NAME": "Luis", "LAST_NAME": "Popp", "EMAIL": "LPOPP", "PHONE_NUMBER": "515.124.4567", "HIRE_DATE": "1987-06-30", "JOB_ID": "FI_ACCOUNT", "SALARY": 6900, "COMMISSION_PCT": 0, "MANAGER_ID": 108, "DEPARTMENT_ID": 100}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 114, "FIRST_NAME": "Den", "LAST_NAME": "Raphaely", "EMAIL": "DRAPHEAL", "PHONE_NUMBER": "515.127.4561", "HIRE_DATE": "1987-07-01", "JOB_ID": "PU_MAN", "SALARY": 11000, "COMMISSION_PCT": 0, "MANAGER_ID": 100, "DEPARTMENT_ID": 30}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 115, "FIRST_NAME": "Alexander", "LAST_NAME": "Khoo", "EMAIL": "AKHOO", "PHONE_NUMBER": "515.127.4562", "HIRE_DATE": "1987-07-02", "JOB_ID": "PU_CLERK", "SALARY": 3100, "COMMISSION_PCT": 0, "MANAGER_ID": 114, "DEPARTMENT_ID": 30}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 116, "FIRST_NAME": "Shelli", "LAST_NAME": "Baida", "EMAIL": "SBAIDA", "PHONE_NUMBER": "515.127.4563", "HIRE_DATE": "1987-07-03", "JOB_ID": "PU_CLERK", "SALARY": 2900, "COMMISSION_PCT": 0, "MANAGER_ID": 114, "DEPARTMENT_ID": 30}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 117, "FIRST_NAME": "Sigal", "LAST_NAME": "Tobias", "EMAIL": "STOBIAS", "PHONE_NUMBER": "515.127.4564", "HIRE_DATE": "1987-07-04", "JOB_ID": "PU_CLERK", "SALARY": 2800, "COMMISSION_PCT": 0, "MANAGER_ID": 114, "DEPARTMENT_ID": 30}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 118, "FIRST_NAME": "Guy", "LAST_NAME": "Himuro", "EMAIL": "GHIMURO", "PHONE_NUMBER": "515.127.4565", "HIRE_DATE": "1987-07-05", "JOB_ID": "PU_CLERK", "SALARY": 2600, "COMMISSION_PCT": 0, "MANAGER_ID": 114, "DEPARTMENT_ID": 30}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 119, "FIRST_NAME": "Karen", "LAST_NAME": "Colmenares", "EMAIL": "KCOLMENA", "PHONE_NUMBER": "515.127.4566", "HIRE_DATE": "1987-07-06", "JOB_ID": "PU_CLERK", "SALARY": 2500, "COMMISSION_PCT": 0, "MANAGER_ID": 114, "DEPARTMENT_ID": 30}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 120, "FIRST_NAME": "Matthew", "LAST_NAME": "Weiss", "EMAIL": "MWEISS", "PHONE_NUMBER": "650.123.1234", "HIRE_DATE": "1987-07-07", "JOB_ID": "ST_MAN", "SALARY": 8000, "COMMISSION_PCT": 0, "MANAGER_ID": 100, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 121, "FIRST_NAME": "Adam", "LAST_NAME": "Fripp", "EMAIL": "AFRIPP", "PHONE_NUMBER": "650.123.2234", "HIRE_DATE": "1987-07-08", "JOB_ID": "ST_MAN", "SALARY": 8200, "COMMISSION_PCT": 0, "MANAGER_ID": 100, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 122, "FIRST_NAME": "Payam", "LAST_NAME": "Kaufling", "EMAIL": "PKAUFLIN", "PHONE_NUMBER": "650.123.3234", "HIRE_DATE": "1987-07-09", "JOB_ID": "ST_MAN", "SALARY": 7900, "COMMISSION_PCT": 0, "MANAGER_ID": 100, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 123, "FIRST_NAME": "Shanta", "LAST_NAME": "Vollman", "EMAIL": "SVOLLMAN", "PHONE_NUMBER": "650.123.4234", "HIRE_DATE": "1987-07-10", "JOB_ID": "ST_MAN", "SALARY": 6500, "COMMISSION_PCT": 0, "MANAGER_ID": 100, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 124, "FIRST_NAME": "Kevin", "LAST_NAME": "Mourgos", "EMAIL": "KMOURGOS", "PHONE_NUMBER": "650.123.5234", "HIRE_DATE": "1987-07-11", "JOB_ID": "ST_MAN", "SALARY": 5800, "COMMISSION_PCT": 0, "MANAGER_ID": 100, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 125, "FIRST_NAME": "Julia", "LAST_NAME": "Nayer", "EMAIL": "JNAYER", "PHONE_NUMBER": "650.124.1214", "HIRE_DATE": "1987-07-12", "JOB_ID": "ST_CLERK", "SALARY": 3200, "COMMISSION_PCT": 0, "MANAGER_ID": 120, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 126, "FIRST_NAME": "Irene", "LAST_NAME": "Mikkilineni", "EMAIL": "IMIKKILI", "PHONE_NUMBER": "650.124.1224", "HIRE_DATE": "1987-07-13", "JOB_ID": "ST_CLERK", "SALARY": 2700, "COMMISSION_PCT": 0, "MANAGER_ID": 120, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 127, "FIRST_NAME": "James", "LAST_NAME": "Landry", "EMAIL": "JLANDRY", "PHONE_NUMBER": "650.124.1334", "HIRE_DATE": "1987-07-14", "JOB_ID": "ST_CLERK", "SALARY": 2400, "COMMISSION_PCT": 0, "MANAGER_ID": 120, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 128, "FIRST_NAME": "Steven", "LAST_NAME": "Markle", "EMAIL": "SMARKLE", "PHONE_NUMBER": "650.124.1434", "HIRE_DATE": "1987-07-15", "JOB_ID": "ST_CLERK", "SALARY": 2200, "COMMISSION_PCT": 0, "MANAGER_ID": 120, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 129, "FIRST_NAME": "Laura", "LAST_NAME": "Bissot", "EMAIL": "LBISSOT", "PHONE_NUMBER": "650.124.5234", "HIRE_DATE": "1987-07-16", "JOB_ID": "ST_CLERK", "SALARY": 3300, "COMMISSION_PCT": 0, "MANAGER_ID": 121, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 130, "FIRST_NAME": "Mozhe", "LAST_NAME": "Atkinson", "EMAIL": "MATKINSO", "PHONE_NUMBER": "650.124.6234", "HIRE_DATE": "1987-07-17", "JOB_ID": "ST_CLERK", "SALARY": 2800, "COMMISSION_PCT": 0, "MANAGER_ID": 121, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 131, "FIRST_NAME": "James", "LAST_NAME": "Marlow", "EMAIL": "JAMRLOW", "PHONE_NUMBER": "650.124.7234", "HIRE_DATE": "1987-07-18", "JOB_ID": "ST_CLERK", "SALARY": 2500, "COMMISSION_PCT": 0, "MANAGER_ID": 121, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 132, "FIRST_NAME": "TJ", "LAST_NAME": "Olson", "EMAIL": "TJOLSON", "PHONE_NUMBER": "650.124.8234", "HIRE_DATE": "1987-07-19", "JOB_ID": "ST_CLERK", "SALARY": 2100, "COMMISSION_PCT": 0, "MANAGER_ID": 121, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 133, "FIRST_NAME": "Jason", "LAST_NAME": "Mallin", "EMAIL": "JMALLIN", "PHONE_NUMBER": "650.127.1934", "HIRE_DATE": "1987-07-20", "JOB_ID": "ST_CLERK", "SALARY": 3300, "COMMISSION_PCT": 0, "MANAGER_ID": 122, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 134, "FIRST_NAME": "Michael", "LAST_NAME": "Rogers", "EMAIL": "MROGERS", "PHONE_NUMBER": "650.127.1834", "HIRE_DATE": "1987-07-21", "JOB_ID": "ST_CLERK", "SALARY": 2900, "COMMISSION_PCT": 0, "MANAGER_ID": 122, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 135, "FIRST_NAME": "Ki", "LAST_NAME": "Gee", "EMAIL": "KGEE", "PHONE_NUMBER": "650.127.1734", "HIRE_DATE": "1987-07-22", "JOB_ID": "ST_CLERK", "SALARY": 2400, "COMMISSION_PCT": 0, "MANAGER_ID": 122, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 136, "FIRST_NAME": "Hazel", "LAST_NAME": "Philtanker", "EMAIL": "HPHILTAN", "PHONE_NUMBER": "650.127.1634", "HIRE_DATE": "1987-07-23", "JOB_ID": "ST_CLERK", "SALARY": 2200, "COMMISSION_PCT": 0, "MANAGER_ID": 122, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 137, "FIRST_NAME": "Renske", "LAST_NAME": "Ladwig", "EMAIL": "RLADWIG", "PHONE_NUMBER": "650.121.1234", "HIRE_DATE": "1987-07-24", "JOB_ID": "ST_CLERK", "SALARY": 3600, "COMMISSION_PCT": 0, "MANAGER_ID": 123, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 138, "FIRST_NAME": "Stephen", "LAST_NAME": "Stiles", "EMAIL": "SSTILES", "PHONE_NUMBER": "650.121.2034", "HIRE_DATE": "1987-07-25", "JOB_ID": "ST_CLERK", "SALARY": 3200, "COMMISSION_PCT": 0, "MANAGER_ID": 123, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 139, "FIRST_NAME": "John", "LAST_NAME": "Seo", "EMAIL": "JSEO", "PHONE_NUMBER": "650.121.2019", "HIRE_DATE": "1987-07-26", "JOB_ID": "ST_CLERK", "SALARY": 2700, "COMMISSION_PCT": 0, "MANAGER_ID": 123, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 140, "FIRST_NAME": "Joshua", "LAST_NAME": "Patel", "EMAIL": "JPATEL", "PHONE_NUMBER": "650.121.1834", "HIRE_DATE": "1987-07-27", "JOB_ID": "ST_CLERK", "SALARY": 2500, "COMMISSION_PCT": 0, "MANAGER_ID": 123, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 141, "FIRST_NAME": "Trenna", "LAST_NAME": "Rajs", "EMAIL": "TRAJS", "PHONE_NUMBER": "650.121.8009", "HIRE_DATE": "1987-07-28", "JOB_ID": "ST_CLERK", "SALARY": 3500, "COMMISSION_PCT": 0, "MANAGER_ID": 124, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 142, "FIRST_NAME": "Curtis", "LAST_NAME": "Davies", "EMAIL": "CDAVIES", "PHONE_NUMBER": "650.121.2994", "HIRE_DATE": "1987-07-29", "JOB_ID": "ST_CLERK", "SALARY": 3100, "COMMISSION_PCT": 0, "MANAGER_ID": 124, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 143, "FIRST_NAME": "Randall", "LAST_NAME": "Matos", "EMAIL": "RMATOS", "PHONE_NUMBER": "650.121.2874", "HIRE_DATE": "1987-07-30", "JOB_ID": "ST_CLERK", "SALARY": 2600, "COMMISSION_PCT": 0, "MANAGER_ID": 124, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 144, "FIRST_NAME": "Peter", "LAST_NAME": "Vargas", "EMAIL": "PVARGAS", "PHONE_NUMBER": "650.121.2004", "HIRE_DATE": "1987-07-31", "JOB_ID": "ST_CLERK", "SALARY": 2500, "COMMISSION_PCT": 0, "MANAGER_ID": 124, "DEPARTMENT_ID": 50}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 145, "FIRST_NAME": "John", "LAST_NAME": "Russell", "EMAIL": "JRUSSEL", "PHONE_NUMBER": "011.44.1344.429268", "HIRE_DATE": "1987-08-01", "JOB_ID": "SA_MAN", "SALARY": 14000, "COMMISSION_PCT": 0.4, "MANAGER_ID": 100, "DEPARTMENT_ID": 80}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 146, "FIRST_NAME": "Karen", "LAST_NAME": "Partners", "EMAIL": "KPARTNER", "PHONE_NUMBER": "011.44.1344.467268", "HIRE_DATE": "1987-08-02", "JOB_ID": "SA_MAN", "SALARY": 13500, "COMMISSION_PCT": 0.3, "MANAGER_ID": 100, "DEPARTMENT_ID": 80}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 147, "FIRST_NAME": "Alberto", "LAST_NAME": "Errazuriz", "EMAIL": "AERRAZUR", "PHONE_NUMBER": "011.44.1344.429278", "HIRE_DATE": "1987-08-03", "JOB_ID": "SA_MAN", "SALARY": 12000, "COMMISSION_PCT": 0.3, "MANAGER_ID": 100, "DEPARTMENT_ID": 80}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 148, "FIRST_NAME": "Gerald", "LAST_NAME": "Cambrault", "EMAIL": "GCAMBRAU", "PHONE_NUMBER": "011.44.1344.619268", "HIRE_DATE": "1987-08-04", "JOB_ID": "SA_MAN", "SALARY": 11000, "COMMISSION_PCT": 0.3, "MANAGER_ID": 100, "DEPARTMENT_ID": 80}}
+{"table": "employees", "row": {"EMPLOYEE_ID": 149, "FIRST_NAME": "Eleni", "LAST_NAME": "Zlotkey", "EMAIL": "EZLOTKEY", "PHONE_NUMBER": "011.44.1344.429018", "HIRE_DATE": "1987-08-05", "JOB_ID": "SA_MAN", "SALARY": 10500, "COMMISSION_PCT": 0.2, "MANAGER_ID": 100, "DEPARTMENT_ID": 80}}
+{"table": "job_history", "row": {"EMPLOYEE_ID": 102, "START_DATE": "1993-01-13", "END_DATE": "1998-07-24", "JOB_ID": "IT_PROG", "DEPARTMENT_ID": 60}}
+{"table": "job_history", "row": {"EMPLOYEE_ID": 101, "START_DATE": "1989-09-21", "END_DATE": "1993-10-27", "JOB_ID": "AC_ACCOUNT", "DEPARTMENT_ID": 110}}
+{"table": "job_history", "row": {"EMPLOYEE_ID": 101, "START_DATE": "1993-10-28", "END_DATE": "1997-03-15", "JOB_ID": "AC_MGR", "DEPARTMENT_ID": 110}}
+{"table": "job_history", "row": {"EMPLOYEE_ID": 201, "START_DATE": "1996-02-17", "END_DATE": "1999-12-19", "JOB_ID": "MK_REP", "DEPARTMENT_ID": 20}}
+{"table": "job_history", "row": {"EMPLOYEE_ID": 114, "START_DATE": "1998-03-24", "END_DATE": "1999-12-31", "JOB_ID": "ST_CLERK", "DEPARTMENT_ID": 50}}
+{"table": "job_history", "row": {"EMPLOYEE_ID": 122, "START_DATE": "1999-01-01", "END_DATE": "1999-12-31", "JOB_ID": "ST_CLERK", "DEPARTMENT_ID": 50}}
+{"table": "job_history", "row": {"EMPLOYEE_ID": 200, "START_DATE": "1987-09-17", "END_DATE": "1993-06-17", "JOB_ID": "AD_ASST", "DEPARTMENT_ID": 90}}
+{"table": "job_history", "row": {"EMPLOYEE_ID": 176, "START_DATE": "1998-03-24", "END_DATE": "1998-12-31", "JOB_ID": "SA_REP", "DEPARTMENT_ID": 80}}
+{"table": "job_history", "row": {"EMPLOYEE_ID": 176, "START_DATE": "1999-01-01", "END_DATE": "1999-12-31", "JOB_ID": "SA_MAN", "DEPARTMENT_ID": 80}}
+{"table": "job_history", "row": {"EMPLOYEE_ID": 200, "START_DATE": "1994-07-01", "END_DATE": "1998-12-31", "JOB_ID": "AC_ACCOUNT", "DEPARTMENT_ID": 90}}
+{"table": "job_history", "row": {"EMPLOYEE_ID": 0, "START_DATE": "0000-00-00", "END_DATE": "0000-00-00", "JOB_ID": "", "DEPARTMENT_ID": 0}}
+{"table": "jobs", "row": {"JOB_ID": "AD_PRES", "JOB_TITLE": "President", "MIN_SALARY": 20000, "MAX_SALARY": 40000}}
+{"table": "jobs", "row": {"JOB_ID": "AD_VP", "JOB_TITLE": "Administration Vice President", "MIN_SALARY": 15000, "MAX_SALARY": 30000}}
+{"table": "jobs", "row": {"JOB_ID": "AD_ASST", "JOB_TITLE": "Administration Assistant", "MIN_SALARY": 3000, "MAX_SALARY": 6000}}
+{"table": "jobs", "row": {"JOB_ID": "FI_MGR", "JOB_TITLE": "Finance Manager", "MIN_SALARY": 8200, "MAX_SALARY": 16000}}
+{"table": "jobs", "row": {"JOB_ID": "FI_ACCOUNT", "JOB_TITLE": "Accountant", "MIN_SALARY": 4200, "MAX_SALARY": 9000}}
+{"table": "jobs", "row": {"JOB_ID": "AC_MGR", "JOB_TITLE": "Accounting Manager", "MIN_SALARY": 8200, "MAX_SALARY": 16000}}
+{"table": "jobs", "row": {"JOB_ID": "AC_ACCOUNT", "JOB_TITLE": "Public Accountant", "MIN_SALARY": 4200, "MAX_SALARY": 9000}}
+{"table": "jobs", "row": {"JOB_ID": "SA_MAN", "JOB_TITLE": "Sales Manager", "MIN_SALARY": 10000, "MAX_SALARY": 20000}}
+{"table": "jobs", "row": {"JOB_ID": "SA_REP", "JOB_TITLE": "Sales Representative", "MIN_SALARY": 6000, "MAX_SALARY": 12000}}
+{"table": "jobs", "row": {"JOB_ID": "PU_MAN", "JOB_TITLE": "Purchasing Manager", "MIN_SALARY": 8000, "MAX_SALARY": 15000}}
+{"table": "jobs", "row": {"JOB_ID": "PU_CLERK", "JOB_TITLE": "Purchasing Clerk", "MIN_SALARY": 2500, "MAX_SALARY": 5500}}
+{"table": "jobs", "row": {"JOB_ID": "ST_MAN", "JOB_TITLE": "Stock Manager", "MIN_SALARY": 5500, "MAX_SALARY": 8500}}
+{"table": "jobs", "row": {"JOB_ID": "ST_CLERK", "JOB_TITLE": "Stock Clerk", "MIN_SALARY": 2000, "MAX_SALARY": 5000}}
+{"table": "jobs", "row": {"JOB_ID": "SH_CLERK", "JOB_TITLE": "Shipping Clerk", "MIN_SALARY": 2500, "MAX_SALARY": 5500}}
+{"table": "jobs", "row": {"JOB_ID": "IT_PROG", "JOB_TITLE": "Programmer", "MIN_SALARY": 4000, "MAX_SALARY": 10000}}
+{"table": "jobs", "row": {"JOB_ID": "MK_MAN", "JOB_TITLE": "Marketing Manager", "MIN_SALARY": 9000, "MAX_SALARY": 15000}}
+{"table": "jobs", "row": {"JOB_ID": "MK_REP", "JOB_TITLE": "Marketing Representative", "MIN_SALARY": 4000, "MAX_SALARY": 9000}}
+{"table": "jobs", "row": {"JOB_ID": "HR_REP", "JOB_TITLE": "Human Resources Representative", "MIN_SALARY": 4000, "MAX_SALARY": 9000}}
+{"table": "jobs", "row": {"JOB_ID": "PR_REP", "JOB_TITLE": "Public Relations Representative", "MIN_SALARY": 4500, "MAX_SALARY": 10500}}
+{"table": "locations", "row": {"LOCATION_ID": 1000, "STREET_ADDRESS": "1297 Via Cola di Rie", "POSTAL_CODE": "989", "CITY": "Roma", "STATE_PROVINCE": "", "COUNTRY_ID": "IT"}}
+{"table": "locations", "row": {"LOCATION_ID": 1100, "STREET_ADDRESS": "93091 Calle della Testa", "POSTAL_CODE": "10934", "CITY": "Venice", "STATE_PROVINCE": "", "COUNTRY_ID": "IT"}}
+{"table": "locations", "row": {"LOCATION_ID": 1200, "STREET_ADDRESS": "2017 Shinjuku-ku", "POSTAL_CODE": "1689", "CITY": "Tokyo", "STATE_PROVINCE": "Tokyo Prefecture", "COUNTRY_ID": "JP"}}
+{"table": "locations", "row": {"LOCATION_ID": 1300, "STREET_ADDRESS": "9450 Kamiya-cho", "POSTAL_CODE": "6823", "CITY": "Hiroshima", "STATE_PROVINCE": "", "COUNTRY_ID": "JP"}}
+{"table": "locations", "row": {"LOCATION_ID": 1400, "STREET_ADDRESS": "2014 Jabberwocky Rd", "POSTAL_CODE": "26192", "CITY": "Southlake", "STATE_PROVINCE": "Texas", "COUNTRY_ID": "US"}}
+{"table": "locations", "row": {"LOCATION_ID": 1500, "STREET_ADDRESS": "2011 Interiors Blvd", "POSTAL_CODE": "99236", "CITY": "South San Francisco", "STATE_PROVINCE": "California", "COUNTRY_ID": "US"}}
+{"table": "locations", "row": {"LOCATION_ID": 1600, "STREET_ADDRESS": "2007 Zagora St", "POSTAL_CODE": "50090", "CITY": "South Brunswick", "STATE_PROVINCE": "New Jersey", "COUNTRY_ID": "US"}}
+{"table": "locations", "row": {"LOCATION_ID": 1700, "STREET_ADDRESS": "2004 Charade Rd", "POSTAL_CODE": "98199", "CITY": "Seattle", "STATE_PROVINCE": "Washington", "COUNTRY_ID": "US"}}
+{"table": "locations", "row": {"LOCATION_ID": 1800, "STREET_ADDRESS": "147 Spadina Ave", "POSTAL_CODE": "M5V 2L7", "CITY": "Toronto", "STATE_PROVINCE": "Ontario", "COUNTRY_ID": "CA"}}
+{"table": "locations", "row": {"LOCATION_ID": 1900, "STREET_ADDRESS": "6092 Boxwood St", "POSTAL_CODE": "YSW 9T2", "CITY": "Whitehorse", "STATE_PROVINCE": "Yukon", "COUNTRY_ID": "CA"}}
+{"table": "locations", "row": {"LOCATION_ID": 2000, "STREET_ADDRESS": "40-5-12 Laogianggen", "POSTAL_CODE": "190518", "CITY": "Beijing", "STATE_PROVINCE": "", "COUNTRY_ID": "CN"}}
+{"table": "locations", "row": {"LOCATION_ID": 2100, "STREET_ADDRESS": "1298 Vileparle (E)", "POSTAL_CODE": "490231", "CITY": "Bombay", "STATE_PROVINCE": "Maharashtra", "COUNTRY_ID": "IN"}}
+{"table": "locations", "row": {"LOCATION_ID": 2200, "STREET_ADDRESS": "12-98 Victoria Street", "POSTAL_CODE": "2901", "CITY": "Sydney", "STATE_PROVINCE": "New South Wales", "COUNTRY_ID": "AU"}}
+{"table": "locations", "row": {"LOCATION_ID": 2300, "STREET_ADDRESS": "198 Clementi North", "POSTAL_CODE": "540198", "CITY": "Singapore", "STATE_PROVINCE": "", "COUNTRY_ID": "SG"}}
+{"table": "locations", "row": {"LOCATION_ID": 2400, "STREET_ADDRESS": "8204 Arthur St", "POSTAL_CODE": "", "CITY": "London", "STATE_PROVINCE": "", "COUNTRY_ID": "UK"}}
+{"table": "locations", "row": {"LOCATION_ID": 2500, "STREET_ADDRESS": "\"Magdalen Centre", "POSTAL_CODE": " The Oxford ", "CITY": "OX9 9ZB", "STATE_PROVINCE": "Oxford", "COUNTRY_ID": "Ox"}}
+{"table": "locations", "row": {"LOCATION_ID": 2600, "STREET_ADDRESS": "9702 Chester Road", "POSTAL_CODE": "9629850293", "CITY": "Stretford", "STATE_PROVINCE": "Manchester", "COUNTRY_ID": "UK"}}
+{"table": "locations", "row": {"LOCATION_ID": 2700, "STREET_ADDRESS": "Schwanthalerstr. 7031", "POSTAL_CODE": "80925", "CITY": "Munich", "STATE_PROVINCE": "Bavaria", "COUNTRY_ID": "DE"}}
+{"table": "locations", "row": {"LOCATION_ID": 2800, "STREET_ADDRESS": "Rua Frei Caneca 1360", "POSTAL_CODE": "01307-002", "CITY": "Sao Paulo", "STATE_PROVINCE": "Sao Paulo", "COUNTRY_ID": "BR"}}
+{"table": "locations", "row": {"LOCATION_ID": 2900, "STREET_ADDRESS": "20 Rue des Corps-Saints", "POSTAL_CODE": "1730", "CITY": "Geneva", "STATE_PROVINCE": "Geneve", "COUNTRY_ID": "CH"}}
+{"table": "locations", "row": {"LOCATION_ID": 3000, "STREET_ADDRESS": "Murtenstrasse 921", "POSTAL_CODE": "3095", "CITY": "Bern", "STATE_PROVINCE": "BE", "COUNTRY_ID": "CH"}}
+{"table": "locations", "row": {"LOCATION_ID": 3100, "STREET_ADDRESS": "Pieter Breughelstraat 837", "POSTAL_CODE": "3029SK", "CITY": "Utrecht", "STATE_PROVINCE": "Utrecht", "COUNTRY_ID": "NL"}}
+{"table": "locations", "row": {"LOCATION_ID": 3200, "STREET_ADDRESS": "Mariano Escobedo 9991", "POSTAL_CODE": "11932", "CITY": "Mexico City", "STATE_PROVINCE": "\"Distrito Federal", "COUNTRY_ID": "\""}}
+{"table": "regions", "row": {"REGION_ID": 1, "REGION_NAME": "Europe\\r"}}
+{"table": "regions", "row": {"REGION_ID": 2, "REGION_NAME": "Americas\\r"}}
+{"table": "regions", "row": {"REGION_ID": 3, "REGION_NAME": "Asia\\r"}}
+{"table": "regions", "row": {"REGION_ID": 4, "REGION_NAME": "Middle East and Africa\\r"}}

@@ -1,0 +1,39 @@
+DB ID: icfp_1
+Run:   20250910-163730
+
+Tables: 4
+Columns: 12
+PKs: 6
+FKs: 3
+
+No structural issues found.
+
+Primary keys by table:
+- Authors: ['authID']
+- Authorship: ['authID', 'instID', 'paperID']
+- Inst: ['instID']
+- Papers: ['paperID']
+
+Null summary:
+{
+  "Authors": {
+    "authID": 0,
+    "lname": 0,
+    "fname": 0
+  },
+  "Authorship": {
+    "authID": 0,
+    "instID": 0,
+    "paperID": 0,
+    "authOrder": 0
+  },
+  "Inst": {
+    "instID": 0,
+    "name": 0,
+    "country": 0
+  },
+  "Papers": {
+    "paperID": 0,
+    "title": 0
+  }
+}

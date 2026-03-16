@@ -1,0 +1,63 @@
+{
+  "db_id": "flight_company",
+  "nodes": [
+    {
+      "id": "airport",
+      "columns": [
+        "id",
+        "City",
+        "Country",
+        "IATA",
+        "ICAO",
+        "name"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    },
+    {
+      "id": "flight",
+      "columns": [
+        "id",
+        "Vehicle_Flight_number",
+        "Date",
+        "Pilot",
+        "Velocity",
+        "Altitude",
+        "airport_id",
+        "company_id"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    },
+    {
+      "id": "operate_company",
+      "columns": [
+        "id",
+        "name",
+        "Type",
+        "Principal_activities",
+        "Incorporated_in",
+        "Group_Equity_Shareholding"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "flight",
+      "to": "operate_company",
+      "from_column": "company_id",
+      "to_column": "id"
+    },
+    {
+      "from": "flight",
+      "to": "airport",
+      "from_column": "airport_id",
+      "to_column": "id"
+    }
+  ]
+}

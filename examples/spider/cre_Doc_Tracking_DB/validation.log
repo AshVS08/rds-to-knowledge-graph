@@ -1,0 +1,72 @@
+DB ID: cre_Doc_Tracking_DB
+Run:   20250910-163730
+
+Tables: 8
+Columns: 33
+PKs: 10
+FKs: 12
+
+No structural issues found.
+
+Primary keys by table:
+- All_Documents: ['Document_ID']
+- Document_Locations: ['Document_ID', 'Location_Code', 'Date_in_Location_From']
+- Documents_to_be_Destroyed: ['Document_ID']
+- Employees: ['Employee_ID']
+- Ref_Calendar: ['Calendar_Date']
+- Ref_Document_Types: ['Document_Type_Code']
+- Ref_Locations: ['Location_Code']
+- Roles: ['Role_Code']
+
+Null summary:
+{
+  "All_Documents": {
+    "Document_ID": 0,
+    "Date_Stored": 0,
+    "Document_Type_Code": 0,
+    "Document_Name": 0,
+    "Document_Description": 15,
+    "Other_Details": 15
+  },
+  "Document_Locations": {
+    "Document_ID": 0,
+    "Location_Code": 0,
+    "Date_in_Location_From": 0,
+    "Date_in_Locaton_To": 0
+  },
+  "Documents_to_be_Destroyed": {
+    "Document_ID": 0,
+    "Destruction_Authorised_by_Employee_ID": 0,
+    "Destroyed_by_Employee_ID": 0,
+    "Planned_Destruction_Date": 0,
+    "Actual_Destruction_Date": 0,
+    "Other_Details": 11
+  },
+  "Employees": {
+    "Employee_ID": 0,
+    "Role_Code": 0,
+    "Employee_Name": 0,
+    "Gender_MFU": 0,
+    "Date_of_Birth": 0,
+    "Other_Details": 15
+  },
+  "Ref_Calendar": {
+    "Calendar_Date": 0,
+    "Day_Number": 0
+  },
+  "Ref_Document_Types": {
+    "Document_Type_Code": 0,
+    "Document_Type_Name": 0,
+    "Document_Type_Description": 0
+  },
+  "Ref_Locations": {
+    "Location_Code": 0,
+    "Location_Name": 0,
+    "Location_Description": 0
+  },
+  "Roles": {
+    "Role_Code": 0,
+    "Role_Name": 0,
+    "Role_Description": 0
+  }
+}

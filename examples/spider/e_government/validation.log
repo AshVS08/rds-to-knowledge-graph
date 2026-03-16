@@ -1,0 +1,95 @@
+DB ID: e_government
+Run:   20250910-163730
+
+Tables: 10
+Columns: 50
+PKs: 12
+FKs: 9
+
+No structural issues found.
+
+Primary keys by table:
+- Addresses: ['address_id']
+- Forms: ['form_id']
+- Individuals: ['individual_id']
+- Organization_Contact_Individuals: ['individual_id', 'organization_id']
+- Organizations: ['organization_id']
+- Parties: ['party_id']
+- Party_Addresses: ['party_id', 'address_id']
+- Party_Forms: ['party_id', 'form_id']
+- Party_Services: None
+- Services: ['service_id']
+
+Null summary:
+{
+  "Addresses": {
+    "address_id": 0,
+    "line_1_number_building": 0,
+    "town_city": 0,
+    "zip_postcode": 0,
+    "state_province_county": 0,
+    "country": 0
+  },
+  "Forms": {
+    "form_id": 0,
+    "form_type_code": 0,
+    "service_id": 0,
+    "form_number": 0,
+    "form_name": 0,
+    "form_description": 0
+  },
+  "Individuals": {
+    "individual_id": 0,
+    "individual_first_name": 0,
+    "individual_middle_name": 0,
+    "inidividual_phone": 0,
+    "individual_email": 0,
+    "individual_address": 0,
+    "individual_last_name": 0
+  },
+  "Organization_Contact_Individuals": {
+    "individual_id": 0,
+    "organization_id": 0,
+    "date_contact_from": 0,
+    "date_contact_to": 0
+  },
+  "Organizations": {
+    "organization_id": 0,
+    "date_formed": 0,
+    "organization_name": 0,
+    "uk_vat_number": 0
+  },
+  "Parties": {
+    "party_id": 0,
+    "payment_method_code": 0,
+    "party_phone": 0,
+    "party_email": 0
+  },
+  "Party_Addresses": {
+    "party_id": 0,
+    "address_id": 0,
+    "date_address_from": 0,
+    "address_type_code": 0,
+    "date_address_to": 0
+  },
+  "Party_Forms": {
+    "party_id": 0,
+    "form_id": 0,
+    "date_completion_started": 0,
+    "form_status_code": 0,
+    "date_fully_completed": 0
+  },
+  "Party_Services": {
+    "booking_id": 0,
+    "customer_id": 0,
+    "service_id": 0,
+    "service_datetime": 0,
+    "booking_made_date": 0
+  },
+  "Services": {
+    "service_id": 0,
+    "service_type_code": 0,
+    "service_name": 0,
+    "service_descriptio": 0
+  }
+}

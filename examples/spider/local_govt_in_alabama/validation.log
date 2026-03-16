@@ -1,0 +1,37 @@
+DB ID: local_govt_in_alabama
+Run:   20250910-163730
+
+Tables: 4
+Columns: 10
+PKs: 5
+FKs: 3
+
+No structural issues found.
+
+Primary keys by table:
+- Events: ['Event_ID']
+- Participants: ['Participant_ID']
+- Participants_in_Events: ['Event_ID', 'Participant_ID']
+- Services: ['Service_ID']
+
+Null summary:
+{
+  "Events": {
+    "Event_ID": 0,
+    "Service_ID": 0,
+    "Event_Details": 0
+  },
+  "Participants": {
+    "Participant_ID": 0,
+    "Participant_Type_Code": 0,
+    "Participant_Details": 0
+  },
+  "Participants_in_Events": {
+    "Event_ID": 0,
+    "Participant_ID": 0
+  },
+  "Services": {
+    "Service_ID": 0,
+    "Service_Type_Code": 0
+  }
+}

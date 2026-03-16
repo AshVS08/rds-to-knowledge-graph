@@ -1,0 +1,65 @@
+DB ID: e_learning
+Run:   20250910-163730
+
+Tables: 6
+Columns: 32
+PKs: 5
+FKs: 5
+
+No structural issues found.
+
+Primary keys by table:
+- Course_Authors_and_Tutors: ['author_id']
+- Courses: ['course_id']
+- Student_Course_Enrolment: ['registration_id']
+- Student_Tests_Taken: None
+- Students: ['student_id']
+- Subjects: ['subject_id']
+
+Null summary:
+{
+  "Course_Authors_and_Tutors": {
+    "author_id": 0,
+    "author_tutor_ATB": 0,
+    "login_name": 0,
+    "password": 0,
+    "personal_name": 0,
+    "middle_name": 0,
+    "family_name": 0,
+    "gender_mf": 0,
+    "address_line_1": 0
+  },
+  "Courses": {
+    "course_id": 0,
+    "author_id": 0,
+    "subject_id": 0,
+    "course_name": 0,
+    "course_description": 0
+  },
+  "Student_Course_Enrolment": {
+    "registration_id": 0,
+    "student_id": 0,
+    "course_id": 0,
+    "date_of_enrolment": 0,
+    "date_of_completion": 0
+  },
+  "Student_Tests_Taken": {
+    "registration_id": 0,
+    "date_test_taken": 0,
+    "test_result": 0
+  },
+  "Students": {
+    "student_id": 0,
+    "date_of_registration": 0,
+    "date_of_latest_logon": 0,
+    "login_name": 0,
+    "password": 0,
+    "personal_name": 0,
+    "middle_name": 0,
+    "family_name": 0
+  },
+  "Subjects": {
+    "subject_id": 0,
+    "subject_name": 0
+  }
+}

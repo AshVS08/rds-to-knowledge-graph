@@ -1,0 +1,303 @@
+{
+  "db_id": "geo",
+  "tables": [
+    {
+      "name": "border_info",
+      "columns": [
+        {
+          "name": "state_name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "border",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "state_name",
+        "border"
+      ]
+    },
+    {
+      "name": "city",
+      "columns": [
+        {
+          "name": "city_name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "population",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "country_name",
+          "type": "varchar(3)",
+          "notnull": true,
+          "default": "''",
+          "is_pk": false
+        },
+        {
+          "name": "state_name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "city_name",
+        "state_name"
+      ]
+    },
+    {
+      "name": "highlow",
+      "columns": [
+        {
+          "name": "state_name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "highest_elevation",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "lowest_point",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "highest_point",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "lowest_elevation",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "state_name"
+      ]
+    },
+    {
+      "name": "lake",
+      "columns": [
+        {
+          "name": "lake_name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "area",
+          "type": "double",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "country_name",
+          "type": "varchar(3)",
+          "notnull": true,
+          "default": "''",
+          "is_pk": false
+        },
+        {
+          "name": "state_name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "mountain",
+      "columns": [
+        {
+          "name": "mountain_name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "mountain_altitude",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "country_name",
+          "type": "varchar(3)",
+          "notnull": true,
+          "default": "''",
+          "is_pk": false
+        },
+        {
+          "name": "state_name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "mountain_name",
+        "state_name"
+      ]
+    },
+    {
+      "name": "river",
+      "columns": [
+        {
+          "name": "river_name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "length",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "country_name",
+          "type": "varchar(3)",
+          "notnull": true,
+          "default": "''",
+          "is_pk": false
+        },
+        {
+          "name": "traverse",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "river_name"
+      ]
+    },
+    {
+      "name": "state",
+      "columns": [
+        {
+          "name": "state_name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "population",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "area",
+          "type": "double",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "country_name",
+          "type": "varchar(3)",
+          "notnull": true,
+          "default": "''",
+          "is_pk": false
+        },
+        {
+          "name": "capital",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "density",
+          "type": "double",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "state_name"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "border_info",
+      "from_column": "border",
+      "to_table": "state",
+      "to_column": "state_name"
+    },
+    {
+      "from_table": "border_info",
+      "from_column": "state_name",
+      "to_table": "state",
+      "to_column": "state_name"
+    },
+    {
+      "from_table": "city",
+      "from_column": "state_name",
+      "to_table": "state",
+      "to_column": "state_name"
+    },
+    {
+      "from_table": "highlow",
+      "from_column": "state_name",
+      "to_table": "state",
+      "to_column": "state_name"
+    },
+    {
+      "from_table": "mountain",
+      "from_column": "state_name",
+      "to_table": "state",
+      "to_column": "state_name"
+    },
+    {
+      "from_table": "river",
+      "from_column": "traverse",
+      "to_table": "state",
+      "to_column": "state_name"
+    }
+  ]
+}

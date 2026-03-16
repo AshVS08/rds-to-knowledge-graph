@@ -1,0 +1,60 @@
+{
+  "db_id": "music_4",
+  "nodes": [
+    {
+      "id": "artist",
+      "columns": [
+        "Artist_ID",
+        "Artist",
+        "Age",
+        "Famous_Title",
+        "Famous_Release_date"
+      ],
+      "primary_keys": [
+        "Artist_ID"
+      ]
+    },
+    {
+      "id": "music_festival",
+      "columns": [
+        "ID",
+        "Music_Festival",
+        "Date_of_ceremony",
+        "Category",
+        "Volume",
+        "Result"
+      ],
+      "primary_keys": [
+        "ID"
+      ]
+    },
+    {
+      "id": "volume",
+      "columns": [
+        "Volume_ID",
+        "Volume_Issue",
+        "Issue_Date",
+        "Weeks_on_Top",
+        "Song",
+        "Artist_ID"
+      ],
+      "primary_keys": [
+        "Volume_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "music_festival",
+      "to": "volume",
+      "from_column": "Volume",
+      "to_column": "Volume_ID"
+    },
+    {
+      "from": "volume",
+      "to": "artist",
+      "from_column": "Artist_ID",
+      "to_column": "Artist_ID"
+    }
+  ]
+}

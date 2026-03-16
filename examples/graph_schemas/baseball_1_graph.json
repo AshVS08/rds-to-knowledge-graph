@@ -1,0 +1,635 @@
+{
+  "db_id": "baseball_1",
+  "nodes": [
+    {
+      "id": "all_star",
+      "columns": [
+        "player_id",
+        "year",
+        "game_num",
+        "game_id",
+        "team_id",
+        "league_id",
+        "gp",
+        "starting_pos"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "appearances",
+      "columns": [
+        "year",
+        "team_id",
+        "league_id",
+        "player_id",
+        "g_all",
+        "gs",
+        "g_batting",
+        "g_defense",
+        "g_p",
+        "g_c",
+        "g_1b",
+        "g_2b",
+        "g_3b",
+        "g_ss",
+        "g_lf",
+        "g_cf",
+        "g_rf",
+        "g_of",
+        "g_dh",
+        "g_ph",
+        "g_pr"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "batting",
+      "columns": [
+        "player_id",
+        "year",
+        "stint",
+        "team_id",
+        "league_id",
+        "g",
+        "ab",
+        "r",
+        "h",
+        "double",
+        "triple",
+        "hr",
+        "rbi",
+        "sb",
+        "cs",
+        "bb",
+        "so",
+        "ibb",
+        "hbp",
+        "sh",
+        "sf",
+        "g_idp"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "batting_postseason",
+      "columns": [
+        "year",
+        "round",
+        "player_id",
+        "team_id",
+        "league_id",
+        "g",
+        "ab",
+        "r",
+        "h",
+        "double",
+        "triple",
+        "hr",
+        "rbi",
+        "sb",
+        "cs",
+        "bb",
+        "so",
+        "ibb",
+        "hbp",
+        "sh",
+        "sf",
+        "g_idp"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "college",
+      "columns": [
+        "college_id",
+        "name_full",
+        "city",
+        "state",
+        "country"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "fielding",
+      "columns": [
+        "player_id",
+        "year",
+        "stint",
+        "team_id",
+        "league_id",
+        "pos",
+        "g",
+        "gs",
+        "inn_outs",
+        "po",
+        "a",
+        "e",
+        "dp",
+        "pb",
+        "wp",
+        "sb",
+        "cs",
+        "zr"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "fielding_outfield",
+      "columns": [
+        "player_id",
+        "year",
+        "stint",
+        "glf",
+        "gcf",
+        "grf"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "fielding_postseason",
+      "columns": [
+        "player_id",
+        "year",
+        "team_id",
+        "league_id",
+        "round",
+        "pos",
+        "g",
+        "gs",
+        "inn_outs",
+        "po",
+        "a",
+        "e",
+        "dp",
+        "tp",
+        "pb",
+        "sb",
+        "cs"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "hall_of_fame",
+      "columns": [
+        "player_id",
+        "yearid",
+        "votedby",
+        "ballots",
+        "needed",
+        "votes",
+        "inducted",
+        "category",
+        "needed_note"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "home_game",
+      "columns": [
+        "year",
+        "league_id",
+        "team_id",
+        "park_id",
+        "span_first",
+        "span_last",
+        "games",
+        "openings",
+        "attendance"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "manager",
+      "columns": [
+        "player_id",
+        "year",
+        "team_id",
+        "league_id",
+        "inseason",
+        "g",
+        "w",
+        "l",
+        "rank",
+        "plyr_mgr"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "manager_award",
+      "columns": [
+        "player_id",
+        "award_id",
+        "year",
+        "league_id",
+        "tie",
+        "notes"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "manager_award_vote",
+      "columns": [
+        "award_id",
+        "year",
+        "league_id",
+        "player_id",
+        "points_won",
+        "points_max",
+        "votes_first"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "manager_half",
+      "columns": [
+        "player_id",
+        "year",
+        "team_id",
+        "league_id",
+        "inseason",
+        "half",
+        "g",
+        "w",
+        "l",
+        "rank"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "park",
+      "columns": [
+        "park_id",
+        "park_name",
+        "park_alias",
+        "city",
+        "state",
+        "country"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "pitching",
+      "columns": [
+        "player_id",
+        "year",
+        "stint",
+        "team_id",
+        "league_id",
+        "w",
+        "l",
+        "g",
+        "gs",
+        "cg",
+        "sho",
+        "sv",
+        "ipouts",
+        "h",
+        "er",
+        "hr",
+        "bb",
+        "so",
+        "baopp",
+        "era",
+        "ibb",
+        "wp",
+        "hbp",
+        "bk",
+        "bfp",
+        "gf",
+        "r",
+        "sh",
+        "sf",
+        "g_idp"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "pitching_postseason",
+      "columns": [
+        "player_id",
+        "year",
+        "round",
+        "team_id",
+        "league_id",
+        "w",
+        "l",
+        "g",
+        "gs",
+        "cg",
+        "sho",
+        "sv",
+        "ipouts",
+        "h",
+        "er",
+        "hr",
+        "bb",
+        "so",
+        "baopp",
+        "era",
+        "ibb",
+        "wp",
+        "hbp",
+        "bk",
+        "bfp",
+        "gf",
+        "r",
+        "sh",
+        "sf",
+        "g_idp"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "player",
+      "columns": [
+        "player_id",
+        "birth_year",
+        "birth_month",
+        "birth_day",
+        "birth_country",
+        "birth_state",
+        "birth_city",
+        "death_year",
+        "death_month",
+        "death_day",
+        "death_country",
+        "death_state",
+        "death_city",
+        "name_first",
+        "name_last",
+        "name_given",
+        "weight",
+        "height",
+        "bats",
+        "throws",
+        "debut",
+        "final_game",
+        "retro_id",
+        "bbref_id"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "player_award",
+      "columns": [
+        "player_id",
+        "award_id",
+        "year",
+        "league_id",
+        "tie",
+        "notes"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "player_award_vote",
+      "columns": [
+        "award_id",
+        "year",
+        "league_id",
+        "player_id",
+        "points_won",
+        "points_max",
+        "votes_first"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "player_college",
+      "columns": [
+        "player_id",
+        "college_id",
+        "year"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "postseason",
+      "columns": [
+        "year",
+        "round",
+        "team_id_winner",
+        "league_id_winner",
+        "team_id_loser",
+        "league_id_loser",
+        "wins",
+        "losses",
+        "ties"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "salary",
+      "columns": [
+        "year",
+        "team_id",
+        "league_id",
+        "player_id",
+        "salary"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "team",
+      "columns": [
+        "year",
+        "league_id",
+        "team_id",
+        "franchise_id",
+        "div_id",
+        "rank",
+        "g",
+        "ghome",
+        "w",
+        "l",
+        "div_win",
+        "wc_win",
+        "lg_win",
+        "ws_win",
+        "r",
+        "ab",
+        "h",
+        "double",
+        "triple",
+        "hr",
+        "bb",
+        "so",
+        "sb",
+        "cs",
+        "hbp",
+        "sf",
+        "ra",
+        "er",
+        "era",
+        "cg",
+        "sho",
+        "sv",
+        "ipouts",
+        "ha",
+        "hra",
+        "bba",
+        "soa",
+        "e",
+        "dp",
+        "fp",
+        "name",
+        "park",
+        "attendance",
+        "bpf",
+        "ppf",
+        "team_id_br",
+        "team_id_lahman45",
+        "team_id_retro"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "team_franchise",
+      "columns": [
+        "franchise_id",
+        "franchise_name",
+        "active",
+        "na_assoc"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "team_half",
+      "columns": [
+        "year",
+        "league_id",
+        "team_id",
+        "half",
+        "div_id",
+        "div_win",
+        "rank",
+        "g",
+        "w",
+        "l"
+      ],
+      "primary_keys": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "all_star",
+      "to": "player",
+      "from_column": "player_id",
+      "to_column": "player_id"
+    },
+    {
+      "from": "appearances",
+      "to": "player",
+      "from_column": "player_id",
+      "to_column": "player_id"
+    },
+    {
+      "from": "appearances",
+      "to": "team",
+      "from_column": "team_id",
+      "to_column": "team_id"
+    },
+    {
+      "from": "batting",
+      "to": "player",
+      "from_column": "player_id",
+      "to_column": "player_id"
+    },
+    {
+      "from": "batting_postseason",
+      "to": "team",
+      "from_column": "team_id",
+      "to_column": "team_id"
+    },
+    {
+      "from": "batting_postseason",
+      "to": "player",
+      "from_column": "player_id",
+      "to_column": "player_id"
+    },
+    {
+      "from": "fielding",
+      "to": "player",
+      "from_column": "player_id",
+      "to_column": "player_id"
+    },
+    {
+      "from": "fielding_outfield",
+      "to": "player",
+      "from_column": "player_id",
+      "to_column": "player_id"
+    },
+    {
+      "from": "fielding_postseason",
+      "to": "player",
+      "from_column": "team_id",
+      "to_column": "team_id"
+    },
+    {
+      "from": "fielding_postseason",
+      "to": "player",
+      "from_column": "player_id",
+      "to_column": "player_id"
+    },
+    {
+      "from": "hall_of_fame",
+      "to": "player",
+      "from_column": "player_id",
+      "to_column": "player_id"
+    },
+    {
+      "from": "home_game",
+      "to": "park",
+      "from_column": "park_id",
+      "to_column": "park_id"
+    },
+    {
+      "from": "home_game",
+      "to": "team",
+      "from_column": "team_id",
+      "to_column": "team_id"
+    },
+    {
+      "from": "manager",
+      "to": "team",
+      "from_column": "team_id",
+      "to_column": "team_id"
+    },
+    {
+      "from": "manager_award",
+      "to": "player",
+      "from_column": "player_id",
+      "to_column": "player_id"
+    },
+    {
+      "from": "manager_half",
+      "to": "team",
+      "from_column": "team_id",
+      "to_column": "team_id"
+    },
+    {
+      "from": "player_award",
+      "to": "player",
+      "from_column": "player_id",
+      "to_column": "player_id"
+    },
+    {
+      "from": "player_award_vote",
+      "to": "player",
+      "from_column": "player_id",
+      "to_column": "player_id"
+    },
+    {
+      "from": "player_college",
+      "to": "college",
+      "from_column": "college_id",
+      "to_column": "college_id"
+    },
+    {
+      "from": "player_college",
+      "to": "player",
+      "from_column": "player_id",
+      "to_column": "player_id"
+    }
+  ]
+}

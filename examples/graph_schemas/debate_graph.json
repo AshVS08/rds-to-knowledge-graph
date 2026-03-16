@@ -1,0 +1,64 @@
+{
+  "db_id": "debate",
+  "nodes": [
+    {
+      "id": "debate",
+      "columns": [
+        "Debate_ID",
+        "Date",
+        "Venue",
+        "Num_of_Audience"
+      ],
+      "primary_keys": [
+        "Debate_ID"
+      ]
+    },
+    {
+      "id": "debate_people",
+      "columns": [
+        "Debate_ID",
+        "Affirmative",
+        "Negative",
+        "If_Affirmative_Win"
+      ],
+      "primary_keys": [
+        "Debate_ID",
+        "Affirmative",
+        "Negative"
+      ]
+    },
+    {
+      "id": "people",
+      "columns": [
+        "People_ID",
+        "District",
+        "Name",
+        "Party",
+        "Age"
+      ],
+      "primary_keys": [
+        "People_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "debate_people",
+      "to": "people",
+      "from_column": "Negative",
+      "to_column": "People_ID"
+    },
+    {
+      "from": "debate_people",
+      "to": "people",
+      "from_column": "Affirmative",
+      "to_column": "People_ID"
+    },
+    {
+      "from": "debate_people",
+      "to": "debate",
+      "from_column": "Debate_ID",
+      "to_column": "Debate_ID"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "db_id": "course_teach",
+  "tables": [
+    {
+      "name": "course",
+      "columns": [
+        {
+          "name": "Course_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Staring_Date",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Course",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Course_ID"
+      ]
+    },
+    {
+      "name": "course_arrange",
+      "columns": [
+        {
+          "name": "Course_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Teacher_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Grade",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "Course_ID",
+        "Teacher_ID",
+        "Grade"
+      ]
+    },
+    {
+      "name": "teacher",
+      "columns": [
+        {
+          "name": "Teacher_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Age",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Hometown",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Teacher_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "course_arrange",
+      "from_column": "Teacher_ID",
+      "to_table": "teacher",
+      "to_column": "Teacher_ID"
+    },
+    {
+      "from_table": "course_arrange",
+      "from_column": "Course_ID",
+      "to_table": "course",
+      "to_column": "Course_ID"
+    }
+  ]
+}

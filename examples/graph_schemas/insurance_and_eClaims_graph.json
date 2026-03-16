@@ -1,0 +1,130 @@
+{
+  "db_id": "insurance_and_eClaims",
+  "nodes": [
+    {
+      "id": "Claim_Headers",
+      "columns": [
+        "Claim_Header_ID",
+        "Claim_Status_Code",
+        "Claim_Type_Code",
+        "Policy_ID",
+        "Date_of_Claim",
+        "Date_of_Settlement",
+        "Amount_Claimed",
+        "Amount_Piad"
+      ],
+      "primary_keys": [
+        "Claim_Header_ID"
+      ]
+    },
+    {
+      "id": "Claims_Documents",
+      "columns": [
+        "Claim_ID",
+        "Document_Type_Code",
+        "Created_by_Staff_ID",
+        "Created_Date"
+      ],
+      "primary_keys": [
+        "Claim_ID",
+        "Document_Type_Code"
+      ]
+    },
+    {
+      "id": "Claims_Processing",
+      "columns": [
+        "Claim_Processing_ID",
+        "Claim_ID",
+        "Claim_Outcome_Code",
+        "Claim_Stage_ID",
+        "Staff_ID"
+      ],
+      "primary_keys": [
+        "Claim_Processing_ID"
+      ]
+    },
+    {
+      "id": "Claims_Processing_Stages",
+      "columns": [
+        "Claim_Stage_ID",
+        "Next_Claim_Stage_ID",
+        "Claim_Status_Name",
+        "Claim_Status_Description"
+      ],
+      "primary_keys": [
+        "Claim_Stage_ID"
+      ]
+    },
+    {
+      "id": "Customers",
+      "columns": [
+        "Customer_ID",
+        "Customer_Details"
+      ],
+      "primary_keys": [
+        "Customer_ID"
+      ]
+    },
+    {
+      "id": "Policies",
+      "columns": [
+        "Policy_ID",
+        "Customer_ID",
+        "Policy_Type_Code",
+        "Start_Date",
+        "End_Date"
+      ],
+      "primary_keys": [
+        "Policy_ID"
+      ]
+    },
+    {
+      "id": "Staff",
+      "columns": [
+        "Staff_ID",
+        "Staff_Details"
+      ],
+      "primary_keys": [
+        "Staff_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Claim_Headers",
+      "to": "Policies",
+      "from_column": "Policy_ID",
+      "to_column": "Policy_ID"
+    },
+    {
+      "from": "Claims_Documents",
+      "to": "Staff",
+      "from_column": "Created_by_Staff_ID",
+      "to_column": "Staff_ID"
+    },
+    {
+      "from": "Claims_Documents",
+      "to": "Claim_Headers",
+      "from_column": "Claim_ID",
+      "to_column": "Claim_Header_ID"
+    },
+    {
+      "from": "Claims_Processing",
+      "to": "Staff",
+      "from_column": "Staff_ID",
+      "to_column": "Staff_ID"
+    },
+    {
+      "from": "Claims_Processing",
+      "to": "Claim_Headers",
+      "from_column": "Claim_ID",
+      "to_column": "Claim_Header_ID"
+    },
+    {
+      "from": "Policies",
+      "to": "Customers",
+      "from_column": "Customer_ID",
+      "to_column": "Customer_ID"
+    }
+  ]
+}

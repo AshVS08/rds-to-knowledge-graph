@@ -1,0 +1,143 @@
+{
+  "db_id": "icfp_1",
+  "tables": [
+    {
+      "name": "Authors",
+      "columns": [
+        {
+          "name": "authID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "lname",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "fname",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "authID"
+      ]
+    },
+    {
+      "name": "Authorship",
+      "columns": [
+        {
+          "name": "authID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "instID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "paperID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "authOrder",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "authID",
+        "instID",
+        "paperID"
+      ]
+    },
+    {
+      "name": "Inst",
+      "columns": [
+        {
+          "name": "instID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "country",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "instID"
+      ]
+    },
+    {
+      "name": "Papers",
+      "columns": [
+        {
+          "name": "paperID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "title",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "paperID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Authorship",
+      "from_column": "paperID",
+      "to_table": "Papers",
+      "to_column": "paperID"
+    },
+    {
+      "from_table": "Authorship",
+      "from_column": "instID",
+      "to_table": "Inst",
+      "to_column": "instID"
+    },
+    {
+      "from_table": "Authorship",
+      "from_column": "authID",
+      "to_table": "Authors",
+      "to_column": "authID"
+    }
+  ]
+}

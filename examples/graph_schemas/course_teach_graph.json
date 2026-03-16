@@ -1,0 +1,55 @@
+{
+  "db_id": "course_teach",
+  "nodes": [
+    {
+      "id": "course",
+      "columns": [
+        "Course_ID",
+        "Staring_Date",
+        "Course"
+      ],
+      "primary_keys": [
+        "Course_ID"
+      ]
+    },
+    {
+      "id": "course_arrange",
+      "columns": [
+        "Course_ID",
+        "Teacher_ID",
+        "Grade"
+      ],
+      "primary_keys": [
+        "Course_ID",
+        "Teacher_ID",
+        "Grade"
+      ]
+    },
+    {
+      "id": "teacher",
+      "columns": [
+        "Teacher_ID",
+        "Name",
+        "Age",
+        "Hometown"
+      ],
+      "primary_keys": [
+        "Teacher_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "course_arrange",
+      "to": "teacher",
+      "from_column": "Teacher_ID",
+      "to_column": "Teacher_ID"
+    },
+    {
+      "from": "course_arrange",
+      "to": "course",
+      "from_column": "Course_ID",
+      "to_column": "Course_ID"
+    }
+  ]
+}

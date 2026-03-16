@@ -1,0 +1,121 @@
+{
+  "db_id": "cre_Docs_and_Epenses",
+  "nodes": [
+    {
+      "id": "Accounts",
+      "columns": [
+        "Account_ID",
+        "Statement_ID",
+        "Account_Details"
+      ],
+      "primary_keys": [
+        "Account_ID"
+      ]
+    },
+    {
+      "id": "Documents",
+      "columns": [
+        "Document_ID",
+        "Document_Type_Code",
+        "Project_ID",
+        "Document_Date",
+        "Document_Name",
+        "Document_Description",
+        "Other_Details"
+      ],
+      "primary_keys": [
+        "Document_ID"
+      ]
+    },
+    {
+      "id": "Documents_with_Expenses",
+      "columns": [
+        "Document_ID",
+        "Budget_Type_Code",
+        "Document_Details"
+      ],
+      "primary_keys": [
+        "Document_ID"
+      ]
+    },
+    {
+      "id": "Projects",
+      "columns": [
+        "Project_ID",
+        "Project_Details"
+      ],
+      "primary_keys": [
+        "Project_ID"
+      ]
+    },
+    {
+      "id": "Ref_Budget_Codes",
+      "columns": [
+        "Budget_Type_Code",
+        "Budget_Type_Description"
+      ],
+      "primary_keys": [
+        "Budget_Type_Code"
+      ]
+    },
+    {
+      "id": "Ref_Document_Types",
+      "columns": [
+        "Document_Type_Code",
+        "Document_Type_Name",
+        "Document_Type_Description"
+      ],
+      "primary_keys": [
+        "Document_Type_Code"
+      ]
+    },
+    {
+      "id": "Statements",
+      "columns": [
+        "Statement_ID",
+        "Statement_Details"
+      ],
+      "primary_keys": [
+        "Statement_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Accounts",
+      "to": "Statements",
+      "from_column": "Statement_ID",
+      "to_column": "Statement_ID"
+    },
+    {
+      "from": "Documents",
+      "to": "Projects",
+      "from_column": "Project_ID",
+      "to_column": "Project_ID"
+    },
+    {
+      "from": "Documents",
+      "to": "Ref_Document_Types",
+      "from_column": "Document_Type_Code",
+      "to_column": "Document_Type_Code"
+    },
+    {
+      "from": "Documents_with_Expenses",
+      "to": "Documents",
+      "from_column": "Document_ID",
+      "to_column": "Document_ID"
+    },
+    {
+      "from": "Documents_with_Expenses",
+      "to": "Ref_Budget_Codes",
+      "from_column": "Budget_Type_Code",
+      "to_column": "Budget_Type_Code"
+    },
+    {
+      "from": "Statements",
+      "to": "Documents",
+      "from_column": "Statement_ID",
+      "to_column": "Document_ID"
+    }
+  ]
+}

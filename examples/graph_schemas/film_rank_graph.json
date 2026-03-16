@@ -1,0 +1,58 @@
+{
+  "db_id": "film_rank",
+  "nodes": [
+    {
+      "id": "film",
+      "columns": [
+        "Film_ID",
+        "Title",
+        "Studio",
+        "Director",
+        "Gross_in_dollar"
+      ],
+      "primary_keys": [
+        "Film_ID"
+      ]
+    },
+    {
+      "id": "film_market_estimation",
+      "columns": [
+        "Estimation_ID",
+        "Low_Estimate",
+        "High_Estimate",
+        "Film_ID",
+        "Type",
+        "Market_ID",
+        "Year"
+      ],
+      "primary_keys": [
+        "Estimation_ID"
+      ]
+    },
+    {
+      "id": "market",
+      "columns": [
+        "Market_ID",
+        "Country",
+        "Number_cities"
+      ],
+      "primary_keys": [
+        "Market_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "film_market_estimation",
+      "to": "market",
+      "from_column": "Market_ID",
+      "to_column": "Market_ID"
+    },
+    {
+      "from": "film_market_estimation",
+      "to": "film",
+      "from_column": "Film_ID",
+      "to_column": "Film_ID"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+DB ID: imdb
+Run:   20250910-163730
+
+Tables: 16
+Columns: 66
+PKs: 15
+FKs: 12
+
+issues:
+- Missing to_column keyword.kid
+
+Primary keys by table:
+- actor: ['aid']
+- cast: ['id']
+- classification: ['id']
+- company: ['id']
+- copyright: ['id']
+- directed_by: ['id']
+- director: ['did']
+- genre: ['gid']
+- keyword: ['id']
+- made_by: ['id']
+- movie: ['mid']
+- producer: ['pid']
+- tags: ['id']
+- tv_series: ['sid']
+- writer: ['wid']
+- written_by: None
+
+Null summary:
+{
+  "actor": {},
+  "cast": {},
+  "classification": {},
+  "company": {},
+  "copyright": {},
+  "directed_by": {},
+  "director": {},
+  "genre": {},
+  "keyword": {},
+  "made_by": {},
+  "movie": {},
+  "producer": {},
+  "tags": {},
+  "tv_series": {},
+  "writer": {},
+  "written_by": {}
+}

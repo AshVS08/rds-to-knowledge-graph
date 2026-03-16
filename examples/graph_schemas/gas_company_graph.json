@@ -1,0 +1,62 @@
+{
+  "db_id": "gas_company",
+  "nodes": [
+    {
+      "id": "company",
+      "columns": [
+        "Company_ID",
+        "Rank",
+        "Company",
+        "Headquarters",
+        "Main_Industry",
+        "Sales_billion",
+        "Profits_billion",
+        "Assets_billion",
+        "Market_Value"
+      ],
+      "primary_keys": [
+        "Company_ID"
+      ]
+    },
+    {
+      "id": "gas_station",
+      "columns": [
+        "Station_ID",
+        "Open_Year",
+        "Location",
+        "Manager_Name",
+        "Vice_Manager_Name",
+        "Representative_Name"
+      ],
+      "primary_keys": [
+        "Station_ID"
+      ]
+    },
+    {
+      "id": "station_company",
+      "columns": [
+        "Station_ID",
+        "Company_ID",
+        "Rank_of_the_Year"
+      ],
+      "primary_keys": [
+        "Station_ID",
+        "Company_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "station_company",
+      "to": "company",
+      "from_column": "Company_ID",
+      "to_column": "Company_ID"
+    },
+    {
+      "from": "station_company",
+      "to": "gas_station",
+      "from_column": "Station_ID",
+      "to_column": "Station_ID"
+    }
+  ]
+}

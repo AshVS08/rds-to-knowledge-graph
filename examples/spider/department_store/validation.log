@@ -1,0 +1,113 @@
+DB ID: department_store
+Run:   20250910-163730
+
+Tables: 14
+Columns: 56
+PKs: 18
+FKs: 13
+
+No structural issues found.
+
+Primary keys by table:
+- Addresses: ['address_id']
+- Customer_Addresses: ['customer_id', 'address_id']
+- Customer_Orders: ['order_id']
+- Customers: ['customer_id']
+- Department_Store_Chain: ['dept_store_chain_id']
+- Department_Stores: ['dept_store_id']
+- Departments: ['department_id']
+- Order_Items: ['order_item_id']
+- Product_Suppliers: ['product_id', 'supplier_id']
+- Products: ['product_id']
+- Staff: ['staff_id']
+- Staff_Department_Assignments: ['staff_id', 'department_id']
+- Supplier_Addresses: ['supplier_id', 'address_id']
+- Suppliers: ['supplier_id']
+
+Null summary:
+{
+  "Addresses": {
+    "address_id": 0,
+    "address_details": 0
+  },
+  "Customer_Addresses": {
+    "customer_id": 0,
+    "address_id": 0,
+    "date_from": 0,
+    "date_to": 0
+  },
+  "Customer_Orders": {
+    "order_id": 0,
+    "customer_id": 0,
+    "order_status_code": 0,
+    "order_date": 0
+  },
+  "Customers": {
+    "customer_id": 0,
+    "payment_method_code": 0,
+    "customer_code": 0,
+    "customer_name": 0,
+    "customer_address": 0,
+    "customer_phone": 0,
+    "customer_email": 0
+  },
+  "Department_Store_Chain": {
+    "dept_store_chain_id": 0,
+    "dept_store_chain_name": 0
+  },
+  "Department_Stores": {
+    "dept_store_id": 0,
+    "dept_store_chain_id": 0,
+    "store_name": 0,
+    "store_address": 0,
+    "store_phone": 0,
+    "store_email": 0
+  },
+  "Departments": {
+    "department_id": 0,
+    "dept_store_id": 0,
+    "department_name": 0
+  },
+  "Order_Items": {
+    "order_item_id": 0,
+    "order_id": 0,
+    "product_id": 0
+  },
+  "Product_Suppliers": {
+    "product_id": 0,
+    "supplier_id": 0,
+    "date_supplied_from": 0,
+    "date_supplied_to": 0,
+    "total_amount_purchased": 0,
+    "total_value_purchased": 0
+  },
+  "Products": {
+    "product_id": 0,
+    "product_type_code": 0,
+    "product_name": 0,
+    "product_price": 0
+  },
+  "Staff": {
+    "staff_id": 0,
+    "staff_gender": 0,
+    "staff_name": 0
+  },
+  "Staff_Department_Assignments": {
+    "staff_id": 0,
+    "department_id": 0,
+    "date_assigned_from": 0,
+    "job_title_code": 0,
+    "date_assigned_to": 0
+  },
+  "Supplier_Addresses": {
+    "supplier_id": 0,
+    "address_id": 0,
+    "date_from": 0,
+    "date_to": 0
+  },
+  "Suppliers": {
+    "supplier_id": 0,
+    "supplier_name": 0,
+    "supplier_phone": 0
+  }
+}

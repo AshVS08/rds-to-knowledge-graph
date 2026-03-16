@@ -1,0 +1,192 @@
+{
+  "db_id": "e_government",
+  "nodes": [
+    {
+      "id": "Addresses",
+      "columns": [
+        "address_id",
+        "line_1_number_building",
+        "town_city",
+        "zip_postcode",
+        "state_province_county",
+        "country"
+      ],
+      "primary_keys": [
+        "address_id"
+      ]
+    },
+    {
+      "id": "Forms",
+      "columns": [
+        "form_id",
+        "form_type_code",
+        "service_id",
+        "form_number",
+        "form_name",
+        "form_description"
+      ],
+      "primary_keys": [
+        "form_id"
+      ]
+    },
+    {
+      "id": "Individuals",
+      "columns": [
+        "individual_id",
+        "individual_first_name",
+        "individual_middle_name",
+        "inidividual_phone",
+        "individual_email",
+        "individual_address",
+        "individual_last_name"
+      ],
+      "primary_keys": [
+        "individual_id"
+      ]
+    },
+    {
+      "id": "Organization_Contact_Individuals",
+      "columns": [
+        "individual_id",
+        "organization_id",
+        "date_contact_from",
+        "date_contact_to"
+      ],
+      "primary_keys": [
+        "individual_id",
+        "organization_id"
+      ]
+    },
+    {
+      "id": "Organizations",
+      "columns": [
+        "organization_id",
+        "date_formed",
+        "organization_name",
+        "uk_vat_number"
+      ],
+      "primary_keys": [
+        "organization_id"
+      ]
+    },
+    {
+      "id": "Parties",
+      "columns": [
+        "party_id",
+        "payment_method_code",
+        "party_phone",
+        "party_email"
+      ],
+      "primary_keys": [
+        "party_id"
+      ]
+    },
+    {
+      "id": "Party_Addresses",
+      "columns": [
+        "party_id",
+        "address_id",
+        "date_address_from",
+        "address_type_code",
+        "date_address_to"
+      ],
+      "primary_keys": [
+        "party_id",
+        "address_id"
+      ]
+    },
+    {
+      "id": "Party_Forms",
+      "columns": [
+        "party_id",
+        "form_id",
+        "date_completion_started",
+        "form_status_code",
+        "date_fully_completed"
+      ],
+      "primary_keys": [
+        "party_id",
+        "form_id"
+      ]
+    },
+    {
+      "id": "Party_Services",
+      "columns": [
+        "booking_id",
+        "customer_id",
+        "service_id",
+        "service_datetime",
+        "booking_made_date"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Services",
+      "columns": [
+        "service_id",
+        "service_type_code",
+        "service_name",
+        "service_descriptio"
+      ],
+      "primary_keys": [
+        "service_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Forms",
+      "to": "Services",
+      "from_column": "service_id",
+      "to_column": "service_id"
+    },
+    {
+      "from": "Organization_Contact_Individuals",
+      "to": "Individuals",
+      "from_column": "individual_id",
+      "to_column": "individual_id"
+    },
+    {
+      "from": "Organization_Contact_Individuals",
+      "to": "Organizations",
+      "from_column": "organization_id",
+      "to_column": "organization_id"
+    },
+    {
+      "from": "Party_Addresses",
+      "to": "Parties",
+      "from_column": "party_id",
+      "to_column": "party_id"
+    },
+    {
+      "from": "Party_Addresses",
+      "to": "Addresses",
+      "from_column": "address_id",
+      "to_column": "address_id"
+    },
+    {
+      "from": "Party_Forms",
+      "to": "Forms",
+      "from_column": "form_id",
+      "to_column": "form_id"
+    },
+    {
+      "from": "Party_Forms",
+      "to": "Parties",
+      "from_column": "party_id",
+      "to_column": "party_id"
+    },
+    {
+      "from": "Party_Services",
+      "to": "Parties",
+      "from_column": "customer_id",
+      "to_column": "party_id"
+    },
+    {
+      "from": "Party_Services",
+      "to": "Services",
+      "from_column": "service_id",
+      "to_column": "service_id"
+    }
+  ]
+}

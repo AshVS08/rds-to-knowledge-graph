@@ -1,0 +1,83 @@
+DB ID: cre_Doc_Control_Systems
+Run:   20250910-163730
+
+Tables: 11
+Columns: 35
+PKs: 18
+FKs: 13
+
+No structural issues found.
+
+Primary keys by table:
+- Addresses: ['address_id']
+- Circulation_History: ['document_id', 'draft_number', 'copy_number', 'employee_id']
+- Document_Drafts: ['document_id', 'draft_number']
+- Documents: ['document_id']
+- Documents_Mailed: ['document_id', 'mailed_to_address_id']
+- Draft_Copies: ['document_id', 'draft_number', 'copy_number']
+- Employees: ['employee_id']
+- Ref_Document_Status: ['document_status_code']
+- Ref_Document_Types: ['document_type_code']
+- Ref_Shipping_Agents: ['shipping_agent_code']
+- Roles: ['role_code']
+
+Null summary:
+{
+  "Addresses": {
+    "address_id": 0,
+    "address_details": 0
+  },
+  "Circulation_History": {
+    "document_id": 0,
+    "draft_number": 0,
+    "copy_number": 0,
+    "employee_id": 0
+  },
+  "Document_Drafts": {
+    "document_id": 0,
+    "draft_number": 0,
+    "draft_details": 0
+  },
+  "Documents": {
+    "document_id": 0,
+    "document_status_code": 0,
+    "document_type_code": 0,
+    "shipping_agent_code": 0,
+    "receipt_date": 0,
+    "receipt_number": 0,
+    "other_details": 0
+  },
+  "Documents_Mailed": {
+    "document_id": 0,
+    "mailed_to_address_id": 0,
+    "mailing_date": 0
+  },
+  "Draft_Copies": {
+    "document_id": 0,
+    "draft_number": 0,
+    "copy_number": 0
+  },
+  "Employees": {
+    "employee_id": 0,
+    "role_code": 0,
+    "employee_name": 0,
+    "other_details": 0
+  },
+  "Ref_Document_Status": {
+    "document_status_code": 0,
+    "document_status_description": 0
+  },
+  "Ref_Document_Types": {
+    "document_type_code": 0,
+    "document_type_description": 0
+  },
+  "Ref_Shipping_Agents": {
+    "shipping_agent_code": 0,
+    "shipping_agent_name": 0,
+    "shipping_agent_description": 0
+  },
+  "Roles": {
+    "role_code": 0,
+    "role_description": 0
+  }
+}

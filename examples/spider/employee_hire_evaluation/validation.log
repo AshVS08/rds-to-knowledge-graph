@@ -1,0 +1,44 @@
+DB ID: employee_hire_evaluation
+Run:   20250910-163730
+
+Tables: 4
+Columns: 17
+PKs: 5
+FKs: 3
+
+No structural issues found.
+
+Primary keys by table:
+- employee: ['Employee_ID']
+- evaluation: ['Employee_ID', 'Year_awarded']
+- hiring: ['Employee_ID']
+- shop: ['Shop_ID']
+
+Null summary:
+{
+  "employee": {
+    "Employee_ID": 0,
+    "Name": 0,
+    "Age": 0,
+    "City": 0
+  },
+  "evaluation": {
+    "Employee_ID": 0,
+    "Year_awarded": 0,
+    "Bonus": 0
+  },
+  "hiring": {
+    "Shop_ID": 0,
+    "Employee_ID": 0,
+    "Start_from": 0,
+    "Is_full_time": 0
+  },
+  "shop": {
+    "Shop_ID": 0,
+    "Name": 0,
+    "Location": 0,
+    "District": 0,
+    "Number_products": 0,
+    "Manager_name": 0
+  }
+}

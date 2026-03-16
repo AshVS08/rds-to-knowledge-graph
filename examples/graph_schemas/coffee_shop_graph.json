@@ -1,0 +1,73 @@
+{
+  "db_id": "coffee_shop",
+  "nodes": [
+    {
+      "id": "happy_hour",
+      "columns": [
+        "HH_ID",
+        "Shop_ID",
+        "Month",
+        "Num_of_shaff_in_charge"
+      ],
+      "primary_keys": [
+        "HH_ID",
+        "Shop_ID",
+        "Month"
+      ]
+    },
+    {
+      "id": "happy_hour_member",
+      "columns": [
+        "HH_ID",
+        "Member_ID",
+        "Total_amount"
+      ],
+      "primary_keys": [
+        "HH_ID",
+        "Member_ID"
+      ]
+    },
+    {
+      "id": "member",
+      "columns": [
+        "Member_ID",
+        "Name",
+        "Membership_card",
+        "Age",
+        "Time_of_purchase",
+        "Level_of_membership",
+        "Address"
+      ],
+      "primary_keys": [
+        "Member_ID"
+      ]
+    },
+    {
+      "id": "shop",
+      "columns": [
+        "Shop_ID",
+        "Address",
+        "Num_of_staff",
+        "Score",
+        "Open_Year"
+      ],
+      "primary_keys": [
+        "Shop_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "happy_hour",
+      "to": "shop",
+      "from_column": "Shop_ID",
+      "to_column": "Shop_ID"
+    },
+    {
+      "from": "happy_hour_member",
+      "to": "member",
+      "from_column": "Member_ID",
+      "to_column": "Member_ID"
+    }
+  ]
+}

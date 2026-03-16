@@ -1,0 +1,92 @@
+{
+  "db_id": "manufactory_1",
+  "tables": [
+    {
+      "name": "Manufacturers",
+      "columns": [
+        {
+          "name": "Code",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Headquarter",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Founder",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Revenue",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Code"
+      ]
+    },
+    {
+      "name": "Products",
+      "columns": [
+        {
+          "name": "Code",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Price",
+          "type": "DECIMAL",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Manufacturer",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Code"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Products",
+      "from_column": "Manufacturer",
+      "to_table": "Manufacturers",
+      "to_column": "Code"
+    }
+  ]
+}

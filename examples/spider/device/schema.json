@@ -1,0 +1,142 @@
+{
+  "db_id": "device",
+  "tables": [
+    {
+      "name": "device",
+      "columns": [
+        {
+          "name": "Device_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Device",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Carrier",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Package_Version",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Applications",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Software_Platform",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Device_ID"
+      ]
+    },
+    {
+      "name": "shop",
+      "columns": [
+        {
+          "name": "Shop_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Shop_Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Location",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Open_Date",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Open_Year",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Shop_ID"
+      ]
+    },
+    {
+      "name": "stock",
+      "columns": [
+        {
+          "name": "Shop_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Device_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Quantity",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Shop_ID",
+        "Device_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "stock",
+      "from_column": "Device_ID",
+      "to_table": "device",
+      "to_column": "Device_ID"
+    },
+    {
+      "from_table": "stock",
+      "from_column": "Shop_ID",
+      "to_table": "shop",
+      "to_column": "Shop_ID"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+DB ID: entrepreneur
+Run:   20250910-163730
+
+Tables: 2
+Columns: 10
+PKs: 2
+FKs: 1
+
+No structural issues found.
+
+Primary keys by table:
+- entrepreneur: ['Entrepreneur_ID']
+- people: ['People_ID']
+
+Null summary:
+{
+  "entrepreneur": {
+    "Entrepreneur_ID": 0,
+    "People_ID": 0,
+    "Company": 0,
+    "Money_Requested": 0,
+    "Investor": 0
+  },
+  "people": {
+    "People_ID": 0,
+    "Name": 0,
+    "Height": 0,
+    "Weight": 0,
+    "Date_of_Birth": 0
+  }
+}

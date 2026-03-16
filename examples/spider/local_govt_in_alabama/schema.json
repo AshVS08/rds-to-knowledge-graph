@@ -1,0 +1,128 @@
+{
+  "db_id": "local_govt_in_alabama",
+  "tables": [
+    {
+      "name": "Events",
+      "columns": [
+        {
+          "name": "Event_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Service_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Event_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Event_ID"
+      ]
+    },
+    {
+      "name": "Participants",
+      "columns": [
+        {
+          "name": "Participant_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Participant_Type_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Participant_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Participant_ID"
+      ]
+    },
+    {
+      "name": "Participants_in_Events",
+      "columns": [
+        {
+          "name": "Event_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Participant_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "Event_ID",
+        "Participant_ID"
+      ]
+    },
+    {
+      "name": "Services",
+      "columns": [
+        {
+          "name": "Service_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Service_Type_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Service_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Events",
+      "from_column": "Service_ID",
+      "to_table": "Services",
+      "to_column": "Service_ID"
+    },
+    {
+      "from_table": "Participants_in_Events",
+      "from_column": "Event_ID",
+      "to_table": "Events",
+      "to_column": "Event_ID"
+    },
+    {
+      "from_table": "Participants_in_Events",
+      "from_column": "Participant_ID",
+      "to_table": "Participants",
+      "to_column": "Participant_ID"
+    }
+  ]
+}

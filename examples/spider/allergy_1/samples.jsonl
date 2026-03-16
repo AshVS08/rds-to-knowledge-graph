@@ -1,0 +1,98 @@
+{"table": "Allergy_Type", "row": {"Allergy": "Eggs", "AllergyType": "food"}}
+{"table": "Allergy_Type", "row": {"Allergy": "Nuts", "AllergyType": "food"}}
+{"table": "Allergy_Type", "row": {"Allergy": "Milk", "AllergyType": "food"}}
+{"table": "Allergy_Type", "row": {"Allergy": "Shellfish", "AllergyType": "food"}}
+{"table": "Allergy_Type", "row": {"Allergy": "Anchovies", "AllergyType": "food"}}
+{"table": "Allergy_Type", "row": {"Allergy": "Wheat", "AllergyType": "food"}}
+{"table": "Allergy_Type", "row": {"Allergy": "Soy", "AllergyType": "food"}}
+{"table": "Allergy_Type", "row": {"Allergy": "Ragweed", "AllergyType": "environmental"}}
+{"table": "Allergy_Type", "row": {"Allergy": "Tree Pollen", "AllergyType": "environmental"}}
+{"table": "Allergy_Type", "row": {"Allergy": "Grass Pollen", "AllergyType": "environmental"}}
+{"table": "Allergy_Type", "row": {"Allergy": "Cat", "AllergyType": "animal"}}
+{"table": "Allergy_Type", "row": {"Allergy": "Dog", "AllergyType": "animal"}}
+{"table": "Allergy_Type", "row": {"Allergy": "Rodent", "AllergyType": "animal"}}
+{"table": "Allergy_Type", "row": {"Allergy": "Bee Stings", "AllergyType": "animal"}}
+{"table": "Has_Allergy", "row": {"StuID": 1001, "Allergy": "Cat"}}
+{"table": "Has_Allergy", "row": {"StuID": 1002, "Allergy": "Shellfish"}}
+{"table": "Has_Allergy", "row": {"StuID": 1002, "Allergy": "Tree Pollen"}}
+{"table": "Has_Allergy", "row": {"StuID": 1003, "Allergy": "Dog"}}
+{"table": "Has_Allergy", "row": {"StuID": 1004, "Allergy": "Nuts"}}
+{"table": "Has_Allergy", "row": {"StuID": 1005, "Allergy": "Nuts"}}
+{"table": "Has_Allergy", "row": {"StuID": 1005, "Allergy": "Tree Pollen"}}
+{"table": "Has_Allergy", "row": {"StuID": 1006, "Allergy": "Nuts"}}
+{"table": "Has_Allergy", "row": {"StuID": 1007, "Allergy": "Ragweed"}}
+{"table": "Has_Allergy", "row": {"StuID": 1007, "Allergy": "Tree Pollen"}}
+{"table": "Has_Allergy", "row": {"StuID": 1007, "Allergy": "Grass Pollen"}}
+{"table": "Has_Allergy", "row": {"StuID": 1007, "Allergy": "Eggs"}}
+{"table": "Has_Allergy", "row": {"StuID": 1007, "Allergy": "Milk"}}
+{"table": "Has_Allergy", "row": {"StuID": 1007, "Allergy": "Shellfish"}}
+{"table": "Has_Allergy", "row": {"StuID": 1007, "Allergy": "Anchovies"}}
+{"table": "Has_Allergy", "row": {"StuID": 1007, "Allergy": "Cat"}}
+{"table": "Has_Allergy", "row": {"StuID": 1007, "Allergy": "Dog"}}
+{"table": "Has_Allergy", "row": {"StuID": 1009, "Allergy": "Tree Pollen"}}
+{"table": "Has_Allergy", "row": {"StuID": 1010, "Allergy": "Ragweed"}}
+{"table": "Has_Allergy", "row": {"StuID": 1010, "Allergy": "Tree Pollen"}}
+{"table": "Has_Allergy", "row": {"StuID": 1010, "Allergy": "Grass Pollen"}}
+{"table": "Has_Allergy", "row": {"StuID": 1010, "Allergy": "Eggs"}}
+{"table": "Has_Allergy", "row": {"StuID": 1010, "Allergy": "Milk"}}
+{"table": "Has_Allergy", "row": {"StuID": 1010, "Allergy": "Shellfish"}}
+{"table": "Has_Allergy", "row": {"StuID": 1010, "Allergy": "Anchovies"}}
+{"table": "Has_Allergy", "row": {"StuID": 1010, "Allergy": "Cat"}}
+{"table": "Has_Allergy", "row": {"StuID": 1010, "Allergy": "Dog"}}
+{"table": "Has_Allergy", "row": {"StuID": 1011, "Allergy": "Ragweed"}}
+{"table": "Has_Allergy", "row": {"StuID": 1012, "Allergy": "Ragweed"}}
+{"table": "Has_Allergy", "row": {"StuID": 1013, "Allergy": "Ragweed"}}
+{"table": "Has_Allergy", "row": {"StuID": 1014, "Allergy": "Nuts"}}
+{"table": "Has_Allergy", "row": {"StuID": 1015, "Allergy": "Nuts"}}
+{"table": "Has_Allergy", "row": {"StuID": 1015, "Allergy": "Soy"}}
+{"table": "Has_Allergy", "row": {"StuID": 1016, "Allergy": "Nuts"}}
+{"table": "Has_Allergy", "row": {"StuID": 1016, "Allergy": "Milk"}}
+{"table": "Has_Allergy", "row": {"StuID": 1017, "Allergy": "Tree Pollen"}}
+{"table": "Has_Allergy", "row": {"StuID": 1018, "Allergy": "Nuts"}}
+{"table": "Has_Allergy", "row": {"StuID": 1018, "Allergy": "Soy"}}
+{"table": "Has_Allergy", "row": {"StuID": 1019, "Allergy": "Tree Pollen"}}
+{"table": "Has_Allergy", "row": {"StuID": 1020, "Allergy": "Tree Pollen"}}
+{"table": "Has_Allergy", "row": {"StuID": 1021, "Allergy": "Tree Pollen"}}
+{"table": "Has_Allergy", "row": {"StuID": 1022, "Allergy": "Nuts"}}
+{"table": "Has_Allergy", "row": {"StuID": 1022, "Allergy": "Anchovies"}}
+{"table": "Has_Allergy", "row": {"StuID": 1023, "Allergy": "Rodent"}}
+{"table": "Has_Allergy", "row": {"StuID": 1023, "Allergy": "Cat"}}
+{"table": "Has_Allergy", "row": {"StuID": 1023, "Allergy": "Nuts"}}
+{"table": "Has_Allergy", "row": {"StuID": 1024, "Allergy": "Ragweed"}}
+{"table": "Has_Allergy", "row": {"StuID": 1024, "Allergy": "Tree Pollen"}}
+{"table": "Has_Allergy", "row": {"StuID": 1025, "Allergy": "Tree Pollen"}}
+{"table": "Has_Allergy", "row": {"StuID": 1026, "Allergy": "Grass Pollen"}}
+{"table": "Student", "row": {"StuID": 1001, "LName": "Smith", "Fname": "Linda", "Age": 18, "Sex": "F", "Major": 600, "Advisor": 1121, "city_code": "BAL"}}
+{"table": "Student", "row": {"StuID": 1002, "LName": "Kim", "Fname": "Tracy", "Age": 19, "Sex": "F", "Major": 600, "Advisor": 7712, "city_code": "HKG"}}
+{"table": "Student", "row": {"StuID": 1003, "LName": "Jones", "Fname": "Shiela", "Age": 21, "Sex": "F", "Major": 600, "Advisor": 7792, "city_code": "WAS"}}
+{"table": "Student", "row": {"StuID": 1004, "LName": "Kumar", "Fname": "Dinesh", "Age": 20, "Sex": "M", "Major": 600, "Advisor": 8423, "city_code": "CHI"}}
+{"table": "Student", "row": {"StuID": 1005, "LName": "Gompers", "Fname": "Paul", "Age": 26, "Sex": "M", "Major": 600, "Advisor": 1121, "city_code": "YYZ"}}
+{"table": "Student", "row": {"StuID": 1006, "LName": "Schultz", "Fname": "Andy", "Age": 18, "Sex": "M", "Major": 600, "Advisor": 1148, "city_code": "BAL"}}
+{"table": "Student", "row": {"StuID": 1007, "LName": "Apap", "Fname": "Lisa", "Age": 18, "Sex": "F", "Major": 600, "Advisor": 8918, "city_code": "PIT"}}
+{"table": "Student", "row": {"StuID": 1008, "LName": "Nelson", "Fname": "Jandy", "Age": 20, "Sex": "F", "Major": 600, "Advisor": 9172, "city_code": "BAL"}}
+{"table": "Student", "row": {"StuID": 1009, "LName": "Tai", "Fname": "Eric", "Age": 19, "Sex": "M", "Major": 600, "Advisor": 2192, "city_code": "YYZ"}}
+{"table": "Student", "row": {"StuID": 1010, "LName": "Lee", "Fname": "Derek", "Age": 17, "Sex": "M", "Major": 600, "Advisor": 2192, "city_code": "HOU"}}
+{"table": "Student", "row": {"StuID": 1011, "LName": "Adams", "Fname": "David", "Age": 22, "Sex": "M", "Major": 600, "Advisor": 1148, "city_code": "PHL"}}
+{"table": "Student", "row": {"StuID": 1012, "LName": "Davis", "Fname": "Steven", "Age": 20, "Sex": "M", "Major": 600, "Advisor": 7723, "city_code": "PIT"}}
+{"table": "Student", "row": {"StuID": 1014, "LName": "Norris", "Fname": "Charles", "Age": 18, "Sex": "M", "Major": 600, "Advisor": 8741, "city_code": "DAL"}}
+{"table": "Student", "row": {"StuID": 1015, "LName": "Lee", "Fname": "Susan", "Age": 16, "Sex": "F", "Major": 600, "Advisor": 8721, "city_code": "HKG"}}
+{"table": "Student", "row": {"StuID": 1016, "LName": "Schwartz", "Fname": "Mark", "Age": 17, "Sex": "M", "Major": 600, "Advisor": 2192, "city_code": "DET"}}
+{"table": "Student", "row": {"StuID": 1017, "LName": "Wilson", "Fname": "Bruce", "Age": 27, "Sex": "M", "Major": 600, "Advisor": 1148, "city_code": "LON"}}
+{"table": "Student", "row": {"StuID": 1018, "LName": "Leighton", "Fname": "Michael", "Age": 20, "Sex": "M", "Major": 600, "Advisor": 1121, "city_code": "PIT"}}
+{"table": "Student", "row": {"StuID": 1019, "LName": "Pang", "Fname": "Arthur", "Age": 18, "Sex": "M", "Major": 600, "Advisor": 2192, "city_code": "WAS"}}
+{"table": "Student", "row": {"StuID": 1020, "LName": "Thornton", "Fname": "Ian", "Age": 22, "Sex": "M", "Major": 520, "Advisor": 7271, "city_code": "NYC"}}
+{"table": "Student", "row": {"StuID": 1021, "LName": "Andreou", "Fname": "George", "Age": 19, "Sex": "M", "Major": 520, "Advisor": 8722, "city_code": "NYC"}}
+{"table": "Student", "row": {"StuID": 1022, "LName": "Woods", "Fname": "Michael", "Age": 17, "Sex": "M", "Major": 540, "Advisor": 8722, "city_code": "PHL"}}
+{"table": "Student", "row": {"StuID": 1023, "LName": "Shieber", "Fname": "David", "Age": 20, "Sex": "M", "Major": 520, "Advisor": 8722, "city_code": "NYC"}}
+{"table": "Student", "row": {"StuID": 1024, "LName": "Prater", "Fname": "Stacy", "Age": 18, "Sex": "F", "Major": 540, "Advisor": 7271, "city_code": "BAL"}}
+{"table": "Student", "row": {"StuID": 1025, "LName": "Goldman", "Fname": "Mark", "Age": 18, "Sex": "M", "Major": 520, "Advisor": 7134, "city_code": "PIT"}}
+{"table": "Student", "row": {"StuID": 1026, "LName": "Pang", "Fname": "Eric", "Age": 19, "Sex": "M", "Major": 520, "Advisor": 7134, "city_code": "HKG"}}
+{"table": "Student", "row": {"StuID": 1027, "LName": "Brody", "Fname": "Paul", "Age": 18, "Sex": "M", "Major": 520, "Advisor": 8723, "city_code": "LOS"}}
+{"table": "Student", "row": {"StuID": 1028, "LName": "Rugh", "Fname": "Eric", "Age": 20, "Sex": "M", "Major": 550, "Advisor": 2311, "city_code": "ROC"}}
+{"table": "Student", "row": {"StuID": 1029, "LName": "Han", "Fname": "Jun", "Age": 17, "Sex": "M", "Major": 100, "Advisor": 2311, "city_code": "PEK"}}
+{"table": "Student", "row": {"StuID": 1030, "LName": "Cheng", "Fname": "Lisa", "Age": 21, "Sex": "F", "Major": 550, "Advisor": 2311, "city_code": "SFO"}}
+{"table": "Student", "row": {"StuID": 1031, "LName": "Smith", "Fname": "Sarah", "Age": 20, "Sex": "F", "Major": 550, "Advisor": 8772, "city_code": "PHL"}}
+{"table": "Student", "row": {"StuID": 1032, "LName": "Brown", "Fname": "Eric", "Age": 20, "Sex": "M", "Major": 550, "Advisor": 8772, "city_code": "ATL"}}
+{"table": "Student", "row": {"StuID": 1033, "LName": "Simms", "Fname": "William", "Age": 18, "Sex": "M", "Major": 550, "Advisor": 8772, "city_code": "NAR"}}
+{"table": "Student", "row": {"StuID": 1034, "LName": "Epp", "Fname": "Eric", "Age": 18, "Sex": "M", "Major": 50, "Advisor": 5718, "city_code": "BOS"}}
+{"table": "Student", "row": {"StuID": 1035, "LName": "Schmidt", "Fname": "Sarah", "Age": 26, "Sex": "F", "Major": 50, "Advisor": 5718, "city_code": "WAS"}}

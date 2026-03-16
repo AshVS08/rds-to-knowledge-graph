@@ -1,0 +1,156 @@
+{
+  "db_id": "company_employee",
+  "tables": [
+    {
+      "name": "company",
+      "columns": [
+        {
+          "name": "Company_ID",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Headquarters",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Industry",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Sales_in_Billion",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Profits_in_Billion",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Assets_in_Billion",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Market_Value_in_Billion",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Company_ID"
+      ]
+    },
+    {
+      "name": "employment",
+      "columns": [
+        {
+          "name": "Company_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "People_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Year_working",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Company_ID",
+        "People_ID"
+      ]
+    },
+    {
+      "name": "people",
+      "columns": [
+        {
+          "name": "People_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Age",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Nationality",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Graduation_College",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "People_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "employment",
+      "from_column": "People_ID",
+      "to_table": "people",
+      "to_column": "People_ID"
+    },
+    {
+      "from_table": "employment",
+      "from_column": "Company_ID",
+      "to_table": "company",
+      "to_column": "Company_ID"
+    }
+  ]
+}

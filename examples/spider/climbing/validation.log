@@ -1,0 +1,33 @@
+DB ID: climbing
+Run:   20250910-163730
+
+Tables: 2
+Columns: 12
+PKs: 2
+FKs: 1
+
+No structural issues found.
+
+Primary keys by table:
+- climber: ['Climber_ID']
+- mountain: ['Mountain_ID']
+
+Null summary:
+{
+  "climber": {
+    "Climber_ID": 0,
+    "Name": 0,
+    "Country": 0,
+    "Time": 0,
+    "Points": 0,
+    "Mountain_ID": 0
+  },
+  "mountain": {
+    "Mountain_ID": 0,
+    "Name": 0,
+    "Height": 0,
+    "Prominence": 0,
+    "Range": 0,
+    "Country": 0
+  }
+}

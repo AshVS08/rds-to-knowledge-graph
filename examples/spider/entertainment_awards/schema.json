@@ -1,0 +1,128 @@
+{
+  "db_id": "entertainment_awards",
+  "tables": [
+    {
+      "name": "artwork",
+      "columns": [
+        {
+          "name": "Artwork_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Type",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Artwork_ID"
+      ]
+    },
+    {
+      "name": "festival_detail",
+      "columns": [
+        {
+          "name": "Festival_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Festival_Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Chair_Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Location",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Year",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Num_of_Audience",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Festival_ID"
+      ]
+    },
+    {
+      "name": "nomination",
+      "columns": [
+        {
+          "name": "Artwork_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Festival_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Result",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Artwork_ID",
+        "Festival_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "nomination",
+      "from_column": "Festival_ID",
+      "to_table": "festival_detail",
+      "to_column": "Festival_ID"
+    },
+    {
+      "from_table": "nomination",
+      "from_column": "Artwork_ID",
+      "to_table": "artwork",
+      "to_column": "Artwork_ID"
+    }
+  ]
+}

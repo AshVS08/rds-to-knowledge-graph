@@ -1,0 +1,56 @@
+{
+  "db_id": "club_1",
+  "nodes": [
+    {
+      "id": "Club",
+      "columns": [
+        "ClubID",
+        "ClubName",
+        "ClubDesc",
+        "ClubLocation"
+      ],
+      "primary_keys": [
+        "ClubID"
+      ]
+    },
+    {
+      "id": "Member_of_club",
+      "columns": [
+        "StuID",
+        "ClubID",
+        "Position"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Student",
+      "columns": [
+        "StuID",
+        "LName",
+        "Fname",
+        "Age",
+        "Sex",
+        "Major",
+        "Advisor",
+        "city_code"
+      ],
+      "primary_keys": [
+        "StuID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Member_of_club",
+      "to": "Club",
+      "from_column": "ClubID",
+      "to_column": "ClubID"
+    },
+    {
+      "from": "Member_of_club",
+      "to": "Student",
+      "from_column": "StuID",
+      "to_column": "StuID"
+    }
+  ]
+}

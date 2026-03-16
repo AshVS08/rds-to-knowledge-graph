@@ -1,0 +1,142 @@
+{
+  "db_id": "medicine_enzyme_interaction",
+  "tables": [
+    {
+      "name": "enzyme",
+      "columns": [
+        {
+          "name": "id",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Location",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Product",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Chromosome",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "OMIM",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Porphyria",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "id"
+      ]
+    },
+    {
+      "name": "medicine",
+      "columns": [
+        {
+          "name": "id",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Trade_Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "FDA_approved",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "id"
+      ]
+    },
+    {
+      "name": "medicine_enzyme_interaction",
+      "columns": [
+        {
+          "name": "enzyme_id",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "medicine_id",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "interaction_type",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "enzyme_id",
+        "medicine_id"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "medicine_enzyme_interaction",
+      "from_column": "medicine_id",
+      "to_table": "medicine",
+      "to_column": "id"
+    },
+    {
+      "from_table": "medicine_enzyme_interaction",
+      "from_column": "enzyme_id",
+      "to_table": "enzyme",
+      "to_column": "id"
+    }
+  ]
+}

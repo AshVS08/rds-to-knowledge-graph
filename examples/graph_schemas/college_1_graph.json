@@ -1,0 +1,156 @@
+{
+  "db_id": "college_1",
+  "nodes": [
+    {
+      "id": "CLASS",
+      "columns": [
+        "CLASS_CODE",
+        "CRS_CODE",
+        "CLASS_SECTION",
+        "CLASS_TIME",
+        "CLASS_ROOM",
+        "PROF_NUM"
+      ],
+      "primary_keys": [
+        "CLASS_CODE"
+      ]
+    },
+    {
+      "id": "COURSE",
+      "columns": [
+        "CRS_CODE",
+        "DEPT_CODE",
+        "CRS_DESCRIPTION",
+        "CRS_CREDIT"
+      ],
+      "primary_keys": [
+        "CRS_CODE"
+      ]
+    },
+    {
+      "id": "DEPARTMENT",
+      "columns": [
+        "DEPT_CODE",
+        "DEPT_NAME",
+        "SCHOOL_CODE",
+        "EMP_NUM",
+        "DEPT_ADDRESS",
+        "DEPT_EXTENSION"
+      ],
+      "primary_keys": [
+        "DEPT_CODE"
+      ]
+    },
+    {
+      "id": "EMPLOYEE",
+      "columns": [
+        "EMP_NUM",
+        "EMP_LNAME",
+        "EMP_FNAME",
+        "EMP_INITIAL",
+        "EMP_JOBCODE",
+        "EMP_HIREDATE",
+        "EMP_DOB"
+      ],
+      "primary_keys": [
+        "EMP_NUM"
+      ]
+    },
+    {
+      "id": "ENROLL",
+      "columns": [
+        "CLASS_CODE",
+        "STU_NUM",
+        "ENROLL_GRADE"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "PROFESSOR",
+      "columns": [
+        "EMP_NUM",
+        "DEPT_CODE",
+        "PROF_OFFICE",
+        "PROF_EXTENSION",
+        "PROF_HIGH_DEGREE"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "STUDENT",
+      "columns": [
+        "STU_NUM",
+        "STU_LNAME",
+        "STU_FNAME",
+        "STU_INIT",
+        "STU_DOB",
+        "STU_HRS",
+        "STU_CLASS",
+        "STU_GPA",
+        "STU_TRANSFER",
+        "DEPT_CODE",
+        "STU_PHONE",
+        "PROF_NUM"
+      ],
+      "primary_keys": [
+        "STU_NUM"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "CLASS",
+      "to": "EMPLOYEE",
+      "from_column": "PROF_NUM",
+      "to_column": "EMP_NUM"
+    },
+    {
+      "from": "CLASS",
+      "to": "COURSE",
+      "from_column": "CRS_CODE",
+      "to_column": "CRS_CODE"
+    },
+    {
+      "from": "COURSE",
+      "to": "DEPARTMENT",
+      "from_column": "DEPT_CODE",
+      "to_column": "DEPT_CODE"
+    },
+    {
+      "from": "DEPARTMENT",
+      "to": "EMPLOYEE",
+      "from_column": "EMP_NUM",
+      "to_column": "EMP_NUM"
+    },
+    {
+      "from": "ENROLL",
+      "to": "STUDENT",
+      "from_column": "STU_NUM",
+      "to_column": "STU_NUM"
+    },
+    {
+      "from": "ENROLL",
+      "to": "CLASS",
+      "from_column": "CLASS_CODE",
+      "to_column": "CLASS_CODE"
+    },
+    {
+      "from": "PROFESSOR",
+      "to": "DEPARTMENT",
+      "from_column": "DEPT_CODE",
+      "to_column": "DEPT_CODE"
+    },
+    {
+      "from": "PROFESSOR",
+      "to": "EMPLOYEE",
+      "from_column": "EMP_NUM",
+      "to_column": "EMP_NUM"
+    },
+    {
+      "from": "STUDENT",
+      "to": "DEPARTMENT",
+      "from_column": "DEPT_CODE",
+      "to_column": "DEPT_CODE"
+    }
+  ]
+}

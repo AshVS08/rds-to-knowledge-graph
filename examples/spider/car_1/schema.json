@@ -1,0 +1,246 @@
+{
+  "db_id": "car_1",
+  "tables": [
+    {
+      "name": "car_makers",
+      "columns": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Maker",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "FullName",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Country",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Id"
+      ]
+    },
+    {
+      "name": "car_names",
+      "columns": [
+        {
+          "name": "MakeId",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Model",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Make",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "MakeId"
+      ]
+    },
+    {
+      "name": "cars_data",
+      "columns": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "MPG",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Cylinders",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Edispl",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Horsepower",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Weight",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Accelerate",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Id"
+      ]
+    },
+    {
+      "name": "continents",
+      "columns": [
+        {
+          "name": "ContId",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Continent",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "ContId"
+      ]
+    },
+    {
+      "name": "countries",
+      "columns": [
+        {
+          "name": "CountryId",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "CountryName",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Continent",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "CountryId"
+      ]
+    },
+    {
+      "name": "model_list",
+      "columns": [
+        {
+          "name": "ModelId",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Maker",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Model",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "ModelId"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "car_makers",
+      "from_column": "Country",
+      "to_table": "countries",
+      "to_column": "CountryId"
+    },
+    {
+      "from_table": "car_names",
+      "from_column": "Model",
+      "to_table": "model_list",
+      "to_column": "Model"
+    },
+    {
+      "from_table": "cars_data",
+      "from_column": "Id",
+      "to_table": "car_names",
+      "to_column": "MakeId"
+    },
+    {
+      "from_table": "countries",
+      "from_column": "Continent",
+      "to_table": "continents",
+      "to_column": "ContId"
+    },
+    {
+      "from_table": "model_list",
+      "from_column": "Maker",
+      "to_table": "car_makers",
+      "to_column": "Id"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "db_id": "geo",
+  "nodes": [
+    {
+      "id": "border_info",
+      "columns": [
+        "state_name",
+        "border"
+      ],
+      "primary_keys": [
+        "state_name",
+        "border"
+      ]
+    },
+    {
+      "id": "city",
+      "columns": [
+        "city_name",
+        "population",
+        "country_name",
+        "state_name"
+      ],
+      "primary_keys": [
+        "city_name",
+        "state_name"
+      ]
+    },
+    {
+      "id": "highlow",
+      "columns": [
+        "state_name",
+        "highest_elevation",
+        "lowest_point",
+        "highest_point",
+        "lowest_elevation"
+      ],
+      "primary_keys": [
+        "state_name"
+      ]
+    },
+    {
+      "id": "lake",
+      "columns": [
+        "lake_name",
+        "area",
+        "country_name",
+        "state_name"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "mountain",
+      "columns": [
+        "mountain_name",
+        "mountain_altitude",
+        "country_name",
+        "state_name"
+      ],
+      "primary_keys": [
+        "mountain_name",
+        "state_name"
+      ]
+    },
+    {
+      "id": "river",
+      "columns": [
+        "river_name",
+        "length",
+        "country_name",
+        "traverse"
+      ],
+      "primary_keys": [
+        "river_name"
+      ]
+    },
+    {
+      "id": "state",
+      "columns": [
+        "state_name",
+        "population",
+        "area",
+        "country_name",
+        "capital",
+        "density"
+      ],
+      "primary_keys": [
+        "state_name"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "border_info",
+      "to": "state",
+      "from_column": "border",
+      "to_column": "state_name"
+    },
+    {
+      "from": "border_info",
+      "to": "state",
+      "from_column": "state_name",
+      "to_column": "state_name"
+    },
+    {
+      "from": "city",
+      "to": "state",
+      "from_column": "state_name",
+      "to_column": "state_name"
+    },
+    {
+      "from": "highlow",
+      "to": "state",
+      "from_column": "state_name",
+      "to_column": "state_name"
+    },
+    {
+      "from": "mountain",
+      "to": "state",
+      "from_column": "state_name",
+      "to_column": "state_name"
+    },
+    {
+      "from": "river",
+      "to": "state",
+      "from_column": "traverse",
+      "to_column": "state_name"
+    }
+  ]
+}

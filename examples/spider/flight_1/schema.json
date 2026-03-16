@@ -1,0 +1,170 @@
+{
+  "db_id": "flight_1",
+  "tables": [
+    {
+      "name": "aircraft",
+      "columns": [
+        {
+          "name": "aid",
+          "type": "number(9,0)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "name",
+          "type": "varchar2(30)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "distance",
+          "type": "number(6,0)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "aid"
+      ]
+    },
+    {
+      "name": "certificate",
+      "columns": [
+        {
+          "name": "eid",
+          "type": "number(9,0)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "aid",
+          "type": "number(9,0)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "eid",
+        "aid"
+      ]
+    },
+    {
+      "name": "employee",
+      "columns": [
+        {
+          "name": "eid",
+          "type": "number(9,0)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "name",
+          "type": "varchar2(30)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "salary",
+          "type": "number(10,2)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "eid"
+      ]
+    },
+    {
+      "name": "flight",
+      "columns": [
+        {
+          "name": "flno",
+          "type": "number(4,0)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "origin",
+          "type": "varchar2(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "destination",
+          "type": "varchar2(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "distance",
+          "type": "number(6,0)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "departure_date",
+          "type": "date",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "arrival_date",
+          "type": "date",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "price",
+          "type": "number(7,2)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "aid",
+          "type": "number(9,0)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "flno"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "certificate",
+      "from_column": "aid",
+      "to_table": "aircraft",
+      "to_column": "aid"
+    },
+    {
+      "from_table": "certificate",
+      "from_column": "eid",
+      "to_table": "employee",
+      "to_column": "eid"
+    },
+    {
+      "from_table": "flight",
+      "from_column": "aid",
+      "to_table": "aircraft",
+      "to_column": "aid"
+    }
+  ]
+}

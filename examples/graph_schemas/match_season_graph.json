@@ -1,0 +1,78 @@
+{
+  "db_id": "match_season",
+  "nodes": [
+    {
+      "id": "country",
+      "columns": [
+        "Country_id",
+        "Country_name",
+        "Capital",
+        "Official_native_language"
+      ],
+      "primary_keys": [
+        "Country_id"
+      ]
+    },
+    {
+      "id": "match_season",
+      "columns": [
+        "Season",
+        "Player",
+        "Position",
+        "Country",
+        "Team",
+        "Draft_Pick_Number",
+        "Draft_Class",
+        "College"
+      ],
+      "primary_keys": [
+        "Season"
+      ]
+    },
+    {
+      "id": "player",
+      "columns": [
+        "Player_ID",
+        "Player",
+        "Years_Played",
+        "Total_WL",
+        "Singles_WL",
+        "Doubles_WL",
+        "Team"
+      ],
+      "primary_keys": [
+        "Player_ID"
+      ]
+    },
+    {
+      "id": "team",
+      "columns": [
+        "Team_id",
+        "Name"
+      ],
+      "primary_keys": [
+        "Team_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "match_season",
+      "to": "team",
+      "from_column": "Team",
+      "to_column": "Team_id"
+    },
+    {
+      "from": "match_season",
+      "to": "country",
+      "from_column": "Country",
+      "to_column": "Country_id"
+    },
+    {
+      "from": "player",
+      "to": "team",
+      "from_column": "Team",
+      "to_column": "Team_id"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+DB ID: music_2
+Run:   20250910-163730
+
+Tables: 7
+Columns: 22
+PKs: 12
+FKs: 8
+
+No structural issues found.
+
+Primary keys by table:
+- Albums: ['AId']
+- Band: ['Id']
+- Instruments: ['SongId', 'BandmateId', 'Instrument']
+- Performance: ['SongId', 'Bandmate']
+- Songs: ['SongId']
+- Tracklists: ['AlbumId', 'Position']
+- Vocals: ['SongId', 'Bandmate']
+
+Null summary:
+{
+  "Albums": {},
+  "Band": {},
+  "Instruments": {},
+  "Performance": {},
+  "Songs": {},
+  "Tracklists": {},
+  "Vocals": {}
+}

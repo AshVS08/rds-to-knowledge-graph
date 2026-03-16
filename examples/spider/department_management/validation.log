@@ -1,0 +1,37 @@
+DB ID: department_management
+Run:   20250910-163730
+
+Tables: 3
+Columns: 13
+PKs: 4
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- department: ['Department_ID']
+- head: ['head_ID']
+- management: ['department_ID', 'head_ID']
+
+Null summary:
+{
+  "department": {
+    "Department_ID": 0,
+    "Name": 0,
+    "Creation": 0,
+    "Ranking": 0,
+    "Budget_in_Billions": 0,
+    "Num_Employees": 0
+  },
+  "head": {
+    "head_ID": 0,
+    "name": 0,
+    "born_state": 0,
+    "age": 0
+  },
+  "management": {
+    "department_ID": 0,
+    "head_ID": 0,
+    "temporary_acting": 0
+  }
+}

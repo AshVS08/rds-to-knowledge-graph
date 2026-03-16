@@ -1,0 +1,130 @@
+{
+  "db_id": "local_govt_mdm",
+  "nodes": [
+    {
+      "id": "Benefits_Overpayments",
+      "columns": [
+        "council_tax_id",
+        "cmi_cross_ref_id"
+      ],
+      "primary_keys": [
+        "council_tax_id"
+      ]
+    },
+    {
+      "id": "Business_Rates",
+      "columns": [
+        "business_rates_id",
+        "cmi_cross_ref_id"
+      ],
+      "primary_keys": [
+        "business_rates_id"
+      ]
+    },
+    {
+      "id": "CMI_Cross_References",
+      "columns": [
+        "cmi_cross_ref_id",
+        "master_customer_id",
+        "source_system_code"
+      ],
+      "primary_keys": [
+        "cmi_cross_ref_id"
+      ]
+    },
+    {
+      "id": "Council_Tax",
+      "columns": [
+        "council_tax_id",
+        "cmi_cross_ref_id"
+      ],
+      "primary_keys": [
+        "council_tax_id"
+      ]
+    },
+    {
+      "id": "Customer_Master_Index",
+      "columns": [
+        "master_customer_id",
+        "cmi_details"
+      ],
+      "primary_keys": [
+        "master_customer_id"
+      ]
+    },
+    {
+      "id": "Electoral_Register",
+      "columns": [
+        "electoral_register_id",
+        "cmi_cross_ref_id"
+      ],
+      "primary_keys": [
+        "electoral_register_id"
+      ]
+    },
+    {
+      "id": "Parking_Fines",
+      "columns": [
+        "council_tax_id",
+        "cmi_cross_ref_id"
+      ],
+      "primary_keys": [
+        "council_tax_id"
+      ]
+    },
+    {
+      "id": "Rent_Arrears",
+      "columns": [
+        "council_tax_id",
+        "cmi_cross_ref_id"
+      ],
+      "primary_keys": [
+        "council_tax_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Benefits_Overpayments",
+      "to": "CMI_Cross_References",
+      "from_column": "cmi_cross_ref_id",
+      "to_column": "cmi_cross_ref_id"
+    },
+    {
+      "from": "Business_Rates",
+      "to": "CMI_Cross_References",
+      "from_column": "cmi_cross_ref_id",
+      "to_column": "cmi_cross_ref_id"
+    },
+    {
+      "from": "CMI_Cross_References",
+      "to": "Customer_Master_Index",
+      "from_column": "master_customer_id",
+      "to_column": "master_customer_id"
+    },
+    {
+      "from": "Council_Tax",
+      "to": "CMI_Cross_References",
+      "from_column": "cmi_cross_ref_id",
+      "to_column": "cmi_cross_ref_id"
+    },
+    {
+      "from": "Electoral_Register",
+      "to": "CMI_Cross_References",
+      "from_column": "cmi_cross_ref_id",
+      "to_column": "cmi_cross_ref_id"
+    },
+    {
+      "from": "Parking_Fines",
+      "to": "CMI_Cross_References",
+      "from_column": "cmi_cross_ref_id",
+      "to_column": "cmi_cross_ref_id"
+    },
+    {
+      "from": "Rent_Arrears",
+      "to": "CMI_Cross_References",
+      "from_column": "cmi_cross_ref_id",
+      "to_column": "cmi_cross_ref_id"
+    }
+  ]
+}

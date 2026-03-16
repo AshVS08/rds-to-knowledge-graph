@@ -1,0 +1,42 @@
+DB ID: gas_company
+Run:   20250910-163730
+
+Tables: 3
+Columns: 18
+PKs: 4
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- company: ['Company_ID']
+- gas_station: ['Station_ID']
+- station_company: ['Station_ID', 'Company_ID']
+
+Null summary:
+{
+  "company": {
+    "Company_ID": 0,
+    "Rank": 0,
+    "Company": 0,
+    "Headquarters": 0,
+    "Main_Industry": 0,
+    "Sales_billion": 0,
+    "Profits_billion": 0,
+    "Assets_billion": 0,
+    "Market_Value": 0
+  },
+  "gas_station": {
+    "Station_ID": 0,
+    "Open_Year": 0,
+    "Location": 0,
+    "Manager_Name": 0,
+    "Vice_Manager_Name": 0,
+    "Representative_Name": 0
+  },
+  "station_company": {
+    "Station_ID": 0,
+    "Company_ID": 0,
+    "Rank_of_the_Year": 0
+  }
+}

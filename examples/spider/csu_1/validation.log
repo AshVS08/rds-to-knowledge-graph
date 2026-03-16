@@ -1,0 +1,56 @@
+DB ID: csu_1
+Run:   20250910-163730
+
+Tables: 6
+Columns: 23
+PKs: 8
+FKs: 5
+
+No structural issues found.
+
+Primary keys by table:
+- Campuses: ['Id']
+- csu_fees: ['Campus']
+- degrees: ['Year', 'Campus']
+- discipline_enrollments: ['Campus', 'Discipline']
+- enrollments: ['Campus', 'Year']
+- faculty: None
+
+Null summary:
+{
+  "Campuses": {
+    "Id": 0,
+    "Campus": 0,
+    "Location": 0,
+    "County": 0,
+    "Year": 0
+  },
+  "csu_fees": {
+    "Campus": 0,
+    "Year": 0,
+    "CampusFee": 0
+  },
+  "degrees": {
+    "Year": 0,
+    "Campus": 0,
+    "Degrees": 0
+  },
+  "discipline_enrollments": {
+    "Campus": 0,
+    "Discipline": 0,
+    "Year": 0,
+    "Undergraduate": 0,
+    "Graduate": 0
+  },
+  "enrollments": {
+    "Campus": 0,
+    "Year": 0,
+    "TotalEnrollment_AY": 0,
+    "FTE_AY": 0
+  },
+  "faculty": {
+    "Campus": 0,
+    "Year": 0,
+    "Faculty": 0
+  }
+}

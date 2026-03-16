@@ -1,0 +1,34 @@
+DB ID: journal_committee
+Run:   20250910-163730
+
+Tables: 3
+Columns: 10
+PKs: 4
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- editor: ['Editor_ID']
+- journal: ['Journal_ID']
+- journal_committee: ['Editor_ID', 'Journal_ID']
+
+Null summary:
+{
+  "editor": {
+    "Editor_ID": 0,
+    "Name": 0,
+    "Age": 0
+  },
+  "journal": {
+    "Journal_ID": 0,
+    "Date": 0,
+    "Theme": 0,
+    "Sales": 0
+  },
+  "journal_committee": {
+    "Editor_ID": 0,
+    "Journal_ID": 0,
+    "Work_Type": 0
+  }
+}

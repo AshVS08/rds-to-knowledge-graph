@@ -1,0 +1,766 @@
+{
+  "db_id": "hospital_1",
+  "tables": [
+    {
+      "name": "Affiliated_With",
+      "columns": [
+        {
+          "name": "Physician",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Department",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "PrimaryAffiliation",
+          "type": "BOOLEAN",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Physician",
+        "Department"
+      ]
+    },
+    {
+      "name": "Appointment",
+      "columns": [
+        {
+          "name": "AppointmentID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Patient",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "PrepNurse",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Physician",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Start",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "End",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ExaminationRoom",
+          "type": "TEXT",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "AppointmentID"
+      ]
+    },
+    {
+      "name": "Block",
+      "columns": [
+        {
+          "name": "BlockFloor",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "BlockCode",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "BlockFloor",
+        "BlockCode"
+      ]
+    },
+    {
+      "name": "Department",
+      "columns": [
+        {
+          "name": "DepartmentID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "VARCHAR(30)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Head",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "DepartmentID"
+      ]
+    },
+    {
+      "name": "Medication",
+      "columns": [
+        {
+          "name": "Code",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "VARCHAR(30)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Brand",
+          "type": "VARCHAR(30)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Description",
+          "type": "VARCHAR(30)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Code"
+      ]
+    },
+    {
+      "name": "Nurse",
+      "columns": [
+        {
+          "name": "EmployeeID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "VARCHAR(30)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Position",
+          "type": "VARCHAR(30)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Registered",
+          "type": "BOOLEAN",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "SSN",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "EmployeeID"
+      ]
+    },
+    {
+      "name": "On_Call",
+      "columns": [
+        {
+          "name": "Nurse",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "BlockFloor",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "BlockCode",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "OnCallStart",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "OnCallEnd",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "Nurse",
+        "BlockFloor",
+        "BlockCode",
+        "OnCallStart",
+        "OnCallEnd"
+      ]
+    },
+    {
+      "name": "Patient",
+      "columns": [
+        {
+          "name": "SSN",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "VARCHAR(30)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Address",
+          "type": "VARCHAR(30)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Phone",
+          "type": "VARCHAR(30)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "InsuranceID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "PCP",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "SSN"
+      ]
+    },
+    {
+      "name": "Physician",
+      "columns": [
+        {
+          "name": "EmployeeID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "VARCHAR(30)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Position",
+          "type": "VARCHAR(30)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "SSN",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "EmployeeID"
+      ]
+    },
+    {
+      "name": "Prescribes",
+      "columns": [
+        {
+          "name": "Physician",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Patient",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Medication",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Date",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Appointment",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Dose",
+          "type": "VARCHAR(30)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Physician",
+        "Patient",
+        "Medication",
+        "Date"
+      ]
+    },
+    {
+      "name": "Procedures",
+      "columns": [
+        {
+          "name": "Code",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "VARCHAR(30)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Cost",
+          "type": "REAL",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Code"
+      ]
+    },
+    {
+      "name": "Room",
+      "columns": [
+        {
+          "name": "RoomNumber",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "RoomType",
+          "type": "VARCHAR(30)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "BlockFloor",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "BlockCode",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Unavailable",
+          "type": "BOOLEAN",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "RoomNumber"
+      ]
+    },
+    {
+      "name": "Stay",
+      "columns": [
+        {
+          "name": "StayID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Patient",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Room",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "StayStart",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "StayEnd",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "StayID"
+      ]
+    },
+    {
+      "name": "Trained_In",
+      "columns": [
+        {
+          "name": "Physician",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Treatment",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "CertificationDate",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "CertificationExpires",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Physician",
+        "Treatment"
+      ]
+    },
+    {
+      "name": "Undergoes",
+      "columns": [
+        {
+          "name": "Patient",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Procedures",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Stay",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "DateUndergoes",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Physician",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "AssistingNurse",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Patient",
+        "Procedures",
+        "Stay",
+        "DateUndergoes"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Affiliated_With",
+      "from_column": "Department",
+      "to_table": "Department",
+      "to_column": "DepartmentID"
+    },
+    {
+      "from_table": "Affiliated_With",
+      "from_column": "Physician",
+      "to_table": "Physician",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from_table": "Appointment",
+      "from_column": "Physician",
+      "to_table": "Physician",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from_table": "Appointment",
+      "from_column": "PrepNurse",
+      "to_table": "Nurse",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from_table": "Appointment",
+      "from_column": "Patient",
+      "to_table": "Patient",
+      "to_column": "SSN"
+    },
+    {
+      "from_table": "Department",
+      "from_column": "Head",
+      "to_table": "Physician",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from_table": "On_Call",
+      "from_column": "BlockFloor",
+      "to_table": "Block",
+      "to_column": "BlockFloor"
+    },
+    {
+      "from_table": "On_Call",
+      "from_column": "BlockCode",
+      "to_table": "Block",
+      "to_column": "BlockCode"
+    },
+    {
+      "from_table": "On_Call",
+      "from_column": "Nurse",
+      "to_table": "Nurse",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from_table": "Patient",
+      "from_column": "PCP",
+      "to_table": "Physician",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from_table": "Prescribes",
+      "from_column": "Appointment",
+      "to_table": "Appointment",
+      "to_column": "AppointmentID"
+    },
+    {
+      "from_table": "Prescribes",
+      "from_column": "Medication",
+      "to_table": "Medication",
+      "to_column": "Code"
+    },
+    {
+      "from_table": "Prescribes",
+      "from_column": "Patient",
+      "to_table": "Patient",
+      "to_column": "SSN"
+    },
+    {
+      "from_table": "Prescribes",
+      "from_column": "Physician",
+      "to_table": "Physician",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from_table": "Room",
+      "from_column": "BlockFloor",
+      "to_table": "Block",
+      "to_column": "BlockFloor"
+    },
+    {
+      "from_table": "Room",
+      "from_column": "BlockCode",
+      "to_table": "Block",
+      "to_column": "BlockCode"
+    },
+    {
+      "from_table": "Stay",
+      "from_column": "Room",
+      "to_table": "Room",
+      "to_column": "RoomNumber"
+    },
+    {
+      "from_table": "Stay",
+      "from_column": "Patient",
+      "to_table": "Patient",
+      "to_column": "SSN"
+    },
+    {
+      "from_table": "Trained_In",
+      "from_column": "Treatment",
+      "to_table": "Procedures",
+      "to_column": "Code"
+    },
+    {
+      "from_table": "Trained_In",
+      "from_column": "Physician",
+      "to_table": "Physician",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from_table": "Undergoes",
+      "from_column": "AssistingNurse",
+      "to_table": "Nurse",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from_table": "Undergoes",
+      "from_column": "Physician",
+      "to_table": "Physician",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from_table": "Undergoes",
+      "from_column": "Stay",
+      "to_table": "Stay",
+      "to_column": "StayID"
+    },
+    {
+      "from_table": "Undergoes",
+      "from_column": "Procedures",
+      "to_table": "Procedures",
+      "to_column": "Code"
+    },
+    {
+      "from_table": "Undergoes",
+      "from_column": "Patient",
+      "to_table": "Patient",
+      "to_column": "SSN"
+    }
+  ]
+}

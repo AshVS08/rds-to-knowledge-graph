@@ -1,0 +1,351 @@
+{
+  "db_id": "hr_1",
+  "tables": [
+    {
+      "name": "countries",
+      "columns": [
+        {
+          "name": "COUNTRY_ID",
+          "type": "varchar(2)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "COUNTRY_NAME",
+          "type": "varchar(40)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "REGION_ID",
+          "type": "decimal(10,0)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "COUNTRY_ID"
+      ]
+    },
+    {
+      "name": "departments",
+      "columns": [
+        {
+          "name": "DEPARTMENT_ID",
+          "type": "decimal(4,0)",
+          "notnull": true,
+          "default": "'0'",
+          "is_pk": true
+        },
+        {
+          "name": "DEPARTMENT_NAME",
+          "type": "varchar(30)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "MANAGER_ID",
+          "type": "decimal(6,0)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "LOCATION_ID",
+          "type": "decimal(4,0)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "DEPARTMENT_ID"
+      ]
+    },
+    {
+      "name": "employees",
+      "columns": [
+        {
+          "name": "EMPLOYEE_ID",
+          "type": "decimal(6,0)",
+          "notnull": true,
+          "default": "'0'",
+          "is_pk": true
+        },
+        {
+          "name": "FIRST_NAME",
+          "type": "varchar(20)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "LAST_NAME",
+          "type": "varchar(25)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "EMAIL",
+          "type": "varchar(25)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "PHONE_NUMBER",
+          "type": "varchar(20)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "HIRE_DATE",
+          "type": "date",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "JOB_ID",
+          "type": "varchar(10)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "SALARY",
+          "type": "decimal(8,2)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "COMMISSION_PCT",
+          "type": "decimal(2,2)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "MANAGER_ID",
+          "type": "decimal(6,0)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "DEPARTMENT_ID",
+          "type": "decimal(4,0)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "EMPLOYEE_ID"
+      ]
+    },
+    {
+      "name": "job_history",
+      "columns": [
+        {
+          "name": "EMPLOYEE_ID",
+          "type": "decimal(6,0)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "START_DATE",
+          "type": "date",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "END_DATE",
+          "type": "date",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "JOB_ID",
+          "type": "varchar(10)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "DEPARTMENT_ID",
+          "type": "decimal(4,0)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "EMPLOYEE_ID",
+        "START_DATE"
+      ]
+    },
+    {
+      "name": "jobs",
+      "columns": [
+        {
+          "name": "JOB_ID",
+          "type": "varchar(10)",
+          "notnull": true,
+          "default": "''",
+          "is_pk": true
+        },
+        {
+          "name": "JOB_TITLE",
+          "type": "varchar(35)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "MIN_SALARY",
+          "type": "decimal(6,0)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "MAX_SALARY",
+          "type": "decimal(6,0)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "JOB_ID"
+      ]
+    },
+    {
+      "name": "locations",
+      "columns": [
+        {
+          "name": "LOCATION_ID",
+          "type": "decimal(4,0)",
+          "notnull": true,
+          "default": "'0'",
+          "is_pk": true
+        },
+        {
+          "name": "STREET_ADDRESS",
+          "type": "varchar(40)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "POSTAL_CODE",
+          "type": "varchar(12)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "CITY",
+          "type": "varchar(30)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "STATE_PROVINCE",
+          "type": "varchar(25)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "COUNTRY_ID",
+          "type": "varchar(2)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "LOCATION_ID"
+      ]
+    },
+    {
+      "name": "regions",
+      "columns": [
+        {
+          "name": "REGION_ID",
+          "type": "decimal(5,0)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "REGION_NAME",
+          "type": "varchar(25)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "REGION_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "countries",
+      "from_column": "REGION_ID",
+      "to_table": "regions",
+      "to_column": "REGION_ID"
+    },
+    {
+      "from_table": "employees",
+      "from_column": "JOB_ID",
+      "to_table": "jobs",
+      "to_column": "JOB_ID"
+    },
+    {
+      "from_table": "employees",
+      "from_column": "DEPARTMENT_ID",
+      "to_table": "departments",
+      "to_column": "DEPARTMENT_ID"
+    },
+    {
+      "from_table": "job_history",
+      "from_column": "JOB_ID",
+      "to_table": "jobs",
+      "to_column": "JOB_ID"
+    },
+    {
+      "from_table": "job_history",
+      "from_column": "DEPARTMENT_ID",
+      "to_table": "departments",
+      "to_column": "DEPARTMENT_ID"
+    },
+    {
+      "from_table": "job_history",
+      "from_column": "EMPLOYEE_ID",
+      "to_table": "employees",
+      "to_column": "EMPLOYEE_ID"
+    },
+    {
+      "from_table": "locations",
+      "from_column": "COUNTRY_ID",
+      "to_table": "countries",
+      "to_column": "COUNTRY_ID"
+    }
+  ]
+}

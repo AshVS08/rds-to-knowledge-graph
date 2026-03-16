@@ -1,0 +1,128 @@
+{
+  "db_id": "decoration_competition",
+  "tables": [
+    {
+      "name": "college",
+      "columns": [
+        {
+          "name": "College_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Leader_Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "College_Location",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "College_ID"
+      ]
+    },
+    {
+      "name": "member",
+      "columns": [
+        {
+          "name": "Member_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Country",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "College_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Member_ID"
+      ]
+    },
+    {
+      "name": "round",
+      "columns": [
+        {
+          "name": "Round_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Member_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Decoration_Theme",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Rank_in_Round",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Round_ID",
+        "Member_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "member",
+      "from_column": "College_ID",
+      "to_table": "college",
+      "to_column": "College_ID"
+    },
+    {
+      "from_table": "round",
+      "from_column": "Member_ID",
+      "to_table": "member",
+      "to_column": "Member_ID"
+    }
+  ]
+}

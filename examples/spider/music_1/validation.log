@@ -1,0 +1,48 @@
+DB ID: music_1
+Run:   20250910-163730
+
+Tables: 4
+Columns: 21
+PKs: 4
+FKs: 5
+
+No structural issues found.
+
+Primary keys by table:
+- artist: ['artist_name']
+- files: ['f_id']
+- genre: ['g_name']
+- song: ['song_name']
+
+Null summary:
+{
+  "artist": {
+    "artist_name": 0,
+    "country": 0,
+    "gender": 0,
+    "preferred_genre": 0
+  },
+  "files": {
+    "f_id": 0,
+    "artist_name": 0,
+    "file_size": 0,
+    "duration": 0,
+    "formats": 0
+  },
+  "genre": {
+    "g_name": 0,
+    "rating": 0,
+    "most_popular_in": 0
+  },
+  "song": {
+    "song_name": 0,
+    "artist_name": 0,
+    "country": 0,
+    "f_id": 0,
+    "genre_is": 0,
+    "rating": 0,
+    "languages": 0,
+    "releasedate": 0,
+    "resolution": 0
+  }
+}

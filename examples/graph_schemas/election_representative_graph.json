@@ -1,0 +1,41 @@
+{
+  "db_id": "election_representative",
+  "nodes": [
+    {
+      "id": "election",
+      "columns": [
+        "Election_ID",
+        "Representative_ID",
+        "Date",
+        "Votes",
+        "Vote_Percent",
+        "Seats",
+        "Place"
+      ],
+      "primary_keys": [
+        "Election_ID"
+      ]
+    },
+    {
+      "id": "representative",
+      "columns": [
+        "Representative_ID",
+        "Name",
+        "State",
+        "Party",
+        "Lifespan"
+      ],
+      "primary_keys": [
+        "Representative_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "election",
+      "to": "representative",
+      "from_column": "Representative_ID",
+      "to_column": "Representative_ID"
+    }
+  ]
+}

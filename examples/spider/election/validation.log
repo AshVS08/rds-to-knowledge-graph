@@ -1,0 +1,43 @@
+DB ID: election
+Run:   20250910-163730
+
+Tables: 3
+Columns: 19
+PKs: 3
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- county: ['County_Id']
+- election: ['Election_ID']
+- party: ['Party_ID']
+
+Null summary:
+{
+  "county": {
+    "County_Id": 0,
+    "County_name": 0,
+    "Population": 0,
+    "Zip_code": 0
+  },
+  "election": {
+    "Election_ID": 0,
+    "Counties_Represented": 0,
+    "District": 0,
+    "Delegate": 0,
+    "Party": 0,
+    "First_Elected": 0,
+    "Committee": 0
+  },
+  "party": {
+    "Party_ID": 0,
+    "Year": 0,
+    "Party": 0,
+    "Governor": 0,
+    "Lieutenant_Governor": 0,
+    "Comptroller": 0,
+    "Attorney_General": 0,
+    "US_Senate": 0
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "db_id": "epinions_1",
+  "nodes": [
+    {
+      "id": "item",
+      "columns": [
+        "i_id",
+        "title"
+      ],
+      "primary_keys": [
+        "i_id"
+      ]
+    },
+    {
+      "id": "review",
+      "columns": [
+        "a_id",
+        "u_id",
+        "i_id",
+        "rating",
+        "rank"
+      ],
+      "primary_keys": [
+        "a_id"
+      ]
+    },
+    {
+      "id": "trust",
+      "columns": [
+        "source_u_id",
+        "target_u_id",
+        "trust"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "useracct",
+      "columns": [
+        "u_id",
+        "name"
+      ],
+      "primary_keys": [
+        "u_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "review",
+      "to": "item",
+      "from_column": "i_id",
+      "to_column": "i_id"
+    },
+    {
+      "from": "review",
+      "to": "useracct",
+      "from_column": "u_id",
+      "to_column": "u_id"
+    },
+    {
+      "from": "trust",
+      "to": "useracct",
+      "from_column": "target_u_id",
+      "to_column": "u_id"
+    },
+    {
+      "from": "trust",
+      "to": "useracct",
+      "from_column": "source_u_id",
+      "to_column": "u_id"
+    }
+  ]
+}

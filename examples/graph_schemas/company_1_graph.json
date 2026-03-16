@@ -1,0 +1,85 @@
+{
+  "db_id": "company_1",
+  "nodes": [
+    {
+      "id": "department",
+      "columns": [
+        "Dname",
+        "Dnumber",
+        "Mgr_ssn",
+        "Mgr_start_date"
+      ],
+      "primary_keys": [
+        "Dnumber"
+      ]
+    },
+    {
+      "id": "dependent",
+      "columns": [
+        "Essn",
+        "Dependent_name",
+        "Sex",
+        "Bdate",
+        "Relationship"
+      ],
+      "primary_keys": [
+        "Essn",
+        "Dependent_name"
+      ]
+    },
+    {
+      "id": "dept_locations",
+      "columns": [
+        "Dnumber",
+        "Dlocation"
+      ],
+      "primary_keys": [
+        "Dnumber",
+        "Dlocation"
+      ]
+    },
+    {
+      "id": "employee",
+      "columns": [
+        "Fname",
+        "Minit",
+        "Lname",
+        "Ssn",
+        "Bdate",
+        "Address",
+        "Sex",
+        "Salary",
+        "Super_ssn",
+        "Dno"
+      ],
+      "primary_keys": [
+        "Ssn"
+      ]
+    },
+    {
+      "id": "project",
+      "columns": [
+        "Pname",
+        "Pnumber",
+        "Plocation",
+        "Dnum"
+      ],
+      "primary_keys": [
+        "Pnumber"
+      ]
+    },
+    {
+      "id": "works_on",
+      "columns": [
+        "Essn",
+        "Pno",
+        "Hours"
+      ],
+      "primary_keys": [
+        "Essn",
+        "Pno"
+      ]
+    }
+  ],
+  "edges": []
+}

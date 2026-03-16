@@ -1,0 +1,45 @@
+{"table": "department", "row": {"Dname": "Headquarters", "Dnumber": 1, "Mgr_ssn": 888665555, "Mgr_start_date": "1981-06-19"}}
+{"table": "department", "row": {"Dname": "Administration", "Dnumber": 4, "Mgr_ssn": 987654321, "Mgr_start_date": "1995-01-01"}}
+{"table": "department", "row": {"Dname": "Research", "Dnumber": 5, "Mgr_ssn": 333445555, "Mgr_start_date": "1988-05-22"}}
+{"table": "dependent", "row": {"Essn": 333445555, "Dependent_name": "Alice", "Sex": "F", "Bdate": "1986-04-05", "Relationship": "Daughter"}}
+{"table": "dependent", "row": {"Essn": 333445555, "Dependent_name": "Theodore", "Sex": "M", "Bdate": "1983-10-25", "Relationship": "Son"}}
+{"table": "dependent", "row": {"Essn": 333445555, "Dependent_name": "Joy", "Sex": "F", "Bdate": "1958-05-03", "Relationship": "Spouse"}}
+{"table": "dependent", "row": {"Essn": 987654321, "Dependent_name": "Abner", "Sex": "M", "Bdate": "1942-02-28", "Relationship": "Spouse"}}
+{"table": "dependent", "row": {"Essn": 123456789, "Dependent_name": "Michael", "Sex": "M", "Bdate": "1988-01-04", "Relationship": "Son"}}
+{"table": "dependent", "row": {"Essn": 123456789, "Dependent_name": "Alice", "Sex": "F", "Bdate": "1988-12-30", "Relationship": "Daughter"}}
+{"table": "dependent", "row": {"Essn": 123456789, "Dependent_name": "Elizabeth", "Sex": "F", "Bdate": "1967-05-05", "Relationship": "Spouse"}}
+{"table": "dept_locations", "row": {"Dnumber": 1, "Dlocation": "Houston"}}
+{"table": "dept_locations", "row": {"Dnumber": 4, "Dlocation": "Stafford"}}
+{"table": "dept_locations", "row": {"Dnumber": 5, "Dlocation": "Bellaire"}}
+{"table": "dept_locations", "row": {"Dnumber": 5, "Dlocation": "Sugarland"}}
+{"table": "dept_locations", "row": {"Dnumber": 5, "Dlocation": "Houston"}}
+{"table": "employee", "row": {"Fname": "Jonh", "Minit": "B", "Lname": "Smith", "Ssn": 123456789, "Bdate": "1965-01-09", "Address": "731 Fondren, Houston, TX", "Sex": "M", "Salary": 30000, "Super_ssn": 333445555, "Dno": 5}}
+{"table": "employee", "row": {"Fname": "Franklin", "Minit": "T", "Lname": "Wong", "Ssn": 333445555, "Bdate": "1955-12-08", "Address": "638 Voss, Houston, TX", "Sex": "M", "Salary": 40000, "Super_ssn": 888665555, "Dno": 5}}
+{"table": "employee", "row": {"Fname": "Joyce", "Minit": "A", "Lname": "English", "Ssn": 453453453, "Bdate": "1972-07-31", "Address": "5631 Rice, Houston, TX", "Sex": "F", "Salary": 25000, "Super_ssn": 333445555, "Dno": 5}}
+{"table": "employee", "row": {"Fname": "Ramesh", "Minit": "K", "Lname": "Narayan", "Ssn": 666884444, "Bdate": "1962-09-15", "Address": "975 Fire Oak, Humble, TX", "Sex": "M", "Salary": 38000, "Super_ssn": 333445555, "Dno": 5}}
+{"table": "employee", "row": {"Fname": "James", "Minit": "E", "Lname": "Borg", "Ssn": 888665555, "Bdate": "1937-11-10", "Address": "450 Stone, Houston, TX", "Sex": "M", "Salary": 55000, "Super_ssn": null, "Dno": 1}}
+{"table": "employee", "row": {"Fname": "Jennifier", "Minit": "S", "Lname": "Wallace", "Ssn": 987654321, "Bdate": "1941-06-20", "Address": "291 Berry, Bellaire, TX", "Sex": "F", "Salary": 43000, "Super_ssn": 888665555, "Dno": 4}}
+{"table": "employee", "row": {"Fname": "Ahmad", "Minit": "V", "Lname": "Jabbar", "Ssn": 987987987, "Bdate": "1969-03-29", "Address": "980 Dallas, Houston, TX", "Sex": "M", "Salary": 25000, "Super_ssn": 987654321, "Dno": 4}}
+{"table": "employee", "row": {"Fname": "Alicia", "Minit": "J", "Lname": "Zelaya", "Ssn": 999887777, "Bdate": "1968-01-19", "Address": "3321 Castle, Spring, TX", "Sex": "F", "Salary": 25000, "Super_ssn": 987654321, "Dno": 4}}
+{"table": "project", "row": {"Pname": "ProductX", "Pnumber": 1, "Plocation": "Bellaire", "Dnum": 5}}
+{"table": "project", "row": {"Pname": "ProductY", "Pnumber": 2, "Plocation": "Sugarland", "Dnum": 5}}
+{"table": "project", "row": {"Pname": "ProductZ", "Pnumber": 3, "Plocation": "Houston", "Dnum": 5}}
+{"table": "project", "row": {"Pname": "Computerization", "Pnumber": 10, "Plocation": "Stafford", "Dnum": 4}}
+{"table": "project", "row": {"Pname": "Reorganization", "Pnumber": 20, "Plocation": "Houston", "Dnum": 1}}
+{"table": "project", "row": {"Pname": "Newbenefits", "Pnumber": 30, "Plocation": "Stafford", "Dnum": 4}}
+{"table": "works_on", "row": {"Essn": 123456789, "Pno": 1, "Hours": 32.5}}
+{"table": "works_on", "row": {"Essn": 123456789, "Pno": 2, "Hours": 7.5}}
+{"table": "works_on", "row": {"Essn": 666884444, "Pno": 3, "Hours": 40.0}}
+{"table": "works_on", "row": {"Essn": 453453453, "Pno": 1, "Hours": 20.0}}
+{"table": "works_on", "row": {"Essn": 453453453, "Pno": 2, "Hours": 20.0}}
+{"table": "works_on", "row": {"Essn": 333445555, "Pno": 2, "Hours": 10.0}}
+{"table": "works_on", "row": {"Essn": 333445555, "Pno": 3, "Hours": 10.0}}
+{"table": "works_on", "row": {"Essn": 333445555, "Pno": 10, "Hours": 10.0}}
+{"table": "works_on", "row": {"Essn": 333445555, "Pno": 20, "Hours": 10.0}}
+{"table": "works_on", "row": {"Essn": 999887777, "Pno": 30, "Hours": 30.0}}
+{"table": "works_on", "row": {"Essn": 999887777, "Pno": 10, "Hours": 10.0}}
+{"table": "works_on", "row": {"Essn": 987987987, "Pno": 10, "Hours": 35.0}}
+{"table": "works_on", "row": {"Essn": 987987987, "Pno": 30, "Hours": 5.0}}
+{"table": "works_on", "row": {"Essn": 987654321, "Pno": 30, "Hours": 20.0}}
+{"table": "works_on", "row": {"Essn": 987654321, "Pno": 20, "Hours": 15.0}}
+{"table": "works_on", "row": {"Essn": 888665555, "Pno": 20, "Hours": null}}

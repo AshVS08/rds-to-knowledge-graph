@@ -1,0 +1,39 @@
+DB ID: county_public_safety
+Run:   20250910-163730
+
+Tables: 2
+Columns: 18
+PKs: 2
+FKs: 1
+
+No structural issues found.
+
+Primary keys by table:
+- city: ['City_ID']
+- county_public_safety: ['County_ID']
+
+Null summary:
+{
+  "city": {
+    "City_ID": 0,
+    "County_ID": 0,
+    "Name": 0,
+    "White": 0,
+    "Black": 0,
+    "Amerindian": 0,
+    "Asian": 0,
+    "Multiracial": 0,
+    "Hispanic": 0
+  },
+  "county_public_safety": {
+    "County_ID": 0,
+    "Name": 0,
+    "Population": 0,
+    "Police_officers": 0,
+    "Residents_per_officer": 0,
+    "Case_burden": 0,
+    "Crime_rate": 0,
+    "Police_force": 0,
+    "Location": 0
+  }
+}

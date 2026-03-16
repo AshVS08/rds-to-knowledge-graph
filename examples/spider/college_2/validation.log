@@ -1,0 +1,94 @@
+DB ID: college_2
+Run:   20250910-163730
+
+Tables: 11
+Columns: 46
+PKs: 27
+FKs: 20
+
+No structural issues found.
+
+Primary keys by table:
+- advisor: ['s_ID']
+- classroom: ['building', 'room_number']
+- course: ['course_id']
+- department: ['dept_name']
+- instructor: ['ID']
+- prereq: ['course_id', 'prereq_id']
+- section: ['course_id', 'sec_id', 'semester', 'year']
+- student: ['ID']
+- takes: ['ID', 'course_id', 'sec_id', 'semester', 'year']
+- teaches: ['ID', 'course_id', 'sec_id', 'semester', 'year']
+- time_slot: ['time_slot_id', 'day', 'start_hr', 'start_min']
+
+Null summary:
+{
+  "advisor": {
+    "s_ID": 0,
+    "i_ID": 0
+  },
+  "classroom": {
+    "building": 0,
+    "room_number": 0,
+    "capacity": 0
+  },
+  "course": {
+    "course_id": 0,
+    "title": 0,
+    "dept_name": 0,
+    "credits": 0
+  },
+  "department": {
+    "dept_name": 0,
+    "building": 0,
+    "budget": 0
+  },
+  "instructor": {
+    "ID": 0,
+    "name": 0,
+    "dept_name": 0,
+    "salary": 0
+  },
+  "prereq": {
+    "course_id": 0,
+    "prereq_id": 0
+  },
+  "section": {
+    "course_id": 0,
+    "sec_id": 0,
+    "semester": 0,
+    "year": 0,
+    "building": 0,
+    "room_number": 0,
+    "time_slot_id": 0
+  },
+  "student": {
+    "ID": 0,
+    "name": 0,
+    "dept_name": 0,
+    "tot_cred": 0
+  },
+  "takes": {
+    "ID": 0,
+    "course_id": 0,
+    "sec_id": 0,
+    "semester": 0,
+    "year": 0,
+    "grade": 0
+  },
+  "teaches": {
+    "ID": 0,
+    "course_id": 0,
+    "sec_id": 0,
+    "semester": 0,
+    "year": 0
+  },
+  "time_slot": {
+    "time_slot_id": 0,
+    "day": 0,
+    "start_hr": 0,
+    "start_min": 0,
+    "end_hr": 0,
+    "end_min": 0
+  }
+}

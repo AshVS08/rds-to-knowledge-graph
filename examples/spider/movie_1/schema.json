@@ -1,0 +1,111 @@
+{
+  "db_id": "movie_1",
+  "tables": [
+    {
+      "name": "Movie",
+      "columns": [
+        {
+          "name": "mID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "title",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "year",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "director",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "mID"
+      ]
+    },
+    {
+      "name": "Rating",
+      "columns": [
+        {
+          "name": "rID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "mID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "stars",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ratingDate",
+          "type": "date",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "Reviewer",
+      "columns": [
+        {
+          "name": "rID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "rID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Rating",
+      "from_column": "rID",
+      "to_table": "Reviewer",
+      "to_column": "rID"
+    },
+    {
+      "from_table": "Rating",
+      "from_column": "mID",
+      "to_table": "Movie",
+      "to_column": "mID"
+    }
+  ]
+}

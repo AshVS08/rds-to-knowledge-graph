@@ -1,0 +1,40 @@
+DB ID: mountain_photos
+Run:   20250910-163730
+
+Tables: 3
+Columns: 16
+PKs: 3
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- camera_lens: ['id']
+- mountain: ['id']
+- photos: ['id']
+
+Null summary:
+{
+  "camera_lens": {
+    "id": 0,
+    "brand": 0,
+    "name": 0,
+    "focal_length_mm": 0,
+    "max_aperture": 0
+  },
+  "mountain": {
+    "id": 0,
+    "name": 0,
+    "Height": 0,
+    "Prominence": 0,
+    "Range": 0,
+    "Country": 0
+  },
+  "photos": {
+    "id": 0,
+    "camera_lens_id": 0,
+    "mountain_id": 0,
+    "color": 0,
+    "name": 0
+  }
+}

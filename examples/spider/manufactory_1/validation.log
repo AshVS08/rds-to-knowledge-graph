@@ -1,0 +1,30 @@
+DB ID: manufactory_1
+Run:   20250910-163730
+
+Tables: 2
+Columns: 9
+PKs: 2
+FKs: 1
+
+No structural issues found.
+
+Primary keys by table:
+- Manufacturers: ['Code']
+- Products: ['Code']
+
+Null summary:
+{
+  "Manufacturers": {
+    "Code": 0,
+    "Name": 0,
+    "Headquarter": 0,
+    "Founder": 0,
+    "Revenue": 0
+  },
+  "Products": {
+    "Code": 0,
+    "Name": 0,
+    "Price": 0,
+    "Manufacturer": 0
+  }
+}

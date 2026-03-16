@@ -1,0 +1,37 @@
+DB ID: debate
+Run:   20250910-163730
+
+Tables: 3
+Columns: 13
+PKs: 5
+FKs: 3
+
+No structural issues found.
+
+Primary keys by table:
+- debate: ['Debate_ID']
+- debate_people: ['Debate_ID', 'Affirmative', 'Negative']
+- people: ['People_ID']
+
+Null summary:
+{
+  "debate": {
+    "Debate_ID": 0,
+    "Date": 0,
+    "Venue": 0,
+    "Num_of_Audience": 0
+  },
+  "debate_people": {
+    "Debate_ID": 0,
+    "Affirmative": 0,
+    "Negative": 0,
+    "If_Affirmative_Win": 0
+  },
+  "people": {
+    "People_ID": 0,
+    "District": 0,
+    "Name": 0,
+    "Party": 0,
+    "Age": 0
+  }
+}

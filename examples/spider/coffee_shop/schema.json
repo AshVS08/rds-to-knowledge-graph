@@ -1,0 +1,187 @@
+{
+  "db_id": "coffee_shop",
+  "tables": [
+    {
+      "name": "happy_hour",
+      "columns": [
+        {
+          "name": "HH_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Shop_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Month",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Num_of_shaff_in_charge",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "HH_ID",
+        "Shop_ID",
+        "Month"
+      ]
+    },
+    {
+      "name": "happy_hour_member",
+      "columns": [
+        {
+          "name": "HH_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Member_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Total_amount",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "HH_ID",
+        "Member_ID"
+      ]
+    },
+    {
+      "name": "member",
+      "columns": [
+        {
+          "name": "Member_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Membership_card",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Age",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Time_of_purchase",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Level_of_membership",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Address",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Member_ID"
+      ]
+    },
+    {
+      "name": "shop",
+      "columns": [
+        {
+          "name": "Shop_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Address",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Num_of_staff",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Score",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Open_Year",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Shop_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "happy_hour",
+      "from_column": "Shop_ID",
+      "to_table": "shop",
+      "to_column": "Shop_ID"
+    },
+    {
+      "from_table": "happy_hour_member",
+      "from_column": "Member_ID",
+      "to_table": "member",
+      "to_column": "Member_ID"
+    }
+  ]
+}

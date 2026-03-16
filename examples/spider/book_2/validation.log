@@ -1,0 +1,30 @@
+DB ID: book_2
+Run:   20250910-163730
+
+Tables: 2
+Columns: 9
+PKs: 2
+FKs: 1
+
+No structural issues found.
+
+Primary keys by table:
+- book: ['Book_ID']
+- publication: ['Publication_ID']
+
+Null summary:
+{
+  "book": {
+    "Book_ID": 0,
+    "Title": 0,
+    "Issues": 0,
+    "Writer": 0
+  },
+  "publication": {
+    "Publication_ID": 0,
+    "Book_ID": 0,
+    "Publisher": 0,
+    "Publication_Date": 0,
+    "Price": 0
+  }
+}

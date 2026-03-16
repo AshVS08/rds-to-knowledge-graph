@@ -1,0 +1,115 @@
+DB ID: cre_Theme_park
+Run:   20250910-163730
+
+Tables: 16
+Columns: 52
+PKs: 17
+FKs: 14
+
+No structural issues found.
+
+Primary keys by table:
+- Features: ['Feature_ID']
+- Hotels: ['hotel_id']
+- Locations: ['Location_ID']
+- Museums: ['Museum_ID']
+- Photos: ['Photo_ID']
+- Ref_Attraction_Types: ['Attraction_Type_Code']
+- Ref_Hotel_Star_Ratings: ['star_rating_code']
+- Royal_Family: ['Royal_Family_ID']
+- Shops: ['Shop_ID']
+- Staff: ['Staff_ID']
+- Street_Markets: ['Market_ID']
+- Theme_Parks: ['Theme_Park_ID']
+- Tourist_Attraction_Features: ['Tourist_Attraction_ID', 'Feature_ID']
+- Tourist_Attractions: ['Tourist_Attraction_ID']
+- Visitors: ['Tourist_ID']
+- Visits: ['Visit_ID']
+
+Null summary:
+{
+  "Features": {
+    "Feature_ID": 0,
+    "Feature_Details": 0
+  },
+  "Hotels": {
+    "hotel_id": 0,
+    "star_rating_code": 0,
+    "pets_allowed_yn": 0,
+    "price_range": 0,
+    "other_hotel_details": 20
+  },
+  "Locations": {
+    "Location_ID": 0,
+    "Location_Name": 0,
+    "Address": 0,
+    "Other_Details": 15
+  },
+  "Museums": {
+    "Museum_ID": 0,
+    "Museum_Details": 0
+  },
+  "Photos": {
+    "Photo_ID": 0,
+    "Tourist_Attraction_ID": 0,
+    "Name": 0,
+    "Description": 15,
+    "Filename": 0,
+    "Other_Details": 15
+  },
+  "Ref_Attraction_Types": {
+    "Attraction_Type_Code": 0,
+    "Attraction_Type_Description": 0
+  },
+  "Ref_Hotel_Star_Ratings": {
+    "star_rating_code": 0,
+    "star_rating_description": 0
+  },
+  "Royal_Family": {
+    "Royal_Family_ID": 0,
+    "Royal_Family_Details": 2
+  },
+  "Shops": {
+    "Shop_ID": 0,
+    "Shop_Details": 0
+  },
+  "Staff": {
+    "Staff_ID": 0,
+    "Tourist_Attraction_ID": 0,
+    "Name": 0,
+    "Other_Details": 20
+  },
+  "Street_Markets": {
+    "Market_ID": 0,
+    "Market_Details": 0
+  },
+  "Theme_Parks": {
+    "Theme_Park_ID": 0,
+    "Theme_Park_Details": 0
+  },
+  "Tourist_Attraction_Features": {
+    "Tourist_Attraction_ID": 0,
+    "Feature_ID": 0
+  },
+  "Tourist_Attractions": {
+    "Tourist_Attraction_ID": 0,
+    "Attraction_Type_Code": 0,
+    "Location_ID": 0,
+    "How_to_Get_There": 0,
+    "Name": 0,
+    "Description": 15,
+    "Opening_Hours": 15,
+    "Other_Details": 15
+  },
+  "Visitors": {
+    "Tourist_ID": 0,
+    "Tourist_Details": 0
+  },
+  "Visits": {
+    "Visit_ID": 0,
+    "Tourist_Attraction_ID": 0,
+    "Tourist_ID": 0,
+    "Visit_Date": 0,
+    "Visit_Details": 0
+  }
+}

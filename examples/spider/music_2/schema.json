@@ -1,0 +1,270 @@
+{
+  "db_id": "music_2",
+  "tables": [
+    {
+      "name": "Albums",
+      "columns": [
+        {
+          "name": "AId",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Title",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Year",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Label",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Type",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "AId"
+      ]
+    },
+    {
+      "name": "Band",
+      "columns": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Firstname",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Lastname",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Id"
+      ]
+    },
+    {
+      "name": "Instruments",
+      "columns": [
+        {
+          "name": "SongId",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "BandmateId",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Instrument",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "SongId",
+        "BandmateId",
+        "Instrument"
+      ]
+    },
+    {
+      "name": "Performance",
+      "columns": [
+        {
+          "name": "SongId",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Bandmate",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "StagePosition",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "SongId",
+        "Bandmate"
+      ]
+    },
+    {
+      "name": "Songs",
+      "columns": [
+        {
+          "name": "SongId",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Title",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "SongId"
+      ]
+    },
+    {
+      "name": "Tracklists",
+      "columns": [
+        {
+          "name": "AlbumId",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Position",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "SongId",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "AlbumId",
+        "Position"
+      ]
+    },
+    {
+      "name": "Vocals",
+      "columns": [
+        {
+          "name": "SongId",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Bandmate",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Type",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "SongId",
+        "Bandmate"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Instruments",
+      "from_column": "BandmateId",
+      "to_table": "Band",
+      "to_column": "Id"
+    },
+    {
+      "from_table": "Instruments",
+      "from_column": "SongId",
+      "to_table": "Songs",
+      "to_column": "SongId"
+    },
+    {
+      "from_table": "Performance",
+      "from_column": "Bandmate",
+      "to_table": "Band",
+      "to_column": "Id"
+    },
+    {
+      "from_table": "Performance",
+      "from_column": "SongId",
+      "to_table": "Songs",
+      "to_column": "SongId"
+    },
+    {
+      "from_table": "Tracklists",
+      "from_column": "AlbumId",
+      "to_table": "Albums",
+      "to_column": "AId"
+    },
+    {
+      "from_table": "Tracklists",
+      "from_column": "SongId",
+      "to_table": "Songs",
+      "to_column": "SongId"
+    },
+    {
+      "from_table": "Vocals",
+      "from_column": "Bandmate",
+      "to_table": "Band",
+      "to_column": "Id"
+    },
+    {
+      "from_table": "Vocals",
+      "from_column": "SongId",
+      "to_table": "Songs",
+      "to_column": "SongId"
+    }
+  ]
+}

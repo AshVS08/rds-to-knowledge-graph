@@ -1,0 +1,74 @@
+{
+  "db_id": "flight_1",
+  "nodes": [
+    {
+      "id": "aircraft",
+      "columns": [
+        "aid",
+        "name",
+        "distance"
+      ],
+      "primary_keys": [
+        "aid"
+      ]
+    },
+    {
+      "id": "certificate",
+      "columns": [
+        "eid",
+        "aid"
+      ],
+      "primary_keys": [
+        "eid",
+        "aid"
+      ]
+    },
+    {
+      "id": "employee",
+      "columns": [
+        "eid",
+        "name",
+        "salary"
+      ],
+      "primary_keys": [
+        "eid"
+      ]
+    },
+    {
+      "id": "flight",
+      "columns": [
+        "flno",
+        "origin",
+        "destination",
+        "distance",
+        "departure_date",
+        "arrival_date",
+        "price",
+        "aid"
+      ],
+      "primary_keys": [
+        "flno"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "certificate",
+      "to": "aircraft",
+      "from_column": "aid",
+      "to_column": "aid"
+    },
+    {
+      "from": "certificate",
+      "to": "employee",
+      "from_column": "eid",
+      "to_column": "eid"
+    },
+    {
+      "from": "flight",
+      "to": "aircraft",
+      "from_column": "aid",
+      "to_column": "aid"
+    }
+  ]
+}

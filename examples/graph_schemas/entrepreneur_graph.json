@@ -1,0 +1,39 @@
+{
+  "db_id": "entrepreneur",
+  "nodes": [
+    {
+      "id": "entrepreneur",
+      "columns": [
+        "Entrepreneur_ID",
+        "People_ID",
+        "Company",
+        "Money_Requested",
+        "Investor"
+      ],
+      "primary_keys": [
+        "Entrepreneur_ID"
+      ]
+    },
+    {
+      "id": "people",
+      "columns": [
+        "People_ID",
+        "Name",
+        "Height",
+        "Weight",
+        "Date_of_Birth"
+      ],
+      "primary_keys": [
+        "People_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "entrepreneur",
+      "to": "people",
+      "from_column": "People_ID",
+      "to_column": "People_ID"
+    }
+  ]
+}

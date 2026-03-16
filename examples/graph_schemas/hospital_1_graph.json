@@ -1,0 +1,358 @@
+{
+  "db_id": "hospital_1",
+  "nodes": [
+    {
+      "id": "Affiliated_With",
+      "columns": [
+        "Physician",
+        "Department",
+        "PrimaryAffiliation"
+      ],
+      "primary_keys": [
+        "Physician",
+        "Department"
+      ]
+    },
+    {
+      "id": "Appointment",
+      "columns": [
+        "AppointmentID",
+        "Patient",
+        "PrepNurse",
+        "Physician",
+        "Start",
+        "End",
+        "ExaminationRoom"
+      ],
+      "primary_keys": [
+        "AppointmentID"
+      ]
+    },
+    {
+      "id": "Block",
+      "columns": [
+        "BlockFloor",
+        "BlockCode"
+      ],
+      "primary_keys": [
+        "BlockFloor",
+        "BlockCode"
+      ]
+    },
+    {
+      "id": "Department",
+      "columns": [
+        "DepartmentID",
+        "Name",
+        "Head"
+      ],
+      "primary_keys": [
+        "DepartmentID"
+      ]
+    },
+    {
+      "id": "Medication",
+      "columns": [
+        "Code",
+        "Name",
+        "Brand",
+        "Description"
+      ],
+      "primary_keys": [
+        "Code"
+      ]
+    },
+    {
+      "id": "Nurse",
+      "columns": [
+        "EmployeeID",
+        "Name",
+        "Position",
+        "Registered",
+        "SSN"
+      ],
+      "primary_keys": [
+        "EmployeeID"
+      ]
+    },
+    {
+      "id": "On_Call",
+      "columns": [
+        "Nurse",
+        "BlockFloor",
+        "BlockCode",
+        "OnCallStart",
+        "OnCallEnd"
+      ],
+      "primary_keys": [
+        "Nurse",
+        "BlockFloor",
+        "BlockCode",
+        "OnCallStart",
+        "OnCallEnd"
+      ]
+    },
+    {
+      "id": "Patient",
+      "columns": [
+        "SSN",
+        "Name",
+        "Address",
+        "Phone",
+        "InsuranceID",
+        "PCP"
+      ],
+      "primary_keys": [
+        "SSN"
+      ]
+    },
+    {
+      "id": "Physician",
+      "columns": [
+        "EmployeeID",
+        "Name",
+        "Position",
+        "SSN"
+      ],
+      "primary_keys": [
+        "EmployeeID"
+      ]
+    },
+    {
+      "id": "Prescribes",
+      "columns": [
+        "Physician",
+        "Patient",
+        "Medication",
+        "Date",
+        "Appointment",
+        "Dose"
+      ],
+      "primary_keys": [
+        "Physician",
+        "Patient",
+        "Medication",
+        "Date"
+      ]
+    },
+    {
+      "id": "Procedures",
+      "columns": [
+        "Code",
+        "Name",
+        "Cost"
+      ],
+      "primary_keys": [
+        "Code"
+      ]
+    },
+    {
+      "id": "Room",
+      "columns": [
+        "RoomNumber",
+        "RoomType",
+        "BlockFloor",
+        "BlockCode",
+        "Unavailable"
+      ],
+      "primary_keys": [
+        "RoomNumber"
+      ]
+    },
+    {
+      "id": "Stay",
+      "columns": [
+        "StayID",
+        "Patient",
+        "Room",
+        "StayStart",
+        "StayEnd"
+      ],
+      "primary_keys": [
+        "StayID"
+      ]
+    },
+    {
+      "id": "Trained_In",
+      "columns": [
+        "Physician",
+        "Treatment",
+        "CertificationDate",
+        "CertificationExpires"
+      ],
+      "primary_keys": [
+        "Physician",
+        "Treatment"
+      ]
+    },
+    {
+      "id": "Undergoes",
+      "columns": [
+        "Patient",
+        "Procedures",
+        "Stay",
+        "DateUndergoes",
+        "Physician",
+        "AssistingNurse"
+      ],
+      "primary_keys": [
+        "Patient",
+        "Procedures",
+        "Stay",
+        "DateUndergoes"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Affiliated_With",
+      "to": "Department",
+      "from_column": "Department",
+      "to_column": "DepartmentID"
+    },
+    {
+      "from": "Affiliated_With",
+      "to": "Physician",
+      "from_column": "Physician",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from": "Appointment",
+      "to": "Physician",
+      "from_column": "Physician",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from": "Appointment",
+      "to": "Nurse",
+      "from_column": "PrepNurse",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from": "Appointment",
+      "to": "Patient",
+      "from_column": "Patient",
+      "to_column": "SSN"
+    },
+    {
+      "from": "Department",
+      "to": "Physician",
+      "from_column": "Head",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from": "On_Call",
+      "to": "Block",
+      "from_column": "BlockFloor",
+      "to_column": "BlockFloor"
+    },
+    {
+      "from": "On_Call",
+      "to": "Block",
+      "from_column": "BlockCode",
+      "to_column": "BlockCode"
+    },
+    {
+      "from": "On_Call",
+      "to": "Nurse",
+      "from_column": "Nurse",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from": "Patient",
+      "to": "Physician",
+      "from_column": "PCP",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from": "Prescribes",
+      "to": "Appointment",
+      "from_column": "Appointment",
+      "to_column": "AppointmentID"
+    },
+    {
+      "from": "Prescribes",
+      "to": "Medication",
+      "from_column": "Medication",
+      "to_column": "Code"
+    },
+    {
+      "from": "Prescribes",
+      "to": "Patient",
+      "from_column": "Patient",
+      "to_column": "SSN"
+    },
+    {
+      "from": "Prescribes",
+      "to": "Physician",
+      "from_column": "Physician",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from": "Room",
+      "to": "Block",
+      "from_column": "BlockFloor",
+      "to_column": "BlockFloor"
+    },
+    {
+      "from": "Room",
+      "to": "Block",
+      "from_column": "BlockCode",
+      "to_column": "BlockCode"
+    },
+    {
+      "from": "Stay",
+      "to": "Room",
+      "from_column": "Room",
+      "to_column": "RoomNumber"
+    },
+    {
+      "from": "Stay",
+      "to": "Patient",
+      "from_column": "Patient",
+      "to_column": "SSN"
+    },
+    {
+      "from": "Trained_In",
+      "to": "Procedures",
+      "from_column": "Treatment",
+      "to_column": "Code"
+    },
+    {
+      "from": "Trained_In",
+      "to": "Physician",
+      "from_column": "Physician",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from": "Undergoes",
+      "to": "Nurse",
+      "from_column": "AssistingNurse",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from": "Undergoes",
+      "to": "Physician",
+      "from_column": "Physician",
+      "to_column": "EmployeeID"
+    },
+    {
+      "from": "Undergoes",
+      "to": "Stay",
+      "from_column": "Stay",
+      "to_column": "StayID"
+    },
+    {
+      "from": "Undergoes",
+      "to": "Procedures",
+      "from_column": "Procedures",
+      "to_column": "Code"
+    },
+    {
+      "from": "Undergoes",
+      "to": "Patient",
+      "from_column": "Patient",
+      "to_column": "SSN"
+    }
+  ]
+}

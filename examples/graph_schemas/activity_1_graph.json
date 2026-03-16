@@ -1,0 +1,89 @@
+{
+  "db_id": "activity_1",
+  "nodes": [
+    {
+      "id": "Activity",
+      "columns": [
+        "actid",
+        "activity_name"
+      ],
+      "primary_keys": [
+        "actid"
+      ]
+    },
+    {
+      "id": "Faculty",
+      "columns": [
+        "FacID",
+        "Lname",
+        "Fname",
+        "Rank",
+        "Sex",
+        "Phone",
+        "Room",
+        "Building"
+      ],
+      "primary_keys": [
+        "FacID"
+      ]
+    },
+    {
+      "id": "Faculty_Participates_in",
+      "columns": [
+        "FacID",
+        "actid"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Participates_in",
+      "columns": [
+        "stuid",
+        "actid"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Student",
+      "columns": [
+        "StuID",
+        "LName",
+        "Fname",
+        "Age",
+        "Sex",
+        "Major",
+        "Advisor",
+        "city_code"
+      ],
+      "primary_keys": [
+        "StuID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Faculty_Participates_in",
+      "to": "Activity",
+      "from_column": "actid",
+      "to_column": "actid"
+    },
+    {
+      "from": "Faculty_Participates_in",
+      "to": "Faculty",
+      "from_column": "FacID",
+      "to_column": "FacID"
+    },
+    {
+      "from": "Participates_in",
+      "to": "Activity",
+      "from_column": "actid",
+      "to_column": "actid"
+    },
+    {
+      "from": "Participates_in",
+      "to": "Student",
+      "from_column": "stuid",
+      "to_column": "StuID"
+    }
+  ]
+}

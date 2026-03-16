@@ -1,0 +1,283 @@
+{
+  "db_id": "assets_maintenance",
+  "nodes": [
+    {
+      "id": "Asset_Parts",
+      "columns": [
+        "asset_id",
+        "part_id"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Assets",
+      "columns": [
+        "asset_id",
+        "maintenance_contract_id",
+        "supplier_company_id",
+        "asset_details",
+        "asset_make",
+        "asset_model",
+        "asset_acquired_date",
+        "asset_disposed_date",
+        "other_asset_details"
+      ],
+      "primary_keys": [
+        "asset_id"
+      ]
+    },
+    {
+      "id": "Engineer_Skills",
+      "columns": [
+        "engineer_id",
+        "skill_id"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Engineer_Visits",
+      "columns": [
+        "engineer_visit_id",
+        "contact_staff_id",
+        "engineer_id",
+        "fault_log_entry_id",
+        "fault_status",
+        "visit_start_datetime",
+        "visit_end_datetime",
+        "other_visit_details"
+      ],
+      "primary_keys": [
+        "engineer_visit_id"
+      ]
+    },
+    {
+      "id": "Fault_Log",
+      "columns": [
+        "fault_log_entry_id",
+        "asset_id",
+        "recorded_by_staff_id",
+        "fault_log_entry_datetime",
+        "fault_description",
+        "other_fault_details"
+      ],
+      "primary_keys": [
+        "fault_log_entry_id"
+      ]
+    },
+    {
+      "id": "Fault_Log_Parts",
+      "columns": [
+        "fault_log_entry_id",
+        "part_fault_id",
+        "fault_status"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Maintenance_Contracts",
+      "columns": [
+        "maintenance_contract_id",
+        "maintenance_contract_company_id",
+        "contract_start_date",
+        "contract_end_date",
+        "other_contract_details"
+      ],
+      "primary_keys": [
+        "maintenance_contract_id"
+      ]
+    },
+    {
+      "id": "Maintenance_Engineers",
+      "columns": [
+        "engineer_id",
+        "company_id",
+        "first_name",
+        "last_name",
+        "other_details"
+      ],
+      "primary_keys": [
+        "engineer_id"
+      ]
+    },
+    {
+      "id": "Part_Faults",
+      "columns": [
+        "part_fault_id",
+        "part_id",
+        "fault_short_name",
+        "fault_description",
+        "other_fault_details"
+      ],
+      "primary_keys": [
+        "part_fault_id"
+      ]
+    },
+    {
+      "id": "Parts",
+      "columns": [
+        "part_id",
+        "part_name",
+        "chargeable_yn",
+        "chargeable_amount",
+        "other_part_details"
+      ],
+      "primary_keys": [
+        "part_id"
+      ]
+    },
+    {
+      "id": "Skills",
+      "columns": [
+        "skill_id",
+        "skill_code",
+        "skill_description"
+      ],
+      "primary_keys": [
+        "skill_id"
+      ]
+    },
+    {
+      "id": "Skills_Required_To_Fix",
+      "columns": [
+        "part_fault_id",
+        "skill_id"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Staff",
+      "columns": [
+        "staff_id",
+        "staff_name",
+        "gender",
+        "other_staff_details"
+      ],
+      "primary_keys": [
+        "staff_id"
+      ]
+    },
+    {
+      "id": "Third_Party_Companies",
+      "columns": [
+        "company_id",
+        "company_type",
+        "company_name",
+        "company_address",
+        "other_company_details"
+      ],
+      "primary_keys": [
+        "company_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Asset_Parts",
+      "to": "Assets",
+      "from_column": "asset_id",
+      "to_column": "asset_id"
+    },
+    {
+      "from": "Asset_Parts",
+      "to": "Parts",
+      "from_column": "part_id",
+      "to_column": "part_id"
+    },
+    {
+      "from": "Assets",
+      "to": "Third_Party_Companies",
+      "from_column": "supplier_company_id",
+      "to_column": "company_id"
+    },
+    {
+      "from": "Assets",
+      "to": "Maintenance_Contracts",
+      "from_column": "maintenance_contract_id",
+      "to_column": "maintenance_contract_id"
+    },
+    {
+      "from": "Engineer_Skills",
+      "to": "Skills",
+      "from_column": "skill_id",
+      "to_column": "skill_id"
+    },
+    {
+      "from": "Engineer_Skills",
+      "to": "Maintenance_Engineers",
+      "from_column": "engineer_id",
+      "to_column": "engineer_id"
+    },
+    {
+      "from": "Engineer_Visits",
+      "to": "Staff",
+      "from_column": "contact_staff_id",
+      "to_column": "staff_id"
+    },
+    {
+      "from": "Engineer_Visits",
+      "to": "Maintenance_Engineers",
+      "from_column": "engineer_id",
+      "to_column": "engineer_id"
+    },
+    {
+      "from": "Engineer_Visits",
+      "to": "Fault_Log",
+      "from_column": "fault_log_entry_id",
+      "to_column": "fault_log_entry_id"
+    },
+    {
+      "from": "Fault_Log",
+      "to": "Staff",
+      "from_column": "recorded_by_staff_id",
+      "to_column": "staff_id"
+    },
+    {
+      "from": "Fault_Log",
+      "to": "Assets",
+      "from_column": "asset_id",
+      "to_column": "asset_id"
+    },
+    {
+      "from": "Fault_Log_Parts",
+      "to": "Fault_Log",
+      "from_column": "fault_log_entry_id",
+      "to_column": "fault_log_entry_id"
+    },
+    {
+      "from": "Fault_Log_Parts",
+      "to": "Part_Faults",
+      "from_column": "part_fault_id",
+      "to_column": "part_fault_id"
+    },
+    {
+      "from": "Maintenance_Contracts",
+      "to": "Third_Party_Companies",
+      "from_column": "maintenance_contract_company_id",
+      "to_column": "company_id"
+    },
+    {
+      "from": "Maintenance_Engineers",
+      "to": "Third_Party_Companies",
+      "from_column": "company_id",
+      "to_column": "company_id"
+    },
+    {
+      "from": "Part_Faults",
+      "to": "Parts",
+      "from_column": "part_id",
+      "to_column": "part_id"
+    },
+    {
+      "from": "Skills_Required_To_Fix",
+      "to": "Skills",
+      "from_column": "skill_id",
+      "to_column": "skill_id"
+    },
+    {
+      "from": "Skills_Required_To_Fix",
+      "to": "Part_Faults",
+      "from_column": "part_fault_id",
+      "to_column": "part_fault_id"
+    }
+  ]
+}

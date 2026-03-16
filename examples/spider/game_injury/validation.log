@@ -1,0 +1,44 @@
+DB ID: game_injury
+Run:   20250910-163730
+
+Tables: 3
+Columns: 20
+PKs: 3
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- game: ['id']
+- injury_accident: ['id']
+- stadium: ['id']
+
+Null summary:
+{
+  "game": {
+    "stadium_id": 0,
+    "id": 0,
+    "Season": 0,
+    "Date": 0,
+    "Home_team": 0,
+    "Away_team": 0,
+    "Score": 0,
+    "Competition": 0
+  },
+  "injury_accident": {
+    "game_id": 0,
+    "id": 0,
+    "Player": 0,
+    "Injury": 0,
+    "Number_of_matches": 0,
+    "Source": 0
+  },
+  "stadium": {
+    "id": 0,
+    "name": 0,
+    "Home_Games": 0,
+    "Average_Attendance": 0,
+    "Total_Attendance": 0,
+    "Capacity_Percentage": 0
+  }
+}

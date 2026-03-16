@@ -1,0 +1,337 @@
+{
+  "db_id": "document_management",
+  "tables": [
+    {
+      "name": "Document_Functional_Areas",
+      "columns": [
+        {
+          "name": "document_code",
+          "type": "VARCHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "functional_area_code",
+          "type": "VARCHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "Document_Sections",
+      "columns": [
+        {
+          "name": "section_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "document_code",
+          "type": "VARCHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "section_sequence",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "section_code",
+          "type": "VARCHAR(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "section_title",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "section_id"
+      ]
+    },
+    {
+      "name": "Document_Sections_Images",
+      "columns": [
+        {
+          "name": "section_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "image_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "section_id",
+        "image_id"
+      ]
+    },
+    {
+      "name": "Document_Structures",
+      "columns": [
+        {
+          "name": "document_structure_code",
+          "type": "VARCHAR(15)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "parent_document_structure_code",
+          "type": "VARCHAR(15)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "document_structure_description",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "document_structure_code"
+      ]
+    },
+    {
+      "name": "Documents",
+      "columns": [
+        {
+          "name": "document_code",
+          "type": "VARCHAR(15)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "document_structure_code",
+          "type": "VARCHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "document_type_code",
+          "type": "VARCHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "access_count",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "document_name",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "document_code"
+      ]
+    },
+    {
+      "name": "Functional_Areas",
+      "columns": [
+        {
+          "name": "functional_area_code",
+          "type": "VARCHAR(15)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "parent_functional_area_code",
+          "type": "VARCHAR(15)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "functional_area_description",
+          "type": "VARCHAR(80)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "functional_area_code"
+      ]
+    },
+    {
+      "name": "Images",
+      "columns": [
+        {
+          "name": "image_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "image_alt_text",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "image_name",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "image_url",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "image_id"
+      ]
+    },
+    {
+      "name": "Roles",
+      "columns": [
+        {
+          "name": "role_code",
+          "type": "VARCHAR(15)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "role_description",
+          "type": "VARCHAR(80)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "role_code"
+      ]
+    },
+    {
+      "name": "Users",
+      "columns": [
+        {
+          "name": "user_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "role_code",
+          "type": "VARCHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "user_name",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "user_login",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "password",
+          "type": "VARCHAR(40)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "user_id"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Document_Functional_Areas",
+      "from_column": "functional_area_code",
+      "to_table": "Functional_Areas",
+      "to_column": "functional_area_code"
+    },
+    {
+      "from_table": "Document_Functional_Areas",
+      "from_column": "document_code",
+      "to_table": "Documents",
+      "to_column": "document_code"
+    },
+    {
+      "from_table": "Document_Sections",
+      "from_column": "document_code",
+      "to_table": "Documents",
+      "to_column": "document_code"
+    },
+    {
+      "from_table": "Document_Sections_Images",
+      "from_column": "image_id",
+      "to_table": "Images",
+      "to_column": "image_id"
+    },
+    {
+      "from_table": "Document_Sections_Images",
+      "from_column": "section_id",
+      "to_table": "Document_Sections",
+      "to_column": "section_id"
+    },
+    {
+      "from_table": "Documents",
+      "from_column": "document_structure_code",
+      "to_table": "Document_Structures",
+      "to_column": "document_structure_code"
+    },
+    {
+      "from_table": "Users",
+      "from_column": "role_code",
+      "to_table": "Roles",
+      "to_column": "role_code"
+    }
+  ]
+}

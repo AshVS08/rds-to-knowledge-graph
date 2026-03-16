@@ -1,0 +1,178 @@
+{"table": "car_makers", "row": {"Id": 1, "Maker": "amc", "FullName": "American Motor Company", "Country": "1"}}
+{"table": "car_makers", "row": {"Id": 2, "Maker": "volkswagen", "FullName": "Volkswagen", "Country": "2"}}
+{"table": "car_makers", "row": {"Id": 3, "Maker": "bmw", "FullName": "BMW", "Country": "2"}}
+{"table": "car_makers", "row": {"Id": 4, "Maker": "gm", "FullName": "General Motors", "Country": "1"}}
+{"table": "car_makers", "row": {"Id": 5, "Maker": "ford", "FullName": "Ford Motor Company", "Country": "1"}}
+{"table": "car_makers", "row": {"Id": 6, "Maker": "chrysler", "FullName": "Chrysler", "Country": "1"}}
+{"table": "car_makers", "row": {"Id": 7, "Maker": "citroen", "FullName": "Citroen", "Country": "3"}}
+{"table": "car_makers", "row": {"Id": 8, "Maker": "nissan", "FullName": "Nissan Motors", "Country": "4"}}
+{"table": "car_makers", "row": {"Id": 9, "Maker": "fiat", "FullName": "Fiat", "Country": "5"}}
+{"table": "car_makers", "row": {"Id": 11, "Maker": "honda", "FullName": "Honda", "Country": "4"}}
+{"table": "car_makers", "row": {"Id": 12, "Maker": "mazda", "FullName": "Mazda", "Country": "4"}}
+{"table": "car_makers", "row": {"Id": 13, "Maker": "daimler benz", "FullName": "Daimler Benz", "Country": "2"}}
+{"table": "car_makers", "row": {"Id": 14, "Maker": "opel", "FullName": "Opel", "Country": "2"}}
+{"table": "car_makers", "row": {"Id": 15, "Maker": "peugeaut", "FullName": "Peugeaut", "Country": "3"}}
+{"table": "car_makers", "row": {"Id": 16, "Maker": "renault", "FullName": "Renault", "Country": "3"}}
+{"table": "car_makers", "row": {"Id": 17, "Maker": "saab", "FullName": "Saab", "Country": "6"}}
+{"table": "car_makers", "row": {"Id": 18, "Maker": "subaru", "FullName": "Subaru", "Country": "4"}}
+{"table": "car_makers", "row": {"Id": 19, "Maker": "toyota", "FullName": "Toyota", "Country": "4"}}
+{"table": "car_makers", "row": {"Id": 20, "Maker": "triumph", "FullName": "Triumph", "Country": "7"}}
+{"table": "car_makers", "row": {"Id": 21, "Maker": "volvo", "FullName": "Volvo", "Country": "6"}}
+{"table": "car_makers", "row": {"Id": 22, "Maker": "kia", "FullName": "Kia Motors", "Country": "8"}}
+{"table": "car_makers", "row": {"Id": 23, "Maker": "hyundai", "FullName": "Hyundai", "Country": "8"}}
+{"table": "car_names", "row": {"MakeId": 1, "Model": "chevrolet", "Make": "chevrolet chevelle malibu"}}
+{"table": "car_names", "row": {"MakeId": 2, "Model": "buick", "Make": "buick skylark 320"}}
+{"table": "car_names", "row": {"MakeId": 3, "Model": "plymouth", "Make": "plymouth satellite"}}
+{"table": "car_names", "row": {"MakeId": 4, "Model": "amc", "Make": "amc rebel sst"}}
+{"table": "car_names", "row": {"MakeId": 5, "Model": "ford", "Make": "ford torino"}}
+{"table": "car_names", "row": {"MakeId": 6, "Model": "ford", "Make": "ford galaxie 500"}}
+{"table": "car_names", "row": {"MakeId": 7, "Model": "chevrolet", "Make": "chevrolet impala"}}
+{"table": "car_names", "row": {"MakeId": 8, "Model": "plymouth", "Make": "plymouth fury iii"}}
+{"table": "car_names", "row": {"MakeId": 9, "Model": "pontiac", "Make": "pontiac catalina"}}
+{"table": "car_names", "row": {"MakeId": 10, "Model": "amc", "Make": "amc ambassador dpl"}}
+{"table": "car_names", "row": {"MakeId": 11, "Model": "citroen", "Make": "citroen ds-21 pallas"}}
+{"table": "car_names", "row": {"MakeId": 12, "Model": "chevrolet", "Make": "chevrolet chevelle concours (sw)"}}
+{"table": "car_names", "row": {"MakeId": 13, "Model": "ford", "Make": "ford torino (sw)"}}
+{"table": "car_names", "row": {"MakeId": 14, "Model": "plymouth", "Make": "plymouth satellite (sw)"}}
+{"table": "car_names", "row": {"MakeId": 15, "Model": "amc", "Make": "amc rebel sst (sw)"}}
+{"table": "car_names", "row": {"MakeId": 16, "Model": "dodge", "Make": "dodge challenger se"}}
+{"table": "car_names", "row": {"MakeId": 17, "Model": "plymouth", "Make": "plymouth cuda 340"}}
+{"table": "car_names", "row": {"MakeId": 18, "Model": "ford", "Make": "ford mustang boss 302"}}
+{"table": "car_names", "row": {"MakeId": 19, "Model": "chevrolet", "Make": "chevrolet monte carlo"}}
+{"table": "car_names", "row": {"MakeId": 20, "Model": "buick", "Make": "buick estate wagon (sw)"}}
+{"table": "car_names", "row": {"MakeId": 21, "Model": "toyota", "Make": "toyota corona mark ii"}}
+{"table": "car_names", "row": {"MakeId": 22, "Model": "plymouth", "Make": "plymouth duster"}}
+{"table": "car_names", "row": {"MakeId": 23, "Model": "amc", "Make": "amc hornet"}}
+{"table": "car_names", "row": {"MakeId": 24, "Model": "ford", "Make": "ford maverick"}}
+{"table": "car_names", "row": {"MakeId": 25, "Model": "datsun", "Make": "datsun pl510"}}
+{"table": "car_names", "row": {"MakeId": 26, "Model": "volkswagen", "Make": "volkswagen 1131 deluxe sedan"}}
+{"table": "car_names", "row": {"MakeId": 27, "Model": "peugeot", "Make": "peugeot 504"}}
+{"table": "car_names", "row": {"MakeId": 28, "Model": "audi", "Make": "audi 100 ls"}}
+{"table": "car_names", "row": {"MakeId": 29, "Model": "saab", "Make": "saab 99e"}}
+{"table": "car_names", "row": {"MakeId": 30, "Model": "bmw", "Make": "bmw 2002"}}
+{"table": "car_names", "row": {"MakeId": 31, "Model": "amc", "Make": "amc gremlin"}}
+{"table": "car_names", "row": {"MakeId": 32, "Model": "ford", "Make": "ford f250"}}
+{"table": "car_names", "row": {"MakeId": 33, "Model": "chevrolet", "Make": "chevy c20"}}
+{"table": "car_names", "row": {"MakeId": 34, "Model": "dodge", "Make": "dodge d200"}}
+{"table": "car_names", "row": {"MakeId": 35, "Model": "hi", "Make": "hi 1200d"}}
+{"table": "car_names", "row": {"MakeId": 36, "Model": "datsun", "Make": "datsun pl510"}}
+{"table": "car_names", "row": {"MakeId": 37, "Model": "chevrolet", "Make": "chevrolet vega 2300"}}
+{"table": "car_names", "row": {"MakeId": 38, "Model": "toyota", "Make": "toyota corona"}}
+{"table": "car_names", "row": {"MakeId": 39, "Model": "ford", "Make": "ford pinto"}}
+{"table": "car_names", "row": {"MakeId": 40, "Model": "volkswagen", "Make": "volkswagen super beetle 117"}}
+{"table": "car_names", "row": {"MakeId": 41, "Model": "amc", "Make": "amc gremlin"}}
+{"table": "car_names", "row": {"MakeId": 42, "Model": "plymouth", "Make": "plymouth satellite custom"}}
+{"table": "car_names", "row": {"MakeId": 43, "Model": "chevrolet", "Make": "chevrolet chevelle malibu"}}
+{"table": "car_names", "row": {"MakeId": 44, "Model": "ford", "Make": "ford torino 500"}}
+{"table": "car_names", "row": {"MakeId": 45, "Model": "amc", "Make": "amc matador"}}
+{"table": "car_names", "row": {"MakeId": 46, "Model": "chevrolet", "Make": "chevrolet impala"}}
+{"table": "car_names", "row": {"MakeId": 47, "Model": "pontiac", "Make": "pontiac catalina brougham"}}
+{"table": "car_names", "row": {"MakeId": 48, "Model": "ford", "Make": "ford galaxie 500"}}
+{"table": "car_names", "row": {"MakeId": 49, "Model": "plymouth", "Make": "plymouth fury iii"}}
+{"table": "car_names", "row": {"MakeId": 50, "Model": "dodge", "Make": "dodge monaco (sw)"}}
+{"table": "cars_data", "row": {"Id": 1, "MPG": "18", "Cylinders": 8, "Edispl": 307.0, "Horsepower": "130", "Weight": 3504, "Accelerate": 12.0, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 2, "MPG": "15", "Cylinders": 8, "Edispl": 350.0, "Horsepower": "165", "Weight": 3693, "Accelerate": 11.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 3, "MPG": "18", "Cylinders": 8, "Edispl": 318.0, "Horsepower": "150", "Weight": 3436, "Accelerate": 11.0, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 4, "MPG": "16", "Cylinders": 8, "Edispl": 304.0, "Horsepower": "150", "Weight": 3433, "Accelerate": 12.0, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 5, "MPG": "17", "Cylinders": 8, "Edispl": 302.0, "Horsepower": "140", "Weight": 3449, "Accelerate": 10.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 6, "MPG": "15", "Cylinders": 8, "Edispl": 429.0, "Horsepower": "198", "Weight": 4341, "Accelerate": 10.0, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 7, "MPG": "14", "Cylinders": 8, "Edispl": 454.0, "Horsepower": "220", "Weight": 4354, "Accelerate": 9.0, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 8, "MPG": "14", "Cylinders": 8, "Edispl": 440.0, "Horsepower": "215", "Weight": 4312, "Accelerate": 8.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 9, "MPG": "14", "Cylinders": 8, "Edispl": 455.0, "Horsepower": "225", "Weight": 4425, "Accelerate": 10.0, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 10, "MPG": "15", "Cylinders": 8, "Edispl": 390.0, "Horsepower": "190", "Weight": 3850, "Accelerate": 8.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 11, "MPG": "null", "Cylinders": 4, "Edispl": 133.0, "Horsepower": "115", "Weight": 3090, "Accelerate": 17.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 12, "MPG": "null", "Cylinders": 8, "Edispl": 350.0, "Horsepower": "165", "Weight": 4142, "Accelerate": 11.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 13, "MPG": "null", "Cylinders": 8, "Edispl": 351.0, "Horsepower": "153", "Weight": 4034, "Accelerate": 11.0, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 14, "MPG": "null", "Cylinders": 8, "Edispl": 383.0, "Horsepower": "175", "Weight": 4166, "Accelerate": 10.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 15, "MPG": "null", "Cylinders": 8, "Edispl": 360.0, "Horsepower": "175", "Weight": 3850, "Accelerate": 11.0, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 16, "MPG": "15", "Cylinders": 8, "Edispl": 383.0, "Horsepower": "170", "Weight": 3563, "Accelerate": 10.0, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 17, "MPG": "14", "Cylinders": 8, "Edispl": 340.0, "Horsepower": "160", "Weight": 3609, "Accelerate": 8.0, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 18, "MPG": "null", "Cylinders": 8, "Edispl": 302.0, "Horsepower": "140", "Weight": 3353, "Accelerate": 8.0, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 19, "MPG": "15", "Cylinders": 8, "Edispl": 400.0, "Horsepower": "150", "Weight": 3761, "Accelerate": 9.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 20, "MPG": "14", "Cylinders": 8, "Edispl": 455.0, "Horsepower": "225", "Weight": 3086, "Accelerate": 10.0, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 21, "MPG": "24", "Cylinders": 4, "Edispl": 113.0, "Horsepower": "95", "Weight": 2372, "Accelerate": 15.0, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 22, "MPG": "22", "Cylinders": 6, "Edispl": 198.0, "Horsepower": "95", "Weight": 2833, "Accelerate": 15.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 23, "MPG": "18", "Cylinders": 6, "Edispl": 199.0, "Horsepower": "97", "Weight": 2774, "Accelerate": 15.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 24, "MPG": "21", "Cylinders": 6, "Edispl": 200.0, "Horsepower": "85", "Weight": 2587, "Accelerate": 16.0, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 25, "MPG": "27", "Cylinders": 4, "Edispl": 97.0, "Horsepower": "88", "Weight": 2130, "Accelerate": 14.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 26, "MPG": "26", "Cylinders": 4, "Edispl": 97.0, "Horsepower": "46", "Weight": 1835, "Accelerate": 20.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 27, "MPG": "25", "Cylinders": 4, "Edispl": 110.0, "Horsepower": "87", "Weight": 2672, "Accelerate": 17.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 28, "MPG": "24", "Cylinders": 4, "Edispl": 107.0, "Horsepower": "90", "Weight": 2430, "Accelerate": 14.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 29, "MPG": "25", "Cylinders": 4, "Edispl": 104.0, "Horsepower": "95", "Weight": 2375, "Accelerate": 17.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 30, "MPG": "26", "Cylinders": 4, "Edispl": 121.0, "Horsepower": "113", "Weight": 2234, "Accelerate": 12.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 31, "MPG": "21", "Cylinders": 6, "Edispl": 199.0, "Horsepower": "90", "Weight": 2648, "Accelerate": 15.0, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 32, "MPG": "10", "Cylinders": 8, "Edispl": 360.0, "Horsepower": "215", "Weight": 4615, "Accelerate": 14.0, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 33, "MPG": "10", "Cylinders": 8, "Edispl": 307.0, "Horsepower": "200", "Weight": 4376, "Accelerate": 15.0, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 34, "MPG": "11", "Cylinders": 8, "Edispl": 318.0, "Horsepower": "210", "Weight": 4382, "Accelerate": 13.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 35, "MPG": "9", "Cylinders": 8, "Edispl": 304.0, "Horsepower": "193", "Weight": 4732, "Accelerate": 18.5, "Year": 1970}}
+{"table": "cars_data", "row": {"Id": 36, "MPG": "27", "Cylinders": 4, "Edispl": 97.0, "Horsepower": "88", "Weight": 2130, "Accelerate": 14.5, "Year": 1971}}
+{"table": "cars_data", "row": {"Id": 37, "MPG": "28", "Cylinders": 4, "Edispl": 140.0, "Horsepower": "90", "Weight": 2264, "Accelerate": 15.5, "Year": 1971}}
+{"table": "cars_data", "row": {"Id": 38, "MPG": "25", "Cylinders": 4, "Edispl": 113.0, "Horsepower": "95", "Weight": 2228, "Accelerate": 14.0, "Year": 1971}}
+{"table": "cars_data", "row": {"Id": 39, "MPG": "25", "Cylinders": 4, "Edispl": 98.0, "Horsepower": "null", "Weight": 2046, "Accelerate": 19.0, "Year": 1971}}
+{"table": "cars_data", "row": {"Id": 40, "MPG": "null", "Cylinders": 4, "Edispl": 97.0, "Horsepower": "48", "Weight": 1978, "Accelerate": 20.0, "Year": 1971}}
+{"table": "cars_data", "row": {"Id": 41, "MPG": "19", "Cylinders": 6, "Edispl": 232.0, "Horsepower": "100", "Weight": 2634, "Accelerate": 13.0, "Year": 1971}}
+{"table": "cars_data", "row": {"Id": 42, "MPG": "16", "Cylinders": 6, "Edispl": 225.0, "Horsepower": "105", "Weight": 3439, "Accelerate": 15.5, "Year": 1971}}
+{"table": "cars_data", "row": {"Id": 43, "MPG": "17", "Cylinders": 6, "Edispl": 250.0, "Horsepower": "100", "Weight": 3329, "Accelerate": 15.5, "Year": 1971}}
+{"table": "cars_data", "row": {"Id": 44, "MPG": "19", "Cylinders": 6, "Edispl": 250.0, "Horsepower": "88", "Weight": 3302, "Accelerate": 15.5, "Year": 1971}}
+{"table": "cars_data", "row": {"Id": 45, "MPG": "18", "Cylinders": 6, "Edispl": 232.0, "Horsepower": "100", "Weight": 3288, "Accelerate": 15.5, "Year": 1971}}
+{"table": "cars_data", "row": {"Id": 46, "MPG": "14", "Cylinders": 8, "Edispl": 350.0, "Horsepower": "165", "Weight": 4209, "Accelerate": 12.0, "Year": 1971}}
+{"table": "cars_data", "row": {"Id": 47, "MPG": "14", "Cylinders": 8, "Edispl": 400.0, "Horsepower": "175", "Weight": 4464, "Accelerate": 11.5, "Year": 1971}}
+{"table": "cars_data", "row": {"Id": 48, "MPG": "14", "Cylinders": 8, "Edispl": 351.0, "Horsepower": "153", "Weight": 4154, "Accelerate": 13.5, "Year": 1971}}
+{"table": "cars_data", "row": {"Id": 49, "MPG": "14", "Cylinders": 8, "Edispl": 318.0, "Horsepower": "150", "Weight": 4096, "Accelerate": 13.0, "Year": 1971}}
+{"table": "cars_data", "row": {"Id": 50, "MPG": "12", "Cylinders": 8, "Edispl": 383.0, "Horsepower": "180", "Weight": 4955, "Accelerate": 11.5, "Year": 1971}}
+{"table": "continents", "row": {"ContId": 1, "Continent": "america"}}
+{"table": "continents", "row": {"ContId": 2, "Continent": "europe"}}
+{"table": "continents", "row": {"ContId": 3, "Continent": "asia"}}
+{"table": "continents", "row": {"ContId": 4, "Continent": "africa"}}
+{"table": "continents", "row": {"ContId": 5, "Continent": "australia"}}
+{"table": "countries", "row": {"CountryId": 1, "CountryName": "usa", "Continent": 1}}
+{"table": "countries", "row": {"CountryId": 2, "CountryName": "germany", "Continent": 2}}
+{"table": "countries", "row": {"CountryId": 3, "CountryName": "france", "Continent": 2}}
+{"table": "countries", "row": {"CountryId": 4, "CountryName": "japan", "Continent": 3}}
+{"table": "countries", "row": {"CountryId": 5, "CountryName": "italy", "Continent": 2}}
+{"table": "countries", "row": {"CountryId": 6, "CountryName": "sweden", "Continent": 2}}
+{"table": "countries", "row": {"CountryId": 7, "CountryName": "uk", "Continent": 2}}
+{"table": "countries", "row": {"CountryId": 8, "CountryName": "korea", "Continent": 3}}
+{"table": "countries", "row": {"CountryId": 9, "CountryName": "russia", "Continent": 2}}
+{"table": "countries", "row": {"CountryId": 10, "CountryName": "nigeria", "Continent": 4}}
+{"table": "countries", "row": {"CountryId": 11, "CountryName": "australia", "Continent": 5}}
+{"table": "countries", "row": {"CountryId": 12, "CountryName": "new zealand", "Continent": 5}}
+{"table": "countries", "row": {"CountryId": 13, "CountryName": "egypt", "Continent": 4}}
+{"table": "countries", "row": {"CountryId": 14, "CountryName": "mexico", "Continent": 1}}
+{"table": "countries", "row": {"CountryId": 15, "CountryName": "brazil", "Continent": 1}}
+{"table": "model_list", "row": {"ModelId": 1, "Maker": 1, "Model": "amc"}}
+{"table": "model_list", "row": {"ModelId": 2, "Maker": 2, "Model": "audi"}}
+{"table": "model_list", "row": {"ModelId": 3, "Maker": 3, "Model": "bmw"}}
+{"table": "model_list", "row": {"ModelId": 4, "Maker": 4, "Model": "buick"}}
+{"table": "model_list", "row": {"ModelId": 5, "Maker": 4, "Model": "cadillac"}}
+{"table": "model_list", "row": {"ModelId": 6, "Maker": 5, "Model": "capri"}}
+{"table": "model_list", "row": {"ModelId": 7, "Maker": 4, "Model": "chevrolet"}}
+{"table": "model_list", "row": {"ModelId": 8, "Maker": 6, "Model": "chrysler"}}
+{"table": "model_list", "row": {"ModelId": 9, "Maker": 7, "Model": "citroen"}}
+{"table": "model_list", "row": {"ModelId": 10, "Maker": 8, "Model": "datsun"}}
+{"table": "model_list", "row": {"ModelId": 11, "Maker": 6, "Model": "dodge"}}
+{"table": "model_list", "row": {"ModelId": 12, "Maker": 9, "Model": "fiat"}}
+{"table": "model_list", "row": {"ModelId": 13, "Maker": 5, "Model": "ford"}}
+{"table": "model_list", "row": {"ModelId": 14, "Maker": 10, "Model": "hi"}}
+{"table": "model_list", "row": {"ModelId": 15, "Maker": 11, "Model": "honda"}}
+{"table": "model_list", "row": {"ModelId": 16, "Maker": 12, "Model": "mazda"}}
+{"table": "model_list", "row": {"ModelId": 17, "Maker": 13, "Model": "mercedes"}}
+{"table": "model_list", "row": {"ModelId": 18, "Maker": 13, "Model": "mercedes-benz"}}
+{"table": "model_list", "row": {"ModelId": 19, "Maker": 5, "Model": "mercury"}}
+{"table": "model_list", "row": {"ModelId": 20, "Maker": 8, "Model": "nissan"}}
+{"table": "model_list", "row": {"ModelId": 21, "Maker": 4, "Model": "oldsmobile"}}
+{"table": "model_list", "row": {"ModelId": 22, "Maker": 14, "Model": "opel"}}
+{"table": "model_list", "row": {"ModelId": 23, "Maker": 15, "Model": "peugeot"}}
+{"table": "model_list", "row": {"ModelId": 24, "Maker": 6, "Model": "plymouth"}}
+{"table": "model_list", "row": {"ModelId": 25, "Maker": 4, "Model": "pontiac"}}
+{"table": "model_list", "row": {"ModelId": 26, "Maker": 16, "Model": "renault"}}
+{"table": "model_list", "row": {"ModelId": 27, "Maker": 17, "Model": "saab"}}
+{"table": "model_list", "row": {"ModelId": 28, "Maker": 18, "Model": "subaru"}}
+{"table": "model_list", "row": {"ModelId": 29, "Maker": 19, "Model": "toyota"}}
+{"table": "model_list", "row": {"ModelId": 30, "Maker": 20, "Model": "triumph"}}
+{"table": "model_list", "row": {"ModelId": 31, "Maker": 2, "Model": "volkswagen"}}
+{"table": "model_list", "row": {"ModelId": 32, "Maker": 21, "Model": "volvo"}}
+{"table": "model_list", "row": {"ModelId": 33, "Maker": 22, "Model": "kia"}}
+{"table": "model_list", "row": {"ModelId": 34, "Maker": 23, "Model": "hyundai"}}
+{"table": "model_list", "row": {"ModelId": 35, "Maker": 6, "Model": "jeep"}}
+{"table": "model_list", "row": {"ModelId": 36, "Maker": 19, "Model": "scion"}}

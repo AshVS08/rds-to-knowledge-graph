@@ -1,0 +1,57 @@
+{
+  "db_id": "flight_2",
+  "nodes": [
+    {
+      "id": "airlines",
+      "columns": [
+        "uid",
+        "Airline",
+        "Abbreviation",
+        "Country"
+      ],
+      "primary_keys": [
+        "uid"
+      ]
+    },
+    {
+      "id": "airports",
+      "columns": [
+        "City",
+        "AirportCode",
+        "AirportName",
+        "Country",
+        "CountryAbbrev"
+      ],
+      "primary_keys": [
+        "AirportCode"
+      ]
+    },
+    {
+      "id": "flights",
+      "columns": [
+        "Airline",
+        "FlightNo",
+        "SourceAirport",
+        "DestAirport"
+      ],
+      "primary_keys": [
+        "Airline",
+        "FlightNo"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "flights",
+      "to": "airports",
+      "from_column": "DestAirport",
+      "to_column": "AirportCode"
+    },
+    {
+      "from": "flights",
+      "to": "airports",
+      "from_column": "SourceAirport",
+      "to_column": "AirportCode"
+    }
+  ]
+}

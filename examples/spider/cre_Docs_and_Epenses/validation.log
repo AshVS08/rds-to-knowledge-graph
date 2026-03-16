@@ -1,0 +1,58 @@
+DB ID: cre_Docs_and_Epenses
+Run:   20250910-163730
+
+Tables: 7
+Columns: 22
+PKs: 7
+FKs: 6
+
+No structural issues found.
+
+Primary keys by table:
+- Accounts: ['Account_ID']
+- Documents: ['Document_ID']
+- Documents_with_Expenses: ['Document_ID']
+- Projects: ['Project_ID']
+- Ref_Budget_Codes: ['Budget_Type_Code']
+- Ref_Document_Types: ['Document_Type_Code']
+- Statements: ['Statement_ID']
+
+Null summary:
+{
+  "Accounts": {
+    "Account_ID": 0,
+    "Statement_ID": 0,
+    "Account_Details": 0
+  },
+  "Documents": {
+    "Document_ID": 0,
+    "Document_Type_Code": 0,
+    "Project_ID": 0,
+    "Document_Date": 0,
+    "Document_Name": 0,
+    "Document_Description": 15,
+    "Other_Details": 15
+  },
+  "Documents_with_Expenses": {
+    "Document_ID": 0,
+    "Budget_Type_Code": 0,
+    "Document_Details": 0
+  },
+  "Projects": {
+    "Project_ID": 0,
+    "Project_Details": 0
+  },
+  "Ref_Budget_Codes": {
+    "Budget_Type_Code": 0,
+    "Budget_Type_Description": 0
+  },
+  "Ref_Document_Types": {
+    "Document_Type_Code": 0,
+    "Document_Type_Name": 0,
+    "Document_Type_Description": 0
+  },
+  "Statements": {
+    "Statement_ID": 0,
+    "Statement_Details": 0
+  }
+}

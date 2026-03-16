@@ -1,0 +1,43 @@
+{
+  "db_id": "candidate_poll",
+  "nodes": [
+    {
+      "id": "candidate",
+      "columns": [
+        "Candidate_ID",
+        "People_ID",
+        "Poll_Source",
+        "Date",
+        "Support_rate",
+        "Consider_rate",
+        "Oppose_rate",
+        "Unsure_rate"
+      ],
+      "primary_keys": [
+        "Candidate_ID"
+      ]
+    },
+    {
+      "id": "people",
+      "columns": [
+        "People_ID",
+        "Sex",
+        "Name",
+        "Date_of_Birth",
+        "Height",
+        "Weight"
+      ],
+      "primary_keys": [
+        "People_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "candidate",
+      "to": "people",
+      "from_column": "People_ID",
+      "to_column": "People_ID"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "db_id": "customers_campaigns_ecommerce",
+  "nodes": [
+    {
+      "id": "Customer_Addresses",
+      "columns": [
+        "customer_id",
+        "premise_id",
+        "date_address_from",
+        "address_type_code",
+        "date_address_to"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Customer_Orders",
+      "columns": [
+        "order_id",
+        "customer_id",
+        "order_status_code",
+        "shipping_method_code",
+        "order_placed_datetime",
+        "order_delivered_datetime",
+        "order_shipping_charges"
+      ],
+      "primary_keys": [
+        "order_id"
+      ]
+    },
+    {
+      "id": "Customers",
+      "columns": [
+        "customer_id",
+        "payment_method",
+        "customer_name",
+        "customer_phone",
+        "customer_email",
+        "customer_address",
+        "customer_login",
+        "customer_password"
+      ],
+      "primary_keys": [
+        "customer_id"
+      ]
+    },
+    {
+      "id": "Mailshot_Campaigns",
+      "columns": [
+        "mailshot_id",
+        "product_category",
+        "mailshot_name",
+        "mailshot_start_date",
+        "mailshot_end_date"
+      ],
+      "primary_keys": [
+        "mailshot_id"
+      ]
+    },
+    {
+      "id": "Mailshot_Customers",
+      "columns": [
+        "mailshot_id",
+        "customer_id",
+        "outcome_code",
+        "mailshot_customer_date"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Order_Items",
+      "columns": [
+        "item_id",
+        "order_item_status_code",
+        "order_id",
+        "product_id",
+        "item_status_code",
+        "item_delivered_datetime",
+        "item_order_quantity"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Premises",
+      "columns": [
+        "premise_id",
+        "premises_type",
+        "premise_details"
+      ],
+      "primary_keys": [
+        "premise_id"
+      ]
+    },
+    {
+      "id": "Products",
+      "columns": [
+        "product_id",
+        "product_category",
+        "product_name"
+      ],
+      "primary_keys": [
+        "product_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Customer_Addresses",
+      "to": "Customers",
+      "from_column": "customer_id",
+      "to_column": "customer_id"
+    },
+    {
+      "from": "Customer_Addresses",
+      "to": "Premises",
+      "from_column": "premise_id",
+      "to_column": "premise_id"
+    },
+    {
+      "from": "Customer_Orders",
+      "to": "Customers",
+      "from_column": "customer_id",
+      "to_column": "customer_id"
+    },
+    {
+      "from": "Mailshot_Customers",
+      "to": "Mailshot_Campaigns",
+      "from_column": "mailshot_id",
+      "to_column": "mailshot_id"
+    },
+    {
+      "from": "Mailshot_Customers",
+      "to": "Customers",
+      "from_column": "customer_id",
+      "to_column": "customer_id"
+    },
+    {
+      "from": "Order_Items",
+      "to": "Customer_Orders",
+      "from_column": "order_id",
+      "to_column": "order_id"
+    },
+    {
+      "from": "Order_Items",
+      "to": "Products",
+      "from_column": "product_id",
+      "to_column": "product_id"
+    }
+  ]
+}

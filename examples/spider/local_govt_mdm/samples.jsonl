@@ -1,0 +1,55 @@
+{"table": "Benefits_Overpayments", "row": {"council_tax_id": 3, "cmi_cross_ref_id": 65}}
+{"table": "Benefits_Overpayments", "row": {"council_tax_id": 6, "cmi_cross_ref_id": 41}}
+{"table": "Benefits_Overpayments", "row": {"council_tax_id": 7, "cmi_cross_ref_id": 83}}
+{"table": "Benefits_Overpayments", "row": {"council_tax_id": 8, "cmi_cross_ref_id": 48}}
+{"table": "Business_Rates", "row": {"business_rates_id": 2, "cmi_cross_ref_id": 99}}
+{"table": "Business_Rates", "row": {"business_rates_id": 5, "cmi_cross_ref_id": 49}}
+{"table": "Business_Rates", "row": {"business_rates_id": 8, "cmi_cross_ref_id": 95}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 2, "master_customer_id": 4, "source_system_code": "Rent"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 4, "master_customer_id": 5, "source_system_code": "Parking"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 8, "master_customer_id": 1, "source_system_code": "Rent"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 41, "master_customer_id": 5, "source_system_code": "Benefits"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 48, "master_customer_id": 5, "source_system_code": "Benefits"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 49, "master_customer_id": 1, "source_system_code": "Business"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 59, "master_customer_id": 1, "source_system_code": "Rent"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 65, "master_customer_id": 9, "source_system_code": "Benefits"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 75, "master_customer_id": 5, "source_system_code": "Electoral"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 77, "master_customer_id": 4, "source_system_code": "Electoral"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 81, "master_customer_id": 9, "source_system_code": "Parking"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 83, "master_customer_id": 3, "source_system_code": "Benefits"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 95, "master_customer_id": 2, "source_system_code": "Business"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 99, "master_customer_id": 9, "source_system_code": "Business"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 100, "master_customer_id": 4, "source_system_code": "Rent"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 101, "master_customer_id": 2, "source_system_code": "Tax"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 102, "master_customer_id": 4, "source_system_code": "Tax"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 103, "master_customer_id": 9, "source_system_code": "Tax"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 104, "master_customer_id": 2, "source_system_code": "Tax"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 105, "master_customer_id": 2, "source_system_code": "Tax"}}
+{"table": "CMI_Cross_References", "row": {"cmi_cross_ref_id": 106, "master_customer_id": 1, "source_system_code": "Tax"}}
+{"table": "Council_Tax", "row": {"council_tax_id": 1, "cmi_cross_ref_id": 101}}
+{"table": "Council_Tax", "row": {"council_tax_id": 2, "cmi_cross_ref_id": 103}}
+{"table": "Council_Tax", "row": {"council_tax_id": 3, "cmi_cross_ref_id": 104}}
+{"table": "Council_Tax", "row": {"council_tax_id": 7, "cmi_cross_ref_id": 102}}
+{"table": "Council_Tax", "row": {"council_tax_id": 8, "cmi_cross_ref_id": 106}}
+{"table": "Council_Tax", "row": {"council_tax_id": 9, "cmi_cross_ref_id": 105}}
+{"table": "Customer_Master_Index", "row": {"master_customer_id": 1, "cmi_details": "Schmitt-Lang"}}
+{"table": "Customer_Master_Index", "row": {"master_customer_id": 2, "cmi_details": "Volkman, Mills and Ferry"}}
+{"table": "Customer_Master_Index", "row": {"master_customer_id": 3, "cmi_details": "Gusikowski PLC"}}
+{"table": "Customer_Master_Index", "row": {"master_customer_id": 4, "cmi_details": "Schmidt, Kertzmann and Lubowitz"}}
+{"table": "Customer_Master_Index", "row": {"master_customer_id": 5, "cmi_details": "Gottlieb, Becker and Wyman"}}
+{"table": "Customer_Master_Index", "row": {"master_customer_id": 6, "cmi_details": "Mayer-Hagenes"}}
+{"table": "Customer_Master_Index", "row": {"master_customer_id": 7, "cmi_details": "Streich-Morissette"}}
+{"table": "Customer_Master_Index", "row": {"master_customer_id": 8, "cmi_details": "Quigley-Paucek"}}
+{"table": "Customer_Master_Index", "row": {"master_customer_id": 9, "cmi_details": "Reynolds-McClure"}}
+{"table": "Electoral_Register", "row": {"electoral_register_id": 2, "cmi_cross_ref_id": 83}}
+{"table": "Electoral_Register", "row": {"electoral_register_id": 3, "cmi_cross_ref_id": 65}}
+{"table": "Electoral_Register", "row": {"electoral_register_id": 4, "cmi_cross_ref_id": 100}}
+{"table": "Electoral_Register", "row": {"electoral_register_id": 6, "cmi_cross_ref_id": 95}}
+{"table": "Electoral_Register", "row": {"electoral_register_id": 7, "cmi_cross_ref_id": 65}}
+{"table": "Electoral_Register", "row": {"electoral_register_id": 8, "cmi_cross_ref_id": 75}}
+{"table": "Parking_Fines", "row": {"council_tax_id": 9, "cmi_cross_ref_id": 4}}
+{"table": "Parking_Fines", "row": {"council_tax_id": 10, "cmi_cross_ref_id": 81}}
+{"table": "Rent_Arrears", "row": {"council_tax_id": 1, "cmi_cross_ref_id": 100}}
+{"table": "Rent_Arrears", "row": {"council_tax_id": 2, "cmi_cross_ref_id": 8}}
+{"table": "Rent_Arrears", "row": {"council_tax_id": 6, "cmi_cross_ref_id": 59}}
+{"table": "Rent_Arrears", "row": {"council_tax_id": 7, "cmi_cross_ref_id": 2}}

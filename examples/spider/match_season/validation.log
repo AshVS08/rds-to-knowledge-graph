@@ -1,0 +1,48 @@
+DB ID: match_season
+Run:   20250910-163730
+
+Tables: 4
+Columns: 21
+PKs: 4
+FKs: 3
+
+No structural issues found.
+
+Primary keys by table:
+- country: ['Country_id']
+- match_season: ['Season']
+- player: ['Player_ID']
+- team: ['Team_id']
+
+Null summary:
+{
+  "country": {
+    "Country_id": 0,
+    "Country_name": 0,
+    "Capital": 0,
+    "Official_native_language": 0
+  },
+  "match_season": {
+    "Season": 0,
+    "Player": 0,
+    "Position": 0,
+    "Country": 0,
+    "Team": 0,
+    "Draft_Pick_Number": 0,
+    "Draft_Class": 0,
+    "College": 0
+  },
+  "player": {
+    "Player_ID": 0,
+    "Player": 0,
+    "Years_Played": 0,
+    "Total_WL": 0,
+    "Singles_WL": 0,
+    "Doubles_WL": 0,
+    "Team": 0
+  },
+  "team": {
+    "Team_id": 0,
+    "Name": 0
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "db_id": "movie_1",
+  "nodes": [
+    {
+      "id": "Movie",
+      "columns": [
+        "mID",
+        "title",
+        "year",
+        "director"
+      ],
+      "primary_keys": [
+        "mID"
+      ]
+    },
+    {
+      "id": "Rating",
+      "columns": [
+        "rID",
+        "mID",
+        "stars",
+        "ratingDate"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Reviewer",
+      "columns": [
+        "rID",
+        "name"
+      ],
+      "primary_keys": [
+        "rID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Rating",
+      "to": "Reviewer",
+      "from_column": "rID",
+      "to_column": "rID"
+    },
+    {
+      "from": "Rating",
+      "to": "Movie",
+      "from_column": "mID",
+      "to_column": "mID"
+    }
+  ]
+}

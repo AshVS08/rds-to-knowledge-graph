@@ -1,0 +1,46 @@
+DB ID: machine_repair
+Run:   20250910-163730
+
+Tables: 4
+Columns: 19
+PKs: 6
+FKs: 3
+
+No structural issues found.
+
+Primary keys by table:
+- machine: ['Machine_ID']
+- repair: ['repair_ID']
+- repair_assignment: ['technician_id', 'repair_ID', 'Machine_ID']
+- technician: ['technician_id']
+
+Null summary:
+{
+  "machine": {
+    "Machine_ID": 0,
+    "Making_Year": 0,
+    "Class": 0,
+    "Team": 0,
+    "Machine_series": 0,
+    "value_points": 0,
+    "quality_rank": 0
+  },
+  "repair": {
+    "repair_ID": 0,
+    "name": 0,
+    "Launch_Date": 0,
+    "Notes": 0
+  },
+  "repair_assignment": {
+    "technician_id": 0,
+    "repair_ID": 0,
+    "Machine_ID": 0
+  },
+  "technician": {
+    "technician_id": 0,
+    "Name": 0,
+    "Team": 0,
+    "Starting_Year": 0,
+    "Age": 0
+  }
+}

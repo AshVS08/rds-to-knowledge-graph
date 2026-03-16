@@ -1,0 +1,36 @@
+DB ID: entertainment_awards
+Run:   20250910-163730
+
+Tables: 3
+Columns: 12
+PKs: 4
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- artwork: ['Artwork_ID']
+- festival_detail: ['Festival_ID']
+- nomination: ['Artwork_ID', 'Festival_ID']
+
+Null summary:
+{
+  "artwork": {
+    "Artwork_ID": 0,
+    "Type": 0,
+    "Name": 0
+  },
+  "festival_detail": {
+    "Festival_ID": 0,
+    "Festival_Name": 0,
+    "Chair_Name": 0,
+    "Location": 0,
+    "Year": 0,
+    "Num_of_Audience": 0
+  },
+  "nomination": {
+    "Artwork_ID": 0,
+    "Festival_ID": 0,
+    "Result": 0
+  }
+}

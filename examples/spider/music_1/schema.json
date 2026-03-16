@@ -1,0 +1,216 @@
+{
+  "db_id": "music_1",
+  "tables": [
+    {
+      "name": "artist",
+      "columns": [
+        {
+          "name": "artist_name",
+          "type": "varchar2(50)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "country",
+          "type": "varchar2(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "gender",
+          "type": "varchar2(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "preferred_genre",
+          "type": "varchar2(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "artist_name"
+      ]
+    },
+    {
+      "name": "files",
+      "columns": [
+        {
+          "name": "f_id",
+          "type": "number(10)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "artist_name",
+          "type": "varchar2(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "file_size",
+          "type": "varchar2(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "duration",
+          "type": "varchar2(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "formats",
+          "type": "varchar2(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "f_id"
+      ]
+    },
+    {
+      "name": "genre",
+      "columns": [
+        {
+          "name": "g_name",
+          "type": "varchar2(20)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "rating",
+          "type": "varchar2(10)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "most_popular_in",
+          "type": "varchar2(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "g_name"
+      ]
+    },
+    {
+      "name": "song",
+      "columns": [
+        {
+          "name": "song_name",
+          "type": "varchar2(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "artist_name",
+          "type": "varchar2(50)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "country",
+          "type": "varchar2(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "f_id",
+          "type": "number(10)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "genre_is",
+          "type": "varchar2(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "rating",
+          "type": "number(10)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "languages",
+          "type": "varchar2(20)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "releasedate",
+          "type": "Date",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "resolution",
+          "type": "number(10)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "song_name"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "artist",
+      "from_column": "preferred_genre",
+      "to_table": "genre",
+      "to_column": "g_name"
+    },
+    {
+      "from_table": "files",
+      "from_column": "artist_name",
+      "to_table": "artist",
+      "to_column": "artist_name"
+    },
+    {
+      "from_table": "song",
+      "from_column": "genre_is",
+      "to_table": "genre",
+      "to_column": "g_name"
+    },
+    {
+      "from_table": "song",
+      "from_column": "f_id",
+      "to_table": "files",
+      "to_column": "f_id"
+    },
+    {
+      "from_table": "song",
+      "from_column": "artist_name",
+      "to_table": "artist",
+      "to_column": "artist_name"
+    }
+  ]
+}

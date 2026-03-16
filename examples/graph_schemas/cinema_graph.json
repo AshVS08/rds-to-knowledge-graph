@@ -1,0 +1,61 @@
+{
+  "db_id": "cinema",
+  "nodes": [
+    {
+      "id": "cinema",
+      "columns": [
+        "Cinema_ID",
+        "Name",
+        "Openning_year",
+        "Capacity",
+        "Location"
+      ],
+      "primary_keys": [
+        "Cinema_ID"
+      ]
+    },
+    {
+      "id": "film",
+      "columns": [
+        "Film_ID",
+        "Rank_in_series",
+        "Number_in_season",
+        "Title",
+        "Directed_by",
+        "Original_air_date",
+        "Production_code"
+      ],
+      "primary_keys": [
+        "Film_ID"
+      ]
+    },
+    {
+      "id": "schedule",
+      "columns": [
+        "Cinema_ID",
+        "Film_ID",
+        "Date",
+        "Show_times_per_day",
+        "Price"
+      ],
+      "primary_keys": [
+        "Cinema_ID",
+        "Film_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "schedule",
+      "to": "cinema",
+      "from_column": "Cinema_ID",
+      "to_column": "Cinema_ID"
+    },
+    {
+      "from": "schedule",
+      "to": "film",
+      "from_column": "Film_ID",
+      "to_column": "Film_ID"
+    }
+  ]
+}

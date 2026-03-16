@@ -1,0 +1,141 @@
+{
+  "db_id": "hr_1",
+  "nodes": [
+    {
+      "id": "countries",
+      "columns": [
+        "COUNTRY_ID",
+        "COUNTRY_NAME",
+        "REGION_ID"
+      ],
+      "primary_keys": [
+        "COUNTRY_ID"
+      ]
+    },
+    {
+      "id": "departments",
+      "columns": [
+        "DEPARTMENT_ID",
+        "DEPARTMENT_NAME",
+        "MANAGER_ID",
+        "LOCATION_ID"
+      ],
+      "primary_keys": [
+        "DEPARTMENT_ID"
+      ]
+    },
+    {
+      "id": "employees",
+      "columns": [
+        "EMPLOYEE_ID",
+        "FIRST_NAME",
+        "LAST_NAME",
+        "EMAIL",
+        "PHONE_NUMBER",
+        "HIRE_DATE",
+        "JOB_ID",
+        "SALARY",
+        "COMMISSION_PCT",
+        "MANAGER_ID",
+        "DEPARTMENT_ID"
+      ],
+      "primary_keys": [
+        "EMPLOYEE_ID"
+      ]
+    },
+    {
+      "id": "job_history",
+      "columns": [
+        "EMPLOYEE_ID",
+        "START_DATE",
+        "END_DATE",
+        "JOB_ID",
+        "DEPARTMENT_ID"
+      ],
+      "primary_keys": [
+        "EMPLOYEE_ID",
+        "START_DATE"
+      ]
+    },
+    {
+      "id": "jobs",
+      "columns": [
+        "JOB_ID",
+        "JOB_TITLE",
+        "MIN_SALARY",
+        "MAX_SALARY"
+      ],
+      "primary_keys": [
+        "JOB_ID"
+      ]
+    },
+    {
+      "id": "locations",
+      "columns": [
+        "LOCATION_ID",
+        "STREET_ADDRESS",
+        "POSTAL_CODE",
+        "CITY",
+        "STATE_PROVINCE",
+        "COUNTRY_ID"
+      ],
+      "primary_keys": [
+        "LOCATION_ID"
+      ]
+    },
+    {
+      "id": "regions",
+      "columns": [
+        "REGION_ID",
+        "REGION_NAME"
+      ],
+      "primary_keys": [
+        "REGION_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "countries",
+      "to": "regions",
+      "from_column": "REGION_ID",
+      "to_column": "REGION_ID"
+    },
+    {
+      "from": "employees",
+      "to": "jobs",
+      "from_column": "JOB_ID",
+      "to_column": "JOB_ID"
+    },
+    {
+      "from": "employees",
+      "to": "departments",
+      "from_column": "DEPARTMENT_ID",
+      "to_column": "DEPARTMENT_ID"
+    },
+    {
+      "from": "job_history",
+      "to": "jobs",
+      "from_column": "JOB_ID",
+      "to_column": "JOB_ID"
+    },
+    {
+      "from": "job_history",
+      "to": "departments",
+      "from_column": "DEPARTMENT_ID",
+      "to_column": "DEPARTMENT_ID"
+    },
+    {
+      "from": "job_history",
+      "to": "employees",
+      "from_column": "EMPLOYEE_ID",
+      "to_column": "EMPLOYEE_ID"
+    },
+    {
+      "from": "locations",
+      "to": "countries",
+      "from_column": "COUNTRY_ID",
+      "to_column": "COUNTRY_ID"
+    }
+  ]
+}

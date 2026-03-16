@@ -1,0 +1,56 @@
+DB ID: local_govt_mdm
+Run:   20250910-163730
+
+Tables: 8
+Columns: 17
+PKs: 8
+FKs: 7
+
+No structural issues found.
+
+Primary keys by table:
+- Benefits_Overpayments: ['council_tax_id']
+- Business_Rates: ['business_rates_id']
+- CMI_Cross_References: ['cmi_cross_ref_id']
+- Council_Tax: ['council_tax_id']
+- Customer_Master_Index: ['master_customer_id']
+- Electoral_Register: ['electoral_register_id']
+- Parking_Fines: ['council_tax_id']
+- Rent_Arrears: ['council_tax_id']
+
+Null summary:
+{
+  "Benefits_Overpayments": {
+    "council_tax_id": 0,
+    "cmi_cross_ref_id": 0
+  },
+  "Business_Rates": {
+    "business_rates_id": 0,
+    "cmi_cross_ref_id": 0
+  },
+  "CMI_Cross_References": {
+    "cmi_cross_ref_id": 0,
+    "master_customer_id": 0,
+    "source_system_code": 0
+  },
+  "Council_Tax": {
+    "council_tax_id": 0,
+    "cmi_cross_ref_id": 0
+  },
+  "Customer_Master_Index": {
+    "master_customer_id": 0,
+    "cmi_details": 0
+  },
+  "Electoral_Register": {
+    "electoral_register_id": 0,
+    "cmi_cross_ref_id": 0
+  },
+  "Parking_Fines": {
+    "council_tax_id": 0,
+    "cmi_cross_ref_id": 0
+  },
+  "Rent_Arrears": {
+    "council_tax_id": 0,
+    "cmi_cross_ref_id": 0
+  }
+}

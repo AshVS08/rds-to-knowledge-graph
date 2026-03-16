@@ -1,0 +1,123 @@
+{
+  "db_id": "apartment_rentals",
+  "nodes": [
+    {
+      "id": "Apartment_Bookings",
+      "columns": [
+        "apt_booking_id",
+        "apt_id",
+        "guest_id",
+        "booking_status_code",
+        "booking_start_date",
+        "booking_end_date"
+      ],
+      "primary_keys": [
+        "apt_booking_id"
+      ]
+    },
+    {
+      "id": "Apartment_Buildings",
+      "columns": [
+        "building_id",
+        "building_short_name",
+        "building_full_name",
+        "building_description",
+        "building_address",
+        "building_manager",
+        "building_phone"
+      ],
+      "primary_keys": [
+        "building_id"
+      ]
+    },
+    {
+      "id": "Apartment_Facilities",
+      "columns": [
+        "apt_id",
+        "facility_code"
+      ],
+      "primary_keys": [
+        "apt_id",
+        "facility_code"
+      ]
+    },
+    {
+      "id": "Apartments",
+      "columns": [
+        "apt_id",
+        "building_id",
+        "apt_type_code",
+        "apt_number",
+        "bathroom_count",
+        "bedroom_count",
+        "room_count"
+      ],
+      "primary_keys": [
+        "apt_id"
+      ]
+    },
+    {
+      "id": "Guests",
+      "columns": [
+        "guest_id",
+        "gender_code",
+        "guest_first_name",
+        "guest_last_name",
+        "date_of_birth"
+      ],
+      "primary_keys": [
+        "guest_id"
+      ]
+    },
+    {
+      "id": "View_Unit_Status",
+      "columns": [
+        "apt_id",
+        "apt_booking_id",
+        "status_date",
+        "available_yn"
+      ],
+      "primary_keys": [
+        "status_date"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Apartment_Bookings",
+      "to": "Guests",
+      "from_column": "guest_id",
+      "to_column": "guest_id"
+    },
+    {
+      "from": "Apartment_Bookings",
+      "to": "Apartments",
+      "from_column": "apt_id",
+      "to_column": "apt_id"
+    },
+    {
+      "from": "Apartment_Facilities",
+      "to": "Apartments",
+      "from_column": "apt_id",
+      "to_column": "apt_id"
+    },
+    {
+      "from": "Apartments",
+      "to": "Apartment_Buildings",
+      "from_column": "building_id",
+      "to_column": "building_id"
+    },
+    {
+      "from": "View_Unit_Status",
+      "to": "Apartment_Bookings",
+      "from_column": "apt_booking_id",
+      "to_column": "apt_booking_id"
+    },
+    {
+      "from": "View_Unit_Status",
+      "to": "Apartments",
+      "from_column": "apt_id",
+      "to_column": "apt_id"
+    }
+  ]
+}

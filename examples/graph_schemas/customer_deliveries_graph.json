@@ -1,0 +1,244 @@
+{
+  "db_id": "customer_deliveries",
+  "nodes": [
+    {
+      "id": "Actual_Order_Products",
+      "columns": [
+        "actual_order_id",
+        "product_id"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Actual_Orders",
+      "columns": [
+        "actual_order_id",
+        "order_status_code",
+        "regular_order_id",
+        "actual_order_date"
+      ],
+      "primary_keys": [
+        "actual_order_id"
+      ]
+    },
+    {
+      "id": "Addresses",
+      "columns": [
+        "address_id",
+        "address_details",
+        "city",
+        "zip_postcode",
+        "state_province_county",
+        "country"
+      ],
+      "primary_keys": [
+        "address_id"
+      ]
+    },
+    {
+      "id": "Customer_Addresses",
+      "columns": [
+        "customer_id",
+        "address_id",
+        "date_from",
+        "address_type",
+        "date_to"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Customers",
+      "columns": [
+        "customer_id",
+        "payment_method",
+        "customer_name",
+        "customer_phone",
+        "customer_email",
+        "date_became_customer"
+      ],
+      "primary_keys": [
+        "customer_id"
+      ]
+    },
+    {
+      "id": "Delivery_Route_Locations",
+      "columns": [
+        "location_code",
+        "route_id",
+        "location_address_id",
+        "location_name"
+      ],
+      "primary_keys": [
+        "location_code"
+      ]
+    },
+    {
+      "id": "Delivery_Routes",
+      "columns": [
+        "route_id",
+        "route_name",
+        "other_route_details"
+      ],
+      "primary_keys": [
+        "route_id"
+      ]
+    },
+    {
+      "id": "Employees",
+      "columns": [
+        "employee_id",
+        "employee_address_id",
+        "employee_name",
+        "employee_phone"
+      ],
+      "primary_keys": [
+        "employee_id"
+      ]
+    },
+    {
+      "id": "Order_Deliveries",
+      "columns": [
+        "location_code",
+        "actual_order_id",
+        "delivery_status_code",
+        "driver_employee_id",
+        "truck_id",
+        "delivery_date"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Products",
+      "columns": [
+        "product_id",
+        "product_name",
+        "product_price",
+        "product_description"
+      ],
+      "primary_keys": [
+        "product_id"
+      ]
+    },
+    {
+      "id": "Regular_Order_Products",
+      "columns": [
+        "regular_order_id",
+        "product_id"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Regular_Orders",
+      "columns": [
+        "regular_order_id",
+        "distributer_id"
+      ],
+      "primary_keys": [
+        "regular_order_id"
+      ]
+    },
+    {
+      "id": "Trucks",
+      "columns": [
+        "truck_id",
+        "truck_licence_number",
+        "truck_details"
+      ],
+      "primary_keys": [
+        "truck_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Actual_Order_Products",
+      "to": "Actual_Orders",
+      "from_column": "actual_order_id",
+      "to_column": "actual_order_id"
+    },
+    {
+      "from": "Actual_Order_Products",
+      "to": "Products",
+      "from_column": "product_id",
+      "to_column": "product_id"
+    },
+    {
+      "from": "Actual_Orders",
+      "to": "Regular_Orders",
+      "from_column": "regular_order_id",
+      "to_column": "regular_order_id"
+    },
+    {
+      "from": "Customer_Addresses",
+      "to": "Addresses",
+      "from_column": "address_id",
+      "to_column": "address_id"
+    },
+    {
+      "from": "Customer_Addresses",
+      "to": "Customers",
+      "from_column": "customer_id",
+      "to_column": "customer_id"
+    },
+    {
+      "from": "Delivery_Route_Locations",
+      "to": "Delivery_Routes",
+      "from_column": "route_id",
+      "to_column": "route_id"
+    },
+    {
+      "from": "Delivery_Route_Locations",
+      "to": "Addresses",
+      "from_column": "location_address_id",
+      "to_column": "address_id"
+    },
+    {
+      "from": "Employees",
+      "to": "Addresses",
+      "from_column": "employee_address_id",
+      "to_column": "address_id"
+    },
+    {
+      "from": "Order_Deliveries",
+      "to": "Employees",
+      "from_column": "driver_employee_id",
+      "to_column": "employee_id"
+    },
+    {
+      "from": "Order_Deliveries",
+      "to": "Delivery_Route_Locations",
+      "from_column": "location_code",
+      "to_column": "location_code"
+    },
+    {
+      "from": "Order_Deliveries",
+      "to": "Actual_Orders",
+      "from_column": "actual_order_id",
+      "to_column": "actual_order_id"
+    },
+    {
+      "from": "Order_Deliveries",
+      "to": "Trucks",
+      "from_column": "truck_id",
+      "to_column": "truck_id"
+    },
+    {
+      "from": "Regular_Order_Products",
+      "to": "Regular_Orders",
+      "from_column": "regular_order_id",
+      "to_column": "regular_order_id"
+    },
+    {
+      "from": "Regular_Order_Products",
+      "to": "Products",
+      "from_column": "product_id",
+      "to_column": "product_id"
+    },
+    {
+      "from": "Regular_Orders",
+      "to": "Customers",
+      "from_column": "distributer_id",
+      "to_column": "customer_id"
+    }
+  ]
+}

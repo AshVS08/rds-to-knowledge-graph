@@ -1,0 +1,96 @@
+{
+  "db_id": "insurance_policies",
+  "nodes": [
+    {
+      "id": "Claims",
+      "columns": [
+        "Claim_ID",
+        "Policy_ID",
+        "Date_Claim_Made",
+        "Date_Claim_Settled",
+        "Amount_Claimed",
+        "Amount_Settled"
+      ],
+      "primary_keys": [
+        "Claim_ID"
+      ]
+    },
+    {
+      "id": "Customer_Policies",
+      "columns": [
+        "Policy_ID",
+        "Customer_ID",
+        "Policy_Type_Code",
+        "Start_Date",
+        "End_Date"
+      ],
+      "primary_keys": [
+        "Policy_ID"
+      ]
+    },
+    {
+      "id": "Customers",
+      "columns": [
+        "Customer_ID",
+        "Customer_Details"
+      ],
+      "primary_keys": [
+        "Customer_ID"
+      ]
+    },
+    {
+      "id": "Payments",
+      "columns": [
+        "Payment_ID",
+        "Settlement_ID",
+        "Payment_Method_Code",
+        "Date_Payment_Made",
+        "Amount_Payment"
+      ],
+      "primary_keys": [
+        "Payment_ID"
+      ]
+    },
+    {
+      "id": "Settlements",
+      "columns": [
+        "Settlement_ID",
+        "Claim_ID",
+        "Date_Claim_Made",
+        "Date_Claim_Settled",
+        "Amount_Claimed",
+        "Amount_Settled",
+        "Customer_Policy_ID"
+      ],
+      "primary_keys": [
+        "Settlement_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Claims",
+      "to": "Customer_Policies",
+      "from_column": "Policy_ID",
+      "to_column": "Policy_ID"
+    },
+    {
+      "from": "Customer_Policies",
+      "to": "Customers",
+      "from_column": "Customer_ID",
+      "to_column": "Customer_ID"
+    },
+    {
+      "from": "Payments",
+      "to": "Settlements",
+      "from_column": "Settlement_ID",
+      "to_column": "Settlement_ID"
+    },
+    {
+      "from": "Settlements",
+      "to": "Claims",
+      "from_column": "Claim_ID",
+      "to_column": "Claim_ID"
+    }
+  ]
+}

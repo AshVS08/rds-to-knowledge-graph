@@ -1,0 +1,44 @@
+DB ID: cre_Doc_Template_Mgt
+Run:   20250910-163730
+
+Tables: 4
+Columns: 17
+PKs: 4
+FKs: 3
+
+No structural issues found.
+
+Primary keys by table:
+- Documents: ['Document_ID']
+- Paragraphs: ['Paragraph_ID']
+- Ref_Template_Types: ['Template_Type_Code']
+- Templates: ['Template_ID']
+
+Null summary:
+{
+  "Documents": {
+    "Document_ID": 0,
+    "Template_ID": 0,
+    "Document_Name": 0,
+    "Document_Description": 0,
+    "Other_Details": 15
+  },
+  "Paragraphs": {
+    "Paragraph_ID": 0,
+    "Document_ID": 0,
+    "Paragraph_Text": 0,
+    "Other_Details": 15
+  },
+  "Ref_Template_Types": {
+    "Template_Type_Code": 0,
+    "Template_Type_Description": 0
+  },
+  "Templates": {
+    "Template_ID": 0,
+    "Version_Number": 0,
+    "Template_Type_Code": 0,
+    "Date_Effective_From": 0,
+    "Date_Effective_To": 0,
+    "Template_Details": 0
+  }
+}

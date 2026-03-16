@@ -1,0 +1,72 @@
+{
+  "db_id": "game_1",
+  "nodes": [
+    {
+      "id": "Plays_Games",
+      "columns": [
+        "StuID",
+        "GameID",
+        "Hours_Played"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "SportsInfo",
+      "columns": [
+        "StuID",
+        "SportName",
+        "HoursPerWeek",
+        "GamesPlayed",
+        "OnScholarship"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Student",
+      "columns": [
+        "StuID",
+        "LName",
+        "Fname",
+        "Age",
+        "Sex",
+        "Major",
+        "Advisor",
+        "city_code"
+      ],
+      "primary_keys": [
+        "StuID"
+      ]
+    },
+    {
+      "id": "Video_Games",
+      "columns": [
+        "GameID",
+        "GName",
+        "GType"
+      ],
+      "primary_keys": [
+        "GameID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Plays_Games",
+      "to": "Student",
+      "from_column": "StuID",
+      "to_column": "StuID"
+    },
+    {
+      "from": "Plays_Games",
+      "to": "Video_Games",
+      "from_column": "GameID",
+      "to_column": "GameID"
+    },
+    {
+      "from": "SportsInfo",
+      "to": "Student",
+      "from_column": "StuID",
+      "to_column": "StuID"
+    }
+  ]
+}

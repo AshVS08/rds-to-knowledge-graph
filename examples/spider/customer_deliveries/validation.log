@@ -1,0 +1,105 @@
+DB ID: customer_deliveries
+Run:   20250910-163730
+
+Tables: 13
+Columns: 51
+PKs: 9
+FKs: 15
+
+No structural issues found.
+
+Primary keys by table:
+- Actual_Order_Products: None
+- Actual_Orders: ['actual_order_id']
+- Addresses: ['address_id']
+- Customer_Addresses: None
+- Customers: ['customer_id']
+- Delivery_Route_Locations: ['location_code']
+- Delivery_Routes: ['route_id']
+- Employees: ['employee_id']
+- Order_Deliveries: None
+- Products: ['product_id']
+- Regular_Order_Products: None
+- Regular_Orders: ['regular_order_id']
+- Trucks: ['truck_id']
+
+Null summary:
+{
+  "Actual_Order_Products": {
+    "actual_order_id": 0,
+    "product_id": 0
+  },
+  "Actual_Orders": {
+    "actual_order_id": 0,
+    "order_status_code": 0,
+    "regular_order_id": 0,
+    "actual_order_date": 0
+  },
+  "Addresses": {
+    "address_id": 0,
+    "address_details": 0,
+    "city": 0,
+    "zip_postcode": 0,
+    "state_province_county": 0,
+    "country": 0
+  },
+  "Customer_Addresses": {
+    "customer_id": 0,
+    "address_id": 0,
+    "date_from": 0,
+    "address_type": 0,
+    "date_to": 0
+  },
+  "Customers": {
+    "customer_id": 0,
+    "payment_method": 0,
+    "customer_name": 0,
+    "customer_phone": 0,
+    "customer_email": 0,
+    "date_became_customer": 0
+  },
+  "Delivery_Route_Locations": {
+    "location_code": 0,
+    "route_id": 0,
+    "location_address_id": 0,
+    "location_name": 0
+  },
+  "Delivery_Routes": {
+    "route_id": 0,
+    "route_name": 0,
+    "other_route_details": 0
+  },
+  "Employees": {
+    "employee_id": 0,
+    "employee_address_id": 0,
+    "employee_name": 0,
+    "employee_phone": 0
+  },
+  "Order_Deliveries": {
+    "location_code": 0,
+    "actual_order_id": 0,
+    "delivery_status_code": 0,
+    "driver_employee_id": 0,
+    "truck_id": 0,
+    "delivery_date": 0
+  },
+  "Products": {
+    "product_id": 0,
+    "product_name": 0,
+    "product_price": 0,
+    "product_description": 0
+  },
+  "Regular_Order_Products": {
+    "regular_order_id": 0,
+    "product_id": 0
+  },
+  "Regular_Orders": {
+    "regular_order_id": 0,
+    "distributer_id": 0
+  },
+  "Trucks": {
+    "truck_id": 0,
+    "truck_licence_number": 0,
+    "truck_details": 0
+  }
+}

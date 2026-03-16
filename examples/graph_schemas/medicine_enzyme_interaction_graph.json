@@ -1,0 +1,58 @@
+{
+  "db_id": "medicine_enzyme_interaction",
+  "nodes": [
+    {
+      "id": "enzyme",
+      "columns": [
+        "id",
+        "name",
+        "Location",
+        "Product",
+        "Chromosome",
+        "OMIM",
+        "Porphyria"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    },
+    {
+      "id": "medicine",
+      "columns": [
+        "id",
+        "name",
+        "Trade_Name",
+        "FDA_approved"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    },
+    {
+      "id": "medicine_enzyme_interaction",
+      "columns": [
+        "enzyme_id",
+        "medicine_id",
+        "interaction_type"
+      ],
+      "primary_keys": [
+        "enzyme_id",
+        "medicine_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "medicine_enzyme_interaction",
+      "to": "medicine",
+      "from_column": "medicine_id",
+      "to_column": "id"
+    },
+    {
+      "from": "medicine_enzyme_interaction",
+      "to": "enzyme",
+      "from_column": "enzyme_id",
+      "to_column": "id"
+    }
+  ]
+}

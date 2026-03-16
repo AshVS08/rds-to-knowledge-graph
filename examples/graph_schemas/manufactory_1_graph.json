@@ -1,0 +1,38 @@
+{
+  "db_id": "manufactory_1",
+  "nodes": [
+    {
+      "id": "Manufacturers",
+      "columns": [
+        "Code",
+        "Name",
+        "Headquarter",
+        "Founder",
+        "Revenue"
+      ],
+      "primary_keys": [
+        "Code"
+      ]
+    },
+    {
+      "id": "Products",
+      "columns": [
+        "Code",
+        "Name",
+        "Price",
+        "Manufacturer"
+      ],
+      "primary_keys": [
+        "Code"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Products",
+      "to": "Manufacturers",
+      "from_column": "Manufacturer",
+      "to_column": "Code"
+    }
+  ]
+}

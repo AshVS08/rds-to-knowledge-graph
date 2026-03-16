@@ -1,0 +1,81 @@
+DB ID: customers_campaigns_ecommerce
+Run:   20250910-163730
+
+Tables: 8
+Columns: 42
+PKs: 5
+FKs: 7
+
+No structural issues found.
+
+Primary keys by table:
+- Customer_Addresses: None
+- Customer_Orders: ['order_id']
+- Customers: ['customer_id']
+- Mailshot_Campaigns: ['mailshot_id']
+- Mailshot_Customers: None
+- Order_Items: None
+- Premises: ['premise_id']
+- Products: ['product_id']
+
+Null summary:
+{
+  "Customer_Addresses": {
+    "customer_id": 0,
+    "premise_id": 0,
+    "date_address_from": 0,
+    "address_type_code": 0,
+    "date_address_to": 0
+  },
+  "Customer_Orders": {
+    "order_id": 0,
+    "customer_id": 0,
+    "order_status_code": 0,
+    "shipping_method_code": 0,
+    "order_placed_datetime": 0,
+    "order_delivered_datetime": 0,
+    "order_shipping_charges": 0
+  },
+  "Customers": {
+    "customer_id": 0,
+    "payment_method": 0,
+    "customer_name": 0,
+    "customer_phone": 0,
+    "customer_email": 0,
+    "customer_address": 0,
+    "customer_login": 15,
+    "customer_password": 0
+  },
+  "Mailshot_Campaigns": {
+    "mailshot_id": 0,
+    "product_category": 0,
+    "mailshot_name": 0,
+    "mailshot_start_date": 0,
+    "mailshot_end_date": 0
+  },
+  "Mailshot_Customers": {
+    "mailshot_id": 0,
+    "customer_id": 0,
+    "outcome_code": 0,
+    "mailshot_customer_date": 0
+  },
+  "Order_Items": {
+    "item_id": 0,
+    "order_item_status_code": 0,
+    "order_id": 0,
+    "product_id": 0,
+    "item_status_code": 0,
+    "item_delivered_datetime": 0,
+    "item_order_quantity": 0
+  },
+  "Premises": {
+    "premise_id": 0,
+    "premises_type": 0,
+    "premise_details": 0
+  },
+  "Products": {
+    "product_id": 0,
+    "product_category": 0,
+    "product_name": 0
+  }
+}

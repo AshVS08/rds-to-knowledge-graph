@@ -1,0 +1,221 @@
+{
+  "db_id": "activity_1",
+  "tables": [
+    {
+      "name": "Activity",
+      "columns": [
+        {
+          "name": "actid",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "activity_name",
+          "type": "varchar(25)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "actid"
+      ]
+    },
+    {
+      "name": "Faculty",
+      "columns": [
+        {
+          "name": "FacID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Lname",
+          "type": "VARCHAR(15)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Fname",
+          "type": "VARCHAR(15)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Rank",
+          "type": "VARCHAR(15)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Sex",
+          "type": "VARCHAR(1)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Phone",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Room",
+          "type": "VARCHAR(5)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Building",
+          "type": "VARCHAR(13)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "FacID"
+      ]
+    },
+    {
+      "name": "Faculty_Participates_in",
+      "columns": [
+        {
+          "name": "FacID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "actid",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "Participates_in",
+      "columns": [
+        {
+          "name": "stuid",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "actid",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "Student",
+      "columns": [
+        {
+          "name": "StuID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "LName",
+          "type": "VARCHAR(12)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Fname",
+          "type": "VARCHAR(12)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Age",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Sex",
+          "type": "VARCHAR(1)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Major",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Advisor",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "city_code",
+          "type": "VARCHAR(3)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "StuID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Faculty_Participates_in",
+      "from_column": "actid",
+      "to_table": "Activity",
+      "to_column": "actid"
+    },
+    {
+      "from_table": "Faculty_Participates_in",
+      "from_column": "FacID",
+      "to_table": "Faculty",
+      "to_column": "FacID"
+    },
+    {
+      "from_table": "Participates_in",
+      "from_column": "actid",
+      "to_table": "Activity",
+      "to_column": "actid"
+    },
+    {
+      "from_table": "Participates_in",
+      "from_column": "stuid",
+      "to_table": "Student",
+      "to_column": "StuID"
+    }
+  ]
+}

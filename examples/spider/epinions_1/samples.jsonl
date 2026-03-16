@@ -1,0 +1,31 @@
+{"table": "item", "row": {"i_id": 0, "title": "pear"}}
+{"table": "item", "row": {"i_id": 1, "title": "orange"}}
+{"table": "item", "row": {"i_id": 2, "title": "apple"}}
+{"table": "item", "row": {"i_id": 3, "title": "shampoo"}}
+{"table": "item", "row": {"i_id": 4, "title": "avocado"}}
+{"table": "item", "row": {"i_id": 5, "title": "comb"}}
+{"table": "item", "row": {"i_id": 6, "title": "blue hoodie"}}
+{"table": "item", "row": {"i_id": 7, "title": "cup"}}
+{"table": "review", "row": {"a_id": 1, "u_id": 1, "i_id": 1, "rating": 10, "rank": 1}}
+{"table": "review", "row": {"a_id": 2, "u_id": 2, "i_id": 1, "rating": 5, "rank": 2}}
+{"table": "review", "row": {"a_id": 3, "u_id": 1, "i_id": 4, "rating": 7, "rank": 3}}
+{"table": "review", "row": {"a_id": 4, "u_id": 2, "i_id": 7, "rating": 10, "rank": 7}}
+{"table": "review", "row": {"a_id": 5, "u_id": 2, "i_id": 5, "rating": 7, "rank": 4}}
+{"table": "review", "row": {"a_id": 6, "u_id": 1, "i_id": 3, "rating": 5, "rank": 5}}
+{"table": "review", "row": {"a_id": 7, "u_id": 2, "i_id": 7, "rating": 6, "rank": 6}}
+{"table": "trust", "row": {"source_u_id": 1, "target_u_id": 2, "trust": 10}}
+{"table": "trust", "row": {"source_u_id": 1, "target_u_id": 3, "trust": 6}}
+{"table": "trust", "row": {"source_u_id": 2, "target_u_id": 4, "trust": 8}}
+{"table": "trust", "row": {"source_u_id": 3, "target_u_id": 6, "trust": 10}}
+{"table": "trust", "row": {"source_u_id": 7, "target_u_id": 2, "trust": 3}}
+{"table": "trust", "row": {"source_u_id": 7, "target_u_id": 5, "trust": 2}}
+{"table": "trust", "row": {"source_u_id": 7, "target_u_id": 3, "trust": 4}}
+{"table": "trust", "row": {"source_u_id": 6, "target_u_id": 2, "trust": 1}}
+{"table": "trust", "row": {"source_u_id": 1, "target_u_id": 5, "trust": 7}}
+{"table": "useracct", "row": {"u_id": 1, "name": "Helen"}}
+{"table": "useracct", "row": {"u_id": 2, "name": "Mark"}}
+{"table": "useracct", "row": {"u_id": 3, "name": "Terry"}}
+{"table": "useracct", "row": {"u_id": 4, "name": "Nancy"}}
+{"table": "useracct", "row": {"u_id": 5, "name": "Rosie"}}
+{"table": "useracct", "row": {"u_id": 6, "name": "Roxi"}}
+{"table": "useracct", "row": {"u_id": 7, "name": "Emily"}}

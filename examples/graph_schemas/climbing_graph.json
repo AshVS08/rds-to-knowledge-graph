@@ -1,0 +1,41 @@
+{
+  "db_id": "climbing",
+  "nodes": [
+    {
+      "id": "climber",
+      "columns": [
+        "Climber_ID",
+        "Name",
+        "Country",
+        "Time",
+        "Points",
+        "Mountain_ID"
+      ],
+      "primary_keys": [
+        "Climber_ID"
+      ]
+    },
+    {
+      "id": "mountain",
+      "columns": [
+        "Mountain_ID",
+        "Name",
+        "Height",
+        "Prominence",
+        "Range",
+        "Country"
+      ],
+      "primary_keys": [
+        "Mountain_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "climber",
+      "to": "mountain",
+      "from_column": "Mountain_ID",
+      "to_column": "Mountain_ID"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "db_id": "manufacturer",
+  "tables": [
+    {
+      "name": "furniture",
+      "columns": [
+        {
+          "name": "Furniture_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Num_of_Component",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Market_Rate",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Furniture_ID"
+      ]
+    },
+    {
+      "name": "furniture_manufacte",
+      "columns": [
+        {
+          "name": "Manufacturer_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Furniture_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Price_in_Dollar",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Manufacturer_ID",
+        "Furniture_ID"
+      ]
+    },
+    {
+      "name": "manufacturer",
+      "columns": [
+        {
+          "name": "Manufacturer_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Open_Year",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Num_of_Factories",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Num_of_Shops",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Manufacturer_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "furniture_manufacte",
+      "from_column": "Furniture_ID",
+      "to_table": "furniture",
+      "to_column": "Furniture_ID"
+    },
+    {
+      "from_table": "furniture_manufacte",
+      "from_column": "Manufacturer_ID",
+      "to_table": "manufacturer",
+      "to_column": "Manufacturer_ID"
+    }
+  ]
+}

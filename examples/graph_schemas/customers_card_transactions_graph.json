@@ -1,0 +1,76 @@
+{
+  "db_id": "customers_card_transactions",
+  "nodes": [
+    {
+      "id": "Accounts",
+      "columns": [
+        "account_id",
+        "customer_id",
+        "account_name",
+        "other_account_details"
+      ],
+      "primary_keys": [
+        "account_id"
+      ]
+    },
+    {
+      "id": "Customers",
+      "columns": [
+        "customer_id",
+        "customer_first_name",
+        "customer_last_name",
+        "customer_address",
+        "customer_phone",
+        "customer_email",
+        "other_customer_details"
+      ],
+      "primary_keys": [
+        "customer_id"
+      ]
+    },
+    {
+      "id": "Customers_Cards",
+      "columns": [
+        "card_id",
+        "customer_id",
+        "card_type_code",
+        "card_number",
+        "date_valid_from",
+        "date_valid_to",
+        "other_card_details"
+      ],
+      "primary_keys": [
+        "card_id"
+      ]
+    },
+    {
+      "id": "Financial_Transactions",
+      "columns": [
+        "transaction_id",
+        "previous_transaction_id",
+        "account_id",
+        "card_id",
+        "transaction_type",
+        "transaction_date",
+        "transaction_amount",
+        "transaction_comment",
+        "other_transaction_details"
+      ],
+      "primary_keys": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "Financial_Transactions",
+      "to": "Accounts",
+      "from_column": "account_id",
+      "to_column": "account_id"
+    },
+    {
+      "from": "Financial_Transactions",
+      "to": "Customers_Cards",
+      "from_column": "card_id",
+      "to_column": "card_id"
+    }
+  ]
+}

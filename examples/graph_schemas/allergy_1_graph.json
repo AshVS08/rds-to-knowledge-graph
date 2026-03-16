@@ -1,0 +1,53 @@
+{
+  "db_id": "allergy_1",
+  "nodes": [
+    {
+      "id": "Allergy_Type",
+      "columns": [
+        "Allergy",
+        "AllergyType"
+      ],
+      "primary_keys": [
+        "Allergy"
+      ]
+    },
+    {
+      "id": "Has_Allergy",
+      "columns": [
+        "StuID",
+        "Allergy"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Student",
+      "columns": [
+        "StuID",
+        "LName",
+        "Fname",
+        "Age",
+        "Sex",
+        "Major",
+        "Advisor",
+        "city_code"
+      ],
+      "primary_keys": [
+        "StuID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Has_Allergy",
+      "to": "Allergy_Type",
+      "from_column": "Allergy",
+      "to_column": "Allergy"
+    },
+    {
+      "from": "Has_Allergy",
+      "to": "Student",
+      "from_column": "StuID",
+      "to_column": "StuID"
+    }
+  ]
+}

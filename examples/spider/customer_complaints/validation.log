@@ -1,0 +1,58 @@
+DB ID: customer_complaints
+Run:   20250910-163730
+
+Tables: 4
+Columns: 31
+PKs: 3
+FKs: 3
+
+No structural issues found.
+
+Primary keys by table:
+- Complaints: None
+- Customers: ['customer_id']
+- Products: ['product_id']
+- Staff: ['staff_id']
+
+Null summary:
+{
+  "Complaints": {
+    "complaint_id": 0,
+    "product_id": 0,
+    "customer_id": 0,
+    "complaint_outcome_code": 0,
+    "complaint_status_code": 0,
+    "complaint_type_code": 0,
+    "date_complaint_raised": 0,
+    "date_complaint_closed": 0,
+    "staff_id": 0
+  },
+  "Customers": {
+    "customer_id": 0,
+    "customer_type_code": 0,
+    "address_line_1": 0,
+    "address_line_2": 0,
+    "town_city": 0,
+    "state": 0,
+    "email_address": 0,
+    "phone_number": 0
+  },
+  "Products": {
+    "product_id": 0,
+    "parent_product_id": 0,
+    "product_category_code": 0,
+    "date_product_first_available": 0,
+    "date_product_discontinued": 0,
+    "product_name": 0,
+    "product_description": 0,
+    "product_price": 0
+  },
+  "Staff": {
+    "staff_id": 0,
+    "gender": 0,
+    "first_name": 0,
+    "last_name": 0,
+    "email_address": 0,
+    "phone_number": 0
+  }
+}

@@ -1,0 +1,51 @@
+DB ID: farm
+Run:   20250910-163730
+
+Tables: 4
+Columns: 24
+PKs: 5
+FKs: 3
+
+No structural issues found.
+
+Primary keys by table:
+- city: ['City_ID']
+- competition_record: ['Competition_ID', 'Farm_ID']
+- farm: ['Farm_ID']
+- farm_competition: ['Competition_ID']
+
+Null summary:
+{
+  "city": {
+    "City_ID": 0,
+    "Official_Name": 0,
+    "Status": 0,
+    "Area_km_2": 0,
+    "Population": 0,
+    "Census_Ranking": 0
+  },
+  "competition_record": {
+    "Competition_ID": 0,
+    "Farm_ID": 0,
+    "Rank": 0
+  },
+  "farm": {
+    "Farm_ID": 0,
+    "Year": 0,
+    "Total_Horses": 0,
+    "Working_Horses": 0,
+    "Total_Cattle": 0,
+    "Oxen": 0,
+    "Bulls": 0,
+    "Cows": 0,
+    "Pigs": 0,
+    "Sheep_and_Goats": 0
+  },
+  "farm_competition": {
+    "Competition_ID": 0,
+    "Year": 0,
+    "Theme": 0,
+    "Host_city_ID": 0,
+    "Hosts": 0
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "db_id": "museum_visit",
+  "tables": [
+    {
+      "name": "museum",
+      "columns": [
+        {
+          "name": "Museum_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Num_of_Staff",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Open_Year",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Museum_ID"
+      ]
+    },
+    {
+      "name": "visit",
+      "columns": [
+        {
+          "name": "Museum_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "visitor_ID",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Num_of_Ticket",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Total_spent",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Museum_ID",
+        "visitor_ID"
+      ]
+    },
+    {
+      "name": "visitor",
+      "columns": [
+        {
+          "name": "ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Level_of_membership",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Age",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "visit",
+      "from_column": "visitor_ID",
+      "to_table": "visitor",
+      "to_column": "ID"
+    },
+    {
+      "from_table": "visit",
+      "from_column": "Museum_ID",
+      "to_table": "museum",
+      "to_column": "Museum_ID"
+    }
+  ]
+}

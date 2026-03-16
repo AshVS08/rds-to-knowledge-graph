@@ -1,0 +1,277 @@
+{
+  "db_id": "college_2",
+  "nodes": [
+    {
+      "id": "advisor",
+      "columns": [
+        "s_ID",
+        "i_ID"
+      ],
+      "primary_keys": [
+        "s_ID"
+      ]
+    },
+    {
+      "id": "classroom",
+      "columns": [
+        "building",
+        "room_number",
+        "capacity"
+      ],
+      "primary_keys": [
+        "building",
+        "room_number"
+      ]
+    },
+    {
+      "id": "course",
+      "columns": [
+        "course_id",
+        "title",
+        "dept_name",
+        "credits"
+      ],
+      "primary_keys": [
+        "course_id"
+      ]
+    },
+    {
+      "id": "department",
+      "columns": [
+        "dept_name",
+        "building",
+        "budget"
+      ],
+      "primary_keys": [
+        "dept_name"
+      ]
+    },
+    {
+      "id": "instructor",
+      "columns": [
+        "ID",
+        "name",
+        "dept_name",
+        "salary"
+      ],
+      "primary_keys": [
+        "ID"
+      ]
+    },
+    {
+      "id": "prereq",
+      "columns": [
+        "course_id",
+        "prereq_id"
+      ],
+      "primary_keys": [
+        "course_id",
+        "prereq_id"
+      ]
+    },
+    {
+      "id": "section",
+      "columns": [
+        "course_id",
+        "sec_id",
+        "semester",
+        "year",
+        "building",
+        "room_number",
+        "time_slot_id"
+      ],
+      "primary_keys": [
+        "course_id",
+        "sec_id",
+        "semester",
+        "year"
+      ]
+    },
+    {
+      "id": "student",
+      "columns": [
+        "ID",
+        "name",
+        "dept_name",
+        "tot_cred"
+      ],
+      "primary_keys": [
+        "ID"
+      ]
+    },
+    {
+      "id": "takes",
+      "columns": [
+        "ID",
+        "course_id",
+        "sec_id",
+        "semester",
+        "year",
+        "grade"
+      ],
+      "primary_keys": [
+        "ID",
+        "course_id",
+        "sec_id",
+        "semester",
+        "year"
+      ]
+    },
+    {
+      "id": "teaches",
+      "columns": [
+        "ID",
+        "course_id",
+        "sec_id",
+        "semester",
+        "year"
+      ],
+      "primary_keys": [
+        "ID",
+        "course_id",
+        "sec_id",
+        "semester",
+        "year"
+      ]
+    },
+    {
+      "id": "time_slot",
+      "columns": [
+        "time_slot_id",
+        "day",
+        "start_hr",
+        "start_min",
+        "end_hr",
+        "end_min"
+      ],
+      "primary_keys": [
+        "time_slot_id",
+        "day",
+        "start_hr",
+        "start_min"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "advisor",
+      "to": "student",
+      "from_column": "s_ID",
+      "to_column": "ID"
+    },
+    {
+      "from": "advisor",
+      "to": "instructor",
+      "from_column": "i_ID",
+      "to_column": "ID"
+    },
+    {
+      "from": "course",
+      "to": "department",
+      "from_column": "dept_name",
+      "to_column": "dept_name"
+    },
+    {
+      "from": "instructor",
+      "to": "department",
+      "from_column": "dept_name",
+      "to_column": "dept_name"
+    },
+    {
+      "from": "prereq",
+      "to": "course",
+      "from_column": "prereq_id",
+      "to_column": "course_id"
+    },
+    {
+      "from": "prereq",
+      "to": "course",
+      "from_column": "course_id",
+      "to_column": "course_id"
+    },
+    {
+      "from": "section",
+      "to": "classroom",
+      "from_column": "building",
+      "to_column": "building"
+    },
+    {
+      "from": "section",
+      "to": "classroom",
+      "from_column": "room_number",
+      "to_column": "room_number"
+    },
+    {
+      "from": "section",
+      "to": "course",
+      "from_column": "course_id",
+      "to_column": "course_id"
+    },
+    {
+      "from": "student",
+      "to": "department",
+      "from_column": "dept_name",
+      "to_column": "dept_name"
+    },
+    {
+      "from": "takes",
+      "to": "student",
+      "from_column": "ID",
+      "to_column": "ID"
+    },
+    {
+      "from": "takes",
+      "to": "section",
+      "from_column": "course_id",
+      "to_column": "course_id"
+    },
+    {
+      "from": "takes",
+      "to": "section",
+      "from_column": "sec_id",
+      "to_column": "sec_id"
+    },
+    {
+      "from": "takes",
+      "to": "section",
+      "from_column": "semester",
+      "to_column": "semester"
+    },
+    {
+      "from": "takes",
+      "to": "section",
+      "from_column": "year",
+      "to_column": "year"
+    },
+    {
+      "from": "teaches",
+      "to": "instructor",
+      "from_column": "ID",
+      "to_column": "ID"
+    },
+    {
+      "from": "teaches",
+      "to": "section",
+      "from_column": "course_id",
+      "to_column": "course_id"
+    },
+    {
+      "from": "teaches",
+      "to": "section",
+      "from_column": "sec_id",
+      "to_column": "sec_id"
+    },
+    {
+      "from": "teaches",
+      "to": "section",
+      "from_column": "semester",
+      "to_column": "semester"
+    },
+    {
+      "from": "teaches",
+      "to": "section",
+      "from_column": "year",
+      "to_column": "year"
+    }
+  ]
+}

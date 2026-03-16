@@ -1,0 +1,253 @@
+{
+  "db_id": "cre_Docs_and_Epenses",
+  "tables": [
+    {
+      "name": "Accounts",
+      "columns": [
+        {
+          "name": "Account_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Statement_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Account_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Account_ID"
+      ]
+    },
+    {
+      "name": "Documents",
+      "columns": [
+        {
+          "name": "Document_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Document_Type_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Project_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Document_Date",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Document_Name",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Document_Description",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Other_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Document_ID"
+      ]
+    },
+    {
+      "name": "Documents_with_Expenses",
+      "columns": [
+        {
+          "name": "Document_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Budget_Type_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Document_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Document_ID"
+      ]
+    },
+    {
+      "name": "Projects",
+      "columns": [
+        {
+          "name": "Project_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Project_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Project_ID"
+      ]
+    },
+    {
+      "name": "Ref_Budget_Codes",
+      "columns": [
+        {
+          "name": "Budget_Type_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Budget_Type_Description",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Budget_Type_Code"
+      ]
+    },
+    {
+      "name": "Ref_Document_Types",
+      "columns": [
+        {
+          "name": "Document_Type_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Document_Type_Name",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Document_Type_Description",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Document_Type_Code"
+      ]
+    },
+    {
+      "name": "Statements",
+      "columns": [
+        {
+          "name": "Statement_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Statement_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Statement_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Accounts",
+      "from_column": "Statement_ID",
+      "to_table": "Statements",
+      "to_column": "Statement_ID"
+    },
+    {
+      "from_table": "Documents",
+      "from_column": "Project_ID",
+      "to_table": "Projects",
+      "to_column": "Project_ID"
+    },
+    {
+      "from_table": "Documents",
+      "from_column": "Document_Type_Code",
+      "to_table": "Ref_Document_Types",
+      "to_column": "Document_Type_Code"
+    },
+    {
+      "from_table": "Documents_with_Expenses",
+      "from_column": "Document_ID",
+      "to_table": "Documents",
+      "to_column": "Document_ID"
+    },
+    {
+      "from_table": "Documents_with_Expenses",
+      "from_column": "Budget_Type_Code",
+      "to_table": "Ref_Budget_Codes",
+      "to_column": "Budget_Type_Code"
+    },
+    {
+      "from_table": "Statements",
+      "from_column": "Statement_ID",
+      "to_table": "Documents",
+      "to_column": "Document_ID"
+    }
+  ]
+}

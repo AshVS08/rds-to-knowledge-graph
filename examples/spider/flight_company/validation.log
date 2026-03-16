@@ -1,0 +1,44 @@
+DB ID: flight_company
+Run:   20250910-163730
+
+Tables: 3
+Columns: 20
+PKs: 3
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- airport: ['id']
+- flight: ['id']
+- operate_company: ['id']
+
+Null summary:
+{
+  "airport": {
+    "id": 0,
+    "City": 0,
+    "Country": 0,
+    "IATA": 0,
+    "ICAO": 0,
+    "name": 0
+  },
+  "flight": {
+    "id": 0,
+    "Vehicle_Flight_number": 0,
+    "Date": 0,
+    "Pilot": 0,
+    "Velocity": 0,
+    "Altitude": 0,
+    "airport_id": 0,
+    "company_id": 0
+  },
+  "operate_company": {
+    "id": 0,
+    "name": 0,
+    "Type": 0,
+    "Principal_activities": 0,
+    "Incorporated_in": 0,
+    "Group_Equity_Shareholding": 0
+  }
+}

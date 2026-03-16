@@ -1,0 +1,231 @@
+{
+  "db_id": "behavior_monitoring",
+  "nodes": [
+    {
+      "id": "Addresses",
+      "columns": [
+        "address_id",
+        "line_1",
+        "line_2",
+        "line_3",
+        "city",
+        "zip_postcode",
+        "state_province_county",
+        "country",
+        "other_address_details"
+      ],
+      "primary_keys": [
+        "address_id"
+      ]
+    },
+    {
+      "id": "Assessment_Notes",
+      "columns": [
+        "notes_id",
+        "student_id",
+        "teacher_id",
+        "date_of_notes",
+        "text_of_notes",
+        "other_details"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Behavior_Incident",
+      "columns": [
+        "incident_id",
+        "incident_type_code",
+        "student_id",
+        "date_incident_start",
+        "date_incident_end",
+        "incident_summary",
+        "recommendations",
+        "other_details"
+      ],
+      "primary_keys": [
+        "incident_id"
+      ]
+    },
+    {
+      "id": "Detention",
+      "columns": [
+        "detention_id",
+        "detention_type_code",
+        "teacher_id",
+        "datetime_detention_start",
+        "datetime_detention_end",
+        "detention_summary",
+        "other_details"
+      ],
+      "primary_keys": [
+        "detention_id"
+      ]
+    },
+    {
+      "id": "Ref_Address_Types",
+      "columns": [
+        "address_type_code",
+        "address_type_description"
+      ],
+      "primary_keys": [
+        "address_type_code"
+      ]
+    },
+    {
+      "id": "Ref_Detention_Type",
+      "columns": [
+        "detention_type_code",
+        "detention_type_description"
+      ],
+      "primary_keys": [
+        "detention_type_code"
+      ]
+    },
+    {
+      "id": "Ref_Incident_Type",
+      "columns": [
+        "incident_type_code",
+        "incident_type_description"
+      ],
+      "primary_keys": [
+        "incident_type_code"
+      ]
+    },
+    {
+      "id": "Student_Addresses",
+      "columns": [
+        "student_id",
+        "address_id",
+        "date_address_from",
+        "date_address_to",
+        "monthly_rental",
+        "other_details"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Students",
+      "columns": [
+        "student_id",
+        "address_id",
+        "first_name",
+        "middle_name",
+        "last_name",
+        "cell_mobile_number",
+        "email_address",
+        "date_first_rental",
+        "date_left_university",
+        "other_student_details"
+      ],
+      "primary_keys": [
+        "student_id"
+      ]
+    },
+    {
+      "id": "Students_in_Detention",
+      "columns": [
+        "student_id",
+        "detention_id",
+        "incident_id"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Teachers",
+      "columns": [
+        "teacher_id",
+        "address_id",
+        "first_name",
+        "middle_name",
+        "last_name",
+        "gender",
+        "cell_mobile_number",
+        "email_address",
+        "other_details"
+      ],
+      "primary_keys": [
+        "teacher_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Assessment_Notes",
+      "to": "Teachers",
+      "from_column": "teacher_id",
+      "to_column": "teacher_id"
+    },
+    {
+      "from": "Assessment_Notes",
+      "to": "Students",
+      "from_column": "student_id",
+      "to_column": "student_id"
+    },
+    {
+      "from": "Behavior_Incident",
+      "to": "Students",
+      "from_column": "student_id",
+      "to_column": "student_id"
+    },
+    {
+      "from": "Behavior_Incident",
+      "to": "Ref_Incident_Type",
+      "from_column": "incident_type_code",
+      "to_column": "incident_type_code"
+    },
+    {
+      "from": "Detention",
+      "to": "Teachers",
+      "from_column": "teacher_id",
+      "to_column": "teacher_id"
+    },
+    {
+      "from": "Detention",
+      "to": "Ref_Detention_Type",
+      "from_column": "detention_type_code",
+      "to_column": "detention_type_code"
+    },
+    {
+      "from": "Student_Addresses",
+      "to": "Students",
+      "from_column": "student_id",
+      "to_column": "student_id"
+    },
+    {
+      "from": "Student_Addresses",
+      "to": "Addresses",
+      "from_column": "address_id",
+      "to_column": "address_id"
+    },
+    {
+      "from": "Students",
+      "to": "Addresses",
+      "from_column": "address_id",
+      "to_column": "address_id"
+    },
+    {
+      "from": "Students_in_Detention",
+      "to": "Students",
+      "from_column": "student_id",
+      "to_column": "student_id"
+    },
+    {
+      "from": "Students_in_Detention",
+      "to": "Detention",
+      "from_column": "detention_id",
+      "to_column": "detention_id"
+    },
+    {
+      "from": "Students_in_Detention",
+      "to": "Behavior_Incident",
+      "from_column": "incident_id",
+      "to_column": "incident_id"
+    },
+    {
+      "from": "Teachers",
+      "to": "Addresses",
+      "from_column": "address_id",
+      "to_column": "address_id"
+    }
+  ]
+}

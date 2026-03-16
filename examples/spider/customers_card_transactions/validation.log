@@ -1,0 +1,54 @@
+DB ID: customers_card_transactions
+Run:   20250910-163730
+
+Tables: 4
+Columns: 27
+PKs: 3
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- Accounts: ['account_id']
+- Customers: ['customer_id']
+- Customers_Cards: ['card_id']
+- Financial_Transactions: None
+
+Null summary:
+{
+  "Accounts": {
+    "account_id": 0,
+    "customer_id": 0,
+    "account_name": 0,
+    "other_account_details": 0
+  },
+  "Customers": {
+    "customer_id": 0,
+    "customer_first_name": 0,
+    "customer_last_name": 0,
+    "customer_address": 0,
+    "customer_phone": 0,
+    "customer_email": 0,
+    "other_customer_details": 15
+  },
+  "Customers_Cards": {
+    "card_id": 0,
+    "customer_id": 0,
+    "card_type_code": 0,
+    "card_number": 0,
+    "date_valid_from": 0,
+    "date_valid_to": 0,
+    "other_card_details": 0
+  },
+  "Financial_Transactions": {
+    "transaction_id": 0,
+    "previous_transaction_id": 0,
+    "account_id": 0,
+    "card_id": 0,
+    "transaction_type": 0,
+    "transaction_date": 0,
+    "transaction_amount": 0,
+    "transaction_comment": 15,
+    "other_transaction_details": 15
+  }
+}

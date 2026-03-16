@@ -1,0 +1,41 @@
+DB ID: company_office
+Run:   20250910-163730
+
+Tables: 3
+Columns: 17
+PKs: 4
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- Companies: ['id']
+- Office_locations: ['building_id', 'company_id']
+- buildings: ['id']
+
+Null summary:
+{
+  "Companies": {
+    "id": 0,
+    "name": 0,
+    "Headquarters": 0,
+    "Industry": 0,
+    "Sales_billion": 0,
+    "Profits_billion": 0,
+    "Assets_billion": 0,
+    "Market_Value_billion": 0
+  },
+  "Office_locations": {
+    "building_id": 0,
+    "company_id": 0,
+    "move_in_year": 0
+  },
+  "buildings": {
+    "id": 0,
+    "name": 0,
+    "City": 0,
+    "Height": 0,
+    "Stories": 0,
+    "Status": 0
+  }
+}

@@ -1,0 +1,37 @@
+DB ID: flight_2
+Run:   20250910-163730
+
+Tables: 3
+Columns: 13
+PKs: 4
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- airlines: ['uid']
+- airports: ['AirportCode']
+- flights: ['Airline', 'FlightNo']
+
+Null summary:
+{
+  "airlines": {
+    "uid": 0,
+    "Airline": 0,
+    "Abbreviation": 0,
+    "Country": 0
+  },
+  "airports": {
+    "City": 0,
+    "AirportCode": 0,
+    "AirportName": 0,
+    "Country": 0,
+    "CountryAbbrev": 0
+  },
+  "flights": {
+    "Airline": 0,
+    "FlightNo": 0,
+    "SourceAirport": 0,
+    "DestAirport": 0
+  }
+}

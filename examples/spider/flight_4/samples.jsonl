@@ -1,0 +1,150 @@
+{"table": "airlines", "row": {"alid": -1, "name": "Unknown", "iata": "-", "icao": "N/A", "callsign": null, "country": null, "active": "Y"}}
+{"table": "airlines", "row": {"alid": 1, "name": "Private flight", "iata": "-", "icao": "N/A", "callsign": "", "country": "", "active": "Y"}}
+{"table": "airlines", "row": {"alid": 2, "name": "135 Airways", "iata": "", "icao": "GNL", "callsign": "GENERAL", "country": "United States", "active": "N"}}
+{"table": "airlines", "row": {"alid": 3, "name": "1Time Airline", "iata": "1T", "icao": "RNX", "callsign": "NEXTIME", "country": "South Africa", "active": "Y"}}
+{"table": "airlines", "row": {"alid": 4, "name": "2 Sqn No 1 Elementary Flying Training School", "iata": "", "icao": "WYT", "callsign": "", "country": "United Kingdom", "active": "N"}}
+{"table": "airlines", "row": {"alid": 5, "name": "213 Flight Unit", "iata": "", "icao": "TFU", "callsign": "", "country": "Russia", "active": "N"}}
+{"table": "airlines", "row": {"alid": 6, "name": "223 Flight Unit State Airline", "iata": "", "icao": "CHD", "callsign": "CHKALOVSK-AVIA", "country": "Russia", "active": "N"}}
+{"table": "airlines", "row": {"alid": 7, "name": "224th Flight Unit", "iata": "", "icao": "TTF", "callsign": "CARGO UNIT", "country": "Russia", "active": "N"}}
+{"table": "airlines", "row": {"alid": 8, "name": "247 Jet Ltd", "iata": "", "icao": "TWF", "callsign": "CLOUD RUNNER", "country": "United Kingdom", "active": "N"}}
+{"table": "airlines", "row": {"alid": 9, "name": "3D Aviation", "iata": "", "icao": "SEC", "callsign": "SECUREX", "country": "United States", "active": "N"}}
+{"table": "airlines", "row": {"alid": 10, "name": "40-Mile Air", "iata": "Q5", "icao": "MLA", "callsign": "MILE-AIR", "country": "United States", "active": "Y"}}
+{"table": "airlines", "row": {"alid": 11, "name": "4D Air", "iata": "", "icao": "QRT", "callsign": "QUARTET", "country": "Thailand", "active": "N"}}
+{"table": "airlines", "row": {"alid": 12, "name": "611897 Alberta Limited", "iata": "", "icao": "THD", "callsign": "DONUT", "country": "Canada", "active": "N"}}
+{"table": "airlines", "row": {"alid": 13, "name": "Ansett Australia", "iata": "AN", "icao": "AAA", "callsign": "ANSETT", "country": "Australia", "active": "Y"}}
+{"table": "airlines", "row": {"alid": 14, "name": "Abacus International", "iata": "1B", "icao": "", "callsign": "", "country": "Singapore", "active": "Y"}}
+{"table": "airlines", "row": {"alid": 15, "name": "Abelag Aviation", "iata": "W9", "icao": "AAB", "callsign": "ABG", "country": "Belgium", "active": "N"}}
+{"table": "airlines", "row": {"alid": 16, "name": "Army Air Corps", "iata": "", "icao": "AAC", "callsign": "ARMYAIR", "country": "United Kingdom", "active": "N"}}
+{"table": "airlines", "row": {"alid": 17, "name": "Aero Aviation Centre Ltd.", "iata": "", "icao": "AAD", "callsign": "SUNRISE", "country": "Canada", "active": "N"}}
+{"table": "airlines", "row": {"alid": 18, "name": "Aero Servicios Ejecutivos Internacionales", "iata": "", "icao": "SII", "callsign": "ASEISA", "country": "Mexico", "active": "N"}}
+{"table": "airlines", "row": {"alid": 19, "name": "Aero Biniza", "iata": "", "icao": "BZS", "callsign": "BINIZA", "country": "Mexico", "active": "N"}}
+{"table": "airlines", "row": {"alid": 20, "name": "Aero Albatros", "iata": "", "icao": "ABM", "callsign": "ALBATROS ESPANA", "country": "Spain", "active": "N"}}
+{"table": "airlines", "row": {"alid": 21, "name": "Aigle Azur", "iata": "ZI", "icao": "AAF", "callsign": "AIGLE AZUR", "country": "France", "active": "Y"}}
+{"table": "airlines", "row": {"alid": 22, "name": "Aloha Airlines", "iata": "AQ", "icao": "AAH", "callsign": "ALOHA", "country": "United States", "active": "Y"}}
+{"table": "airlines", "row": {"alid": 23, "name": "Alaska Island Air", "iata": "", "icao": "AAK", "callsign": "ALASKA ISLAND", "country": "United States", "active": "N"}}
+{"table": "airlines", "row": {"alid": 24, "name": "American Airlines", "iata": "AA", "icao": "AAL", "callsign": "AMERICAN", "country": "United States", "active": "Y"}}
+{"table": "airlines", "row": {"alid": 25, "name": "Aviation Management Corporation", "iata": "", "icao": "AAM", "callsign": "AM CORP", "country": "United States", "active": "N"}}
+{"table": "airlines", "row": {"alid": 26, "name": "Atlantis Airlines (USA)", "iata": "", "icao": "AAO", "callsign": "ATLANTIS AIR", "country": "United States", "active": "N"}}
+{"table": "airlines", "row": {"alid": 27, "name": "Aerovista Airlines", "iata": "", "icao": "AAP", "callsign": "AEROVISTA GROUP", "country": "United Arab Emirates", "active": "N"}}
+{"table": "airlines", "row": {"alid": 28, "name": "Asiana Airlines", "iata": "OZ", "icao": "AAR", "callsign": "ASIANA", "country": "Republic of Korea", "active": "Y"}}
+{"table": "airlines", "row": {"alid": 29, "name": "Askari Aviation", "iata": "4K", "icao": "AAS", "callsign": "AL-AAS", "country": "Pakistan", "active": "Y"}}
+{"table": "airlines", "row": {"alid": 30, "name": "Australia Asia Airlines", "iata": "", "icao": "AAU", "callsign": "AUSTASIA", "country": "Australia", "active": "N"}}
+{"table": "airlines", "row": {"alid": 31, "name": "Astro Air International", "iata": "", "icao": "AAV", "callsign": "ASTRO-PHIL", "country": "United States", "active": "N"}}
+{"table": "airlines", "row": {"alid": 32, "name": "Afriqiyah Airways", "iata": "8U", "icao": "AAW", "callsign": "AFRIQIYAH", "country": "Libya", "active": "Y"}}
+{"table": "airlines", "row": {"alid": 33, "name": "Afrinat International Airlines", "iata": "Q9", "icao": "AFU", "callsign": "", "country": "Gambia", "active": "N"}}
+{"table": "airlines", "row": {"alid": 34, "name": "Afric'air Express", "iata": "", "icao": "AAX", "callsign": "AFREX", "country": "Ivory Coast", "active": "N"}}
+{"table": "airlines", "row": {"alid": 35, "name": "Allegiant Air", "iata": "G4", "icao": "AAY", "callsign": "ALLEGIANT", "country": "United States", "active": "Y"}}
+{"table": "airlines", "row": {"alid": 36, "name": "Angus Aviation", "iata": "", "icao": "AAZ", "callsign": "ANGUS", "country": "Canada", "active": "N"}}
+{"table": "airlines", "row": {"alid": 37, "name": "Artem-Avia", "iata": "", "icao": "ABA", "callsign": "ARTEM-AVIA", "country": "Ukraine", "active": "N"}}
+{"table": "airlines", "row": {"alid": 38, "name": "African Business and Transportations", "iata": "", "icao": "ABB", "callsign": "AFRICAN BUSINESS-", "country": "Democratic Republic of the Congo", "active": "N"}}
+{"table": "airlines", "row": {"alid": 39, "name": "Aban Air", "iata": "K5", "icao": "ABE", "callsign": "ABAN", "country": "Iran", "active": "N"}}
+{"table": "airlines", "row": {"alid": 40, "name": "Aerial Oy", "iata": "", "icao": "ABF", "callsign": "SKYWINGS", "country": "Finland", "active": "N"}}
+{"table": "airlines", "row": {"alid": 41, "name": "Abakan-Avia", "iata": "", "icao": "ABG", "callsign": "ABAKAN-AVIA", "country": "Russia", "active": "N"}}
+{"table": "airlines", "row": {"alid": 42, "name": "ABSA - Aerolinhas Brasileiras", "iata": "M3", "icao": "TUS", "callsign": "ABSA Cargo", "country": "Brazil", "active": "Y"}}
+{"table": "airlines", "row": {"alid": 43, "name": "Abaet", "iata": "", "icao": "ABJ", "callsign": "Abaet", "country": "Brazil", "active": "N"}}
+{"table": "airlines", "row": {"alid": 44, "name": "Alberta Citylink", "iata": "", "icao": "ABK", "callsign": "ALBERTA CITYLINK", "country": "Canada", "active": "N"}}
+{"table": "airlines", "row": {"alid": 45, "name": "APSA Colombia", "iata": "", "icao": "ABO", "callsign": "AEROEXPRESO", "country": "Colombia", "active": "N"}}
+{"table": "airlines", "row": {"alid": 46, "name": "Aerovias Bueno", "iata": "", "icao": "ABU", "callsign": "AEROBUENO", "country": "Colombia", "active": "N"}}
+{"table": "airlines", "row": {"alid": 47, "name": "Aerocenter", "iata": "", "icao": "ACR", "callsign": " Escuela de Formacion de Pioltos Privados de Avion", "country": "AEROCENTER", "active": "N"}}
+{"table": "airlines", "row": {"alid": 48, "name": "Antrak Air", "iata": "04", "icao": "ABV", "callsign": "ANTRAK", "country": "Ghana", "active": "N"}}
+{"table": "airlines", "row": {"alid": 49, "name": "Airborne Express", "iata": "GB", "icao": "ABX", "callsign": "ABEX", "country": "United States", "active": "N"}}
+{"table": "airports", "row": {"apid": 1, "name": "Goroka Airport", "city": "Goroka", "country": "Papua New Guinea", "x": 145.391998291, "y": -6.081689834590001, "elevation": 5282, "iata": "GKA", "icao": "AYGA"}}
+{"table": "airports", "row": {"apid": 2, "name": "Madang Airport", "city": "Madang", "country": "Papua New Guinea", "x": 145.789001465, "y": -5.20707988739, "elevation": 20, "iata": "MAG", "icao": "AYMD"}}
+{"table": "airports", "row": {"apid": 3, "name": "Mount Hagen Kagamuga Airport", "city": "Mount Hagen", "country": "Papua New Guinea", "x": 144.29600524902344, "y": -5.826789855957031, "elevation": 5388, "iata": "HGU", "icao": "AYMH"}}
+{"table": "airports", "row": {"apid": 4, "name": "Nadzab Airport", "city": "Nadzab", "country": "Papua New Guinea", "x": 146.725977, "y": -6.569803, "elevation": 239, "iata": "LAE", "icao": "AYNZ"}}
+{"table": "airports", "row": {"apid": 5, "name": "Port Moresby Jacksons International Airport", "city": "Port Moresby", "country": "Papua New Guinea", "x": 147.22000122070312, "y": -9.443380355834961, "elevation": 146, "iata": "POM", "icao": "AYPY"}}
+{"table": "airports", "row": {"apid": 6, "name": "Wewak International Airport", "city": "Wewak", "country": "Papua New Guinea", "x": 143.669006348, "y": -3.58383011818, "elevation": 19, "iata": "WWK", "icao": "AYWK"}}
+{"table": "airports", "row": {"apid": 7, "name": "Narsarsuaq Airport", "city": "Narssarssuaq", "country": "Greenland", "x": -45.4259986877, "y": 61.1604995728, "elevation": 112, "iata": "UAK", "icao": "BGBW"}}
+{"table": "airports", "row": {"apid": 8, "name": "Godthaab / Nuuk Airport", "city": "Godthaab", "country": "Greenland", "x": -51.6781005859, "y": 64.19090271, "elevation": 283, "iata": "GOH", "icao": "BGGH"}}
+{"table": "airports", "row": {"apid": 9, "name": "Kangerlussuaq Airport", "city": "Sondrestrom", "country": "Greenland", "x": -50.7116031647, "y": 67.0122218992, "elevation": 165, "iata": "SFJ", "icao": "BGSF"}}
+{"table": "airports", "row": {"apid": 10, "name": "Thule Air Base", "city": "Thule", "country": "Greenland", "x": -68.7032012939, "y": 76.5311965942, "elevation": 251, "iata": "THU", "icao": "BGTL"}}
+{"table": "airports", "row": {"apid": 11, "name": "Akureyri Airport", "city": "Akureyri", "country": "Iceland", "x": -18.07270050048828, "y": 65.66000366210938, "elevation": 6, "iata": "AEY", "icao": "BIAR"}}
+{"table": "airports", "row": {"apid": 12, "name": "Egilsstaðir Airport", "city": "Egilsstadir", "country": "Iceland", "x": -14.401399612426758, "y": 65.2833023071289, "elevation": 76, "iata": "EGS", "icao": "BIEG"}}
+{"table": "airports", "row": {"apid": 13, "name": "Hornafjörður Airport", "city": "Hofn", "country": "Iceland", "x": -15.2272, "y": 64.295601, "elevation": 24, "iata": "HFN", "icao": "BIHN"}}
+{"table": "airports", "row": {"apid": 14, "name": "Húsavík Airport", "city": "Husavik", "country": "Iceland", "x": -17.426001, "y": 65.952301, "elevation": 48, "iata": "HZK", "icao": "BIHU"}}
+{"table": "airports", "row": {"apid": 15, "name": "Ísafjörður Airport", "city": "Isafjordur", "country": "Iceland", "x": -23.135299682617188, "y": 66.05809783935547, "elevation": 8, "iata": "IFJ", "icao": "BIIS"}}
+{"table": "airports", "row": {"apid": 16, "name": "Keflavik International Airport", "city": "Keflavik", "country": "Iceland", "x": -22.605600357056, "y": 63.985000610352, "elevation": 171, "iata": "KEF", "icao": "BIKF"}}
+{"table": "airports", "row": {"apid": 17, "name": "Patreksfjörður Airport", "city": "Patreksfjordur", "country": "Iceland", "x": -23.965, "y": 65.555801, "elevation": 11, "iata": "PFJ", "icao": "BIPA"}}
+{"table": "airports", "row": {"apid": 18, "name": "Reykjavik Airport", "city": "Reykjavik", "country": "Iceland", "x": -21.9405994415, "y": 64.1299972534, "elevation": 48, "iata": "RKV", "icao": "BIRK"}}
+{"table": "airports", "row": {"apid": 19, "name": "Siglufjörður Airport", "city": "Siglufjordur", "country": "Iceland", "x": -18.9167, "y": 66.133301, "elevation": 10, "iata": "SIJ", "icao": "BISI"}}
+{"table": "airports", "row": {"apid": 20, "name": "Vestmannaeyjar Airport", "city": "Vestmannaeyjar", "country": "Iceland", "x": -20.278900146484375, "y": 63.42430114746094, "elevation": 326, "iata": "VEY", "icao": "BIVM"}}
+{"table": "airports", "row": {"apid": 21, "name": "Sault Ste Marie Airport", "city": "Sault Sainte Marie", "country": "Canada", "x": -84.5093994140625, "y": 46.48500061035156, "elevation": 630, "iata": "YAM", "icao": "CYAM"}}
+{"table": "airports", "row": {"apid": 22, "name": "Winnipeg / St. Andrews Airport", "city": "Winnipeg", "country": "Canada", "x": -97.03250122070001, "y": 50.0564002991, "elevation": 760, "iata": "YAV", "icao": "CYAV"}}
+{"table": "airports", "row": {"apid": 23, "name": "Halifax / CFB Shearwater Heliport", "city": "Halifax", "country": "Canada", "x": -63.499401092499994, "y": 44.6397018433, "elevation": 144, "iata": "YAW", "icao": "CYAW"}}
+{"table": "airports", "row": {"apid": 24, "name": "St. Anthony Airport", "city": "St. Anthony", "country": "Canada", "x": -56.083099365200006, "y": 51.3918991089, "elevation": 108, "iata": "YAY", "icao": "CYAY"}}
+{"table": "airports", "row": {"apid": 25, "name": "Tofino / Long Beach Airport", "city": "Tofino", "country": "Canada", "x": -125.775583, "y": 49.079833, "elevation": 80, "iata": "YAZ", "icao": "CYAZ"}}
+{"table": "airports", "row": {"apid": 26, "name": "Kugaaruk Airport", "city": "Pelly Bay", "country": "Canada", "x": -89.808098, "y": 68.534401, "elevation": 56, "iata": "YBB", "icao": "CYBB"}}
+{"table": "airports", "row": {"apid": 27, "name": "Baie Comeau Airport", "city": "Baie Comeau", "country": "Canada", "x": -68.20439910888672, "y": 49.13249969482422, "elevation": 71, "iata": "YBC", "icao": "CYBC"}}
+{"table": "airports", "row": {"apid": 28, "name": "CFB Bagotville", "city": "Bagotville", "country": "Canada", "x": -70.99639892578125, "y": 48.33060073852539, "elevation": 522, "iata": "YBG", "icao": "CYBG"}}
+{"table": "airports", "row": {"apid": 29, "name": "Baker Lake Airport", "city": "Baker Lake", "country": "Canada", "x": -96.077796936, "y": 64.29889678960001, "elevation": 59, "iata": "YBK", "icao": "CYBK"}}
+{"table": "airports", "row": {"apid": 30, "name": "Campbell River Airport", "city": "Campbell River", "country": "Canada", "x": -125.27100372314453, "y": 49.950801849365234, "elevation": 346, "iata": "YBL", "icao": "CYBL"}}
+{"table": "airports", "row": {"apid": 31, "name": "Brandon Municipal Airport", "city": "Brandon", "country": "Canada", "x": -99.951897, "y": 49.91, "elevation": 1343, "iata": "YBR", "icao": "CYBR"}}
+{"table": "airports", "row": {"apid": 32, "name": "Cambridge Bay Airport", "city": "Cambridge Bay", "country": "Canada", "x": -105.138000488, "y": 69.1081008911, "elevation": 90, "iata": "YCB", "icao": "CYCB"}}
+{"table": "airports", "row": {"apid": 33, "name": "Nanaimo Airport", "city": "Nanaimo", "country": "Canada", "x": -123.869862556, "y": 49.054970224899996, "elevation": 92, "iata": "YCD", "icao": "CYCD"}}
+{"table": "airports", "row": {"apid": 34, "name": "Castlegar/West Kootenay Regional Airport", "city": "Castlegar", "country": "Canada", "x": -117.632003784, "y": 49.2963981628, "elevation": 1624, "iata": "YCG", "icao": "CYCG"}}
+{"table": "airports", "row": {"apid": 35, "name": "Miramichi Airport", "city": "Chatham", "country": "Canada", "x": -65.449203, "y": 47.007801, "elevation": 108, "iata": "YCH", "icao": "CYCH"}}
+{"table": "airports", "row": {"apid": 36, "name": "Charlo Airport", "city": "Charlo", "country": "Canada", "x": -66.330299, "y": 47.990799, "elevation": 132, "iata": "YCL", "icao": "CYCL"}}
+{"table": "airports", "row": {"apid": 37, "name": "Kugluktuk Airport", "city": "Coppermine", "country": "Canada", "x": -115.143997192, "y": 67.81670379639999, "elevation": 74, "iata": "YCO", "icao": "CYCO"}}
+{"table": "airports", "row": {"apid": 38, "name": "Coronation Airport", "city": "Coronation", "country": "Canada", "x": -111.444999695, "y": 52.0750007629, "elevation": 2595, "iata": "YCT", "icao": "CYCT"}}
+{"table": "airports", "row": {"apid": 39, "name": "Chilliwack Airport", "city": "Chilliwack", "country": "Canada", "x": -121.939002991, "y": 49.1528015137, "elevation": 32, "iata": "YCW", "icao": "CYCW"}}
+{"table": "airports", "row": {"apid": 40, "name": "Clyde River Airport", "city": "Clyde River", "country": "Canada", "x": -68.5167007446, "y": 70.4860992432, "elevation": 87, "iata": "YCY", "icao": "CYCY"}}
+{"table": "airports", "row": {"apid": 41, "name": "Coral Harbour Airport", "city": "Coral Harbour", "country": "Canada", "x": -83.3593978882, "y": 64.1932983398, "elevation": 210, "iata": "YZS", "icao": "CYZS"}}
+{"table": "airports", "row": {"apid": 42, "name": "Dawson City Airport", "city": "Dawson", "country": "Canada", "x": -139.1280059814453, "y": 64.04309844970703, "elevation": 1215, "iata": "YDA", "icao": "CYDA"}}
+{"table": "airports", "row": {"apid": 43, "name": "Burwash Airport", "city": "Burwash", "country": "Canada", "x": -139.04100036621094, "y": 61.37110137939453, "elevation": 2647, "iata": "YDB", "icao": "CYDB"}}
+{"table": "airports", "row": {"apid": 44, "name": "Princeton Airport", "city": "Princeton", "country": "Canada", "x": -120.511001587, "y": 49.4681015015, "elevation": 2298, "iata": "YDC", "icao": "CYDC"}}
+{"table": "airports", "row": {"apid": 45, "name": "Deer Lake Airport", "city": "Deer Lake", "country": "Canada", "x": -57.39139938354492, "y": 49.21080017089844, "elevation": 72, "iata": "YDF", "icao": "CYDF"}}
+{"table": "airports", "row": {"apid": 46, "name": "Dease Lake Airport", "city": "Dease Lake", "country": "Canada", "x": -130.031997681, "y": 58.4221992493, "elevation": 2600, "iata": "YDL", "icao": "CYDL"}}
+{"table": "airports", "row": {"apid": 47, "name": "Dauphin Barker Airport", "city": "Dauphin", "country": "Canada", "x": -100.052001953125, "y": 51.100799560546875, "elevation": 999, "iata": "YDN", "icao": "CYDN"}}
+{"table": "airports", "row": {"apid": 48, "name": "Dawson Creek Airport", "city": "Dawson Creek", "country": "Canada", "x": -120.18299865722656, "y": 55.7422981262207, "elevation": 2148, "iata": "YDQ", "icao": "CYDQ"}}
+{"table": "airports", "row": {"apid": 49, "name": "Edmonton International Airport", "city": "Edmonton", "country": "Canada", "x": -113.580001831, "y": 53.309700012200004, "elevation": 2373, "iata": "YEG", "icao": "CYEG"}}
+{"table": "airports", "row": {"apid": 50, "name": "Arviat Airport", "city": "Eskimo Point", "country": "Canada", "x": -94.07080078119999, "y": 61.0942001343, "elevation": 32, "iata": "YEK", "icao": "CYEK"}}
+{"table": "routes", "row": {"rid": 37, "dst_apid": 2990, "dst_ap": "KZ", "src_apid": 2965, "src_ap": "AER", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 38, "dst_apid": 2990, "dst_ap": "KZ", "src_apid": 2966, "src_ap": "ASF", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 39, "dst_apid": 2962, "dst_ap": "MRV", "src_apid": 2966, "src_ap": "ASF", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 40, "dst_apid": 2990, "dst_ap": "KZ", "src_apid": 2968, "src_ap": "CEK", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 41, "dst_apid": 4078, "dst_ap": "OVB", "src_apid": 2968, "src_ap": "CEK", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 42, "dst_apid": 2990, "dst_ap": "KZ", "src_apid": 4029, "src_ap": "DME", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 43, "dst_apid": 6969, "dst_ap": "BC", "src_apid": 4029, "src_ap": "DME", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 45, "dst_apid": 6160, "dst_ap": "A", "src_apid": 4029, "src_ap": "DME", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 46, "dst_apid": 2952, "dst_ap": "KGD", "src_apid": 6156, "src_ap": "EGO", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 47, "dst_apid": 2990, "dst_ap": "KZ", "src_apid": 6156, "src_ap": "EGO", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 48, "dst_apid": 6969, "dst_ap": "BC", "src_apid": 2922, "src_ap": "GYD", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 49, "dst_apid": 6156, "dst_ap": "EGO", "src_apid": 2952, "src_ap": "KGD", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 50, "dst_apid": 2965, "dst_ap": "AER", "src_apid": 2990, "src_ap": "KZ", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 51, "dst_apid": 2966, "dst_ap": "ASF", "src_apid": 2990, "src_ap": "KZ", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 52, "dst_apid": 2968, "dst_ap": "CEK", "src_apid": 2990, "src_ap": "KZ", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 53, "dst_apid": 4029, "dst_ap": "DME", "src_apid": 2990, "src_ap": "KZ", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 54, "dst_apid": 6156, "dst_ap": "EGO", "src_apid": 2990, "src_ap": "KZ", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 55, "dst_apid": 2948, "dst_ap": "ED", "src_apid": 2990, "src_ap": "KZ", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 56, "dst_apid": 2975, "dst_ap": "SVX", "src_apid": 2990, "src_ap": "KZ", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 57, "dst_apid": 2990, "dst_ap": "KZ", "src_apid": 2948, "src_ap": "ED", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 58, "dst_apid": 6969, "dst_ap": "BC", "src_apid": 2948, "src_ap": "ED", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 59, "dst_apid": 6160, "dst_ap": "A", "src_apid": 2948, "src_ap": "ED", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 60, "dst_apid": 2966, "dst_ap": "ASF", "src_apid": 2962, "src_ap": "MRV", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 61, "dst_apid": 4029, "dst_ap": "DME", "src_apid": 6969, "src_ap": "BC", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 62, "dst_apid": 2922, "dst_ap": "GYD", "src_apid": 6969, "src_ap": "BC", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 63, "dst_apid": 2948, "dst_ap": "ED", "src_apid": 6969, "src_ap": "BC", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 64, "dst_apid": 2975, "dst_ap": "SVX", "src_apid": 6969, "src_ap": "BC", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 65, "dst_apid": 2975, "dst_ap": "SVX", "src_apid": 2972, "src_ap": "JC", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 66, "dst_apid": 6160, "dst_ap": "A", "src_apid": 2972, "src_ap": "JC", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 67, "dst_apid": 2975, "dst_ap": "SVX", "src_apid": 4364, "src_ap": "X", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 68, "dst_apid": 2968, "dst_ap": "CEK", "src_apid": 4078, "src_ap": "OVB", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 69, "dst_apid": 2975, "dst_ap": "SVX", "src_apid": 4078, "src_ap": "OVB", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 70, "dst_apid": 2990, "dst_ap": "KZ", "src_apid": 2975, "src_ap": "SVX", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 71, "dst_apid": 6969, "dst_ap": "BC", "src_apid": 2975, "src_ap": "SVX", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 72, "dst_apid": 2972, "dst_ap": "JC", "src_apid": 2975, "src_ap": "SVX", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 73, "dst_apid": 4364, "dst_ap": "X", "src_apid": 2975, "src_ap": "SVX", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 74, "dst_apid": 4078, "dst_ap": "OVB", "src_apid": 2975, "src_ap": "SVX", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 76, "dst_apid": 4029, "dst_ap": "DME", "src_apid": 6160, "src_ap": "A", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 77, "dst_apid": 2948, "dst_ap": "ED", "src_apid": 6160, "src_ap": "A", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 78, "dst_apid": 2972, "dst_ap": "JC", "src_apid": 6160, "src_ap": "A", "alid": 410, "airline": "2B", "codeshare": null}}
+{"table": "routes", "row": {"rid": 79, "dst_apid": 2937, "dst_ap": "IKT", "src_apid": 2936, "src_ap": "BTK", "alid": 1654, "airline": "2G", "codeshare": null}}
+{"table": "routes", "row": {"rid": 80, "dst_apid": 4078, "dst_ap": "OVB", "src_apid": 2936, "src_ap": "BTK", "alid": 1654, "airline": "2G", "codeshare": null}}
+{"table": "routes", "row": {"rid": 81, "dst_apid": 4078, "dst_ap": "OVB", "src_apid": 2968, "src_ap": "CEK", "alid": 1654, "airline": "2G", "codeshare": null}}
+{"table": "routes", "row": {"rid": 82, "dst_apid": 2937, "dst_ap": "IKT", "src_apid": 2935, "src_ap": "HTA", "alid": 1654, "airline": "2G", "codeshare": null}}
+{"table": "routes", "row": {"rid": 83, "dst_apid": 2936, "dst_ap": "BTK", "src_apid": 2937, "src_ap": "IKT", "alid": 1654, "airline": "2G", "codeshare": null}}
+{"table": "routes", "row": {"rid": 84, "dst_apid": 2935, "dst_ap": "HTA", "src_apid": 2937, "src_ap": "IKT", "alid": 1654, "airline": "2G", "codeshare": null}}
+{"table": "routes", "row": {"rid": 86, "dst_apid": 8944, "dst_ap": "ODO", "src_apid": 2937, "src_ap": "IKT", "alid": 1654, "airline": "2G", "codeshare": null}}
+{"table": "routes", "row": {"rid": 87, "dst_apid": 4078, "dst_ap": "OVB", "src_apid": 2937, "src_ap": "IKT", "alid": 1654, "airline": "2G", "codeshare": null}}
+{"table": "routes", "row": {"rid": 88, "dst_apid": 6924, "dst_ap": "KX", "src_apid": 2937, "src_ap": "IKT", "alid": 1654, "airline": "2G", "codeshare": null}}
+{"table": "routes", "row": {"rid": 89, "dst_apid": 9026, "dst_ap": "K", "src_apid": 2937, "src_ap": "IKT", "alid": 1654, "airline": "2G", "codeshare": null}}

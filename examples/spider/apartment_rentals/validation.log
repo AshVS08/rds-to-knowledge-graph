@@ -1,0 +1,64 @@
+DB ID: apartment_rentals
+Run:   20250910-163730
+
+Tables: 6
+Columns: 31
+PKs: 7
+FKs: 6
+
+No structural issues found.
+
+Primary keys by table:
+- Apartment_Bookings: ['apt_booking_id']
+- Apartment_Buildings: ['building_id']
+- Apartment_Facilities: ['apt_id', 'facility_code']
+- Apartments: ['apt_id']
+- Guests: ['guest_id']
+- View_Unit_Status: ['status_date']
+
+Null summary:
+{
+  "Apartment_Bookings": {
+    "apt_booking_id": 0,
+    "apt_id": 0,
+    "guest_id": 0,
+    "booking_status_code": 0,
+    "booking_start_date": 0,
+    "booking_end_date": 0
+  },
+  "Apartment_Buildings": {
+    "building_id": 0,
+    "building_short_name": 0,
+    "building_full_name": 0,
+    "building_description": 0,
+    "building_address": 0,
+    "building_manager": 0,
+    "building_phone": 0
+  },
+  "Apartment_Facilities": {
+    "apt_id": 0,
+    "facility_code": 0
+  },
+  "Apartments": {
+    "apt_id": 0,
+    "building_id": 0,
+    "apt_type_code": 0,
+    "apt_number": 0,
+    "bathroom_count": 0,
+    "bedroom_count": 0,
+    "room_count": 0
+  },
+  "Guests": {
+    "guest_id": 0,
+    "gender_code": 0,
+    "guest_first_name": 0,
+    "guest_last_name": 0,
+    "date_of_birth": 0
+  },
+  "View_Unit_Status": {
+    "apt_id": 0,
+    "apt_booking_id": 0,
+    "status_date": 0,
+    "available_yn": 0
+  }
+}

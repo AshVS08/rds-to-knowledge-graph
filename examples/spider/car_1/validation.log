@@ -1,0 +1,56 @@
+DB ID: car_1
+Run:   20250910-163730
+
+Tables: 6
+Columns: 23
+PKs: 6
+FKs: 5
+
+No structural issues found.
+
+Primary keys by table:
+- car_makers: ['Id']
+- car_names: ['MakeId']
+- cars_data: ['Id']
+- continents: ['ContId']
+- countries: ['CountryId']
+- model_list: ['ModelId']
+
+Null summary:
+{
+  "car_makers": {
+    "Id": 0,
+    "Maker": 0,
+    "FullName": 0,
+    "Country": 0
+  },
+  "car_names": {
+    "MakeId": 0,
+    "Model": 0,
+    "Make": 0
+  },
+  "cars_data": {
+    "Id": 0,
+    "MPG": 0,
+    "Cylinders": 0,
+    "Edispl": 0,
+    "Horsepower": 0,
+    "Weight": 0,
+    "Accelerate": 0,
+    "Year": 0
+  },
+  "continents": {
+    "ContId": 0,
+    "Continent": 0
+  },
+  "countries": {
+    "CountryId": 0,
+    "CountryName": 0,
+    "Continent": 0
+  },
+  "model_list": {
+    "ModelId": 0,
+    "Maker": 0,
+    "Model": 0
+  }
+}

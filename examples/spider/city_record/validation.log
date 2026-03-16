@@ -1,0 +1,54 @@
+DB ID: city_record
+Run:   20250910-163730
+
+Tables: 4
+Columns: 27
+PKs: 4
+FKs: 3
+
+No structural issues found.
+
+Primary keys by table:
+- city: ['City_ID']
+- hosting_city: ['Year']
+- match: ['Match_ID']
+- temperature: ['City_ID']
+
+Null summary:
+{
+  "city": {
+    "City_ID": 0,
+    "City": 0,
+    "Hanzi": 0,
+    "Hanyu_Pinyin": 0,
+    "Regional_Population": 0,
+    "GDP": 0
+  },
+  "hosting_city": {
+    "Year": 0,
+    "Match_ID": 0,
+    "Host_City": 0
+  },
+  "match": {
+    "Match_ID": 0,
+    "Date": 0,
+    "Venue": 0,
+    "Score": 0,
+    "Result": 0,
+    "Competition": 0
+  },
+  "temperature": {
+    "City_ID": 0,
+    "Jan": 0,
+    "Feb": 0,
+    "Mar": 0,
+    "Apr": 0,
+    "Jun": 0,
+    "Jul": 0,
+    "Aug": 0,
+    "Sep": 0,
+    "Oct": 0,
+    "Nov": 0,
+    "Dec": 0
+  }
+}

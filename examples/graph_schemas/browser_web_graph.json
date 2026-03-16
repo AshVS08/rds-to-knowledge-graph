@@ -1,0 +1,55 @@
+{
+  "db_id": "browser_web",
+  "nodes": [
+    {
+      "id": "Web_client_accelerator",
+      "columns": [
+        "id",
+        "name",
+        "Operating_system",
+        "Client",
+        "Connection"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    },
+    {
+      "id": "accelerator_compatible_browser",
+      "columns": [
+        "accelerator_id",
+        "browser_id",
+        "compatible_since_year"
+      ],
+      "primary_keys": [
+        "accelerator_id",
+        "browser_id"
+      ]
+    },
+    {
+      "id": "browser",
+      "columns": [
+        "id",
+        "name",
+        "market_share"
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "accelerator_compatible_browser",
+      "to": "browser",
+      "from_column": "browser_id",
+      "to_column": "id"
+    },
+    {
+      "from": "accelerator_compatible_browser",
+      "to": "Web_client_accelerator",
+      "from_column": "accelerator_id",
+      "to_column": "id"
+    }
+  ]
+}

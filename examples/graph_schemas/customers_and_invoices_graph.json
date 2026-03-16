@@ -1,0 +1,197 @@
+{
+  "db_id": "customers_and_invoices",
+  "nodes": [
+    {
+      "id": "Accounts",
+      "columns": [
+        "account_id",
+        "customer_id",
+        "date_account_opened",
+        "account_name",
+        "other_account_details"
+      ],
+      "primary_keys": [
+        "account_id"
+      ]
+    },
+    {
+      "id": "Customers",
+      "columns": [
+        "customer_id",
+        "customer_first_name",
+        "customer_middle_initial",
+        "customer_last_name",
+        "gender",
+        "email_address",
+        "login_name",
+        "login_password",
+        "phone_number",
+        "town_city",
+        "state_county_province",
+        "country"
+      ],
+      "primary_keys": [
+        "customer_id"
+      ]
+    },
+    {
+      "id": "Financial_Transactions",
+      "columns": [
+        "transaction_id",
+        "account_id",
+        "invoice_number",
+        "transaction_type",
+        "transaction_date",
+        "transaction_amount",
+        "transaction_comment",
+        "other_transaction_details"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Invoice_Line_Items",
+      "columns": [
+        "order_item_id",
+        "invoice_number",
+        "product_id",
+        "product_title",
+        "product_quantity",
+        "product_price",
+        "derived_product_cost",
+        "derived_vat_payable",
+        "derived_total_cost"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Invoices",
+      "columns": [
+        "invoice_number",
+        "order_id",
+        "invoice_date"
+      ],
+      "primary_keys": [
+        "invoice_number"
+      ]
+    },
+    {
+      "id": "Order_Items",
+      "columns": [
+        "order_item_id",
+        "order_id",
+        "product_id",
+        "product_quantity",
+        "other_order_item_details"
+      ],
+      "primary_keys": [
+        "order_item_id"
+      ]
+    },
+    {
+      "id": "Orders",
+      "columns": [
+        "order_id",
+        "customer_id",
+        "date_order_placed",
+        "order_details"
+      ],
+      "primary_keys": [
+        "order_id"
+      ]
+    },
+    {
+      "id": "Product_Categories",
+      "columns": [
+        "production_type_code",
+        "product_type_description",
+        "vat_rating"
+      ],
+      "primary_keys": [
+        "production_type_code"
+      ]
+    },
+    {
+      "id": "Products",
+      "columns": [
+        "product_id",
+        "parent_product_id",
+        "production_type_code",
+        "unit_price",
+        "product_name",
+        "product_color",
+        "product_size"
+      ],
+      "primary_keys": [
+        "product_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Accounts",
+      "to": "Customers",
+      "from_column": "customer_id",
+      "to_column": "customer_id"
+    },
+    {
+      "from": "Financial_Transactions",
+      "to": "Accounts",
+      "from_column": "account_id",
+      "to_column": "account_id"
+    },
+    {
+      "from": "Financial_Transactions",
+      "to": "Invoices",
+      "from_column": "invoice_number",
+      "to_column": "invoice_number"
+    },
+    {
+      "from": "Invoice_Line_Items",
+      "to": "Products",
+      "from_column": "product_id",
+      "to_column": "product_id"
+    },
+    {
+      "from": "Invoice_Line_Items",
+      "to": "Invoices",
+      "from_column": "invoice_number",
+      "to_column": "invoice_number"
+    },
+    {
+      "from": "Invoice_Line_Items",
+      "to": "Order_Items",
+      "from_column": "order_item_id",
+      "to_column": "order_item_id"
+    },
+    {
+      "from": "Invoices",
+      "to": "Orders",
+      "from_column": "order_id",
+      "to_column": "order_id"
+    },
+    {
+      "from": "Order_Items",
+      "to": "Orders",
+      "from_column": "order_id",
+      "to_column": "order_id"
+    },
+    {
+      "from": "Order_Items",
+      "to": "Products",
+      "from_column": "product_id",
+      "to_column": "product_id"
+    },
+    {
+      "from": "Orders",
+      "to": "Customers",
+      "from_column": "customer_id",
+      "to_column": "customer_id"
+    },
+    {
+      "from": "Products",
+      "to": "Product_Categories",
+      "from_column": "production_type_code",
+      "to_column": "production_type_code"
+    }
+  ]
+}

@@ -1,0 +1,534 @@
+{
+  "db_id": "academic",
+  "tables": [
+    {
+      "name": "author",
+      "columns": [
+        {
+          "name": "aid",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "homepage",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "oid",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "aid"
+      ]
+    },
+    {
+      "name": "cite",
+      "columns": [
+        {
+          "name": "cited",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "citing",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "conference",
+      "columns": [
+        {
+          "name": "cid",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "homepage",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "cid"
+      ]
+    },
+    {
+      "name": "domain",
+      "columns": [
+        {
+          "name": "did",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "did"
+      ]
+    },
+    {
+      "name": "domain_author",
+      "columns": [
+        {
+          "name": "aid",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "did",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "aid",
+        "did"
+      ]
+    },
+    {
+      "name": "domain_conference",
+      "columns": [
+        {
+          "name": "cid",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "did",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "cid",
+        "did"
+      ]
+    },
+    {
+      "name": "domain_journal",
+      "columns": [
+        {
+          "name": "did",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "jid",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "did",
+        "jid"
+      ]
+    },
+    {
+      "name": "domain_keyword",
+      "columns": [
+        {
+          "name": "did",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "kid",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "did",
+        "kid"
+      ]
+    },
+    {
+      "name": "domain_publication",
+      "columns": [
+        {
+          "name": "did",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "pid",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "did",
+        "pid"
+      ]
+    },
+    {
+      "name": "journal",
+      "columns": [
+        {
+          "name": "homepage",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "jid",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "jid"
+      ]
+    },
+    {
+      "name": "keyword",
+      "columns": [
+        {
+          "name": "keyword",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "kid",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "kid"
+      ]
+    },
+    {
+      "name": "organization",
+      "columns": [
+        {
+          "name": "continent",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "homepage",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "oid",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "oid"
+      ]
+    },
+    {
+      "name": "publication",
+      "columns": [
+        {
+          "name": "abstract",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "cid",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "citation_num",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "jid",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "pid",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "reference_num",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "title",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "year",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "pid"
+      ]
+    },
+    {
+      "name": "publication_keyword",
+      "columns": [
+        {
+          "name": "pid",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "kid",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "pid",
+        "kid"
+      ]
+    },
+    {
+      "name": "writes",
+      "columns": [
+        {
+          "name": "aid",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "pid",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "aid",
+        "pid"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "cite",
+      "from_column": "citing",
+      "to_table": "publication",
+      "to_column": "pid"
+    },
+    {
+      "from_table": "cite",
+      "from_column": "cited",
+      "to_table": "publication",
+      "to_column": "pid"
+    },
+    {
+      "from_table": "domain_author",
+      "from_column": "did",
+      "to_table": "domain",
+      "to_column": "did"
+    },
+    {
+      "from_table": "domain_author",
+      "from_column": "aid",
+      "to_table": "author",
+      "to_column": "aid"
+    },
+    {
+      "from_table": "domain_conference",
+      "from_column": "did",
+      "to_table": "domain",
+      "to_column": "did"
+    },
+    {
+      "from_table": "domain_conference",
+      "from_column": "cid",
+      "to_table": "conference",
+      "to_column": "cid"
+    },
+    {
+      "from_table": "domain_journal",
+      "from_column": "did",
+      "to_table": "domain",
+      "to_column": "did"
+    },
+    {
+      "from_table": "domain_journal",
+      "from_column": "jid",
+      "to_table": "journal",
+      "to_column": "jid"
+    },
+    {
+      "from_table": "domain_keyword",
+      "from_column": "did",
+      "to_table": "domain",
+      "to_column": "did"
+    },
+    {
+      "from_table": "domain_keyword",
+      "from_column": "kid",
+      "to_table": "keyword",
+      "to_column": "kid"
+    },
+    {
+      "from_table": "domain_publication",
+      "from_column": "did",
+      "to_table": "domain",
+      "to_column": "did"
+    },
+    {
+      "from_table": "domain_publication",
+      "from_column": "pid",
+      "to_table": "publication",
+      "to_column": "pid"
+    },
+    {
+      "from_table": "publication",
+      "from_column": "cid",
+      "to_table": "conference",
+      "to_column": "cid"
+    },
+    {
+      "from_table": "publication",
+      "from_column": "jid",
+      "to_table": "journal",
+      "to_column": "jid"
+    },
+    {
+      "from_table": "publication_keyword",
+      "from_column": "kid",
+      "to_table": "keyword",
+      "to_column": "kid"
+    },
+    {
+      "from_table": "publication_keyword",
+      "from_column": "pid",
+      "to_table": "publication",
+      "to_column": "pid"
+    },
+    {
+      "from_table": "writes",
+      "from_column": "aid",
+      "to_table": "author",
+      "to_column": "aid"
+    },
+    {
+      "from_table": "writes",
+      "from_column": "pid",
+      "to_table": "publication",
+      "to_column": "pid"
+    }
+  ]
+}

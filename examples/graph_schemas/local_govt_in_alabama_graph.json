@@ -1,0 +1,68 @@
+{
+  "db_id": "local_govt_in_alabama",
+  "nodes": [
+    {
+      "id": "Events",
+      "columns": [
+        "Event_ID",
+        "Service_ID",
+        "Event_Details"
+      ],
+      "primary_keys": [
+        "Event_ID"
+      ]
+    },
+    {
+      "id": "Participants",
+      "columns": [
+        "Participant_ID",
+        "Participant_Type_Code",
+        "Participant_Details"
+      ],
+      "primary_keys": [
+        "Participant_ID"
+      ]
+    },
+    {
+      "id": "Participants_in_Events",
+      "columns": [
+        "Event_ID",
+        "Participant_ID"
+      ],
+      "primary_keys": [
+        "Event_ID",
+        "Participant_ID"
+      ]
+    },
+    {
+      "id": "Services",
+      "columns": [
+        "Service_ID",
+        "Service_Type_Code"
+      ],
+      "primary_keys": [
+        "Service_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Events",
+      "to": "Services",
+      "from_column": "Service_ID",
+      "to_column": "Service_ID"
+    },
+    {
+      "from": "Participants_in_Events",
+      "to": "Events",
+      "from_column": "Event_ID",
+      "to_column": "Event_ID"
+    },
+    {
+      "from": "Participants_in_Events",
+      "to": "Participants",
+      "from_column": "Participant_ID",
+      "to_column": "Participant_ID"
+    }
+  ]
+}

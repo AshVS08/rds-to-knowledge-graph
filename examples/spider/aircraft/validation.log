@@ -1,0 +1,58 @@
+DB ID: aircraft
+Run:   20250910-163730
+
+Tables: 5
+Columns: 28
+PKs: 6
+FKs: 4
+
+No structural issues found.
+
+Primary keys by table:
+- aircraft: ['Aircraft_ID']
+- airport: ['Airport_ID']
+- airport_aircraft: ['Airport_ID', 'Aircraft_ID']
+- match: ['Round']
+- pilot: ['Pilot_Id']
+
+Null summary:
+{
+  "aircraft": {
+    "Aircraft_ID": 0,
+    "Aircraft": 0,
+    "Description": 0,
+    "Max_Gross_Weight": 0,
+    "Total_disk_area": 0,
+    "Max_disk_Loading": 0
+  },
+  "airport": {
+    "Airport_ID": 0,
+    "Airport_Name": 0,
+    "Total_Passengers": 0,
+    "%_Change_2007": 0,
+    "International_Passengers": 0,
+    "Domestic_Passengers": 0,
+    "Transit_Passengers": 0,
+    "Aircraft_Movements": 0,
+    "Freight_Metric_Tonnes": 0
+  },
+  "airport_aircraft": {
+    "ID": 0,
+    "Airport_ID": 0,
+    "Aircraft_ID": 0
+  },
+  "match": {
+    "Round": 0,
+    "Location": 0,
+    "Country": 0,
+    "Date": 0,
+    "Fastest_Qualifying": 0,
+    "Winning_Pilot": 0,
+    "Winning_Aircraft": 0
+  },
+  "pilot": {
+    "Pilot_Id": 0,
+    "Name": 0,
+    "Age": 0
+  }
+}

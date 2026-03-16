@@ -1,0 +1,66 @@
+DB ID: insurance_and_eClaims
+Run:   20250910-163730
+
+Tables: 7
+Columns: 30
+PKs: 8
+FKs: 6
+
+No structural issues found.
+
+Primary keys by table:
+- Claim_Headers: ['Claim_Header_ID']
+- Claims_Documents: ['Claim_ID', 'Document_Type_Code']
+- Claims_Processing: ['Claim_Processing_ID']
+- Claims_Processing_Stages: ['Claim_Stage_ID']
+- Customers: ['Customer_ID']
+- Policies: ['Policy_ID']
+- Staff: ['Staff_ID']
+
+Null summary:
+{
+  "Claim_Headers": {
+    "Claim_Header_ID": 0,
+    "Claim_Status_Code": 0,
+    "Claim_Type_Code": 0,
+    "Policy_ID": 0,
+    "Date_of_Claim": 0,
+    "Date_of_Settlement": 0,
+    "Amount_Claimed": 0,
+    "Amount_Piad": 0
+  },
+  "Claims_Documents": {
+    "Claim_ID": 0,
+    "Document_Type_Code": 0,
+    "Created_by_Staff_ID": 0,
+    "Created_Date": 0
+  },
+  "Claims_Processing": {
+    "Claim_Processing_ID": 0,
+    "Claim_ID": 0,
+    "Claim_Outcome_Code": 0,
+    "Claim_Stage_ID": 0,
+    "Staff_ID": 0
+  },
+  "Claims_Processing_Stages": {
+    "Claim_Stage_ID": 0,
+    "Next_Claim_Stage_ID": 0,
+    "Claim_Status_Name": 0,
+    "Claim_Status_Description": 0
+  },
+  "Customers": {
+    "Customer_ID": 0,
+    "Customer_Details": 0
+  },
+  "Policies": {
+    "Policy_ID": 0,
+    "Customer_ID": 0,
+    "Policy_Type_Code": 0,
+    "Start_Date": 0,
+    "End_Date": 0
+  },
+  "Staff": {
+    "Staff_ID": 0,
+    "Staff_Details": 0
+  }
+}

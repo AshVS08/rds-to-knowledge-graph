@@ -1,0 +1,128 @@
+{
+  "db_id": "insurance_fnol",
+  "nodes": [
+    {
+      "id": "Available_Policies",
+      "columns": [
+        "Policy_ID",
+        "policy_type_code",
+        "Customer_Phone"
+      ],
+      "primary_keys": [
+        "Policy_ID"
+      ]
+    },
+    {
+      "id": "Claims",
+      "columns": [
+        "Claim_ID",
+        "FNOL_ID",
+        "Effective_Date"
+      ],
+      "primary_keys": [
+        "Claim_ID"
+      ]
+    },
+    {
+      "id": "Customers",
+      "columns": [
+        "Customer_ID",
+        "Customer_name"
+      ],
+      "primary_keys": [
+        "Customer_ID"
+      ]
+    },
+    {
+      "id": "Customers_Policies",
+      "columns": [
+        "Customer_ID",
+        "Policy_ID",
+        "Date_Opened",
+        "Date_Closed"
+      ],
+      "primary_keys": [
+        "Customer_ID",
+        "Policy_ID"
+      ]
+    },
+    {
+      "id": "First_Notification_of_Loss",
+      "columns": [
+        "FNOL_ID",
+        "Customer_ID",
+        "Policy_ID",
+        "Service_ID"
+      ],
+      "primary_keys": [
+        "FNOL_ID"
+      ]
+    },
+    {
+      "id": "Services",
+      "columns": [
+        "Service_ID",
+        "Service_name"
+      ],
+      "primary_keys": [
+        "Service_ID"
+      ]
+    },
+    {
+      "id": "Settlements",
+      "columns": [
+        "Settlement_ID",
+        "Claim_ID",
+        "Effective_Date",
+        "Settlement_Amount"
+      ],
+      "primary_keys": [
+        "Settlement_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Claims",
+      "to": "First_Notification_of_Loss",
+      "from_column": "FNOL_ID",
+      "to_column": "FNOL_ID"
+    },
+    {
+      "from": "Customers_Policies",
+      "to": "Available_Policies",
+      "from_column": "Policy_ID",
+      "to_column": "Policy_ID"
+    },
+    {
+      "from": "Customers_Policies",
+      "to": "Customers",
+      "from_column": "Customer_ID",
+      "to_column": "Customer_ID"
+    },
+    {
+      "from": "First_Notification_of_Loss",
+      "to": "Customers_Policies",
+      "from_column": "Customer_ID",
+      "to_column": "Customer_ID"
+    },
+    {
+      "from": "First_Notification_of_Loss",
+      "to": "Customers_Policies",
+      "from_column": "Policy_ID",
+      "to_column": "Policy_ID"
+    },
+    {
+      "from": "First_Notification_of_Loss",
+      "to": "Services",
+      "from_column": "Service_ID",
+      "to_column": "Service_ID"
+    },
+    {
+      "from": "Settlements",
+      "to": "Claims",
+      "from_column": "Claim_ID",
+      "to_column": "Claim_ID"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+DB ID: insurance_fnol
+Run:   20250910-163730
+
+Tables: 7
+Columns: 22
+PKs: 8
+FKs: 7
+
+No structural issues found.
+
+Primary keys by table:
+- Available_Policies: ['Policy_ID']
+- Claims: ['Claim_ID']
+- Customers: ['Customer_ID']
+- Customers_Policies: ['Customer_ID', 'Policy_ID']
+- First_Notification_of_Loss: ['FNOL_ID']
+- Services: ['Service_ID']
+- Settlements: ['Settlement_ID']
+
+Null summary:
+{
+  "Available_Policies": {
+    "Policy_ID": 0,
+    "policy_type_code": 0,
+    "Customer_Phone": 0
+  },
+  "Claims": {
+    "Claim_ID": 0,
+    "FNOL_ID": 0,
+    "Effective_Date": 0
+  },
+  "Customers": {
+    "Customer_ID": 0,
+    "Customer_name": 0
+  },
+  "Customers_Policies": {
+    "Customer_ID": 0,
+    "Policy_ID": 0,
+    "Date_Opened": 0,
+    "Date_Closed": 0
+  },
+  "First_Notification_of_Loss": {
+    "FNOL_ID": 0,
+    "Customer_ID": 0,
+    "Policy_ID": 0,
+    "Service_ID": 0
+  },
+  "Services": {
+    "Service_ID": 0,
+    "Service_name": 0
+  },
+  "Settlements": {
+    "Settlement_ID": 0,
+    "Claim_ID": 0,
+    "Effective_Date": 0,
+    "Settlement_Amount": 0
+  }
+}

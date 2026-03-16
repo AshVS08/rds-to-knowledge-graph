@@ -1,0 +1,61 @@
+DB ID: company_1
+Run:   20250910-163730
+
+Tables: 6
+Columns: 28
+PKs: 9
+FKs: 0
+
+No structural issues found.
+
+Primary keys by table:
+- department: ['Dnumber']
+- dependent: ['Essn', 'Dependent_name']
+- dept_locations: ['Dnumber', 'Dlocation']
+- employee: ['Ssn']
+- project: ['Pnumber']
+- works_on: ['Essn', 'Pno']
+
+Null summary:
+{
+  "department": {
+    "Dname": 0,
+    "Dnumber": 0,
+    "Mgr_ssn": 0,
+    "Mgr_start_date": 0
+  },
+  "dependent": {
+    "Essn": 0,
+    "Dependent_name": 0,
+    "Sex": 0,
+    "Bdate": 0,
+    "Relationship": 0
+  },
+  "dept_locations": {
+    "Dnumber": 0,
+    "Dlocation": 0
+  },
+  "employee": {
+    "Fname": 0,
+    "Minit": 0,
+    "Lname": 0,
+    "Ssn": 0,
+    "Bdate": 0,
+    "Address": 0,
+    "Sex": 0,
+    "Salary": 0,
+    "Super_ssn": 1,
+    "Dno": 0
+  },
+  "project": {
+    "Pname": 0,
+    "Pnumber": 0,
+    "Plocation": 0,
+    "Dnum": 0
+  },
+  "works_on": {
+    "Essn": 0,
+    "Pno": 0,
+    "Hours": 1
+  }
+}

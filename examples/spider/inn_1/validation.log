@@ -1,0 +1,37 @@
+DB ID: inn_1
+Run:   20250910-163730
+
+Tables: 2
+Columns: 16
+PKs: 2
+FKs: 1
+
+No structural issues found.
+
+Primary keys by table:
+- Reservations: ['Code']
+- Rooms: ['RoomId']
+
+Null summary:
+{
+  "Reservations": {
+    "Code": 0,
+    "Room": 0,
+    "CheckIn": 0,
+    "CheckOut": 0,
+    "Rate": 0,
+    "LastName": 0,
+    "FirstName": 0,
+    "Adults": 0,
+    "Kids": 0
+  },
+  "Rooms": {
+    "RoomId": 0,
+    "roomName": 0,
+    "beds": 0,
+    "bedType": 0,
+    "maxOccupancy": 0,
+    "basePrice": 0,
+    "decor": 0
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "db_id": "aircraft",
+  "tables": [
+    {
+      "name": "aircraft",
+      "columns": [
+        {
+          "name": "Aircraft_ID",
+          "type": "int(11)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Aircraft",
+          "type": "varchar(50)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Description",
+          "type": "varchar(50)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Max_Gross_Weight",
+          "type": "varchar(50)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Total_disk_area",
+          "type": "varchar(50)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Max_disk_Loading",
+          "type": "varchar(50)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Aircraft_ID"
+      ]
+    },
+    {
+      "name": "airport",
+      "columns": [
+        {
+          "name": "Airport_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Airport_Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Total_Passengers",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "%_Change_2007",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "International_Passengers",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Domestic_Passengers",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Transit_Passengers",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Aircraft_Movements",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Freight_Metric_Tonnes",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Airport_ID"
+      ]
+    },
+    {
+      "name": "airport_aircraft",
+      "columns": [
+        {
+          "name": "ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Airport_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Aircraft_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "Airport_ID",
+        "Aircraft_ID"
+      ]
+    },
+    {
+      "name": "match",
+      "columns": [
+        {
+          "name": "Round",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Location",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Country",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Date",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Fastest_Qualifying",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Winning_Pilot",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Winning_Aircraft",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Round"
+      ]
+    },
+    {
+      "name": "pilot",
+      "columns": [
+        {
+          "name": "Pilot_Id",
+          "type": "int(11)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "varchar(50)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Age",
+          "type": "int(11)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Pilot_Id"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "airport_aircraft",
+      "from_column": "Aircraft_ID",
+      "to_table": "aircraft",
+      "to_column": "Aircraft_ID"
+    },
+    {
+      "from_table": "airport_aircraft",
+      "from_column": "Airport_ID",
+      "to_table": "airport",
+      "to_column": "Airport_ID"
+    },
+    {
+      "from_table": "match",
+      "from_column": "Winning_Pilot",
+      "to_table": "pilot",
+      "to_column": "Pilot_Id"
+    },
+    {
+      "from_table": "match",
+      "from_column": "Winning_Aircraft",
+      "to_table": "aircraft",
+      "to_column": "Aircraft_ID"
+    }
+  ]
+}

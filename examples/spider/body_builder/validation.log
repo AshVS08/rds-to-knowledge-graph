@@ -1,0 +1,32 @@
+DB ID: body_builder
+Run:   20250910-163730
+
+Tables: 2
+Columns: 11
+PKs: 2
+FKs: 1
+
+No structural issues found.
+
+Primary keys by table:
+- body_builder: ['Body_Builder_ID']
+- people: ['People_ID']
+
+Null summary:
+{
+  "body_builder": {
+    "Body_Builder_ID": 0,
+    "People_ID": 0,
+    "Snatch": 0,
+    "Clean_Jerk": 0,
+    "Total": 0
+  },
+  "people": {
+    "People_ID": 0,
+    "Name": 0,
+    "Height": 0,
+    "Weight": 0,
+    "Birth_Date": 0,
+    "Birth_Place": 0
+  }
+}

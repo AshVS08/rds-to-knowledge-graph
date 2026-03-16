@@ -1,0 +1,58 @@
+{
+  "db_id": "device",
+  "nodes": [
+    {
+      "id": "device",
+      "columns": [
+        "Device_ID",
+        "Device",
+        "Carrier",
+        "Package_Version",
+        "Applications",
+        "Software_Platform"
+      ],
+      "primary_keys": [
+        "Device_ID"
+      ]
+    },
+    {
+      "id": "shop",
+      "columns": [
+        "Shop_ID",
+        "Shop_Name",
+        "Location",
+        "Open_Date",
+        "Open_Year"
+      ],
+      "primary_keys": [
+        "Shop_ID"
+      ]
+    },
+    {
+      "id": "stock",
+      "columns": [
+        "Shop_ID",
+        "Device_ID",
+        "Quantity"
+      ],
+      "primary_keys": [
+        "Shop_ID",
+        "Device_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "stock",
+      "to": "device",
+      "from_column": "Device_ID",
+      "to_column": "Device_ID"
+    },
+    {
+      "from": "stock",
+      "to": "shop",
+      "from_column": "Shop_ID",
+      "to_column": "Shop_ID"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "db_id": "book_2",
+  "tables": [
+    {
+      "name": "book",
+      "columns": [
+        {
+          "name": "Book_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Title",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Issues",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Writer",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Book_ID"
+      ]
+    },
+    {
+      "name": "publication",
+      "columns": [
+        {
+          "name": "Publication_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Book_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Publisher",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Publication_Date",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Price",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Publication_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "publication",
+      "from_column": "Book_ID",
+      "to_table": "book",
+      "to_column": "Book_ID"
+    }
+  ]
+}

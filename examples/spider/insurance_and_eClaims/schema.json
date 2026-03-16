@@ -1,0 +1,310 @@
+{
+  "db_id": "insurance_and_eClaims",
+  "tables": [
+    {
+      "name": "Claim_Headers",
+      "columns": [
+        {
+          "name": "Claim_Header_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Claim_Status_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Claim_Type_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Policy_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Date_of_Claim",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Date_of_Settlement",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Amount_Claimed",
+          "type": "DECIMAL(20,4)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Amount_Piad",
+          "type": "DECIMAL(20,4)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Claim_Header_ID"
+      ]
+    },
+    {
+      "name": "Claims_Documents",
+      "columns": [
+        {
+          "name": "Claim_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Document_Type_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Created_by_Staff_ID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Created_Date",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Claim_ID",
+        "Document_Type_Code"
+      ]
+    },
+    {
+      "name": "Claims_Processing",
+      "columns": [
+        {
+          "name": "Claim_Processing_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Claim_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Claim_Outcome_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Claim_Stage_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Staff_ID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Claim_Processing_ID"
+      ]
+    },
+    {
+      "name": "Claims_Processing_Stages",
+      "columns": [
+        {
+          "name": "Claim_Stage_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Next_Claim_Stage_ID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Claim_Status_Name",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Claim_Status_Description",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Claim_Stage_ID"
+      ]
+    },
+    {
+      "name": "Customers",
+      "columns": [
+        {
+          "name": "Customer_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Customer_Details",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Customer_ID"
+      ]
+    },
+    {
+      "name": "Policies",
+      "columns": [
+        {
+          "name": "Policy_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Customer_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Policy_Type_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Start_Date",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "End_Date",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Policy_ID"
+      ]
+    },
+    {
+      "name": "Staff",
+      "columns": [
+        {
+          "name": "Staff_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Staff_Details",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Staff_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Claim_Headers",
+      "from_column": "Policy_ID",
+      "to_table": "Policies",
+      "to_column": "Policy_ID"
+    },
+    {
+      "from_table": "Claims_Documents",
+      "from_column": "Created_by_Staff_ID",
+      "to_table": "Staff",
+      "to_column": "Staff_ID"
+    },
+    {
+      "from_table": "Claims_Documents",
+      "from_column": "Claim_ID",
+      "to_table": "Claim_Headers",
+      "to_column": "Claim_Header_ID"
+    },
+    {
+      "from_table": "Claims_Processing",
+      "from_column": "Staff_ID",
+      "to_table": "Staff",
+      "to_column": "Staff_ID"
+    },
+    {
+      "from_table": "Claims_Processing",
+      "from_column": "Claim_ID",
+      "to_table": "Claim_Headers",
+      "to_column": "Claim_Header_ID"
+    },
+    {
+      "from_table": "Policies",
+      "from_column": "Customer_ID",
+      "to_table": "Customers",
+      "to_column": "Customer_ID"
+    }
+  ]
+}

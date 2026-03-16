@@ -1,0 +1,36 @@
+DB ID: decoration_competition
+Run:   20250910-163730
+
+Tables: 3
+Columns: 12
+PKs: 4
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- college: ['College_ID']
+- member: ['Member_ID']
+- round: ['Round_ID', 'Member_ID']
+
+Null summary:
+{
+  "college": {
+    "College_ID": 0,
+    "Name": 0,
+    "Leader_Name": 0,
+    "College_Location": 0
+  },
+  "member": {
+    "Member_ID": 0,
+    "Name": 0,
+    "Country": 0,
+    "College_ID": 0
+  },
+  "round": {
+    "Round_ID": 0,
+    "Member_ID": 0,
+    "Decoration_Theme": 0,
+    "Rank_in_Round": 0
+  }
+}

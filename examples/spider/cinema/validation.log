@@ -1,0 +1,41 @@
+DB ID: cinema
+Run:   20250910-163730
+
+Tables: 3
+Columns: 17
+PKs: 4
+FKs: 2
+
+No structural issues found.
+
+Primary keys by table:
+- cinema: ['Cinema_ID']
+- film: ['Film_ID']
+- schedule: ['Cinema_ID', 'Film_ID']
+
+Null summary:
+{
+  "cinema": {
+    "Cinema_ID": 0,
+    "Name": 0,
+    "Openning_year": 0,
+    "Capacity": 0,
+    "Location": 0
+  },
+  "film": {
+    "Film_ID": 0,
+    "Rank_in_series": 0,
+    "Number_in_season": 0,
+    "Title": 0,
+    "Directed_by": 0,
+    "Original_air_date": 0,
+    "Production_code": 0
+  },
+  "schedule": {
+    "Cinema_ID": 0,
+    "Film_ID": 0,
+    "Date": 0,
+    "Show_times_per_day": 0,
+    "Price": 0
+  }
+}

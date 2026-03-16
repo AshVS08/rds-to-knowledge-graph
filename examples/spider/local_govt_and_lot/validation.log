@@ -1,0 +1,96 @@
+DB ID: local_govt_and_lot
+Run:   20250910-163730
+
+Tables: 11
+Columns: 48
+PKs: 18
+FKs: 15
+
+No structural issues found.
+
+Primary keys by table:
+- Customer_Event_Notes: ['Customer_Event_Note_ID']
+- Customer_Events: ['Customer_Event_ID']
+- Customers: ['customer_id']
+- Organizations: ['organization_id']
+- Properties: ['property_id']
+- Residents: ['resident_id', 'property_id', 'date_moved_in']
+- Residents_Services: ['resident_id', 'service_id']
+- Services: ['service_id']
+- Things: ['thing_id']
+- Timed_Locations_of_Things: ['thing_id', 'Date_and_Time', 'Location_Code']
+- Timed_Status_of_Things: ['thing_id', 'Date_and_Date', 'Status_of_Thing_Code']
+
+Null summary:
+{
+  "Customer_Event_Notes": {
+    "Customer_Event_Note_ID": 0,
+    "Customer_Event_ID": 0,
+    "service_type_code": 0,
+    "resident_id": 0,
+    "property_id": 0,
+    "date_moved_in": 0
+  },
+  "Customer_Events": {
+    "Customer_Event_ID": 0,
+    "customer_id": 0,
+    "date_moved_in": 0,
+    "property_id": 0,
+    "resident_id": 0,
+    "thing_id": 0
+  },
+  "Customers": {
+    "customer_id": 0,
+    "customer_details": 0
+  },
+  "Organizations": {
+    "organization_id": 0,
+    "parent_organization_id": 0,
+    "organization_details": 0
+  },
+  "Properties": {
+    "property_id": 0,
+    "property_type_code": 0,
+    "property_address": 0,
+    "other_details": 0
+  },
+  "Residents": {
+    "resident_id": 0,
+    "property_id": 0,
+    "date_moved_in": 0,
+    "date_moved_out": 0,
+    "other_details": 0
+  },
+  "Residents_Services": {
+    "resident_id": 0,
+    "service_id": 0,
+    "date_moved_in": 0,
+    "property_id": 0,
+    "date_requested": 0,
+    "date_provided": 0,
+    "other_details": 0
+  },
+  "Services": {
+    "service_id": 0,
+    "organization_id": 0,
+    "service_type_code": 0,
+    "service_details": 0
+  },
+  "Things": {
+    "thing_id": 0,
+    "organization_id": 0,
+    "Type_of_Thing_Code": 0,
+    "service_type_code": 0,
+    "service_details": 0
+  },
+  "Timed_Locations_of_Things": {
+    "thing_id": 0,
+    "Date_and_Time": 0,
+    "Location_Code": 0
+  },
+  "Timed_Status_of_Things": {
+    "thing_id": 0,
+    "Date_and_Date": 0,
+    "Status_of_Thing_Code": 0
+  }
+}

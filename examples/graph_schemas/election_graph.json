@@ -1,0 +1,62 @@
+{
+  "db_id": "election",
+  "nodes": [
+    {
+      "id": "county",
+      "columns": [
+        "County_Id",
+        "County_name",
+        "Population",
+        "Zip_code"
+      ],
+      "primary_keys": [
+        "County_Id"
+      ]
+    },
+    {
+      "id": "election",
+      "columns": [
+        "Election_ID",
+        "Counties_Represented",
+        "District",
+        "Delegate",
+        "Party",
+        "First_Elected",
+        "Committee"
+      ],
+      "primary_keys": [
+        "Election_ID"
+      ]
+    },
+    {
+      "id": "party",
+      "columns": [
+        "Party_ID",
+        "Year",
+        "Party",
+        "Governor",
+        "Lieutenant_Governor",
+        "Comptroller",
+        "Attorney_General",
+        "US_Senate"
+      ],
+      "primary_keys": [
+        "Party_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "election",
+      "to": "county",
+      "from_column": "District",
+      "to_column": "County_Id"
+    },
+    {
+      "from": "election",
+      "to": "party",
+      "from_column": "Party",
+      "to_column": "Party_ID"
+    }
+  ]
+}

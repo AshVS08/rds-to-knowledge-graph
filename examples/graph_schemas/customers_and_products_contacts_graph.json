@@ -1,0 +1,124 @@
+{
+  "db_id": "customers_and_products_contacts",
+  "nodes": [
+    {
+      "id": "Addresses",
+      "columns": [
+        "address_id",
+        "line_1_number_building",
+        "city",
+        "zip_postcode",
+        "state_province_county",
+        "country"
+      ],
+      "primary_keys": [
+        "address_id"
+      ]
+    },
+    {
+      "id": "Contacts",
+      "columns": [
+        "contact_id",
+        "customer_id",
+        "gender",
+        "first_name",
+        "last_name",
+        "contact_phone"
+      ],
+      "primary_keys": [
+        "contact_id"
+      ]
+    },
+    {
+      "id": "Customer_Address_History",
+      "columns": [
+        "customer_id",
+        "address_id",
+        "date_from",
+        "date_to"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Customer_Orders",
+      "columns": [
+        "order_id",
+        "customer_id",
+        "order_date",
+        "order_status_code"
+      ],
+      "primary_keys": [
+        "order_id"
+      ]
+    },
+    {
+      "id": "Customers",
+      "columns": [
+        "customer_id",
+        "payment_method_code",
+        "customer_number",
+        "customer_name",
+        "customer_address",
+        "customer_phone",
+        "customer_email"
+      ],
+      "primary_keys": [
+        "customer_id"
+      ]
+    },
+    {
+      "id": "Order_Items",
+      "columns": [
+        "order_item_id",
+        "order_id",
+        "product_id",
+        "order_quantity"
+      ],
+      "primary_keys": []
+    },
+    {
+      "id": "Products",
+      "columns": [
+        "product_id",
+        "product_type_code",
+        "product_name",
+        "product_price"
+      ],
+      "primary_keys": [
+        "product_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Customer_Address_History",
+      "to": "Addresses",
+      "from_column": "address_id",
+      "to_column": "address_id"
+    },
+    {
+      "from": "Customer_Address_History",
+      "to": "Customers",
+      "from_column": "customer_id",
+      "to_column": "customer_id"
+    },
+    {
+      "from": "Customer_Orders",
+      "to": "Customers",
+      "from_column": "customer_id",
+      "to_column": "customer_id"
+    },
+    {
+      "from": "Order_Items",
+      "to": "Customer_Orders",
+      "from_column": "order_id",
+      "to_column": "order_id"
+    },
+    {
+      "from": "Order_Items",
+      "to": "Products",
+      "from_column": "product_id",
+      "to_column": "product_id"
+    }
+  ]
+}

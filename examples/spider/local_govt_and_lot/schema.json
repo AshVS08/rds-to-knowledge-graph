@@ -1,0 +1,528 @@
+{
+  "db_id": "local_govt_and_lot",
+  "tables": [
+    {
+      "name": "Customer_Event_Notes",
+      "columns": [
+        {
+          "name": "Customer_Event_Note_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Customer_Event_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "service_type_code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "resident_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "property_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_moved_in",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Customer_Event_Note_ID"
+      ]
+    },
+    {
+      "name": "Customer_Events",
+      "columns": [
+        {
+          "name": "Customer_Event_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "customer_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_moved_in",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "property_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "resident_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "thing_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Customer_Event_ID"
+      ]
+    },
+    {
+      "name": "Customers",
+      "columns": [
+        {
+          "name": "customer_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "customer_details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "customer_id"
+      ]
+    },
+    {
+      "name": "Organizations",
+      "columns": [
+        {
+          "name": "organization_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "parent_organization_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "organization_details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "organization_id"
+      ]
+    },
+    {
+      "name": "Properties",
+      "columns": [
+        {
+          "name": "property_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "property_type_code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "property_address",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "other_details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "property_id"
+      ]
+    },
+    {
+      "name": "Residents",
+      "columns": [
+        {
+          "name": "resident_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "property_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "date_moved_in",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "date_moved_out",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "other_details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "resident_id",
+        "property_id",
+        "date_moved_in"
+      ]
+    },
+    {
+      "name": "Residents_Services",
+      "columns": [
+        {
+          "name": "resident_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "service_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "date_moved_in",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "property_id",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_requested",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "date_provided",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "other_details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "resident_id",
+        "service_id"
+      ]
+    },
+    {
+      "name": "Services",
+      "columns": [
+        {
+          "name": "service_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "organization_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "service_type_code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "service_details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "service_id"
+      ]
+    },
+    {
+      "name": "Things",
+      "columns": [
+        {
+          "name": "thing_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "organization_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Type_of_Thing_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "service_type_code",
+          "type": "CHAR(10)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "service_details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "thing_id"
+      ]
+    },
+    {
+      "name": "Timed_Locations_of_Things",
+      "columns": [
+        {
+          "name": "thing_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Date_and_Time",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Location_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "thing_id",
+        "Date_and_Time",
+        "Location_Code"
+      ]
+    },
+    {
+      "name": "Timed_Status_of_Things",
+      "columns": [
+        {
+          "name": "thing_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Date_and_Date",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Status_of_Thing_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "thing_id",
+        "Date_and_Date",
+        "Status_of_Thing_Code"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Customer_Event_Notes",
+      "from_column": "Customer_Event_ID",
+      "to_table": "Customer_Events",
+      "to_column": "Customer_Event_ID"
+    },
+    {
+      "from_table": "Customer_Events",
+      "from_column": "resident_id",
+      "to_table": "Residents",
+      "to_column": "resident_id"
+    },
+    {
+      "from_table": "Customer_Events",
+      "from_column": "property_id",
+      "to_table": "Residents",
+      "to_column": "property_id"
+    },
+    {
+      "from_table": "Customer_Events",
+      "from_column": "date_moved_in",
+      "to_table": "Residents",
+      "to_column": "date_moved_in"
+    },
+    {
+      "from_table": "Customer_Events",
+      "from_column": "customer_id",
+      "to_table": "Customers",
+      "to_column": "customer_id"
+    },
+    {
+      "from_table": "Customer_Events",
+      "from_column": "thing_id",
+      "to_table": "Things",
+      "to_column": "thing_id"
+    },
+    {
+      "from_table": "Residents",
+      "from_column": "property_id",
+      "to_table": "Properties",
+      "to_column": "property_id"
+    },
+    {
+      "from_table": "Residents_Services",
+      "from_column": "resident_id",
+      "to_table": "Residents",
+      "to_column": "resident_id"
+    },
+    {
+      "from_table": "Residents_Services",
+      "from_column": "property_id",
+      "to_table": "Residents",
+      "to_column": "property_id"
+    },
+    {
+      "from_table": "Residents_Services",
+      "from_column": "date_moved_in",
+      "to_table": "Residents",
+      "to_column": "date_moved_in"
+    },
+    {
+      "from_table": "Residents_Services",
+      "from_column": "service_id",
+      "to_table": "Services",
+      "to_column": "service_id"
+    },
+    {
+      "from_table": "Services",
+      "from_column": "organization_id",
+      "to_table": "Organizations",
+      "to_column": "organization_id"
+    },
+    {
+      "from_table": "Things",
+      "from_column": "organization_id",
+      "to_table": "Organizations",
+      "to_column": "organization_id"
+    },
+    {
+      "from_table": "Timed_Locations_of_Things",
+      "from_column": "thing_id",
+      "to_table": "Things",
+      "to_column": "thing_id"
+    },
+    {
+      "from_table": "Timed_Status_of_Things",
+      "from_column": "thing_id",
+      "to_table": "Things",
+      "to_column": "thing_id"
+    }
+  ]
+}

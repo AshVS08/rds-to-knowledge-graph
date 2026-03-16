@@ -1,0 +1,128 @@
+DB ID: hospital_1
+Run:   20250910-163730
+
+Tables: 15
+Columns: 68
+PKs: 28
+FKs: 25
+
+No structural issues found.
+
+Primary keys by table:
+- Affiliated_With: ['Physician', 'Department']
+- Appointment: ['AppointmentID']
+- Block: ['BlockFloor', 'BlockCode']
+- Department: ['DepartmentID']
+- Medication: ['Code']
+- Nurse: ['EmployeeID']
+- On_Call: ['Nurse', 'BlockFloor', 'BlockCode', 'OnCallStart', 'OnCallEnd']
+- Patient: ['SSN']
+- Physician: ['EmployeeID']
+- Prescribes: ['Physician', 'Patient', 'Medication', 'Date']
+- Procedures: ['Code']
+- Room: ['RoomNumber']
+- Stay: ['StayID']
+- Trained_In: ['Physician', 'Treatment']
+- Undergoes: ['Patient', 'Procedures', 'Stay', 'DateUndergoes']
+
+Null summary:
+{
+  "Affiliated_With": {
+    "Physician": 0,
+    "Department": 0,
+    "PrimaryAffiliation": 0
+  },
+  "Appointment": {
+    "AppointmentID": 0,
+    "Patient": 0,
+    "PrepNurse": 2,
+    "Physician": 0,
+    "Start": 0,
+    "End": 0,
+    "ExaminationRoom": 0
+  },
+  "Block": {
+    "BlockFloor": 0,
+    "BlockCode": 0
+  },
+  "Department": {
+    "DepartmentID": 0,
+    "Name": 0,
+    "Head": 0
+  },
+  "Medication": {
+    "Code": 0,
+    "Name": 0,
+    "Brand": 0,
+    "Description": 0
+  },
+  "Nurse": {
+    "EmployeeID": 0,
+    "Name": 0,
+    "Position": 0,
+    "Registered": 0,
+    "SSN": 0
+  },
+  "On_Call": {
+    "Nurse": 0,
+    "BlockFloor": 0,
+    "BlockCode": 0,
+    "OnCallStart": 0,
+    "OnCallEnd": 0
+  },
+  "Patient": {
+    "SSN": 0,
+    "Name": 0,
+    "Address": 0,
+    "Phone": 0,
+    "InsuranceID": 0,
+    "PCP": 0
+  },
+  "Physician": {
+    "EmployeeID": 0,
+    "Name": 0,
+    "Position": 0,
+    "SSN": 0
+  },
+  "Prescribes": {
+    "Physician": 0,
+    "Patient": 0,
+    "Medication": 0,
+    "Date": 0,
+    "Appointment": 1,
+    "Dose": 0
+  },
+  "Procedures": {
+    "Code": 0,
+    "Name": 0,
+    "Cost": 0
+  },
+  "Room": {
+    "RoomNumber": 0,
+    "RoomType": 0,
+    "BlockFloor": 0,
+    "BlockCode": 0,
+    "Unavailable": 0
+  },
+  "Stay": {
+    "StayID": 0,
+    "Patient": 0,
+    "Room": 0,
+    "StayStart": 0,
+    "StayEnd": 0
+  },
+  "Trained_In": {
+    "Physician": 0,
+    "Treatment": 0,
+    "CertificationDate": 0,
+    "CertificationExpires": 0
+  },
+  "Undergoes": {
+    "Patient": 0,
+    "Procedures": 0,
+    "Stay": 0,
+    "DateUndergoes": 0,
+    "Physician": 0,
+    "AssistingNurse": 0
+  }
+}

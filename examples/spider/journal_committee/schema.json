@@ -1,0 +1,114 @@
+{
+  "db_id": "journal_committee",
+  "tables": [
+    {
+      "name": "editor",
+      "columns": [
+        {
+          "name": "Editor_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Age",
+          "type": "REAL",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Editor_ID"
+      ]
+    },
+    {
+      "name": "journal",
+      "columns": [
+        {
+          "name": "Journal_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Date",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Theme",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Sales",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Journal_ID"
+      ]
+    },
+    {
+      "name": "journal_committee",
+      "columns": [
+        {
+          "name": "Editor_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Journal_ID",
+          "type": "INT",
+          "notnull": false,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Work_Type",
+          "type": "TEXT",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Editor_ID",
+        "Journal_ID"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "journal_committee",
+      "from_column": "Journal_ID",
+      "to_table": "journal",
+      "to_column": "Journal_ID"
+    },
+    {
+      "from_table": "journal_committee",
+      "from_column": "Editor_ID",
+      "to_table": "editor",
+      "to_column": "Editor_ID"
+    }
+  ]
+}

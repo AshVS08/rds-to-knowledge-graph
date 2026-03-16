@@ -1,0 +1,71 @@
+{
+  "db_id": "icfp_1",
+  "nodes": [
+    {
+      "id": "Authors",
+      "columns": [
+        "authID",
+        "lname",
+        "fname"
+      ],
+      "primary_keys": [
+        "authID"
+      ]
+    },
+    {
+      "id": "Authorship",
+      "columns": [
+        "authID",
+        "instID",
+        "paperID",
+        "authOrder"
+      ],
+      "primary_keys": [
+        "authID",
+        "instID",
+        "paperID"
+      ]
+    },
+    {
+      "id": "Inst",
+      "columns": [
+        "instID",
+        "name",
+        "country"
+      ],
+      "primary_keys": [
+        "instID"
+      ]
+    },
+    {
+      "id": "Papers",
+      "columns": [
+        "paperID",
+        "title"
+      ],
+      "primary_keys": [
+        "paperID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Authorship",
+      "to": "Papers",
+      "from_column": "paperID",
+      "to_column": "paperID"
+    },
+    {
+      "from": "Authorship",
+      "to": "Inst",
+      "from_column": "instID",
+      "to_column": "instID"
+    },
+    {
+      "from": "Authorship",
+      "to": "Authors",
+      "from_column": "authID",
+      "to_column": "authID"
+    }
+  ]
+}

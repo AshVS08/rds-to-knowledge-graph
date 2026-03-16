@@ -1,0 +1,145 @@
+{
+  "db_id": "epinions_1",
+  "tables": [
+    {
+      "name": "item",
+      "columns": [
+        {
+          "name": "i_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "title",
+          "type": "varchar(20)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "i_id"
+      ]
+    },
+    {
+      "name": "review",
+      "columns": [
+        {
+          "name": "a_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "u_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "i_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "rating",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "rank",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "a_id"
+      ]
+    },
+    {
+      "name": "trust",
+      "columns": [
+        {
+          "name": "source_u_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "target_u_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "trust",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": []
+    },
+    {
+      "name": "useracct",
+      "columns": [
+        {
+          "name": "u_id",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "name",
+          "type": "varchar(128)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "u_id"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "review",
+      "from_column": "i_id",
+      "to_table": "item",
+      "to_column": "i_id"
+    },
+    {
+      "from_table": "review",
+      "from_column": "u_id",
+      "to_table": "useracct",
+      "to_column": "u_id"
+    },
+    {
+      "from_table": "trust",
+      "from_column": "target_u_id",
+      "to_table": "useracct",
+      "to_column": "u_id"
+    },
+    {
+      "from_table": "trust",
+      "from_column": "source_u_id",
+      "to_table": "useracct",
+      "to_column": "u_id"
+    }
+  ]
+}

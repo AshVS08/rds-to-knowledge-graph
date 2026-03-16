@@ -1,0 +1,32 @@
+{"table": "editor", "row": {"Editor_ID": 1, "Name": "Kamila Porczyk", "Age": 34.0}}
+{"table": "editor", "row": {"Editor_ID": 2, "Name": "Anna Powierza", "Age": 35.0}}
+{"table": "editor", "row": {"Editor_ID": 3, "Name": "Marek Siudym", "Age": 21.0}}
+{"table": "editor", "row": {"Editor_ID": 4, "Name": "Piotr Pręgowski", "Age": 43.0}}
+{"table": "editor", "row": {"Editor_ID": 5, "Name": "Szymon Wydra", "Age": 20.0}}
+{"table": "editor", "row": {"Editor_ID": 6, "Name": "Władysław Grzywna", "Age": 24.0}}
+{"table": "editor", "row": {"Editor_ID": 7, "Name": "Mariusz Zalejski", "Age": 25.0}}
+{"table": "editor", "row": {"Editor_ID": 8, "Name": "Grażyna Wolszczak", "Age": 54.0}}
+{"table": "editor", "row": {"Editor_ID": 9, "Name": "Maria Góralczyk", "Age": 38.0}}
+{"table": "journal", "row": {"Journal_ID": 1, "Date": "September 9, 2001", "Theme": "Miami Dolphins", "Sales": 798}}
+{"table": "journal", "row": {"Journal_ID": 2, "Date": "September 23, 2001", "Theme": "at Jacksonville Jaguars", "Sales": 994}}
+{"table": "journal", "row": {"Journal_ID": 4, "Date": "October 7, 2001", "Theme": "at Baltimore Ravens", "Sales": 7494}}
+{"table": "journal", "row": {"Journal_ID": 5, "Date": "October 14, 2001", "Theme": "Tampa Bay Buccaneers", "Sales": 4798}}
+{"table": "journal", "row": {"Journal_ID": 6, "Date": "October 21, 2001", "Theme": "at Detroit Lions", "Sales": 2940}}
+{"table": "journal", "row": {"Journal_ID": 7, "Date": "October 29, 2001", "Theme": "at Pittsburgh Steelers", "Sales": 1763}}
+{"table": "journal", "row": {"Journal_ID": 8, "Date": "November 4, 2001", "Theme": "Jacksonville Jaguars", "Sales": 1232}}
+{"table": "journal", "row": {"Journal_ID": 9, "Date": "November 12, 2001", "Theme": "Baltimore Ravens", "Sales": 6532}}
+{"table": "journal", "row": {"Journal_ID": 10, "Date": "November 18, 2001", "Theme": "at Cincinnati Bengals", "Sales": 3421}}
+{"table": "journal", "row": {"Journal_ID": 11, "Date": "November 25, 2001", "Theme": "Pittsburgh Steelers", "Sales": 3342}}
+{"table": "journal", "row": {"Journal_ID": 12, "Date": "December 2, 2001", "Theme": "at Cleveland Browns", "Sales": 3534}}
+{"table": "journal", "row": {"Journal_ID": 13, "Date": "December 9, 2001", "Theme": "at Minnesota Vikings", "Sales": 4271}}
+{"table": "journal", "row": {"Journal_ID": 14, "Date": "December 16, 2001", "Theme": "Green Bay Packers", "Sales": 2804}}
+{"table": "journal", "row": {"Journal_ID": 15, "Date": "December 22, 2001", "Theme": "at Oakland Raiders", "Sales": 1934}}
+{"table": "journal", "row": {"Journal_ID": 16, "Date": "December 30, 2001", "Theme": "Cleveland Browns", "Sales": 3798}}
+{"table": "journal", "row": {"Journal_ID": 17, "Date": "January 6, 2002", "Theme": "Cincinnati Bengals", "Sales": 5342}}
+{"table": "journal_committee", "row": {"Editor_ID": 1, "Journal_ID": 13, "Work_Type": "Photo"}}
+{"table": "journal_committee", "row": {"Editor_ID": 8, "Journal_ID": 17, "Work_Type": "Article"}}
+{"table": "journal_committee", "row": {"Editor_ID": 6, "Journal_ID": 11, "Work_Type": "Photo"}}
+{"table": "journal_committee", "row": {"Editor_ID": 4, "Journal_ID": 2, "Work_Type": "Article"}}
+{"table": "journal_committee", "row": {"Editor_ID": 3, "Journal_ID": 6, "Work_Type": "Title"}}
+{"table": "journal_committee", "row": {"Editor_ID": 9, "Journal_ID": 12, "Work_Type": "Photo"}}
+{"table": "journal_committee", "row": {"Editor_ID": 8, "Journal_ID": 4, "Work_Type": "Photo"}}

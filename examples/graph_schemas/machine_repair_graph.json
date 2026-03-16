@@ -1,0 +1,78 @@
+{
+  "db_id": "machine_repair",
+  "nodes": [
+    {
+      "id": "machine",
+      "columns": [
+        "Machine_ID",
+        "Making_Year",
+        "Class",
+        "Team",
+        "Machine_series",
+        "value_points",
+        "quality_rank"
+      ],
+      "primary_keys": [
+        "Machine_ID"
+      ]
+    },
+    {
+      "id": "repair",
+      "columns": [
+        "repair_ID",
+        "name",
+        "Launch_Date",
+        "Notes"
+      ],
+      "primary_keys": [
+        "repair_ID"
+      ]
+    },
+    {
+      "id": "repair_assignment",
+      "columns": [
+        "technician_id",
+        "repair_ID",
+        "Machine_ID"
+      ],
+      "primary_keys": [
+        "technician_id",
+        "repair_ID",
+        "Machine_ID"
+      ]
+    },
+    {
+      "id": "technician",
+      "columns": [
+        "technician_id",
+        "Name",
+        "Team",
+        "Starting_Year",
+        "Age"
+      ],
+      "primary_keys": [
+        "technician_id"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "repair_assignment",
+      "to": "machine",
+      "from_column": "Machine_ID",
+      "to_column": "Machine_ID"
+    },
+    {
+      "from": "repair_assignment",
+      "to": "repair",
+      "from_column": "repair_ID",
+      "to_column": "repair_ID"
+    },
+    {
+      "from": "repair_assignment",
+      "to": "technician",
+      "from_column": "technician_id",
+      "to_column": "technician_id"
+    }
+  ]
+}

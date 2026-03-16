@@ -1,0 +1,79 @@
+DB ID: college_1
+Run:   20250910-163730
+
+Tables: 7
+Columns: 43
+PKs: 5
+FKs: 9
+
+No structural issues found.
+
+Primary keys by table:
+- CLASS: ['CLASS_CODE']
+- COURSE: ['CRS_CODE']
+- DEPARTMENT: ['DEPT_CODE']
+- EMPLOYEE: ['EMP_NUM']
+- ENROLL: None
+- PROFESSOR: None
+- STUDENT: ['STU_NUM']
+
+Null summary:
+{
+  "CLASS": {
+    "CLASS_CODE": 0,
+    "CRS_CODE": 0,
+    "CLASS_SECTION": 0,
+    "CLASS_TIME": 0,
+    "CLASS_ROOM": 0,
+    "PROF_NUM": 0
+  },
+  "COURSE": {
+    "CRS_CODE": 0,
+    "DEPT_CODE": 0,
+    "CRS_DESCRIPTION": 0,
+    "CRS_CREDIT": 0
+  },
+  "DEPARTMENT": {
+    "DEPT_CODE": 0,
+    "DEPT_NAME": 0,
+    "SCHOOL_CODE": 0,
+    "EMP_NUM": 0,
+    "DEPT_ADDRESS": 0,
+    "DEPT_EXTENSION": 0
+  },
+  "EMPLOYEE": {
+    "EMP_NUM": 0,
+    "EMP_LNAME": 0,
+    "EMP_FNAME": 0,
+    "EMP_INITIAL": 0,
+    "EMP_JOBCODE": 0,
+    "EMP_HIREDATE": 0,
+    "EMP_DOB": 0
+  },
+  "ENROLL": {
+    "CLASS_CODE": 0,
+    "STU_NUM": 0,
+    "ENROLL_GRADE": 0
+  },
+  "PROFESSOR": {
+    "EMP_NUM": 0,
+    "DEPT_CODE": 0,
+    "PROF_OFFICE": 0,
+    "PROF_EXTENSION": 0,
+    "PROF_HIGH_DEGREE": 0
+  },
+  "STUDENT": {
+    "STU_NUM": 0,
+    "STU_LNAME": 0,
+    "STU_FNAME": 0,
+    "STU_INIT": 0,
+    "STU_DOB": 0,
+    "STU_HRS": 0,
+    "STU_CLASS": 0,
+    "STU_GPA": 0,
+    "STU_TRANSFER": 0,
+    "DEPT_CODE": 0,
+    "STU_PHONE": 0,
+    "PROF_NUM": 0
+  }
+}

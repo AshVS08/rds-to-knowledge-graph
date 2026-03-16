@@ -1,0 +1,56 @@
+{
+  "db_id": "museum_visit",
+  "nodes": [
+    {
+      "id": "museum",
+      "columns": [
+        "Museum_ID",
+        "Name",
+        "Num_of_Staff",
+        "Open_Year"
+      ],
+      "primary_keys": [
+        "Museum_ID"
+      ]
+    },
+    {
+      "id": "visit",
+      "columns": [
+        "Museum_ID",
+        "visitor_ID",
+        "Num_of_Ticket",
+        "Total_spent"
+      ],
+      "primary_keys": [
+        "Museum_ID",
+        "visitor_ID"
+      ]
+    },
+    {
+      "id": "visitor",
+      "columns": [
+        "ID",
+        "Name",
+        "Level_of_membership",
+        "Age"
+      ],
+      "primary_keys": [
+        "ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "visit",
+      "to": "visitor",
+      "from_column": "visitor_ID",
+      "to_column": "ID"
+    },
+    {
+      "from": "visit",
+      "to": "museum",
+      "from_column": "Museum_ID",
+      "to_column": "Museum_ID"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+DB ID: candidate_poll
+Run:   20250910-163730
+
+Tables: 2
+Columns: 14
+PKs: 2
+FKs: 1
+
+No structural issues found.
+
+Primary keys by table:
+- candidate: ['Candidate_ID']
+- people: ['People_ID']
+
+Null summary:
+{
+  "candidate": {
+    "Candidate_ID": 0,
+    "People_ID": 0,
+    "Poll_Source": 0,
+    "Date": 0,
+    "Support_rate": 0,
+    "Consider_rate": 0,
+    "Oppose_rate": 0,
+    "Unsure_rate": 0
+  },
+  "people": {
+    "People_ID": 0,
+    "Sex": 0,
+    "Name": 0,
+    "Date_of_Birth": 0,
+    "Height": 0,
+    "Weight": 0
+  }
+}

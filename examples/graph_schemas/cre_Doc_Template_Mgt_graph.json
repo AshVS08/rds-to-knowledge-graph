@@ -1,0 +1,74 @@
+{
+  "db_id": "cre_Doc_Template_Mgt",
+  "nodes": [
+    {
+      "id": "Documents",
+      "columns": [
+        "Document_ID",
+        "Template_ID",
+        "Document_Name",
+        "Document_Description",
+        "Other_Details"
+      ],
+      "primary_keys": [
+        "Document_ID"
+      ]
+    },
+    {
+      "id": "Paragraphs",
+      "columns": [
+        "Paragraph_ID",
+        "Document_ID",
+        "Paragraph_Text",
+        "Other_Details"
+      ],
+      "primary_keys": [
+        "Paragraph_ID"
+      ]
+    },
+    {
+      "id": "Ref_Template_Types",
+      "columns": [
+        "Template_Type_Code",
+        "Template_Type_Description"
+      ],
+      "primary_keys": [
+        "Template_Type_Code"
+      ]
+    },
+    {
+      "id": "Templates",
+      "columns": [
+        "Template_ID",
+        "Version_Number",
+        "Template_Type_Code",
+        "Date_Effective_From",
+        "Date_Effective_To",
+        "Template_Details"
+      ],
+      "primary_keys": [
+        "Template_ID"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Documents",
+      "to": "Templates",
+      "from_column": "Template_ID",
+      "to_column": "Template_ID"
+    },
+    {
+      "from": "Paragraphs",
+      "to": "Documents",
+      "from_column": "Document_ID",
+      "to_column": "Document_ID"
+    },
+    {
+      "from": "Templates",
+      "to": "Ref_Template_Types",
+      "from_column": "Template_Type_Code",
+      "to_column": "Template_Type_Code"
+    }
+  ]
+}

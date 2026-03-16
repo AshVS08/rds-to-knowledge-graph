@@ -1,0 +1,109 @@
+{
+  "db_id": "csu_1",
+  "nodes": [
+    {
+      "id": "Campuses",
+      "columns": [
+        "Id",
+        "Campus",
+        "Location",
+        "County",
+        "Year"
+      ],
+      "primary_keys": [
+        "Id"
+      ]
+    },
+    {
+      "id": "csu_fees",
+      "columns": [
+        "Campus",
+        "Year",
+        "CampusFee"
+      ],
+      "primary_keys": [
+        "Campus"
+      ]
+    },
+    {
+      "id": "degrees",
+      "columns": [
+        "Year",
+        "Campus",
+        "Degrees"
+      ],
+      "primary_keys": [
+        "Year",
+        "Campus"
+      ]
+    },
+    {
+      "id": "discipline_enrollments",
+      "columns": [
+        "Campus",
+        "Discipline",
+        "Year",
+        "Undergraduate",
+        "Graduate"
+      ],
+      "primary_keys": [
+        "Campus",
+        "Discipline"
+      ]
+    },
+    {
+      "id": "enrollments",
+      "columns": [
+        "Campus",
+        "Year",
+        "TotalEnrollment_AY",
+        "FTE_AY"
+      ],
+      "primary_keys": [
+        "Campus",
+        "Year"
+      ]
+    },
+    {
+      "id": "faculty",
+      "columns": [
+        "Campus",
+        "Year",
+        "Faculty"
+      ],
+      "primary_keys": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "csu_fees",
+      "to": "Campuses",
+      "from_column": "Campus",
+      "to_column": "Id"
+    },
+    {
+      "from": "degrees",
+      "to": "Campuses",
+      "from_column": "Campus",
+      "to_column": "Id"
+    },
+    {
+      "from": "discipline_enrollments",
+      "to": "Campuses",
+      "from_column": "Campus",
+      "to_column": "Id"
+    },
+    {
+      "from": "enrollments",
+      "to": "Campuses",
+      "from_column": "Campus",
+      "to_column": "Id"
+    },
+    {
+      "from": "faculty",
+      "to": "Campuses",
+      "from_column": "Campus",
+      "to_column": "Id"
+    }
+  ]
+}

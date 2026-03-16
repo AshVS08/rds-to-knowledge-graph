@@ -1,0 +1,39 @@
+DB ID: epinions_1
+Run:   20250910-163730
+
+Tables: 4
+Columns: 12
+PKs: 3
+FKs: 4
+
+No structural issues found.
+
+Primary keys by table:
+- item: ['i_id']
+- review: ['a_id']
+- trust: None
+- useracct: ['u_id']
+
+Null summary:
+{
+  "item": {
+    "i_id": 0,
+    "title": 0
+  },
+  "review": {
+    "a_id": 0,
+    "u_id": 0,
+    "i_id": 0,
+    "rating": 0,
+    "rank": 0
+  },
+  "trust": {
+    "source_u_id": 0,
+    "target_u_id": 0,
+    "trust": 0
+  },
+  "useracct": {
+    "u_id": 0,
+    "name": 0
+  }
+}

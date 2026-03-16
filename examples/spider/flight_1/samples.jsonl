@@ -1,0 +1,107 @@
+{"table": "aircraft", "row": {"aid": 1, "name": "Boeing 747-400", "distance": 8430}}
+{"table": "aircraft", "row": {"aid": 2, "name": "Boeing 737-800", "distance": 3383}}
+{"table": "aircraft", "row": {"aid": 3, "name": "Airbus A340-300", "distance": 7120}}
+{"table": "aircraft", "row": {"aid": 4, "name": "British Aerospace Jetstream 41", "distance": 1502}}
+{"table": "aircraft", "row": {"aid": 5, "name": "Embraer ERJ-145", "distance": 1530}}
+{"table": "aircraft", "row": {"aid": 6, "name": "SAAB 340", "distance": 2128}}
+{"table": "aircraft", "row": {"aid": 7, "name": "Piper Archer III", "distance": 520}}
+{"table": "aircraft", "row": {"aid": 8, "name": "Tupolev 154", "distance": 4103}}
+{"table": "aircraft", "row": {"aid": 16, "name": "Schwitzer 2-33", "distance": 30}}
+{"table": "aircraft", "row": {"aid": 9, "name": "Lockheed L1011", "distance": 6900}}
+{"table": "aircraft", "row": {"aid": 10, "name": "Boeing 757-300", "distance": 4010}}
+{"table": "aircraft", "row": {"aid": 11, "name": "Boeing 777-300", "distance": 6441}}
+{"table": "aircraft", "row": {"aid": 12, "name": "Boeing 767-400ER", "distance": 6475}}
+{"table": "aircraft", "row": {"aid": 13, "name": "Airbus A320", "distance": 2605}}
+{"table": "aircraft", "row": {"aid": 14, "name": "Airbus A319", "distance": 1805}}
+{"table": "aircraft", "row": {"aid": 15, "name": "Boeing 727", "distance": 1504}}
+{"table": "certificate", "row": {"eid": 11564812, "aid": 2}}
+{"table": "certificate", "row": {"eid": 11564812, "aid": 10}}
+{"table": "certificate", "row": {"eid": 90873519, "aid": 6}}
+{"table": "certificate", "row": {"eid": 141582651, "aid": 2}}
+{"table": "certificate", "row": {"eid": 141582651, "aid": 10}}
+{"table": "certificate", "row": {"eid": 141582651, "aid": 12}}
+{"table": "certificate", "row": {"eid": 142519864, "aid": 1}}
+{"table": "certificate", "row": {"eid": 142519864, "aid": 2}}
+{"table": "certificate", "row": {"eid": 142519864, "aid": 3}}
+{"table": "certificate", "row": {"eid": 142519864, "aid": 7}}
+{"table": "certificate", "row": {"eid": 142519864, "aid": 10}}
+{"table": "certificate", "row": {"eid": 142519864, "aid": 11}}
+{"table": "certificate", "row": {"eid": 142519864, "aid": 12}}
+{"table": "certificate", "row": {"eid": 142519864, "aid": 13}}
+{"table": "certificate", "row": {"eid": 159542516, "aid": 5}}
+{"table": "certificate", "row": {"eid": 159542516, "aid": 7}}
+{"table": "certificate", "row": {"eid": 242518965, "aid": 2}}
+{"table": "certificate", "row": {"eid": 242518965, "aid": 10}}
+{"table": "certificate", "row": {"eid": 269734834, "aid": 1}}
+{"table": "certificate", "row": {"eid": 269734834, "aid": 2}}
+{"table": "certificate", "row": {"eid": 269734834, "aid": 3}}
+{"table": "certificate", "row": {"eid": 269734834, "aid": 4}}
+{"table": "certificate", "row": {"eid": 269734834, "aid": 5}}
+{"table": "certificate", "row": {"eid": 269734834, "aid": 6}}
+{"table": "certificate", "row": {"eid": 269734834, "aid": 7}}
+{"table": "certificate", "row": {"eid": 269734834, "aid": 8}}
+{"table": "certificate", "row": {"eid": 269734834, "aid": 9}}
+{"table": "certificate", "row": {"eid": 269734834, "aid": 10}}
+{"table": "certificate", "row": {"eid": 269734834, "aid": 11}}
+{"table": "certificate", "row": {"eid": 269734834, "aid": 12}}
+{"table": "certificate", "row": {"eid": 269734834, "aid": 13}}
+{"table": "certificate", "row": {"eid": 269734834, "aid": 14}}
+{"table": "certificate", "row": {"eid": 269734834, "aid": 15}}
+{"table": "certificate", "row": {"eid": 274878974, "aid": 10}}
+{"table": "certificate", "row": {"eid": 274878974, "aid": 12}}
+{"table": "certificate", "row": {"eid": 310454876, "aid": 8}}
+{"table": "certificate", "row": {"eid": 310454876, "aid": 9}}
+{"table": "certificate", "row": {"eid": 355548984, "aid": 8}}
+{"table": "certificate", "row": {"eid": 355548984, "aid": 9}}
+{"table": "certificate", "row": {"eid": 356187925, "aid": 6}}
+{"table": "certificate", "row": {"eid": 390487451, "aid": 3}}
+{"table": "certificate", "row": {"eid": 390487451, "aid": 13}}
+{"table": "certificate", "row": {"eid": 390487451, "aid": 14}}
+{"table": "certificate", "row": {"eid": 548977562, "aid": 7}}
+{"table": "certificate", "row": {"eid": 550156548, "aid": 1}}
+{"table": "certificate", "row": {"eid": 550156548, "aid": 12}}
+{"table": "certificate", "row": {"eid": 552455318, "aid": 2}}
+{"table": "certificate", "row": {"eid": 552455318, "aid": 7}}
+{"table": "certificate", "row": {"eid": 552455318, "aid": 14}}
+{"table": "certificate", "row": {"eid": 556784565, "aid": 2}}
+{"table": "employee", "row": {"eid": 242518965, "name": "James Smith", "salary": 120433}}
+{"table": "employee", "row": {"eid": 141582651, "name": "Mary Johnson", "salary": 178345}}
+{"table": "employee", "row": {"eid": 11564812, "name": "John Williams", "salary": 153972}}
+{"table": "employee", "row": {"eid": 567354612, "name": "Lisa Walker", "salary": 256481}}
+{"table": "employee", "row": {"eid": 552455318, "name": "Larry West", "salary": 101745}}
+{"table": "employee", "row": {"eid": 550156548, "name": "Karen Scott", "salary": 205187}}
+{"table": "employee", "row": {"eid": 390487451, "name": "Lawrence Sperry", "salary": 212156}}
+{"table": "employee", "row": {"eid": 274878974, "name": "Michael Miller", "salary": 99890}}
+{"table": "employee", "row": {"eid": 254099823, "name": "Patricia Jones", "salary": 24450}}
+{"table": "employee", "row": {"eid": 356187925, "name": "Robert Brown", "salary": 44740}}
+{"table": "employee", "row": {"eid": 355548984, "name": "Angela Martinez", "salary": 212156}}
+{"table": "employee", "row": {"eid": 310454876, "name": "Joseph Thompson", "salary": 212156}}
+{"table": "employee", "row": {"eid": 489456522, "name": "Linda Davis", "salary": 27984}}
+{"table": "employee", "row": {"eid": 489221823, "name": "Richard Jackson", "salary": 23980}}
+{"table": "employee", "row": {"eid": 548977562, "name": "William Ward", "salary": 84476}}
+{"table": "employee", "row": {"eid": 310454877, "name": "Chad Stewart", "salary": 33546}}
+{"table": "employee", "row": {"eid": 142519864, "name": "Betty Adams", "salary": 227489}}
+{"table": "employee", "row": {"eid": 269734834, "name": "George Wright", "salary": 289950}}
+{"table": "employee", "row": {"eid": 287321212, "name": "Michael Miller", "salary": 48090}}
+{"table": "employee", "row": {"eid": 552455348, "name": "Dorthy Lewis", "salary": 152013}}
+{"table": "employee", "row": {"eid": 248965255, "name": "Barbara Wilson", "salary": 43723}}
+{"table": "employee", "row": {"eid": 159542516, "name": "William Moore", "salary": 48250}}
+{"table": "employee", "row": {"eid": 348121549, "name": "Haywood Kelly", "salary": 32899}}
+{"table": "employee", "row": {"eid": 90873519, "name": "Elizabeth Taylor", "salary": 32021}}
+{"table": "employee", "row": {"eid": 486512566, "name": "David Anderson", "salary": 43001}}
+{"table": "employee", "row": {"eid": 619023588, "name": "Jennifer Thomas", "salary": 54921}}
+{"table": "employee", "row": {"eid": 15645489, "name": "Donald King", "salary": 18050}}
+{"table": "employee", "row": {"eid": 556784565, "name": "Mark Young", "salary": 205187}}
+{"table": "employee", "row": {"eid": 573284895, "name": "Eric Cooper", "salary": 114323}}
+{"table": "employee", "row": {"eid": 574489456, "name": "William Jones", "salary": 105743}}
+{"table": "employee", "row": {"eid": 574489457, "name": "Milo Brooks", "salary": 20}}
+{"table": "flight", "row": {"flno": 99, "origin": "Los Angeles", "destination": "Washington D.C.", "distance": 2308, "departure_date": "04/12/2005 09:30", "arrival_date": "04/12/2005 09:40", "price": 235.98, "aid": 1}}
+{"table": "flight", "row": {"flno": 13, "origin": "Los Angeles", "destination": "Chicago", "distance": 1749, "departure_date": "04/12/2005 08:45", "arrival_date": "04/12/2005 08:45", "price": 220.98, "aid": 3}}
+{"table": "flight", "row": {"flno": 346, "origin": "Los Angeles", "destination": "Dallas", "distance": 1251, "departure_date": "04/12/2005 11:50", "arrival_date": "04/12/2005 07:05", "price": 182, "aid": 2}}
+{"table": "flight", "row": {"flno": 387, "origin": "Los Angeles", "destination": "Boston", "distance": 2606, "departure_date": "04/12/2005 07:03", "arrival_date": "04/12/2005 05:03", "price": 261.56, "aid": 6}}
+{"table": "flight", "row": {"flno": 7, "origin": "Los Angeles", "destination": "Sydney", "distance": 7487, "departure_date": "04/12/2005 05:30", "arrival_date": "04/12/2005 11:10", "price": 278.56, "aid": 3}}
+{"table": "flight", "row": {"flno": 2, "origin": "Los Angeles", "destination": "Tokyo", "distance": 5478, "departure_date": "04/12/2005 06:30", "arrival_date": "04/12/2005 03:55", "price": 780.99, "aid": 9}}
+{"table": "flight", "row": {"flno": 33, "origin": "Los Angeles", "destination": "Honolulu", "distance": 2551, "departure_date": "04/12/2005 09:15", "arrival_date": "04/12/2005 11:15", "price": 375.23, "aid": 7}}
+{"table": "flight", "row": {"flno": 34, "origin": "Los Angeles", "destination": "Honolulu", "distance": 2551, "departure_date": "04/12/2005 12:45", "arrival_date": "04/12/2005 03:18", "price": 425.98, "aid": 5}}
+{"table": "flight", "row": {"flno": 76, "origin": "Chicago", "destination": "Los Angeles", "distance": 1749, "departure_date": "04/12/2005 08:32", "arrival_date": "04/12/2005 10:03", "price": 220.98, "aid": 9}}
+{"table": "flight", "row": {"flno": 68, "origin": "Chicago", "destination": "New York", "distance": 802, "departure_date": "04/12/2005 09:00", "arrival_date": "04/12/2005 12:02", "price": 202.45, "aid": 10}}

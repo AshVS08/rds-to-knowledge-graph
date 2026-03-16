@@ -1,0 +1,376 @@
+{
+  "db_id": "cre_Doc_Tracking_DB",
+  "tables": [
+    {
+      "name": "All_Documents",
+      "columns": [
+        {
+          "name": "Document_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Date_Stored",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Document_Type_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Document_Name",
+          "type": "CHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Document_Description",
+          "type": "CHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Other_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Document_ID"
+      ]
+    },
+    {
+      "name": "Document_Locations",
+      "columns": [
+        {
+          "name": "Document_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Location_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Date_in_Location_From",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Date_in_Locaton_To",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Document_ID",
+        "Location_Code",
+        "Date_in_Location_From"
+      ]
+    },
+    {
+      "name": "Documents_to_be_Destroyed",
+      "columns": [
+        {
+          "name": "Document_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Destruction_Authorised_by_Employee_ID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Destroyed_by_Employee_ID",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Planned_Destruction_Date",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Actual_Destruction_Date",
+          "type": "DATETIME",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Other_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Document_ID"
+      ]
+    },
+    {
+      "name": "Employees",
+      "columns": [
+        {
+          "name": "Employee_ID",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Role_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Employee_Name",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Gender_MFU",
+          "type": "CHAR(1)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Date_of_Birth",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Other_Details",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Employee_ID"
+      ]
+    },
+    {
+      "name": "Ref_Calendar",
+      "columns": [
+        {
+          "name": "Calendar_Date",
+          "type": "DATETIME",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Day_Number",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Calendar_Date"
+      ]
+    },
+    {
+      "name": "Ref_Document_Types",
+      "columns": [
+        {
+          "name": "Document_Type_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Document_Type_Name",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Document_Type_Description",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Document_Type_Code"
+      ]
+    },
+    {
+      "name": "Ref_Locations",
+      "columns": [
+        {
+          "name": "Location_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Location_Name",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Location_Description",
+          "type": "VARCHAR(255)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Location_Code"
+      ]
+    },
+    {
+      "name": "Roles",
+      "columns": [
+        {
+          "name": "Role_Code",
+          "type": "CHAR(15)",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Role_Name",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Role_Description",
+          "type": "VARCHAR(255)",
+          "notnull": false,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "Role_Code"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "All_Documents",
+      "from_column": "Date_Stored",
+      "to_table": "Ref_Calendar",
+      "to_column": "Calendar_Date"
+    },
+    {
+      "from_table": "All_Documents",
+      "from_column": "Document_Type_Code",
+      "to_table": "Ref_Document_Types",
+      "to_column": "Document_Type_Code"
+    },
+    {
+      "from_table": "Document_Locations",
+      "from_column": "Document_ID",
+      "to_table": "All_Documents",
+      "to_column": "Document_ID"
+    },
+    {
+      "from_table": "Document_Locations",
+      "from_column": "Date_in_Locaton_To",
+      "to_table": "Ref_Calendar",
+      "to_column": "Calendar_Date"
+    },
+    {
+      "from_table": "Document_Locations",
+      "from_column": "Date_in_Location_From",
+      "to_table": "Ref_Calendar",
+      "to_column": "Calendar_Date"
+    },
+    {
+      "from_table": "Document_Locations",
+      "from_column": "Location_Code",
+      "to_table": "Ref_Locations",
+      "to_column": "Location_Code"
+    },
+    {
+      "from_table": "Documents_to_be_Destroyed",
+      "from_column": "Document_ID",
+      "to_table": "All_Documents",
+      "to_column": "Document_ID"
+    },
+    {
+      "from_table": "Documents_to_be_Destroyed",
+      "from_column": "Actual_Destruction_Date",
+      "to_table": "Ref_Calendar",
+      "to_column": "Calendar_Date"
+    },
+    {
+      "from_table": "Documents_to_be_Destroyed",
+      "from_column": "Planned_Destruction_Date",
+      "to_table": "Ref_Calendar",
+      "to_column": "Calendar_Date"
+    },
+    {
+      "from_table": "Documents_to_be_Destroyed",
+      "from_column": "Destruction_Authorised_by_Employee_ID",
+      "to_table": "Employees",
+      "to_column": "Employee_ID"
+    },
+    {
+      "from_table": "Documents_to_be_Destroyed",
+      "from_column": "Destroyed_by_Employee_ID",
+      "to_table": "Employees",
+      "to_column": "Employee_ID"
+    },
+    {
+      "from_table": "Employees",
+      "from_column": "Role_Code",
+      "to_table": "Roles",
+      "to_column": "Role_Code"
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+{
+  "db_id": "chinook_1",
+  "tables": [
+    {
+      "name": "Album",
+      "columns": [
+        {
+          "name": "AlbumId",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Title",
+          "type": "varchar(160)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "ArtistId",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "AlbumId"
+      ]
+    },
+    {
+      "name": "Artist",
+      "columns": [
+        {
+          "name": "ArtistId",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "varchar(120)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "ArtistId"
+      ]
+    },
+    {
+      "name": "Customer",
+      "columns": [
+        {
+          "name": "CustomerId",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "FirstName",
+          "type": "varchar(40)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "LastName",
+          "type": "varchar(20)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Company",
+          "type": "varchar(80)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "Address",
+          "type": "varchar(70)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "City",
+          "type": "varchar(40)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "State",
+          "type": "varchar(40)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "Country",
+          "type": "varchar(40)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "PostalCode",
+          "type": "varchar(10)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "Phone",
+          "type": "varchar(24)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "Fax",
+          "type": "varchar(24)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "Email",
+          "type": "varchar(60)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "SupportRepId",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "CustomerId"
+      ]
+    },
+    {
+      "name": "Employee",
+      "columns": [
+        {
+          "name": "EmployeeId",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "LastName",
+          "type": "varchar(20)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "FirstName",
+          "type": "varchar(20)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Title",
+          "type": "varchar(30)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "ReportsTo",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "BirthDate",
+          "type": "datetime",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "HireDate",
+          "type": "datetime",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "Address",
+          "type": "varchar(70)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "City",
+          "type": "varchar(40)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "State",
+          "type": "varchar(40)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "Country",
+          "type": "varchar(40)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "PostalCode",
+          "type": "varchar(10)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "Phone",
+          "type": "varchar(24)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "Fax",
+          "type": "varchar(24)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "Email",
+          "type": "varchar(60)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "EmployeeId"
+      ]
+    },
+    {
+      "name": "Genre",
+      "columns": [
+        {
+          "name": "GenreId",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "varchar(120)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "GenreId"
+      ]
+    },
+    {
+      "name": "Invoice",
+      "columns": [
+        {
+          "name": "InvoiceId",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "CustomerId",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "InvoiceDate",
+          "type": "datetime",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "BillingAddress",
+          "type": "varchar(70)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "BillingCity",
+          "type": "varchar(40)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "BillingState",
+          "type": "varchar(40)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "BillingCountry",
+          "type": "varchar(40)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "BillingPostalCode",
+          "type": "varchar(10)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "Total",
+          "type": "decimal(10,2)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "InvoiceId"
+      ]
+    },
+    {
+      "name": "InvoiceLine",
+      "columns": [
+        {
+          "name": "InvoiceLineId",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "InvoiceId",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "TrackId",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "UnitPrice",
+          "type": "decimal(10,2)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Quantity",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "InvoiceLineId"
+      ]
+    },
+    {
+      "name": "MediaType",
+      "columns": [
+        {
+          "name": "MediaTypeId",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "varchar(120)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "MediaTypeId"
+      ]
+    },
+    {
+      "name": "Playlist",
+      "columns": [
+        {
+          "name": "PlaylistId",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "varchar(120)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "PlaylistId"
+      ]
+    },
+    {
+      "name": "PlaylistTrack",
+      "columns": [
+        {
+          "name": "PlaylistId",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "TrackId",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        }
+      ],
+      "primary_key": [
+        "PlaylistId",
+        "TrackId"
+      ]
+    },
+    {
+      "name": "Track",
+      "columns": [
+        {
+          "name": "TrackId",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": true
+        },
+        {
+          "name": "Name",
+          "type": "varchar(200)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "AlbumId",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "MediaTypeId",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "GenreId",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "Composer",
+          "type": "varchar(220)",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "Milliseconds",
+          "type": "INTEGER",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        },
+        {
+          "name": "Bytes",
+          "type": "INTEGER",
+          "notnull": false,
+          "default": "NULL",
+          "is_pk": false
+        },
+        {
+          "name": "UnitPrice",
+          "type": "decimal(10,2)",
+          "notnull": true,
+          "default": null,
+          "is_pk": false
+        }
+      ],
+      "primary_key": [
+        "TrackId"
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "from_table": "Album",
+      "from_column": "ArtistId",
+      "to_table": "Artist",
+      "to_column": "ArtistId"
+    },
+    {
+      "from_table": "Customer",
+      "from_column": "SupportRepId",
+      "to_table": "Employee",
+      "to_column": "EmployeeId"
+    },
+    {
+      "from_table": "Employee",
+      "from_column": "ReportsTo",
+      "to_table": "Employee",
+      "to_column": "EmployeeId"
+    },
+    {
+      "from_table": "Invoice",
+      "from_column": "CustomerId",
+      "to_table": "Customer",
+      "to_column": "CustomerId"
+    },
+    {
+      "from_table": "InvoiceLine",
+      "from_column": "TrackId",
+      "to_table": "Track",
+      "to_column": "TrackId"
+    },
+    {
+      "from_table": "InvoiceLine",
+      "from_column": "InvoiceId",
+      "to_table": "Invoice",
+      "to_column": "InvoiceId"
+    },
+    {
+      "from_table": "PlaylistTrack",
+      "from_column": "TrackId",
+      "to_table": "Track",
+      "to_column": "TrackId"
+    },
+    {
+      "from_table": "PlaylistTrack",
+      "from_column": "PlaylistId",
+      "to_table": "Playlist",
+      "to_column": "PlaylistId"
+    },
+    {
+      "from_table": "Track",
+      "from_column": "MediaTypeId",
+      "to_table": "MediaType",
+      "to_column": "MediaTypeId"
+    },
+    {
+      "from_table": "Track",
+      "from_column": "GenreId",
+      "to_table": "Genre",
+      "to_column": "GenreId"
+    },
+    {
+      "from_table": "Track",
+      "from_column": "AlbumId",
+      "to_table": "Album",
+      "to_column": "AlbumId"
+    }
+  ]
+}
